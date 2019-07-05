@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "โปรแกรมบล็อคที่มีประสิทธิภาพ ใช้งานง่ายบน CPU และหน่วยความจำ"
+	},
+	"dashboardName": {
+		"message": "Adblock — แดชบอร์ด"
+	},
+	"settingsPageName": {
+		"message": "การตั้งค่า"
+	},
+	"3pPageName": {
+		"message": "ตัวกรองของบุคคลที่สาม"
+	},
+	"rulesPageName": {
+		"message": "กฎของฉัน"
+	},
+	"whitelistPageName": {
+		"message": "บัญชีขาว"
+	},
+	"statsPageName": {
+		"message": "Adblock — ตัวบันทึกข้อมูล"
+	},
+	"aboutPageName": {
+		"message": "เกี่ยวกับ"
+	},
+	"advancedSettingsPageName": {
+		"message": "การตั้งค่าขั้นสูง"
+	},
+	"pickerCreate": {
+		"message": "สร้าง"
+	},
+	"pickerPick": {
+		"message": "เลือก"
+	},
+	"pickerQuit": {
+		"message": "ออก"
+	},
+	"pickerPreview": {
+		"message": "ดูตัวอย่าง"
+	},
+	"pickerNetFilters": {
+		"message": "ตัวกรองเครือข่าย"
+	},
+	"pickerCosmeticFilters": {
+		"message": "ตัวกรองการตกแต่ง"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "คลิก, Ctrl-click"
+	},
+	"pickerContextMenuEntry": {
+		"message": "บล็อคองค์ประกอบ"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "ซ่อนตัวยึดตำแหน่งขององค์ประกอบที่ถูกบล็อค"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "แสดงจำนวนการร้องขอที่ถูกบล็อคบนไอคอน"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "ปิดใช้งานกล่องคำอธิบาย"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "ใช้ประโยชน์จากเมนูบริบทเมื่อเหมาะสม"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "ใช้ได้กับผู้ที่ตาบอดสี"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "เปิดใช้งานการสนับสนุนการจัดเก็บข้อมูลบนคลาวด์"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "ฉันคือผู้ใช้งานขั้นสูง (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>จำเป็นต้องอ่าน</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "การตั้งค่าขั้นสูง"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "ปิดใช้งานการดึงข้อมูลล่วงหน้า (เพื่อป้องกันการเชื่อมต่อใดๆ สำหรับการร้องขอของเครือข่ายที่ถูกบล็อค)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "ปิดใช้งานการตรวจสอบไฮเปอร์ลิงก์"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "ป้องกัน WebRTC มิให้ปล่อยข้อมูลที่อยู่ IP เฉพาะเครื่องให้รั่วไหลออกไป"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "พฤติกรรมเริ่มต้น"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "พฤติกรรมเริ่มต้นเหล่านี้สามารถลบล้างได้แบบต่อไซต์"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "ปิดใช้งานตัวกรองการตกแต่ง"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "บล็อคฟอนต์จากระยะไกล"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "บล็อครายงาน CSP"
+	},
+	"settingsStorageUsed": {
+		"message": "พื้นที่จัดเก็บที่ใช้: {{value}} ไบต์"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "คืนค่าล่าสุด:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "การสำรองข้อมูลล่าสุด:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "ตัวกรองเครือข่าย {{netFilterCount}} ＋ ตัวกรองการตกแต่ง {{cosmeticFilterCount}} จาก:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} ที่ใช้ไปจาก {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "รายการตัวกรองการอัปเดตอัตโนมัติ"
+	},
+	"3pUpdateNow": {
+		"message": "อัปเดตตอนนี้"
+	},
+	"3pPurgeAll": {
+		"message": "ล้างแคชทั้งหมด"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "แยกวิเคราะห์ และบังคับใช้ตัวกรองการตกแต่ง"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>ตัวเลือกนี้จะเปิดใช้งานการแยกวิเคราะห์และการบังคับใช้ตัวกรองการซ่อนองค์ประกอบที่ใช้งานร่วมกับ <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus ได้ &ldquo;&rdquo;</a> ตัวเลือกเหล่านี้ถือเป็นการตกแต่งที่จำเป็น โดยจะทำหน้าที่ซ่อนองค์ประกอบต่างๆ ในเว็บเพจ ซึ่งดูเหมือนว่าจะรบกวนสายตา และไม่สามารถถูกบล็อคโดยเครื่องมือกรองบน Net Request</p><p>การเปิดใช้งานคุณลักษณะนี้จะเป็นการเพิ่มพื้นที่หน่วยความจำของ Adblock</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "ข้ามตัวกรองการตกแต่งทั่วไป"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>ตัวกรองการตกแต่งทั่วไปคือตัวกรองการตกแต่งซึ่งมีจุดมุ่งหมายสำหรับการนำไปใช้กับทุกเว็บไซต์<p>แม้ว่าจะจัดการได้อย่างมีประสิทธิภาพโดย Adblock แต่ตัวกรองการตกแต่งทั่วไปอาจมีส่วนที่ก่อให้เกิดค่าใช้จ่ายสำหรับหน่วยความจำและ CPU ที่สามารถวัดได้บนบางเว็บเพจ โดยเฉพาะอย่างยิ่งเว็บเพจที่มีขนาดใหญ่และสร้างขึ้นมาเป็นเวลานานแล้ว<p>การเปิดใช้งานตัวเลือกนี้จะช่วยขจัดค่าใช้จ่ายในส่วนหน่วยความจำและ CPU ที่ถูกเพิ่มเข้าไปในเว็บเพจอันเป็นผลจากการจัดการตัวกรองการตกแต่งทั่วไป และยังลดพื้นที่หน่วยความจำของ Adblock<p>ขอแนะนำให้เปิดใช้งานตัวเลือกนี้บนอุปกรณ์ที่มีประสิทธิภาพน้อย"
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "รายการโฮสต์ที่ถูกบล็อค"
+	},
+	"3pApplyChanges": {
+		"message": "นำการเปลี่ยนแปลงไปใช้"
+	},
+	"3pGroupAds": {
+		"message": "โฆษณา"
+	},
+	"3pGroupPrivacy": {
+		"message": "ความเป็นส่วนตัว"
+	},
+	"3pGroupMalware": {
+		"message": "โดเมนของมัลแวร์"
+	},
+	"3pGroupAnnoyances": {
+		"message": "การรบกวน"
+	},
+	"3pGroupMultipurpose": {
+		"message": "อเนกประสงค์"
+	},
+	"3pGroupRegions": {
+		"message": "ภูมิภาค ภาษา"
+	},
+	"3pGroupCustom": {
+		"message": "กำหนดเอง"
+	},
+	"3pExternalListsHint": {
+		"message": "หนึ่ง URL ต่อบรรทัด บรรทัดที่นำหน้าด้วย &lsquo;!&rsquo; จะถูกข้ามไป URL ที่ใช้ไม่ได้ก็จะถูกข้ามในเบื้องหลังแบบไม่แสดงให้เห็น"
+	},
+	"3pExternalListObsolete": {
+		"message": "ล้าสมัย"
+	},
+	"3pLastUpdate": {
+		"message": "อัปเดตล่าสุด: {{ago}}.\nคลิกเพื่อบังคับการอัปเดต"
+	},
+	"3pUpdating": {
+		"message": "กำลังอัปเดต..."
+	},
+	"3pNetworkError": {
+		"message": "เครือข่ายที่ผิดพลาดจะกันมิให้ทรัพยากรได้รับการอัปเดต"
+	},
+	"1pFormatHint": {
+		"message": "หนึ่งตัวกรองต่อบรรทัด ตัวกรองสามารถเป็นชื่อโฮสต์แบบธรรมดา หรือตัวกรองที่่ใช้งานร่วมกับ Adblock Plus ได้ บรรทัดที่นำหน้าด้วย &lsquo;!&rsquo; จะถูกข้ามไป"
+	},
+	"1pImport": {
+		"message": "นำเข้าและผนวกรวม"
+	},
+	"1pExport": {
+		"message": "ส่งออก"
+	},
+	"1pApplyChanges": {
+		"message": "นำการเปลี่ยนแปลงไปใช้"
+	},
+	"rulesPermanentHeader": {
+		"message": "กฎถาวร"
+	},
+	"rulesTemporaryHeader": {
+		"message": "กฎชั่วคราว"
+	},
+	"rulesRevert": {
+		"message": "คืนกลับ"
+	},
+	"rulesCommit": {
+		"message": "ยืนยัน"
+	},
+	"rulesEdit": {
+		"message": "แก้ไข"
+	},
+	"rulesEditSave": {
+		"message": "บันทึก"
+	},
+	"rulesEditDiscard": {
+		"message": "ละทิ้ง"
+	},
+	"rulesImport": {
+		"message": "นำเข้าจากไฟล์..."
+	},
+	"rulesExport": {
+		"message": "ส่งออกไปยังไฟล์"
+	},
+	"rulesHint": {
+		"message": "รายการกฎการกรองแบบไดนามิก"
+	},
+	"rulesFormatHint": {
+		"message": "ไวยากรณ์ของกฎ: <code>source destination type action</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>full documentation</a>)"
+	},
+	"whitelistPrompt": {
+		"message": "คำสั่งในบัญชีขาวจะสั่งการว่าควรปิดใช้งานเว็บเพจใด Adblock หนึ่งรายการต่อหนึ่งบรรทัด คำสั่งที่ใช้ไม่ได้จะถูกข้ามไปในเบื้องหลังแบบไม่แสดงให้เห็น และจะปิดใช้งานซอร์สโค้ดและแปลงให้เป็นความคิดเห็น"
+	},
+	"whitelistImport": {
+		"message": "นำเข้าและผนวกรวม"
+	},
+	"whitelistExport": {
+		"message": "ส่งออก"
+	},
+	"whitelistExportFilename": {
+		"message": "Adblock-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "นำการเปลี่ยนแปลงไปใช้"
+	},
+	"logRequestsHeaderType": {
+		"message": "ประเภท"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "โดเมน"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "ตัวกรอง"
+	},
+	"logAll": {
+		"message": "ทั้งหมด"
+	},
+	"logBehindTheScene": {
+		"message": "เบื้องหลัง"
+	},
+	"logFilterPrompt": {
+		"message": "กรองรายการบันทึก"
+	},
+	"logMaxEntriesTip": {
+		"message": "จำนวนรายการบันทึกสูงสุด"
+	},
+	"aboutChangelog": {
+		"message": "เปลี่ยนบันทึก"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "การสนับสนุน"
+	},
+	"aboutCode": {
+		"message": "ซอร์สโค้ด (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "ผู้สนับสนุน"
+	},
+	"aboutBackupDataButton": {
+		"message": "สำรองข้อมูลไปยังไฟล์"
+	},
+	"aboutBackupFilename": {
+		"message": "Adblock-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "คืนค่าจากไฟล์..."
+	},
+	"aboutResetDataButton": {
+		"message": "รีเซ็ตเป็นการตั้งค่าเริ่มต้น..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "การตั้งค่าทั้งหมดของคุณจะถูกบันทึกทับด้วยการใช้ข้อมูลที่ได้ทำการสำรองไว้เมื่อ {{time}} และ Adblock จะรีสตาร์ท\n\nบันทึกทับการตั้งค่าที่มีอยู่ทั้งหมดโดยใช้ข้อมูลที่ได้ทำการสำรองไว้หรือไม่"
+	},
+	"aboutRestoreDataError": {
+		"message": "ไม่สามารถอ่านข้อมูลได้ หรือข้อมูลไม่ถูกต้อง"
+	},
+	"aboutResetDataConfirm": {
+		"message": "การตั้งค่าทั้งหมดจะถูกนำออก และ Adblock จะรีสตาร์ท\n\nรีเซ็ต Adblock เป็นการตั้งค่าจากโรงงานหรือไม่"
+	},
+	"errorCantConnectTo": {
+		"message": "ข้อผิดพลาดเครือข่าย: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "Adblock: เพิ่ม URL ต่อไปนี้ลงในรายการตัวกรองแบบกำหนดเองของคุณหรือไม่\n\nTitle: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "หนึ่งนาทีที่ผ่านมา"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} นาทีที่แล้ว"
+	},
+	"elapsedOneHourAgo": {
+		"message": "หนึ่งชั่วโมงที่แล้ว"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} ชั่วโมงที่แล้ว"
+	},
+	"elapsedOneDayAgo": {
+		"message": "หนึ่งวันที่แล้ว"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} วันที่แล้ว"
+	},
+	"showDashboardButton": {
+		"message": "แสดงแดชบอร์ด"
+	},
+	"showNetworkLogButton": {
+		"message": "แสดงตัวบันทึกข้อมูล"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "ปิด"
+	},
+	"docblockedPrompt1": {
+		"message": "Adblock ป้องกันไม่ให้โหลดหน้าต่อไปนี้ขึ้นมา:"
+	},
+	"docblockedPrompt2": {
+		"message": "เนื่องจากตัวกรองต่อไปนี้"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "โดยไม่มีพารามิเตอร์"
+	},
+	"docblockedFoundIn": {
+		"message": "พบใน:"
+	},
+	"docblockedBack": {
+		"message": "ย้อนกลับ"
+	},
+	"docblockedClose": {
+		"message": "ปิดหน้าต่างนี้"
+	},
+	"docblockedProceed": {
+		"message": "ปิดใช้งานการบล็อคอย่างเข้มงวดสำหรับ {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "ชั่วคราว"
+	},
+	"docblockedDisablePermanent": {
+		"message": "ถาวร"
+	},
+	"cloudPush": {
+		"message": "ส่งออกไปยังที่จัดเก็บบนคลาวด์"
+	},
+	"cloudPull": {
+		"message": "นำเข้าจากที่จัดเก็บบนคลาวด์"
+	},
+	"cloudPullAndMerge": {
+		"message": "นำเข้าจากที่จัดเก็บบนคลาวด์และผสานกับการตั้งค่าปัจจุบัน"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "ชื่ออุปกรณ์นี้:"
+	},
+	"advancedSettingsWarning": {
+		"message": "คำเตือน! การเปลี่ยนการตั้งค่าขั้นสูงเหล่านี้ถือเป็นความเสี่ยงของตัวคุณเอง"
+	},
+	"genericSubmit": {
+		"message": "ส่ง"
+	},
+	"genericApplyChanges": {
+		"message": "นำการเปลี่ยนแปลงไปใช้"
+	},
+	"genericRevert": {
+		"message": "คืนกลับ"
+	},
+	"genericBytes": {
+		"message": "ไบต์"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "อนุญาตองค์ประกอบสื่อขนาดใหญ่ชั่วคราว"
+	},
+	"dummy": {
+		"message": "รายการนี้ต้องเป็นรายการสุดท้าย"
+	},
+	"popupExtraMoreInformation": {
+		"message": "ข้อมูลเพิ่มเติม"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "มีการบล็อกไม่ให้แสดงโฆษณาบนเว็บไซต์นี้"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "มีการอนุญาตให้แสดงโฆษณาบนเว็บไซต์นี้"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "ไม่สามารถเปิดใช้งานการป้องกันบนเว็บไซต์นี้"
+	},
+	"popupExtraMoreOptions": {
+		"message": "ตัวเลือกเพิ่มเติม"
+	},
+	"popupExtraLessOptions": {
+		"message": "ตัวเลือกน้อยลง"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "ดูรายชื่อเว็บไซต์ทั้งหมดที่อนุญาต"
+	},
+	"popupAdvancedSettings": {
+		"message": "การตั้งค่าขั้นสูง"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "โฆษณาที่ถูกบล็อกบนเพจนี้"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "โฆษณาที่ถูกบล็อกทั้งหมด"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "รายชื่อเว็บไซต์ที่อนุญาต"
+	},
+	"extraSlider0": {
+		"message": "ไม่ต้องบล็อกโฆษณา"
+	},
+	"extraSlider50": {
+		"message": "การบล็อกโฆษณาระดับปานกลาง"
+	},
+	"extraSlider100": {
+		"message": "การบล็อกโฆษณาระดับสูงสุด"
+	},
+	"extraIndexDescription": {
+		"message": "บล็อกโฆษณาเพื่อการท่องเว็บที่รวดเร็วและปลอดภัยยิ่งขึ้น"
+	},
+	"extraGeneralSettings": {
+		"message": "การตั้งค่าทั่วไป"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "จัดการข้อมูลที่ Adblock แสดง"
+	},
+	"extra3pPageNameDesc": {
+		"message": "ตัวกรองโฆษณาและความเป็นส่วนตัวของบุคคลที่สาม"
+	},
+	"extra1pPageNameDesc": {
+		"message": "จัดการตัวกรองที่คุณกำหนดเอง"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "รายการกฎการกรองแบบไดนามิกของคุณ"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "รายชื่อเว็บไซต์ที่อนุญาตให้แสดงโฆษณา"
+	},
+	"extraIndexHeader": {
+		"message": "Adblock การตั้งค่าขั้นสูง"
+	},
+	"extraIndexFooter": {
+		"message": "สนับสนุนโดย uBlock Origin"
+	},
+	"extraShowMore": {
+		"message": "แสดงเพิ่มเติม"
+	},
+	"extraBtnImport": {
+		"message": "นำเข้า"
+	},
+	"extraBtnExport": {
+		"message": "ส่งออก"
+	},
+	"extraBtnAdd": {
+		"message": "เพิ่ม"
+	},
+	"extraBtnCancel": {
+		"message": "ยกเลิก"
+	},
+	"extraBtnEdit": {
+		"message": "แก้ไข"
+	},
+	"extraBtnRemove": {
+		"message": "ลบออก"
+	},
+	"extraBtnUpdateAll": {
+		"message": "อัปเดตทั้งหมด"
+	},
+	"extraLabelFilter": {
+		"message": "ตัวกรอง"
+	},
+	"extraMyCustomFilter": {
+		"message": "ตัวกรองกำหนดเองของฉัน"
+	},
+	"extraManageFilters": {
+		"message": "จัดการตัวกรอง"
+	},
+	"extraAdsFilters": {
+		"message": "ตัวกรองโฆษณา"
+	},
+	"extraEditFilter": {
+		"message": "แก้ไขตัวกรอง"
+	},
+	"extraAddFilter": {
+		"message": "เพิ่มตัวกรอง"
+	},
+	"extraLearnMore": {
+		"message": "เรียนรู้เพิ่มเติม"
+	},
+	"extraRuleSyntax": {
+		"message": "วากยสัมพันธ์ของกฎ"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "ต้นทาง ปลายทาง ประเภท การดำเนินการ"
+	},
+	"extraRuleDefinition": {
+		"message": "คำนิยามกฎ"
+	},
+	"extraRule": {
+		"message": "กฎ"
+	},
+	"extraEditRule": {
+		"message": "แก้ไขกฎชั่วคราว"
+	},
+	"extraAddRrule": {
+		"message": "เพิ่มกฎชั่วคราว"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "การตั้งค่าผู้ใช้ขั้นสูง"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "บล็อกองค์ประกอบสื่อที่ใหญ่กว่า"
+	},
+	"extraSetting": {
+		"message": "การตั้งค่า"
+	},
+	"extraEditSetting": {
+		"message": "แก้ไขการตั้งค่า"
+	},
+	"extraAddSetting": {
+		"message": "เพิ่มการตั้งค่า"
+	},
+	"extraSite": {
+		"message": "เว็บไซต์"
+	},
+	"extraAllowOnSites": {
+		"message": "อนุญาตให้โฆษณาบนเว็บไซต์เหล่านี้"
+	},
+	"extraEditSite": {
+		"message": "แก้ไขเว็บไซต์"
+	},
+	"extraAddSite": {
+		"message": "เพิ่มเว็บไซต์"
+	},
+	"extraDefaultBehaviour": {
+		"message": "พฤติกรรมเริ่มต้น"
+	},
+	"extraPrivacy": {
+		"message": "ความเป็นส่วนตัว"
+	},
+	"3pGroupDefault": {
+		"message": "ตัวกรองเครือข่ายและการตกแต่ง"
+	},
+	"1pPageName": {
+		"message": " My filters"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "ไม่สามารถเปิดใช้งานการป้องกันสำหรับเซสชันนี้ได้"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "ยังไม่ได้เพิ่มเว็บไซต์"
+	},
+	"extraInterstitialBlocking": {
+		"message": "เปิดใช้งานการบล็อกเนื้อหาไม่เกี่ยวข้องที่แทรกอยู่"
+	},
+	"shortcutsPageName": {
+		"message": "ทางลัด"
+	},
+	"popupTipDashboard": {
+		"message": "เปิดแดชบอร์ด"
+	},
+	"popupTipZapper": {
+		"message": "เข้าสู่โหมด Element Zapper"
+	},
+	"popupTipPicker": {
+		"message": "เข้าสู่โหมด Element Picker"
+	},
+	"popupTipLog": {
+		"message": "เปิดตัวบันทึกข้อมูล"
+	},
+	"popupTipNoPopups": {
+		"message": "สลับใช้การบล็อกป็อปอัพทั้งหมดสำหรับไซต์นี้"
+	},
+	"popupTipNoPopups1": {
+		"message": "คลิกเพื่อบล็อกป็อปอัพทั้งหมดบนไซต์นี้"
+	},
+	"popupTipNoPopups2": {
+		"message": "คลิกเพื่อไม่บล็อกป็อปอัพทั้งหมดบนไซต์นี้อีกต่อไป"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "สลับใช้การบล็อกองค์ประกอบสื่อขนาดใหญ่สำหรับไซต์นี้"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "คลิกเพื่อบล็อกองค์ประกอบสื่อขนาดใหญ่บนไซต์นี้"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "คลิกเพื่อไม่บล็อกองค์ประกอบสื่อขนาดใหญ่บนไซต์นี้อีกต่อไป"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "สลับเปิดปิดตัวกรองการตกแต่งสำหรับไซต์นี้"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "คลิกเพื่อปิดใช้งานตัวกรองการตกแต่งบนไซต์นี้"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "คลิกเพื่อเปิดใช้งานตัวกรอบการตกแต่งบนไซต์นี้"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "สลับเปิดปิดการบล็อกฟอนต์ระยะไกลสำหรับไซต์นี้"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "คลิกเพื่อบล็อกฟอนต์ระยะไกลบนไซต์นี้"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "คลิกเพื่อไม่บล็อกฟอนต์ระยะไกลบนไซต์นี้อีกต่อไป"
+	},
+	"popupTipGlobalRules": {
+		"message": "กฎสากล: คอลัมน์นี้มีไว้สำหรับกฎที่ใช้กับไซต์ทั้งหมด"
+	},
+	"popupTipLocalRules": {
+		"message": "กฏเฉพาะที่: คอลัมน์นี้มีไว้สำหรับกฏที่ใช้กับไซต์ปัจจุบันเท่านั้น\nกฏเฉพาะที่จะอยู่เหนือกฎสากล"
+	},
+	"popupTipSaveRules": {
+		"message": "คลิกเพื่อให้การเปลี่ยนแปลงของคุณเป็นไปอย่างถาวร"
+	},
+	"popupTipRevertRules": {
+		"message": "คลิกเพื่อคืนกลับการเปลี่ยนแปลงของคุณ"
+	},
+	"popupAnyRulePrompt": {
+		"message": "ทั้งหมด"
+	},
+	"popupImageRulePrompt": {
+		"message": "รูปภาพ"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "บุคคลที่สาม"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": " CSS/รูปภาพบุคคลที่สาม"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "สคริปต์แบบอินไลน์"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "สคริปต์บุคคลที่หนึ่ง"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "สคริปต์บุคคลที่สาม"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "เฟรมบุคคลที่สาม"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "เชื่อมต่อโดเมนแล้ว"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} จาก {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "บล็อกองค์ประกอบสื่อที่ใหญ่กว่า {{input:number}} kB"
+	},
+	"3pImport": {
+		"message": "นำเข้า..."
+	},
+	"loggerCurrentTab": {
+		"message": "แท็บปัจจุบัน"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "บริบท:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "ประเภท:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "การกรอง URL แบบไดนามิก"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "การกรองแบบคงที่"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} คำร้องเครือข่าย {{type}} {{br}}ซึ่งที่อยู่ URL ตรงกับ {{url}} {{br}}และมาจาก {{origin}},{{br}}{{importance}} มีตัวกรองข้อยกเว้นการจับคู่"
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "บล็อก"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "อนุญาต"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "ประเภท ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "ประเภทใดก็ได้"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "จาก ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "จากที่ใดก็ได้"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "ยกเว้นเมื่อ"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "แม้ว่า"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "ตัวกรองแบบคงที่ <code>{{filter}}</code> พบใน:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "ไม่พบตัวกรองแบบคงที่ <code>{{filter}}</code> ในรายการตัวกรองใดๆ ที่เปิดใช้งานในปัจจุบัน"
+	},
+	"aboutIssues": {
+		"message": "ระบบติดตามปัญหา"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "พิมพ์ทางลัด"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? ตัวดูแอสเซท"
+	},
+	"popupTipNoScripting1": {
+		"message": "คลิกเพื่อปิดใช้งาน JavaScript บนไซต์นี้"
+	},
+	"popupTipNoScripting2": {
+		"message": "คลิกเพื่อไม่ปิดใช้งาน JavaScript บนไซต์นี้อีกต่อไป"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "ปิดใช้งาน JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "ความเข้ากันได้กับระบบภายนอก (ที่ใช้ได้กับ GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "โหลดเนื้อหาของแท็บอีกครั้ง"
+	},
+	"loggerDomInspectorTip": {
+		"message": "สลับเปิดปิดโปรแกรมตรวจสอบ DOM"
+	},
+	"loggerPopupPanelTip": {
+		"message": "สลับเปิดปิดแผงป็อปอัพ"
+	},
+	"loggerInfoTip": {
+		"message": "วิกิ uBlock Origin: ตัวบันทึกข้อมูล"
+	},
+	"loggerClearTip": {
+		"message": "ล้างตัวบันทึกข้อมูล"
+	},
+	"loggerPauseTip": {
+		"message": "หยุดตัวบันทึกข้อมูล (ละทิ้งข้อมูลขาเข้าทั้งหมด)"
+	},
+	"loggerUnpauseTip": {
+		"message": "ยกเลิกการหยุดตัวบันทึกข้อมูล"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "สลับเปิดปิดการกรองตัวบันทึกข้อมูล"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "ตัวเลือกการกรองตัวบันทึกข้อมูล"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "ไม่"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "มีความสำคัญ"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "ถูกบล็อก"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "ได้รับอนุญาต"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "บุคคลที่หนึ่ง"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "บุคคลที่สาม"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "รายละเอียด"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "ตัวกรอง"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "รายการตัวกรอง"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "กฎ"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "บริบท"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "บริบทราก"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "ปาร์ตี้เนส"
+	},
+	"loggerEntryDetailsType": {
+		"message": "ประเภท"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "รายการตัวบันทึกข้อมูลซึ่งไม่เป็นไปตามเงื่อนไขสามข้อด้านล่างจะถูกละทิ้งโดยอัตโนมัติ"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "คงไว้ซึ่งรายการใน {{input}} นาทีสุดท้าย"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "คงไว้ให้โหลดมากที่สุด {{input}} หน้าต่อแท็บ"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "คงไว้มากที่สุด {{input}} รายการต่อแท็บ"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "ใช้ {{input}} บรรทัดต่อรายการในโหมดขยายแนวตั้ง"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "ซ่อนคอลัมน์:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "เวลา {{input}}"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "ตัวกรอง/กฎ {{input}}"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "บริบท {{input}}"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "ปาร์ตี้เนส {{input}}"
+	},
+	"loggerExportFormatList": {
+		"message": "รายการ"
+	},
+	"loggerExportFormatTable": {
+		"message": "ตาราง"
+	},
+	"loggerExportEncodePlain": {
+		"message": "ธรรมดา"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "สลับเปิดปิดล็อคการเลื่อน"
+	},
+	"genericCopyToClipboard": {
+		"message": "คัดลอกไปยังคลิปบอร์ด"
+	}
+}

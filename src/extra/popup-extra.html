@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link type="text/css" href="css/popup-extra.css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="popupExtraTitle"></title>
+</head>
+<body>
+    <div class="conteiner page-main">
+        <header class="header-allow">
+            <div class="header-text"><span class="header-text-tittle" data-i18n="popupExtraTitle"></span></div>
+            <a class="info-link allow" href="https://extension.avastbrowser.com/adblock/about/" target="_blank">
+                <div class="info-icon">
+                    <div class="info-text-block">
+                        <p class="info_descript" data-i18n="popupExtraMoreInformation"></p>
+                    </div>
+                </div>
+            </a>
+        </header>
+
+        <div class="btn-wrapper">
+            <a id="btn-on"><img src="img/icon-on.svg" alt="on-off"></a>
+        </div>
+
+        <div class="wrapper">
+            <div class="wrapper-info">
+                <h3 class="wrapper-info-item green normal" data-i18n="popupExtraAdsBlockedOnSites"></h3>
+                <h3 class="wrapper-info-item grey whitelist" data-i18n="popupExtraAdsAllowedOnSites"></h3>
+                <h3 class="wrapper-info-item grey extra" data-i18n="popupExtraProtectionCanNotEnabled"></h3>
+                <h3 class="wrapper-info-item grey session" data-i18n="popupExtraProtectionDisabledForSession"></h3>
+                <div class="wrapper-info-more">
+                    <span class="more" data-i18n="popupExtraMoreOptions"></span>
+                    <span class="less" data-i18n="popupExtraLessOptions"></span>
+                    <div class="down-arrow"></div>
+                    <div class="up-arrow"></div>
+                </div>
+                <div class="wrapper-info-options">
+                    <a href="#page-allow" class="page-toggle info-options-text"><p class="list" data-i18n="popupExtraSeeListAllowedSites"></p></a>
+                    <a href="../options/index.html" target="_blank" class="info-options-text"><p class="settings" data-i18n="popupAdvancedSettings"></p></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#page-block" class="page-toggle">
+                <div class="footer-flex-container footer-actual blocked state-off">
+                    <div class="footer-actual-body" data-i18n="popupExtraAdsBlockedOnPage"></div>
+                    <div class="footer-actual-count">
+                        <span class="block-request-count">0</span>
+                        <div class="right-arrow-count"></div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="footer-flex-container footer-all blocked">
+                <div class="footer-actual-body" data-i18n="popupExtraAdsBlockedTotal"></div>
+                <div class="footer-actual-count total">
+                    <span class="block-data-total">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteiner2 page-block">
+        <header class="header-allow">
+            <div class="header-text"><span class="header-text-tittle" data-i18n="popupExtraTitle"></span></div>
+            <a class="info-link allow" href="https://extension.avastbrowser.com/adblock/about/" target="_blank">
+                <div class="info-icon">
+                    <div class="info-text-block">
+                        <p class="info_descript" data-i18n="popupExtraMoreInformation"></p>
+                    </div>
+                </div>
+            </a>
+        </header>
+
+
+        <div class="wrapper-blocks">
+            <a href="#page-main" class="page-toggle flex-container">
+                <div class="wrapper-left-arrow"></div>
+                <div class="wrapper-blocks-tittle" data-i18n="popupExtraAdsBlockedOnPage"></div>
+                <div class="wrapper-actual-count block-request-count">0</div>
+            </a>
+        </div>
+
+        <div class="underline allow"></div>
+
+        <div class="footer-blocks">
+        </div>
+    </div>
+
+    <div class="conteiner2 page-allow">
+        <header class="header-allow">
+            <div class="header-text"><span class="header-text-tittle" data-i18n="popupExtraTitle"></span></div>
+            <a class="info-link allow" href="https://extension.avastbrowser.com/adblock/about/" target="_blank">
+                <div class="info-icon">
+                    <div class="info-text-block">
+                        <p class="info_descript" data-i18n="popupExtraMoreInformation"></p>
+                    </div>
+                </div>
+            </a>
+        </header>
+
+
+        <div class="wrapper-allow">
+            <a href="#page-main" class="page-toggle flex-container">
+                <div class="wrapper-left-arrow"></div>
+                <h3 class="wrapper-allow-tittle" data-i18n="popupExtraListAllowedSites"></h3>
+            </a>
+        </div>
+        <div class="underline allow"></div>
+
+        <div class="footer-allow">
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script src="../lib/punycode.js"></script>
+    <script src="../js/vapi.js"></script>
+    <script src="../js/vapi-common.js"></script>
+    <script src="../js/vapi-client.js"></script>
+    <script src="../js/udom.js"></script>
+    <script src="../js/i18n.js"></script>
+
+    <script src="js/popup-extra.js"></script>
+</body>
+</html>

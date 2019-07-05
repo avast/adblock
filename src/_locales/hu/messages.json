@@ -1,0 +1,857 @@
+{
+	"extShortDesc": {
+		"message": "Végre egy hatékony blokkoló. A processzort és a memóriát sem terheli túl."
+	},
+	"dashboardName": {
+		"message": "Adblock – Irányítópult"
+	},
+	"settingsPageName": {
+		"message": "Beállítások"
+	},
+	"3pPageName": {
+		"message": "Külső felek szűrői"
+	},
+	"rulesPageName": {
+		"message": "Saját szabályok"
+	},
+	"whitelistPageName": {
+		"message": "Engedélyezési lista"
+	},
+	"statsPageName": {
+		"message": "Adblock – Naplózó"
+	},
+	"aboutPageName": {
+		"message": "Névjegy"
+	},
+	"advancedSettingsPageName": {
+		"message": "Speciális beállítások"
+	},
+	"pickerCreate": {
+		"message": "Létrehozás"
+	},
+	"pickerPick": {
+		"message": "Kiválasztás"
+	},
+	"pickerQuit": {
+		"message": "Kilépés"
+	},
+	"pickerPreview": {
+		"message": "Előnézet"
+	},
+	"pickerNetFilters": {
+		"message": "Hálózati szűrők"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Vizuális szűrők"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Kattintás, Ctrl-kattintás"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Elem blokkolása"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Blokkolt elemek helyőrzőinek elrejtése"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Blokkolt kérések számának megjelenítése az ikonon"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Eszköztippek letiltása"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Helyi menük használata, ahol lehetséges"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Színvak felhasználók számára használható"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Felhőtároló támogatásának engedélyezése"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Tapasztalt felhasználó vagyok (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>kötelező olvasmány</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "speciális beállítások"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Előzetes lekérés engedélyezése (a blokkolt hálózati kérelmek kapcsolatainak megakadályozásához)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Hivatkozásnaplózás letiltása"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "A helyi IP-címek WebRTC általi kiszivárogtatásának megelőzése"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Alapértelmezett viselkedés"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Ezek az alapértelmezett viselkedések webhelyenként felülírhatók"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Vizuális szűrés letiltása"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Távoli betűtípusok blokkolása"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "CSP-jelentések letiltása"
+	},
+	"settingsStorageUsed": {
+		"message": "Felhasznált tárhely: {{value}} bájt"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Legutóbbi visszaállítás:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Legutóbbi biztonsági mentés:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} hálózati szűrő + {{cosmeticFilterCount}} kozmetikai szűrő innen:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} felhasználva, összesen: {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Szűrőlisták automatikus frissítése"
+	},
+	"3pUpdateNow": {
+		"message": "Frissítés most"
+	},
+	"3pPurgeAll": {
+		"message": "Összes gyorsítótár kiürítése"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Vizuális szűrők elemzése és érvényesítése"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Ez a beállítás engedélyezi az <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus-kompatibilis &ldquo;element hiding&rdquo; szűrők</a> elemzését és érvényesítését. Ezek a szűrők alapvetően vizuálisak, és arra szolgálnak, hogy elrejtsék a weboldalak zavaró elemeit, amelyeket a hálózati kérelemalapú szűrőmotorral nem blokkolhatók.</p><p>A funkció bekapcsolása növeli a(z) Adblock memóriafogyasztását.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Általános vizuális szűrők figyelmen kívül hagyása"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Az általános vizuális szűrők olyan vizuális szűrők, amelyek minden webhelyen érvényesek.<p>A(z) Adblock hatékonyan kezeli őket, de az általános vizuális szűrők érzékelhetően növelhetik a memória és a processzor terhelését bizonyos weboldalakon, különösen a nagy és hosszú életű oldalakon.<p>A beállítás engedélyezése megszünteti az általános vizuális szűrők kezelésével járó extra memória- és processzorterhelést, valamint magának a(z) Adblock programnak a memóriafogyasztását is csökkenti.<p>A kisebb teljesítményű eszközökön ajánlott ennek a beállításnak az engedélyezése."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Blokkolt gazdagépek listái"
+	},
+	"3pApplyChanges": {
+		"message": "Módosítások alkalmazása"
+	},
+	"3pGroupAds": {
+		"message": "Hirdetések"
+	},
+	"3pGroupPrivacy": {
+		"message": "Adatvédelem"
+	},
+	"3pGroupMalware": {
+		"message": "Kártevő tartományok"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Zavaró tényezők"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Többcélú"
+	},
+	"3pGroupRegions": {
+		"message": "Régiók, nyelvek"
+	},
+	"3pGroupCustom": {
+		"message": "Egyéni"
+	},
+	"3pExternalListsHint": {
+		"message": "Soronként egy URL-cím. A &lsquo;!&rsquo; előtaggal rendelkező sorokat figyelmen kívül hagyja a rendszer. Az érvénytelen URL-címeket csendben figyelmen kívül hagyja a rendszer."
+	},
+	"3pExternalListObsolete": {
+		"message": "Elavult."
+	},
+	"3pLastUpdate": {
+		"message": "Legutóbbi frissítése: {{ago}}.\nFrissítés kényszerítéséhez kattintson ide."
+	},
+	"3pUpdating": {
+		"message": "Frissítés..."
+	},
+	"3pNetworkError": {
+		"message": "Egy hálózati hiba megakadályozta az erőforrás frissítését."
+	},
+	"1pFormatHint": {
+		"message": "Soronként egy szűrő. A szűrő egy egyszerű gazdagépnév vagy Adblock Plus-kompatiblis szűrő is lehet. A &lsquo;!&rsquo; előtaggal rendelkező sorokat figyelmen kívül hagyja a rendszer."
+	},
+	"1pImport": {
+		"message": "Importálás és hozzáfűzés"
+	},
+	"1pExport": {
+		"message": "Exportálás"
+	},
+	"1pApplyChanges": {
+		"message": "Módosítások alkalmazása"
+	},
+	"rulesPermanentHeader": {
+		"message": "Állandó szabályok"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Ideiglenes szabályok"
+	},
+	"rulesRevert": {
+		"message": "Visszaállítás"
+	},
+	"rulesCommit": {
+		"message": "Véglegesítés"
+	},
+	"rulesEdit": {
+		"message": "Szerkesztés"
+	},
+	"rulesEditSave": {
+		"message": "Mentés"
+	},
+	"rulesEditDiscard": {
+		"message": "Elvetés"
+	},
+	"rulesImport": {
+		"message": "Importálás fájlból..."
+	},
+	"rulesExport": {
+		"message": "Exportálás fájlba"
+	},
+	"rulesHint": {
+		"message": "Saját dinamikus szűrési szabályok listája."
+	},
+	"rulesFormatHint": {
+		"message": "Szabály szintaxisa: <code>source destination type action</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>teljes dokumentáció</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "Az engedélyezési listák utasításai meghatározzák, hogy melyik weboldalakon kell letiltani a(z) Adblock terméket. Soronként egy bejegyzés. A rendszer csendesen figyelmen kívül hagyja és megjegyzéssé alakítja az érvénytelen utasításokat."
+	},
+	"whitelistImport": {
+		"message": "Importálás és hozzáfűzés"
+	},
+	"whitelistExport": {
+		"message": "Exportálás"
+	},
+	"whitelistExportFilename": {
+		"message": "Adblock-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Módosítások alkalmazása"
+	},
+	"logRequestsHeaderType": {
+		"message": "Típus"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Tartomány"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL-cím"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Szűrő"
+	},
+	"logAll": {
+		"message": "Mind"
+	},
+	"logBehindTheScene": {
+		"message": "A színfalak mögött"
+	},
+	"logFilterPrompt": {
+		"message": "naplóbejegyzések szűrése"
+	},
+	"logMaxEntriesTip": {
+		"message": "Naplóbejegyzések maximális száma"
+	},
+	"aboutChangelog": {
+		"message": "Módosításnapló"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "Támogatás"
+	},
+	"aboutCode": {
+		"message": "Forráskód (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Közreműködők"
+	},
+	"aboutBackupDataButton": {
+		"message": "Biztonsági mentés fájlba"
+	},
+	"aboutBackupFilename": {
+		"message": "Adblock-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Visszaállítás fájlból..."
+	},
+	"aboutResetDataButton": {
+		"message": "Alapértelmezett beállítások visszaállítása..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Minden beállítása felül lesz írva a(z) {{time}} időpontban mentett adatokkal, és a(z) Adblock újraindul. \n\nFelülírja az összes meglévő beállítást a korábban mentett adatokkal?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Az adatok nem olvashatók vagy érvénytelenek"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Az összes beállítása el lesz távolítva, és a(z) Adblock újraindul.\n\nVisszaállítja a(z) Adblock programot a gyári beállításokra?"
+	},
+	"errorCantConnectTo": {
+		"message": "Hálózati hiba: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "Adblock: Hozzáadja a következő URL-címet az egyéni szűrőlistáihoz?\n\nCím: \"{{title}}\"\nURL-cím: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "egy perce"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} perce"
+	},
+	"elapsedOneHourAgo": {
+		"message": "egy órája"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} órája"
+	},
+	"elapsedOneDayAgo": {
+		"message": "egy napja"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} napja"
+	},
+	"showDashboardButton": {
+		"message": "Irányítópult megjelenítése"
+	},
+	"showNetworkLogButton": {
+		"message": "Naplózó megjelenítése"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "ki"
+	},
+	"docblockedPrompt1": {
+		"message": "A(z) Adblock megakadályozta a következő oldal betöltését:"
+	},
+	"docblockedPrompt2": {
+		"message": "A következő szűrő miatt"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "paraméterek nélkül"
+	},
+	"docblockedFoundIn": {
+		"message": "Észlelés helye:"
+	},
+	"docblockedBack": {
+		"message": "Vissza"
+	},
+	"docblockedClose": {
+		"message": "Ablak bezárása"
+	},
+	"docblockedProceed": {
+		"message": "Szigorú blokkolás letiltása a következőn: {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Átmenetileg"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Végleg"
+	},
+	"cloudPush": {
+		"message": "Exportálás felhőtárolóba"
+	},
+	"cloudPull": {
+		"message": "Importálás felhőtárolóból"
+	},
+	"cloudPullAndMerge": {
+		"message": "Importálás felhőtárolóból és egyesítés a jelenlegi beállításokkal"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Ennek az eszköznek a neve:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Figyelmeztetés! Ezeket a speciális beállításokat csak saját felelősségére módosítsa."
+	},
+	"genericSubmit": {
+		"message": "Küldés"
+	},
+	"genericApplyChanges": {
+		"message": "Módosítások alkalmazása"
+	},
+	"genericRevert": {
+		"message": "Visszaállítás"
+	},
+	"genericBytes": {
+		"message": "bájt"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Nagy médiaelemek átmeneti engedélyezése"
+	},
+	"dummy": {
+		"message": "Ennek a bejegyzésnek az utolsónak kell lennie"
+	},
+	"popupExtraMoreInformation": {
+		"message": "További információ"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "A hirdetések blokkolva vannak ezen az oldalon"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "A hirdetések engedélyezve vannak ezen az oldalon"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "A védelem ezen az oldalon nem engedélyezhető"
+	},
+	"popupExtraMoreOptions": {
+		"message": "További beállítások"
+	},
+	"popupExtraLessOptions": {
+		"message": "Kevesebb beállítás"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Az engedélyezett webhelyek listájának megtekintése"
+	},
+	"popupAdvancedSettings": {
+		"message": "Speciális beállítások"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Blokkolt reklámok ezen az oldalon"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Összes blokkolt hirdetés"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Engedélyezett oldalak listája"
+	},
+	"extraSlider0": {
+		"message": "Hirdetések megjelenítése"
+	},
+	"extraSlider50": {
+		"message": "Mérsékelt hirdetésblokkolás"
+	},
+	"extraSlider100": {
+		"message": "Maximális hirdetésblokkolás"
+	},
+	"extraIndexDescription": {
+		"message": "Hirdetések blokkolása a gyorsabb és biztonságosabb böngészési élményért"
+	},
+	"extraGeneralSettings": {
+		"message": "Általános beállítások"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "A(z) Adblock által megjelenített adatok kezelése"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Külső felek adatvédelmi és hirdetésszűrői"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Egyéni szűrők kezelése"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Saját dinamikus szűrési szabályok listája"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Hirdetések megjelenítésére jogosult oldalak listája"
+	},
+	"extraIndexHeader": {
+		"message": "Adblock speciális beállításai"
+	},
+	"extraIndexFooter": {
+		"message": "Technológia: uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "További részletek"
+	},
+	"extraBtnImport": {
+		"message": "importálás"
+	},
+	"extraBtnExport": {
+		"message": "exportálás"
+	},
+	"extraBtnAdd": {
+		"message": "hozzáadás"
+	},
+	"extraBtnCancel": {
+		"message": "mégse"
+	},
+	"extraBtnEdit": {
+		"message": "Szerkesztés"
+	},
+	"extraBtnRemove": {
+		"message": "Eltávolítás"
+	},
+	"extraBtnUpdateAll": {
+		"message": "összes frissítése"
+	},
+	"extraLabelFilter": {
+		"message": "Szűrő"
+	},
+	"extraMyCustomFilter": {
+		"message": "Saját egyéni szűrők"
+	},
+	"extraManageFilters": {
+		"message": "Szűrők kezelése"
+	},
+	"extraAdsFilters": {
+		"message": "Szűrők hozzáadása"
+	},
+	"extraEditFilter": {
+		"message": "Szűrő szerkesztése"
+	},
+	"extraAddFilter": {
+		"message": "Szűrő hozzáadása"
+	},
+	"extraLearnMore": {
+		"message": "További információ"
+	},
+	"extraRuleSyntax": {
+		"message": "Szabály szintaxisa"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "forrás cél típus művelet."
+	},
+	"extraRuleDefinition": {
+		"message": "Szabály definíciója"
+	},
+	"extraRule": {
+		"message": "Szabály"
+	},
+	"extraEditRule": {
+		"message": "Ideiglenes szabály szerkesztése"
+	},
+	"extraAddRrule": {
+		"message": "Ideiglenes szabály hozzáadása"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Speciális felhasználói beállítások"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "A következőnél nagyobb médiaelemek blokkolása"
+	},
+	"extraSetting": {
+		"message": "Beállítás"
+	},
+	"extraEditSetting": {
+		"message": "Beállítások szerkesztése"
+	},
+	"extraAddSetting": {
+		"message": "Beállítás hozzáadása"
+	},
+	"extraSite": {
+		"message": "Oldal"
+	},
+	"extraAllowOnSites": {
+		"message": "Hirdetések engedélyezése ezen az oldalon"
+	},
+	"extraEditSite": {
+		"message": "Oldal szerkesztése"
+	},
+	"extraAddSite": {
+		"message": "Oldal hozzáadása"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Alapértelmezett viselkedés"
+	},
+	"extraPrivacy": {
+		"message": "Adatvédelem"
+	},
+	"3pGroupDefault": {
+		"message": "Hálózati és részletes szűrők"
+	},
+	"1pPageName": {
+		"message": " Saját szűrők"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Ennek a munkamenetnek a védelme nem engedélyezhető"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Még nincsenek hozzáadott webhelyek"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Közbeszúrt blokkolás engedélyezése"
+	},
+	"shortcutsPageName": {
+		"message": "Parancsikonok"
+	},
+	"popupTipDashboard": {
+		"message": "Irányítópult megnyitása"
+	},
+	"popupTipZapper": {
+		"message": "Azonnali automatikus elemtörlési mód megnyitása"
+	},
+	"popupTipPicker": {
+		"message": "Elemválasztó mód megnyitása"
+	},
+	"popupTipLog": {
+		"message": "Naplózó megnyitása"
+	},
+	"popupTipNoPopups": {
+		"message": "A webhelyen előugró összes ablak blokkolásának be- vagy kikapcsolása"
+	},
+	"popupTipNoPopups1": {
+		"message": "Kattintson ide a webhelyen megjelenő összes előugró ablak blokkolásához"
+	},
+	"popupTipNoPopups2": {
+		"message": "Kattintson ide, ha már nem kívánja blokkolni a webhelyen megjelenő összes előugró ablakot"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "A webhelyen megjelenő nagy médiatartalmak blokkolásának be- és kikapcsolása"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Kattintson ide a webhelyen megjelenő nagy médiatartalmak blokkolásához"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Kattintson ide, ha már nem kívánja blokkolni a webhelyen megjelenő nagy médiatartalmakat"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Webhely kozmetikai szűrésének be- és kikapcsolása"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Kattintson ide a webhely kozmetikai szűrésének letiltásához"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Kattintson ide a webhely kozmetikai szűrésének engedélyezéséhez"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "A webhelyen használt távoli betűtípusok blokkolásának be- és kikapcsolása"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Kattintson ide a webhelyen megjelenő távoli betűtípusok blokkolásához"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Kattintson ide, ha már nem kívánja blokkolni a webhelyen megjelenő összes távoli betűtípust"
+	},
+	"popupTipGlobalRules": {
+		"message": "Globális szabályok: ez az oszlop az összes webhelyre vonatkozó szabályokat tartalmazza."
+	},
+	"popupTipLocalRules": {
+		"message": "Helyi szabályok: ez az oszlop a csak az aktuális webhelyre vonatkozó szabályokat tartalmazza.\nA helyi szabályok felülírják a globális szabályokat."
+	},
+	"popupTipSaveRules": {
+		"message": "Kattintson ide a módosítások véglegesítéséhez."
+	},
+	"popupTipRevertRules": {
+		"message": "Kattintson ide a módosítások visszaállításához."
+	},
+	"popupAnyRulePrompt": {
+		"message": "mind"
+	},
+	"popupImageRulePrompt": {
+		"message": "képek"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "külső féltől származó"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "külső féltől származó css/képek"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "beágyazott szkriptek"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "Saját gyűjtésű adatok"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "Külső féltől származó adatok"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "Külső felektől származó keretek"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "csatlakoztatott tartományok"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}}, összesen: {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "{{input:number}} Kb-nál nagyobb médiaelemek blokkolása"
+	},
+	"3pImport": {
+		"message": "Importálás..."
+	},
+	"loggerCurrentTab": {
+		"message": "Jelenlegi lap"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Környezet:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Típus:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Dinamikus URL-szűrés"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Statikus szűrés"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} művelet végrehajtása a(z) {{type}} típusú hálózati kéréseken,{{br}}amelyek URL-címe egyezik a következővel: {{url}} {{br}}és amely innen származik: {{origin}},{{br}}{{importance}} ha van egyező kivételszűrő."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Blokkolás"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Engedélyezés"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "type ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "bármilyen típus"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "innen: ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "bárhonnan"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "kivéve, ha"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "akkor is, ha"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "<code>{{filter}}</code> statikus kód található itt:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "A(z) <code>{{filter}}</code> statikus szűrő egy jelenleg engedélyezett szűrőlistában sem található"
+	},
+	"aboutIssues": {
+		"message": "Hibakövető"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Írjon be egy parancsikont"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? objektummegtekintő"
+	},
+	"popupTipNoScripting1": {
+		"message": "Ide kattintva letilthatja a webhelyen a JavaScriptet"
+	},
+	"popupTipNoScripting2": {
+		"message": "Ide kattintva leállíthatja a JavaScript letiltását"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "JavaScript letiltása"
+	},
+	"aboutDependencies": {
+		"message": "Külső függőségek (GPLv3-kompatibilis):"
+	},
+	"loggerReloadTip": {
+		"message": "Lap tartalmának újratöltése"
+	},
+	"loggerDomInspectorTip": {
+		"message": "DOM-vizsgáló ki- és bekapcsolása"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Előugró panel be- és kikapcsolása"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin wiki: a naplózó"
+	},
+	"loggerClearTip": {
+		"message": "Naplózó törlése"
+	},
+	"loggerPauseTip": {
+		"message": "Naplózó szüneteltetése (összes bejövő adat elvetése)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Naplózó szüneteltetésének befejezése"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Naplózó szűrésének be- és kikapcsolása"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Naplózó szűrési beállításai"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Nem"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "blokkolva"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "engedélyezve"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "saját gyűjtésű"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "külső féltől származó"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Részletek"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Szűrő"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Szűrőlista"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Szabály"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Környezet"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Gyökérkörnyezet"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Adatok származása"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Típus"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL-cím"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Azok a naplózóbejegyzések, amelyek nem felelnek meg mindhárom alábbi követelménynek, automatikusan el lesznek vetve:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Bejegyzések megőrzése az elmúlt {{input}} percből"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Laponként legfeljebb {{input}} oldalbetöltés megtartása"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Laponként legfeljebb {{input}} bejegyzés megtartása"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "{{input}} sor használata bejegyzésenként a függőlegesen kiterjesztett módban"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Oszlopok elrejtése:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} idő"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} szűrő/szabály"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} környezet"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} adatok származása"
+	},
+	"loggerExportFormatList": {
+		"message": "Lista"
+	},
+	"loggerExportFormatTable": {
+		"message": "Tábla"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Egyszerű"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Rögzített görgetés be- és kikapcsolása"
+	},
+	"genericCopyToClipboard": {
+		"message": "Másolás a vágólapra"
+	}
+}

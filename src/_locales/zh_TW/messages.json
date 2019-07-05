@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "減輕 CPU 和記憶體負擔的高效率攔截工具終於問世。"
+	},
+	"dashboardName": {
+		"message": "Adblock — 儀表板"
+	},
+	"settingsPageName": {
+		"message": "設定"
+	},
+	"3pPageName": {
+		"message": "第三方篩選器"
+	},
+	"rulesPageName": {
+		"message": "我的規則"
+	},
+	"whitelistPageName": {
+		"message": "白名單"
+	},
+	"statsPageName": {
+		"message": "Adblock — 記錄器"
+	},
+	"aboutPageName": {
+		"message": "關於"
+	},
+	"advancedSettingsPageName": {
+		"message": "進階設定"
+	},
+	"pickerCreate": {
+		"message": "建立"
+	},
+	"pickerPick": {
+		"message": "挑選"
+	},
+	"pickerQuit": {
+		"message": "結束"
+	},
+	"pickerPreview": {
+		"message": "預覽"
+	},
+	"pickerNetFilters": {
+		"message": "網路篩選器"
+	},
+	"pickerCosmeticFilters": {
+		"message": "外觀篩選器"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "按一下滑鼠左鍵，按一下 Ctrl + 滑鼠左鍵"
+	},
+	"pickerContextMenuEntry": {
+		"message": "封鎖元素"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "隱藏遭封鎖元素的預留位置"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "在圖示上顯示遭封鎖要求的數量"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "停用工具提示"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "盡可能使用操作功能表"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "色盲人士可用"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "啟用雲端儲存空間支援"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "我是進階使用者 (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>必要閱覽內容</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "進階設定"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "停用預先擷取 (禁止遭封鎖網路的連線要求)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "停用超連結稽核"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "預防 WebRTC 外洩本機 IP 位址"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "預設行為"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "您可以根據不同網站覆寫這些預設行為"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "停用外觀篩選"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "封鎖遠端字型"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "封鎖 CSP 報告"
+	},
+	"settingsStorageUsed": {
+		"message": "已使用儲存空間：{{value}} 位元"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "上次還原："
+	},
+	"settingsLastBackupPrompt": {
+		"message": "上次備份："
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} 網路篩選器 + {{cosmeticFilterCount}} 外觀篩選器，來自："
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "已使用 {{used}} (共 {{total}})"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "自動更新篩選器清單"
+	},
+	"3pUpdateNow": {
+		"message": "立即更新"
+	},
+	"3pPurgeAll": {
+		"message": "清除所有快取"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "剖析並強制採用外觀篩選器"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>這個選項會啟用剖析並強制採行 <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus 相容元素隱藏篩選器</a>。這些篩選器基本上以外觀為主，凡認定為干擾瀏覽，且無法以要求為基礎之篩選引擎封鎖的網頁元素，皆可加以隱藏。</p><p>啟用這個功能會增加 Adblock 的記憶體使用量。</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "忽略泛型外觀篩選器"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>泛型外觀篩選器是可套用於所有網站的外觀篩選器。<p>雖經 Adblock 有效處理，在某些網頁上，泛型外觀篩選器仍會造成可觀的記憶體與 CPU 負荷。在大型且長久存在的網頁上，負荷尤其繁重。<p>啟用這個選項，可降低因處理泛型外觀篩選器，而由網頁施予記憶體與 CPU 的負荷，也能降低 Adblock 本身的記憶體使用量。<p>在功能較弱的裝置上，建議您啟用這個選項。"
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "封鎖的主機清單"
+	},
+	"3pApplyChanges": {
+		"message": "套用變更"
+	},
+	"3pGroupAds": {
+		"message": "廣告"
+	},
+	"3pGroupPrivacy": {
+		"message": "隱私"
+	},
+	"3pGroupMalware": {
+		"message": "惡意軟體網域"
+	},
+	"3pGroupAnnoyances": {
+		"message": "打擾"
+	},
+	"3pGroupMultipurpose": {
+		"message": "多功能"
+	},
+	"3pGroupRegions": {
+		"message": "區域、語言"
+	},
+	"3pGroupCustom": {
+		"message": "自訂"
+	},
+	"3pExternalListsHint": {
+		"message": "每行一個 URL。首碼為 &lsquo;!&rsquo; 的行將被忽略。無效 URL 將自動忽略，且不另行通知。"
+	},
+	"3pExternalListObsolete": {
+		"message": "過時。"
+	},
+	"3pLastUpdate": {
+		"message": "上次更新：{{ago}}。\n按一下可強制更新。"
+	},
+	"3pUpdating": {
+		"message": "正在更新..."
+	},
+	"3pNetworkError": {
+		"message": "由於發生網路錯誤，因此無法更新資源。"
+	},
+	"1pFormatHint": {
+		"message": "每行一個篩選器。篩選器可以是普通主機名稱或 Adblock Plus 相容篩選器。首碼為 &lsquo;!&rsquo; 的行將被忽略。"
+	},
+	"1pImport": {
+		"message": "匯入並附加"
+	},
+	"1pExport": {
+		"message": "匯出"
+	},
+	"1pApplyChanges": {
+		"message": "套用變更"
+	},
+	"rulesPermanentHeader": {
+		"message": "永久規則"
+	},
+	"rulesTemporaryHeader": {
+		"message": "暫時規則"
+	},
+	"rulesRevert": {
+		"message": "還原"
+	},
+	"rulesCommit": {
+		"message": "認可"
+	},
+	"rulesEdit": {
+		"message": "編輯"
+	},
+	"rulesEditSave": {
+		"message": "儲存"
+	},
+	"rulesEditDiscard": {
+		"message": "捨棄"
+	},
+	"rulesImport": {
+		"message": "從檔案匯入..."
+	},
+	"rulesExport": {
+		"message": "匯出到檔案"
+	},
+	"rulesHint": {
+		"message": "動態篩選規則清單。"
+	},
+	"rulesFormatHint": {
+		"message": "規則語法：<code>來源目的地類型動作</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>完整文件</a>)。"
+	},
+	"whitelistPrompt": {
+		"message": "白名單指示詞指出應停用 Adblock 的網頁。每行一個項目。無效指示詞會自動忽略並加上註解。"
+	},
+	"whitelistImport": {
+		"message": "匯入並附加"
+	},
+	"whitelistExport": {
+		"message": "匯出"
+	},
+	"whitelistExportFilename": {
+		"message": "Adblock-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "套用變更"
+	},
+	"logRequestsHeaderType": {
+		"message": "類型"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "網域"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "篩選器"
+	},
+	"logAll": {
+		"message": "全部"
+	},
+	"logBehindTheScene": {
+		"message": "在背景"
+	},
+	"logFilterPrompt": {
+		"message": "篩選器記錄項目"
+	},
+	"logMaxEntriesTip": {
+		"message": "記錄項目上限"
+	},
+	"aboutChangelog": {
+		"message": "變更記錄"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "支援"
+	},
+	"aboutCode": {
+		"message": "原始碼 (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "參與者"
+	},
+	"aboutBackupDataButton": {
+		"message": "備份到檔案"
+	},
+	"aboutBackupFilename": {
+		"message": "Adblock-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "從檔案還原..."
+	},
+	"aboutResetDataButton": {
+		"message": "重設為預設設定..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "即將以在 {{time}} 備份的資料覆寫所有設定，而且 Adblock 將重新啟動。\n\n是否要使用備份資料覆寫所有現有設定？"
+	},
+	"aboutRestoreDataError": {
+		"message": "無法讀取資料或資料無效"
+	},
+	"aboutResetDataConfirm": {
+		"message": "即將移除所有設定，而且 Adblock 將會重新啟動。\n\n是否要將 Adblock 重設為原廠設定？"
+	},
+	"errorCantConnectTo": {
+		"message": "網路錯誤：{{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "Adblock：是否將下列 URL 新增至自訂篩選器清單？\n\n標題：「{{title}}」\nURL：{{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "一分鐘前"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} 分鐘前"
+	},
+	"elapsedOneHourAgo": {
+		"message": "一小時前"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} 小時前"
+	},
+	"elapsedOneDayAgo": {
+		"message": "一天前"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} 天前"
+	},
+	"showDashboardButton": {
+		"message": "顯示儀表板"
+	},
+	"showNetworkLogButton": {
+		"message": "顯示記錄器"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "關閉"
+	},
+	"docblockedPrompt1": {
+		"message": "Adblock 已阻止下列網頁載入："
+	},
+	"docblockedPrompt2": {
+		"message": "因為下列篩選器"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "沒有參數"
+	},
+	"docblockedFoundIn": {
+		"message": "發現於："
+	},
+	"docblockedBack": {
+		"message": "返回"
+	},
+	"docblockedClose": {
+		"message": "關閉這個視窗"
+	},
+	"docblockedProceed": {
+		"message": "停用 {{hostname}} 的嚴格封鎖"
+	},
+	"docblockedDisableTemporary": {
+		"message": "暫時"
+	},
+	"docblockedDisablePermanent": {
+		"message": "永久"
+	},
+	"cloudPush": {
+		"message": "匯出到雲端儲存空間"
+	},
+	"cloudPull": {
+		"message": "從雲端儲存空間匯入"
+	},
+	"cloudPullAndMerge": {
+		"message": "從雲端儲存空間匯入，並與目前設定合併"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "這個裝置名稱："
+	},
+	"advancedSettingsWarning": {
+		"message": "警告！變更這些進階設定可能會帶來風險，請自行承擔。"
+	},
+	"genericSubmit": {
+		"message": "提交"
+	},
+	"genericApplyChanges": {
+		"message": "套用變更"
+	},
+	"genericRevert": {
+		"message": "還原"
+	},
+	"genericBytes": {
+		"message": "位元組"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "暫時允許大型媒體元素"
+	},
+	"dummy": {
+		"message": "這個項目必須為最後一項"
+	},
+	"popupExtraMoreInformation": {
+		"message": "詳細資訊"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "已封鎖這個網站的廣告"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "已允許這個網站的廣告"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "無法啟用這個網站的保護"
+	},
+	"popupExtraMoreOptions": {
+		"message": "較多選項"
+	},
+	"popupExtraLessOptions": {
+		"message": "較少選項"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "查看所有允許的網站清單"
+	},
+	"popupAdvancedSettings": {
+		"message": "進階設定"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "這個頁面上遭到封鎖的廣告"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "封鎖的廣告總數"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "允許的網站清單"
+	},
+	"extraSlider0": {
+		"message": "不要封鎖廣告"
+	},
+	"extraSlider50": {
+		"message": "適度封鎖廣告"
+	},
+	"extraSlider100": {
+		"message": "完全封鎖廣告"
+	},
+	"extraIndexDescription": {
+		"message": "封鎖廣告，瀏覽網路更快速安全"
+	},
+	"extraGeneralSettings": {
+		"message": "一般設定"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "管理 Adblock 顯示的資訊"
+	},
+	"extra3pPageNameDesc": {
+		"message": "廣告與隱私第三方篩選器"
+	},
+	"extra1pPageNameDesc": {
+		"message": "管理您的自訂篩選器"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "動態篩選規則清單"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "允許廣告的網站清單"
+	},
+	"extraIndexHeader": {
+		"message": "Adblock 進階設定"
+	},
+	"extraIndexFooter": {
+		"message": "由 uBlock Origin 提供。"
+	},
+	"extraShowMore": {
+		"message": "顯示更多"
+	},
+	"extraBtnImport": {
+		"message": "匯入"
+	},
+	"extraBtnExport": {
+		"message": "匯出"
+	},
+	"extraBtnAdd": {
+		"message": "新增"
+	},
+	"extraBtnCancel": {
+		"message": "取消"
+	},
+	"extraBtnEdit": {
+		"message": "編輯"
+	},
+	"extraBtnRemove": {
+		"message": "移除"
+	},
+	"extraBtnUpdateAll": {
+		"message": "全部更新"
+	},
+	"extraLabelFilter": {
+		"message": "篩選器"
+	},
+	"extraMyCustomFilter": {
+		"message": "我的自訂篩選器"
+	},
+	"extraManageFilters": {
+		"message": "管理篩選器"
+	},
+	"extraAdsFilters": {
+		"message": "廣告篩選器"
+	},
+	"extraEditFilter": {
+		"message": "編輯篩選器"
+	},
+	"extraAddFilter": {
+		"message": "新增篩選器"
+	},
+	"extraLearnMore": {
+		"message": "更多資訊"
+	},
+	"extraRuleSyntax": {
+		"message": "規則語法"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "來源目的地類型動作。"
+	},
+	"extraRuleDefinition": {
+		"message": "規則定義"
+	},
+	"extraRule": {
+		"message": "規則"
+	},
+	"extraEditRule": {
+		"message": "編輯臨時規則"
+	},
+	"extraAddRrule": {
+		"message": "新增臨時規則"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "進階使用者設定"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "封鎖大於指定標準的媒體元素："
+	},
+	"extraSetting": {
+		"message": "設定"
+	},
+	"extraEditSetting": {
+		"message": "編輯設定"
+	},
+	"extraAddSetting": {
+		"message": "新增設定"
+	},
+	"extraSite": {
+		"message": "網站"
+	},
+	"extraAllowOnSites": {
+		"message": "在這些網站上允許廣告"
+	},
+	"extraEditSite": {
+		"message": "編輯網站"
+	},
+	"extraAddSite": {
+		"message": "新增網站"
+	},
+	"extraDefaultBehaviour": {
+		"message": "預設行為"
+	},
+	"extraPrivacy": {
+		"message": "隱私"
+	},
+	"3pGroupDefault": {
+		"message": "網路與美妝篩選器"
+	},
+	"1pPageName": {
+		"message": " 我的篩選器"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "無法啟用這個工作階段的保護"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "尚未新增網站"
+	},
+	"extraInterstitialBlocking": {
+		"message": "啟用插頁廣告封鎖"
+	},
+	"shortcutsPageName": {
+		"message": "捷徑"
+	},
+	"popupTipDashboard": {
+		"message": "開啟儀表板"
+	},
+	"popupTipZapper": {
+		"message": "進入元素臨時移除模式"
+	},
+	"popupTipPicker": {
+		"message": "進入元素選擇器模式"
+	},
+	"popupTipLog": {
+		"message": "開啟記錄器"
+	},
+	"popupTipNoPopups": {
+		"message": "切換是否封鎖這個網站的所有快顯視窗"
+	},
+	"popupTipNoPopups1": {
+		"message": "按一下可封鎖這個網站的所有快顯視窗"
+	},
+	"popupTipNoPopups2": {
+		"message": "按一下可停止封鎖這個網站的所有快顯視窗"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "切換是否封鎖這個網站的大型媒體元素"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "按一下可封鎖這個網站的大型媒體元素"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "按一下可停止封鎖這個網站的大型媒體元素"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "切換是否在這個網站上使用外觀篩選功能"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "按一下可在這個網站上停用外觀篩選功能"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "按一下可在這個網站上啟用外觀篩選功能"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "切換是否封鎖這個網站的遠端字型"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "按一下可封鎖這個網站的遠端字型"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "按一下可停止封鎖這個網站的遠端字型"
+	},
+	"popupTipGlobalRules": {
+		"message": "全域規則：這個欄位的規則會套用至所有網站。"
+	},
+	"popupTipLocalRules": {
+		"message": "區域規則：這個欄位的規則只會套用至目前網站。\n區域規則會覆寫全域規則。"
+	},
+	"popupTipSaveRules": {
+		"message": "按一下可讓變更永久生效。"
+	},
+	"popupTipRevertRules": {
+		"message": "按一下可還原變更。"
+	},
+	"popupAnyRulePrompt": {
+		"message": "全部"
+	},
+	"popupImageRulePrompt": {
+		"message": "影像"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "第三方"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "第三方 CSS/影像"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "內嵌指令碼"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "第一方指令碼"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "第三方指令碼"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "第三方框架"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "連線的網域"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} / {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "封鎖超過 {{input:number}} KB 的媒體元素"
+	},
+	"3pImport": {
+		"message": "匯入..."
+	},
+	"loggerCurrentTab": {
+		"message": "目前的標籤"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "內容："
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "類型："
+	},
+	"loggerURLFilteringHeader": {
+		"message": "動態 URL 篩選"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "靜態篩選"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{importance}}有相符的例外篩選器，{{br}}{{action}} URL 位址與 {{url}} 相符且{{br}}源自 {{origin}} 的{{br}}{{type}}網路要求。"
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "封鎖"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "允許"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "?{{type}}? 類型"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "任何類型"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "任何位置"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "除非"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "即使"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "在以下清單中找到靜態篩選器 <code>{{filter}}</code>："
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "在目前啟用的所有篩選器清單中均找不到靜態篩選器 <code>{{filter}}</code>"
+	},
+	"aboutIssues": {
+		"message": "問題追蹤器"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "輸入捷徑"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? 資源檢視器"
+	},
+	"popupTipNoScripting1": {
+		"message": "按一下可停用這個網站上的 JavaScript"
+	},
+	"popupTipNoScripting2": {
+		"message": "按一下可取消停用這個網站上的 JavaScript"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "停用 JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "外部相依性 (與 GPLv3 相容)："
+	},
+	"loggerReloadTip": {
+		"message": "重新載入標籤內容"
+	},
+	"loggerDomInspectorTip": {
+		"message": "切換 DOM 檢測工具"
+	},
+	"loggerPopupPanelTip": {
+		"message": "切換快顯視窗面板"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin Wiki：記錄器"
+	},
+	"loggerClearTip": {
+		"message": "清除記錄器"
+	},
+	"loggerPauseTip": {
+		"message": "暫停記錄器 (捨棄所有傳入資料)"
+	},
+	"loggerUnpauseTip": {
+		"message": "取消暫停記錄器"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "切換記錄器篩選功能"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "記錄器篩選選項"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "非"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "重要事件"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "封鎖"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "允許"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "第一方"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "第三方"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "詳細資料"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "篩選器"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "篩選器清單"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "規則"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "內容"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Root 內容"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "對象屬性"
+	},
+	"loggerEntryDetailsType": {
+		"message": "類型"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "未同時滿足下列三個條件的記錄器項目將自動捨棄："
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "保留過去 {{input}} 分鐘的項目"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "每個標籤最多保留 {{input}} 次頁面載入"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "每個標籤最多保留 {{input}} 個項目"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "在垂直展開模式中每個項目使用 {{input}} 行"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "隱藏欄位："
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} 時間"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} 篩選器/規則"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} 內容"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} 對象屬性"
+	},
+	"loggerExportFormatList": {
+		"message": "清單"
+	},
+	"loggerExportFormatTable": {
+		"message": "表格"
+	},
+	"loggerExportEncodePlain": {
+		"message": "純文字"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "切換捲動鎖定功能"
+	},
+	"genericCopyToClipboard": {
+		"message": "複製到剪貼簿"
+	}
+}

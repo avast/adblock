@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "अंत में, एक सक्षम अवरोधक. CPU और मेमोरी पर आसान."
+	},
+	"dashboardName": {
+		"message": "#title # — डैशबोर्ड"
+	},
+	"settingsPageName": {
+		"message": "सेटिंग"
+	},
+	"3pPageName": {
+		"message": "तृतीय-पक्ष के फ़िल्टर"
+	},
+	"rulesPageName": {
+		"message": "मेरे नियम"
+	},
+	"whitelistPageName": {
+		"message": "व्हाइटलिस्ट"
+	},
+	"statsPageName": {
+		"message": "#title # — लॉगर"
+	},
+	"aboutPageName": {
+		"message": "परिचय"
+	},
+	"advancedSettingsPageName": {
+		"message": "उन्नत सेटिंग"
+	},
+	"pickerCreate": {
+		"message": "बनाएंं"
+	},
+	"pickerPick": {
+		"message": "चुनें"
+	},
+	"pickerQuit": {
+		"message": "छोड़ें"
+	},
+	"pickerPreview": {
+		"message": "पूर्वावलोकन"
+	},
+	"pickerNetFilters": {
+		"message": "नेटवर्क फ़िल्टर"
+	},
+	"pickerCosmeticFilters": {
+		"message": "कॉस्मेटिक फ़िल्टर"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "क्लिक करें, Ctrl-क्लिक करें"
+	},
+	"pickerContextMenuEntry": {
+		"message": "एलिमेंट ब्लॉक करें"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "अवरोधित एलिमेंट के प्लेसहोल्डर छुपाएं"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "इस आइकन पर अवरोधित अनुरोधों की संख्या दिखाएं"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "टूलटिप अक्षम करें"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "जहां उचित हो संदर्भ मेनू का अधिकतम लाभ उठाएं"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "रंग अंधापन के अनुकूल"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "क्लाउड संग्रहण समर्थन को सक्षम करें"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "मैं उन्नत उपयोगकर्ता हूं (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>required reading</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "उन्नत सेटिंग"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "पूर्व-फ़ेचिंग अक्षम करें (ब्लॉक किए गए नेटवर्क अनुरोधों के लिए किसी भी कनेक्शन को रोकने के लिए)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "हाइपरलिंक ऑडिटिंग अक्षम करें"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "स्थानीय IP पतों को लीक करने से WebRTC रोकें"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "डिफ़ॉल्ट व्यवहार"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "ये डिफ़ॉल्ट व्यवहार प्रति-साइट के आधार पर ओवरराइड किए जा सकते हैं"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "कॉस्मेटिक फ़िल्टरिंग अक्षम करें"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "दूरस्थ फ़ॉन्ट ब्लॉक करें"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "CSP रिपोर्ट ब्लॉक करें"
+	},
+	"settingsStorageUsed": {
+		"message": "प्रयुक्त संग्रहण: {{value}} बाइट"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "अंतिम पुनर्स्थापना:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "अंतिम बैकअप:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "इससे {{netFilterCount}} नेटवर्क फ़िल्टर ＋ {{cosmeticFilterCount}} कॉस्मेटिक फ़िल्टर:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{total}} में से {{used}} प्रयुक्त"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "स्वत:-अद्यतित फ़िल्टर सूचियां"
+	},
+	"3pUpdateNow": {
+		"message": "अभी अपडेट करें"
+	},
+	"3pPurgeAll": {
+		"message": "सभी कैशे पर्ज करें"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "कॉस्मेटिक फ़िल्टर को पार्स करके लागू करें"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>यह विकल्प <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">विज्ञापनरोधी के साथ संगत &ldquo;छुपे हुए एलिमेंट&rdquo; फ़िल्टर</a> को पार्स करने और लागू करना सक्षम बनाता है. ये फ़िल्टर मूल कॉस्मेटिक के लिए आवश्यक हैं, वे एक वेब पृष्ठ पर एलिमेंट को छुपाते हैं जिन्हें विज़ुअल में बाधक माना जाता है और जिन्हें नेट अनुरोधा आधारित फ़िल्टरिंग इंजन द्वारा अवरुद्ध नहीं किया जा सकता है.</p><p>इस सुविधा को सक्षम करने से Adblock's की मेमोरी फुटप्रिंट बढ़ जाते हैं.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "जेनेरिक कॉस्मेटिक फ़िल्टर की अनदेखी करें"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>जेनेरिक कॉस्मेटिक फ़िल्टर वे कॉस्मेटिक फिल्टर होते हैं जो सभी वेबसाइटों पर लागू करने के लिए होते हैं.<p>हालांकि Adblock द्वारा कुशलतापूर्वक प्रबंधित किए जाने से, जेनेरिक कॉस्मेटिक फ़िल्टर अभी भी उपरोक्त कुछ वेब पृष्ठों पर औसत दर्जे की मेमोरी और CPU में, विशेष रूप से बड़े और लंबे समय तक रहने वालों के लिए योगदान कर सकते हैं.<p>इस विकल्प को सक्षम करने से जेनेरिक कॉस्मेटिक फ़िल्टर को प्रबंधित किए जाने के परिणामस्वरूप वेब पृष्ठों में जोड़े गए उपरोक्त मेमोरी और CPU को हटा देगा और इसके अलावा, Adblock के फुटप्रिंट की मेमोरी को कम कर देगा.<p>कम शक्तिशाली डिवाइस पर इस विकल्प को सक्षम करने की अनुशंसा की जाती है."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "ब्लॉक किए गए होस्ट्स की सूचियां"
+	},
+	"3pApplyChanges": {
+		"message": "परिवर्तन लागू करें"
+	},
+	"3pGroupAds": {
+		"message": "विज्ञापन"
+	},
+	"3pGroupPrivacy": {
+		"message": "गोपनीयता"
+	},
+	"3pGroupMalware": {
+		"message": "मैलवेयर डोमेन"
+	},
+	"3pGroupAnnoyances": {
+		"message": "छेड़छाड़"
+	},
+	"3pGroupMultipurpose": {
+		"message": "बहुउद्देशीय"
+	},
+	"3pGroupRegions": {
+		"message": "क्षेत्र, भाषाएं"
+	},
+	"3pGroupCustom": {
+		"message": "कस्टम"
+	},
+	"3pExternalListsHint": {
+		"message": "प्रति लाइन URL खोलें. &lsquo;!&rsquo; से पूर्व-नियत पंक्तियों की अनदेखी की जाएगी. अमान्य URL की शांति से अनदेखी कर दी जाएगी."
+	},
+	"3pExternalListObsolete": {
+		"message": "पुराना"
+	},
+	"3pLastUpdate": {
+		"message": "अंतिम अपडेट: {{ago}}.\nअपडेट बाध्य करने के लिए क्लिक करें."
+	},
+	"3pUpdating": {
+		"message": "अपडेट कर रहा है..."
+	},
+	"3pNetworkError": {
+		"message": "किसी नेटवर्क त्रुटि ने संसाधन को अद्यतित होने से रोका ।"
+	},
+	"1pFormatHint": {
+		"message": "प्रति पंक्ति एक फ़िल्टर. फ़िल्टर एक सामान्य होस्टनाम या एक विज्ञापन-रोधी के साथ संगत फ़िल्टर हो सकता है. &lsquo;!&rsquo; के साथ पूर्वनियत पंक्तियों की अनदेखी की जाएगी."
+	},
+	"1pImport": {
+		"message": "आयात करें और संलग्न करें"
+	},
+	"1pExport": {
+		"message": "निर्यात करें"
+	},
+	"1pApplyChanges": {
+		"message": "परिवर्तन लागू करें"
+	},
+	"rulesPermanentHeader": {
+		"message": "स्थायी नियम"
+	},
+	"rulesTemporaryHeader": {
+		"message": "अस्थाई नियम"
+	},
+	"rulesRevert": {
+		"message": "वापस लाएं"
+	},
+	"rulesCommit": {
+		"message": "वचन दें"
+	},
+	"rulesEdit": {
+		"message": "संपादित करें"
+	},
+	"rulesEditSave": {
+		"message": "सहेजें"
+	},
+	"rulesEditDiscard": {
+		"message": "छोड़ें"
+	},
+	"rulesImport": {
+		"message": "फ़ाइल से आयात करें..."
+	},
+	"rulesExport": {
+		"message": "फ़ाइल में निर्यात करें"
+	},
+	"rulesHint": {
+		"message": "आपके डायनेमिक फ़िल्टरिंग नियमों की सूची."
+	},
+	"rulesFormatHint": {
+		"message": "नियम संदर्भ: <code>source destination type action</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>full documentation</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "श्वेत सूची निर्देश डिक्टेट को किस वेब पृष्ठ पर Adblock अक्षम किया जाना चाहिए. प्रति पंक्ति एक प्रविष्टि. अमान्य निर्देशों को चुपचाप अनदेखा कर दिया जाएगा और बाहर टिप्पणी की जाएगी."
+	},
+	"whitelistImport": {
+		"message": "आयात करें और संलग्न करें"
+	},
+	"whitelistExport": {
+		"message": "निर्यात करें"
+	},
+	"whitelistExportFilename": {
+		"message": "Adblock-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "परिवर्तन लागू करें"
+	},
+	"logRequestsHeaderType": {
+		"message": "लिखें"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "डोमेन"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "फ़िल्टर करें"
+	},
+	"logAll": {
+		"message": "सभी"
+	},
+	"logBehindTheScene": {
+		"message": "दृश्य के पीछे"
+	},
+	"logFilterPrompt": {
+		"message": "फ़िल्टर लॉग प्रविष्टियां"
+	},
+	"logMaxEntriesTip": {
+		"message": "लॉग प्रविष्टियों की अधिकतम संख्या"
+	},
+	"aboutChangelog": {
+		"message": "लॉग परिवर्तित करें"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "सहायता"
+	},
+	"aboutCode": {
+		"message": "स्रोत कोड (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "योगदानकर्ता"
+	},
+	"aboutBackupDataButton": {
+		"message": "फ़ाइल पर बैकअप लें"
+	},
+	"aboutBackupFilename": {
+		"message": "Adblock-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "फ़ाइल से पुनर्स्थापित करें..."
+	},
+	"aboutResetDataButton": {
+		"message": "डिफ़ॉल्ट सेटिंग्स रीसेट करें..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "{{time}} पर बैक अप लिए गए डेटा का उपयोग करके आपकी सभी सेटिंग को अधिलेखित किया जाएगा और Adblock को पुन: प्रारंभ किया जाएगा.\n\nबैक अप लिए गए डेटा का उपयोग करके सभी मौजूदा सेटिंग्स को अधिलेखित करें?"
+	},
+	"aboutRestoreDataError": {
+		"message": "डेटा पढ़ा नहीं जा सका या अमान्य है"
+	},
+	"aboutResetDataConfirm": {
+		"message": "आपकी सभी सेटिंग्स हटा दी जाएंगी, और Adblock पुन: प्रारंभ हो जाएगा.\n\nफ़ैक्टरी सेटिंग्स के लिए Adblock रीसेट करें."
+	},
+	"errorCantConnectTo": {
+		"message": "नेटवर्क त्रुटि: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "Adblock: अपने कस्टम फ़िल्टर की सूचियों में निम्न URL जोड़ें?\n\nTitle: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "एक मिनट पहले"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} मिनट पहले"
+	},
+	"elapsedOneHourAgo": {
+		"message": "एक घंटा पहले"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} घंटे पहले"
+	},
+	"elapsedOneDayAgo": {
+		"message": "एक दिन पहले"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} दिन पहले"
+	},
+	"showDashboardButton": {
+		"message": "डैशबोर्ड दिखाएं"
+	},
+	"showNetworkLogButton": {
+		"message": "लॉगर दिखाएं"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "बंद"
+	},
+	"docblockedPrompt1": {
+		"message": "#title # ने निम्न पृष्ठ को लोड होने से रोका है:"
+	},
+	"docblockedPrompt2": {
+		"message": "निम्न फ़िल्टर के कारण"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "बिना मापदंड के"
+	},
+	"docblockedFoundIn": {
+		"message": "स्थान:"
+	},
+	"docblockedBack": {
+		"message": "वापस जाएं"
+	},
+	"docblockedClose": {
+		"message": "इस विंडो को बंद करें"
+	},
+	"docblockedProceed": {
+		"message": "{{hostname}} के लिए सख्त अवरोधन अक्षम करें"
+	},
+	"docblockedDisableTemporary": {
+		"message": "अस्थायी तौर पर"
+	},
+	"docblockedDisablePermanent": {
+		"message": "स्थायी रूप से"
+	},
+	"cloudPush": {
+		"message": "क्लाउड संग्रहण पर निर्यात करें"
+	},
+	"cloudPull": {
+		"message": "क्लाउड संग्रहण से निर्यात करें"
+	},
+	"cloudPullAndMerge": {
+		"message": "क्लाउड संग्रहण से आयात करें और वर्तमान सेटिंग्स के साथ मर्ज करें"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "इस डिवाइस का नाम:"
+	},
+	"advancedSettingsWarning": {
+		"message": "चेतावनी! इन उन्नत सेटिंग्स को अपने जोखिम पर बदलें."
+	},
+	"genericSubmit": {
+		"message": "सबमिट करें"
+	},
+	"genericApplyChanges": {
+		"message": "परिवर्तन लागू करें"
+	},
+	"genericRevert": {
+		"message": "वापस लाएं"
+	},
+	"genericBytes": {
+		"message": "बाइट"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "बड़े मीडिया एलिमेंट को अस्थाई रूप से अनुमति दें"
+	},
+	"dummy": {
+		"message": "यह प्रविष्टि अंतिम होनी चाहिए"
+	},
+	"popupExtraMoreInformation": {
+		"message": "अधिक जानकारी"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "इस साइट पर विज्ञापन ब्लॉक किए गए हैं"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "इस साइट पर विज्ञापन की अनुमति है"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "इस साइट पर सुरक्षा सक्षम नहीं की जा सकती"
+	},
+	"popupExtraMoreOptions": {
+		"message": "अधिक विकल्प"
+	},
+	"popupExtraLessOptions": {
+		"message": "कम विकल्प"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "सभी अनुमत साइट्स की सूची देखें"
+	},
+	"popupAdvancedSettings": {
+		"message": "उन्नत सेटिंग"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "इस पृष्ठ पर ब्लॉक किए गए विज्ञापन"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "कुल अवरोधित विज्ञापन"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "अनुमत साइट्स की सूची"
+	},
+	"extraSlider0": {
+		"message": "विज्ञापन ब्लॉक न करें"
+	},
+	"extraSlider50": {
+		"message": "मध्यम विज्ञापन ब्लॉकिंग"
+	},
+	"extraSlider100": {
+		"message": "अधिकतम विज्ञापन ब्लॉकिंग"
+	},
+	"extraIndexDescription": {
+		"message": "तेज़ और सुरक्षित ब्राउज़िंग के लिए विज्ञापनों को अवरोधित करें"
+	},
+	"extraGeneralSettings": {
+		"message": "सामान्य सेटिंग"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Adblock द्वारा दिखाई जाने वाली जानकारी प्रबंधित करें"
+	},
+	"extra3pPageNameDesc": {
+		"message": "विज्ञापन और गोपनीयता तृतीय-पक्ष फ़िल्टर"
+	},
+	"extra1pPageNameDesc": {
+		"message": "अपने कस्टम फ़िल्टर प्रबंधित करें"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "आपके डायनेमिक फ़िल्टरिंग नियमों की सूची"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "उन साइटों की सूची जहां विज्ञापनों की अनुमति है"
+	},
+	"extraIndexHeader": {
+		"message": "Adblock उन्नत सेटिंग"
+	},
+	"extraIndexFooter": {
+		"message": "uBlock Origin द्वारा संचालित।"
+	},
+	"extraShowMore": {
+		"message": "अधिक दिखाएँ"
+	},
+	"extraBtnImport": {
+		"message": "आयात करें"
+	},
+	"extraBtnExport": {
+		"message": "निर्यात करें"
+	},
+	"extraBtnAdd": {
+		"message": "जोड़ें"
+	},
+	"extraBtnCancel": {
+		"message": "रद्द करें"
+	},
+	"extraBtnEdit": {
+		"message": "संपादित करें"
+	},
+	"extraBtnRemove": {
+		"message": "निकालें"
+	},
+	"extraBtnUpdateAll": {
+		"message": "सभी अपडेट करें"
+	},
+	"extraLabelFilter": {
+		"message": "फ़िल्टर करें"
+	},
+	"extraMyCustomFilter": {
+		"message": "मेरे कस्टम फ़िल्टर"
+	},
+	"extraManageFilters": {
+		"message": "फ़िल्टर प्रबंधित करें"
+	},
+	"extraAdsFilters": {
+		"message": "विज्ञापन फ़िल्टर"
+	},
+	"extraEditFilter": {
+		"message": "फ़िल्टर संपादित करें"
+	},
+	"extraAddFilter": {
+		"message": "फ़िल्टर जोड़ें"
+	},
+	"extraLearnMore": {
+		"message": "अधिक जानें"
+	},
+	"extraRuleSyntax": {
+		"message": "नियम सिन्टैक्स"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "सुरक्षित गंतव्य प्रकार क्रिया।"
+	},
+	"extraRuleDefinition": {
+		"message": "नियम परिभाषा"
+	},
+	"extraRule": {
+		"message": "नियम"
+	},
+	"extraEditRule": {
+		"message": "अस्थायी नियम संपादित करें"
+	},
+	"extraAddRrule": {
+		"message": "अस्थायी नियम जोड़ें"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "उन्नत उपयोगकर्ता सेटिंग"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "इससे बड़े मीडिया तत्व अवरोधित करें"
+	},
+	"extraSetting": {
+		"message": "सेटिंग"
+	},
+	"extraEditSetting": {
+		"message": "सेटिंग संपादित करें"
+	},
+	"extraAddSetting": {
+		"message": "सेटिंग जोड़ें"
+	},
+	"extraSite": {
+		"message": "साइट"
+	},
+	"extraAllowOnSites": {
+		"message": "इन साइट पर विज्ञापनों की अनुमति दें"
+	},
+	"extraEditSite": {
+		"message": "साइट संपादित करें"
+	},
+	"extraAddSite": {
+		"message": "साइट जोड़ें"
+	},
+	"extraDefaultBehaviour": {
+		"message": "डिफ़ॉल्ट व्यवहार"
+	},
+	"extraPrivacy": {
+		"message": "गोपनीयता"
+	},
+	"3pGroupDefault": {
+		"message": "नेटवर्क और कॉस्मेटिक फ़िल्टर"
+	},
+	"1pPageName": {
+		"message": " मेरे फ़िल्टर"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "इस सत्र के लिए सुरक्षा सक्षम नहीं की जा सकती"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "अभी तक कोई साइट नहीं जोड़ी गई"
+	},
+	"extraInterstitialBlocking": {
+		"message": "अन्तरालीय अवरोध को सक्षम करें"
+	},
+	"shortcutsPageName": {
+		"message": "शॉर्टकट"
+	},
+	"popupTipDashboard": {
+		"message": "डैशबोर्ड को खोलें"
+	},
+	"popupTipZapper": {
+		"message": "एलिमेंट ज़ैपर मोड दर्ज करें"
+	},
+	"popupTipPicker": {
+		"message": "एलिमेंट पिकर मोड दर्ज करें"
+	},
+	"popupTipLog": {
+		"message": "लोगर को खोले"
+	},
+	"popupTipNoPopups": {
+		"message": "इस साइट के लिए सभी अवरुद्ध पॉपअप टॉगल करें"
+	},
+	"popupTipNoPopups1": {
+		"message": "इस साइट पर सभी पॉपअप ब्लॉक करने के लिए क्लिक करें"
+	},
+	"popupTipNoPopups2": {
+		"message": "अब इस साइट के सभी पॉपअप ब्लॉक नहीं करने के लिए क्लिक करें"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "इस साइट के लिए बड़े मीडिया तत्वों को ब्लॉक करना टॉगल करें"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "इस साइट पर बड़े मीडिया तत्वों को ब्लॉक करने के लिए क्लिक करें"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "अब इस साइट पर बड़े मीडिया तत्वों को ब्लॉक नहीं करने के लिए क्लिक करें"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "इस साइट के लिए कॉस्मेटिक फ़िल्टरिंग टॉगल करें"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "इस साइट पर कॉस्मेटिक फ़िल्टरिंग बंद करने के लिए क्लिक करें"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "इस साइट पर कॉस्मेटिक फ़िल्टरिंग चालू करने के लिए क्लिक करें"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "इस साइट के लिए रिमोट फ़ॉन्ट ब्लॉक करना टॉगल करें"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "इस साइट पर रिमोट फ़ॉन्ट ब्लॉक करने के लिए क्लिक करें"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "अब इस साइट पर रिमोट फ़ॉन्ट ब्लॉक नहीं करने के लिए क्लिक करें"
+	},
+	"popupTipGlobalRules": {
+		"message": "वैश्विक नियम: यह कॉलम सभी साइटों पर लागू होने वाले नियमों के लिए है।"
+	},
+	"popupTipLocalRules": {
+		"message": "स्थानीय नियम: यह कॉलम केवल वर्तमान साइट पर लागू होने वाले नियमों के लिए है।\nस्थानीय नियम वैश्विक नियमों को ओवरराइड करते हैं।"
+	},
+	"popupTipSaveRules": {
+		"message": "अपने बदलावों को स्थायी बनाने के लिए क्लिक करें।"
+	},
+	"popupTipRevertRules": {
+		"message": "अपने बदलावों को वापस लाने के लिए क्लिक करें।"
+	},
+	"popupAnyRulePrompt": {
+		"message": "सभी"
+	},
+	"popupImageRulePrompt": {
+		"message": "छवियां"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "तृतीय-पक्ष"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "तृतीय-पक्ष/छवियां"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "इनलाइन स्क्रिप्ट"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "प्रथम-पक्ष की स्क्रिप्ट"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "तृतीय-पक्ष की स्क्रिप्ट"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "तृतीय-पक्ष के फ़्रेम"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "कनेक्ट किए हुए डोमेन"
+	},
+	"popupHitDomainCount": {
+		"message": "{{total}} में से {{count}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "{{input:number}} kB से बड़े मीडिया तत्वों को ब्लॉक करें"
+	},
+	"3pImport": {
+		"message": "आयात करें..."
+	},
+	"loggerCurrentTab": {
+		"message": "वर्तमान टैब"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "संदर्भ:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "प्रकार:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "गतिशीत URL फ़िल्टरिंग"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "स्टेटिक फ़िल्टरिंग"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} {{type}} के नेटवर्क अनुरोध {{br}},जो URL पते से मेल खाता है {{url}} {{br}}और जो {{origin}} जनरेट करता है,{{br}}{{importance}} इसमें एक मिलान अपवाद फ़िल्टर है।"
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "ब्लॉक करें"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "अनुमति दें"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "प्रकार ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "कोई भी प्रकार"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "?{{origin}}? से"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "कहीं से भी"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "सिवाय इसके कि जब"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "भले ही"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "स्टेटिक फ़िल्टर <code>{{filter}}</code> इसमें मिला:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "स्टेटिक फ़िल्टर <code>{{filter}}</code> वर्तमान में सक्षम फ़िल्टर सूचियों में से किसी में भी नहीं मिल सकता"
+	},
+	"aboutIssues": {
+		"message": "समस्या ट्रैक करने वाला"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "कोई शॉर्टकट टाइप करें"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? एसेट व्यूअर"
+	},
+	"popupTipNoScripting1": {
+		"message": "इस साइट पर JavaScript बंद करने के लिए क्लिक करें"
+	},
+	"popupTipNoScripting2": {
+		"message": "अब इस साइट पर JavaScrip बंद नहीं करने के लिए क्लिक करें"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "JavaScript बंद करें"
+	},
+	"aboutDependencies": {
+		"message": "बाहरी निर्भरताएं (GPLv3-कम्पेटिबल):"
+	},
+	"loggerReloadTip": {
+		"message": "टैब की सामग्री पुनः लोड करें"
+	},
+	"loggerDomInspectorTip": {
+		"message": "DOM इंस्पेक्टर टॉगल करें"
+	},
+	"loggerPopupPanelTip": {
+		"message": "पॉपअप पैनल टॉगल करें"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin विकि: लॉगर"
+	},
+	"loggerClearTip": {
+		"message": "लॉगर हटाएं"
+	},
+	"loggerPauseTip": {
+		"message": "लॉगर रोकें (आने वाले सभी डेटा को छोड़ें)"
+	},
+	"loggerUnpauseTip": {
+		"message": "लॉगर से रोक हटाएं"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "लॉगर फ़िल्टरिंग टॉगल करें"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "लॉगर फ़िल्टरिंग विकल्प"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "नहीं"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "परिणामस्वरूप"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "ब्लॉक की गई"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "अनुमति दी गई"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "प्रथम-पक्ष"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "तृतीय-पक्ष"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "विवरण"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "फ़िल्टर करें"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "सूचियाँ फ़िल्टर करें"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "नियम"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "संदर्भ"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "मूल संदर्भ"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "पार्टीनेस"
+	},
+	"loggerEntryDetailsType": {
+		"message": "प्रकार"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "वे लॉगर प्रविष्टियां जो नीचे दी गई सभी तीन शर्तों को पूरा नहीं करती हैं, अपने खारिज कर दी जाएंगी:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "अंतिम {{input}} मिनटों की प्रविष्टियां सुरक्षित रखें"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "प्रति टैब अधिकतम {{input}} पृष्ठ लोड लोड होना सुरक्षित करें"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "प्रति टैब अधिकतम {{input}} प्रविष्टियां सुरक्षित रखें"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "ऊर्ध्वाधर विस्तार मोड में प्रति प्रविष्टि {{input}} लाइनों का उपयोग करें"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "स्तंभ छिपाएं:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} समय"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} फ़िल्टर/नियम"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} संदर्भ"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} पार्टीनेस"
+	},
+	"loggerExportFormatList": {
+		"message": "सूची"
+	},
+	"loggerExportFormatTable": {
+		"message": "तालिका"
+	},
+	"loggerExportEncodePlain": {
+		"message": "सादा"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "चिन्हित करें"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "लॉक किए गए स्क्रॉल को टॉगल करें"
+	},
+	"genericCopyToClipboard": {
+		"message": "क्लिपबोर्ड पर कॉपी करें"
+	}
+}

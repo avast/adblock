@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SPC-and-toolbar-icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="switch-on" transform="translate(-27.000000, -7.000000)" fill-rule="nonzero" fill="#0cb754">
+            <g transform="translate(0.000000, 2.000000)" id="Tick">
+                <g transform="translate(26.866667, 4.800000)">
+                    <polygon id="Shape" points="4.13383085 5.98308458 1.86666667 3.73333333 0.891542289 4.70845771 4.13383085 7.93333333 9.33333333 1.86666667 8.35820896 0.891542289"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

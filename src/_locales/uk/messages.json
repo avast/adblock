@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "Нарешті з’явився ефективний засіб блокування реклами, який не перенавантажує процесор і пам'ять."
+	},
+	"dashboardName": {
+		"message": "Adblock — панель керування"
+	},
+	"settingsPageName": {
+		"message": "Налаштування"
+	},
+	"3pPageName": {
+		"message": "Сторонні фільтри"
+	},
+	"rulesPageName": {
+		"message": "Мої правила"
+	},
+	"whitelistPageName": {
+		"message": "Білий список"
+	},
+	"statsPageName": {
+		"message": "Adblock — журнал"
+	},
+	"aboutPageName": {
+		"message": "Про програму"
+	},
+	"advancedSettingsPageName": {
+		"message": "Додаткові налаштування"
+	},
+	"pickerCreate": {
+		"message": "Створити"
+	},
+	"pickerPick": {
+		"message": "Вибрати"
+	},
+	"pickerQuit": {
+		"message": "Вийти"
+	},
+	"pickerPreview": {
+		"message": "Попередній перегляд"
+	},
+	"pickerNetFilters": {
+		"message": "Мережеві фільтри"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Косметичні фільтри"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Клацнути, клацнути з утриманням Ctrl"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Заблокувати елемент"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Приховати покажчики місця заблокованих елементів"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Показувати кількість заблокованих запитів на значку"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Вимкнути підказки"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Використовувати контекстне меню, де це можливо"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Колірна схема для осіб, що не розрізняють кольори"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Увімкнути підтримку хмарного сховища"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Я досвідчений користувач (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>обов’язково прочитайте</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "додаткові налаштування"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Вимкнути попереднє завантаження, щоб запобігати підключенню за заблокованими мережевими запитами"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Вимкнути перевірку гіперпосилань"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "Запобігти витоку локальної IP-адреси через WebRTC"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Дії за промовчанням"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Для кожного сайту окремо можна визначити інші дії."
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Вимкнути косметичні фільтри"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Блокувати сторонні шрифти"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "Блокувати CSP-звіти"
+	},
+	"settingsStorageUsed": {
+		"message": "Використано: {{value}} байт"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Дата останнього відновлення:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Дата останнього резервного копіювання:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "Мережеві фільтри ({{netFilterCount}}) + косметичні фільтри ({{cosmeticFilterCount}}) з:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "Використано {{used}} з {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Автоматичне оновлення списків фільтрів"
+	},
+	"3pUpdateNow": {
+		"message": "Оновити"
+	},
+	"3pPurgeAll": {
+		"message": "Очистити весь кеш"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Аналізувати й застосовувати косметичні фільтри"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Це налаштування вмикає аналіз і застосування <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">фільтрів «приховання елементів», сумісних з Adblock Plus</a>. Це косметичні фільтри, які приховують непотрібні елементи сторінки, які не може заблокувати механізм фільтрації мережевих запитів.</p><p>За увімкнення цієї функції Adblock використовує більше пам’яті.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Ігнорувати загальні косметичні фільтри"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Загальні косметичні фільтри призначено для використання на всіх веб-сайтах.<p>Хоч Adblock і використовує їх ефективно, такі фільтри можуть потребувати значної кількості ресурсів на деяких сторінках, особливо великих і таких, що вже довго існують.<p>Увімкнення цього параметра зменшує споживання ресурсів ЦП і пам'яті на цих сторінках від застосування загальних косметичних фільтрів, а також скорочує обсяги споживання пам'яті власне Adblock.<p>Рекомендовано ввімкнути цей параметр на не дуже потужних пристроях."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Списки заблокованих хостів"
+	},
+	"3pApplyChanges": {
+		"message": "Застосувати зміни"
+	},
+	"3pGroupAds": {
+		"message": "Реклама"
+	},
+	"3pGroupPrivacy": {
+		"message": "Конфіденційність"
+	},
+	"3pGroupMalware": {
+		"message": "Домени шкідливих програм"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Надокучливі"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Багатоцільові"
+	},
+	"3pGroupRegions": {
+		"message": "Регіони, мови"
+	},
+	"3pGroupCustom": {
+		"message": "Користувацькі"
+	},
+	"3pExternalListsHint": {
+		"message": "Одна URL-адреса на рядок. Рядки, що починаються з символу «!», буде проігноровано. Неприпустимі URL-адреси буде проігноровано без попередження."
+	},
+	"3pExternalListObsolete": {
+		"message": "Застаріло."
+	},
+	"3pLastUpdate": {
+		"message": "Останнє оновлення: {{ago}}.\nКлацніть, щоб виконати примусове оновлення."
+	},
+	"3pUpdating": {
+		"message": "Оновлення..."
+	},
+	"3pNetworkError": {
+		"message": "Через помилку мережі не вдалося оновити дані."
+	},
+	"1pFormatHint": {
+		"message": "Один фільтр на рядок. Фільтром може бути звичайна адреса сайту або фільтр, сумісний з Adblock Plus. Рядки, що починаються з символу «!», буде проігноровано."
+	},
+	"1pImport": {
+		"message": "Імпортувати й додати"
+	},
+	"1pExport": {
+		"message": "Експортувати"
+	},
+	"1pApplyChanges": {
+		"message": "Застосувати зміни"
+	},
+	"rulesPermanentHeader": {
+		"message": "Постійні правила"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Тимчасові правила"
+	},
+	"rulesRevert": {
+		"message": "Скасувати зміни"
+	},
+	"rulesCommit": {
+		"message": "Підтвердити"
+	},
+	"rulesEdit": {
+		"message": "Змінити"
+	},
+	"rulesEditSave": {
+		"message": "Зберегти"
+	},
+	"rulesEditDiscard": {
+		"message": "Скасувати"
+	},
+	"rulesImport": {
+		"message": "Імпортувати з файлу..."
+	},
+	"rulesExport": {
+		"message": "Експортувати у файл"
+	},
+	"rulesHint": {
+		"message": "Список динамічних правил фільтрації."
+	},
+	"rulesFormatHint": {
+		"message": "Синтаксис правил: <code>джерело призначення тип дія</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>повна документація</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "У білому списку міститься список адрес сайтів, для яких Adblock буде вимкнуто. Один запис на рядок. Неправильні записи буде проігноровано без попередження й позначено як коментар."
+	},
+	"whitelistImport": {
+		"message": "Імпортувати й додати"
+	},
+	"whitelistExport": {
+		"message": "Експортувати"
+	},
+	"whitelistExportFilename": {
+		"message": "Adblock-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Застосувати зміни"
+	},
+	"logRequestsHeaderType": {
+		"message": "Тип"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Домен"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL-адреса"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Фільтр"
+	},
+	"logAll": {
+		"message": "Усі"
+	},
+	"logBehindTheScene": {
+		"message": "Приховане"
+	},
+	"logFilterPrompt": {
+		"message": "фільтр записів журналу"
+	},
+	"logMaxEntriesTip": {
+		"message": "Максимальна кількість записів у журналі"
+	},
+	"aboutChangelog": {
+		"message": "Змінити журнал"
+	},
+	"aboutWiki": {
+		"message": "Вікіпедія"
+	},
+	"aboutSupport": {
+		"message": "Підтримка"
+	},
+	"aboutCode": {
+		"message": "Вихідний код (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Автори"
+	},
+	"aboutBackupDataButton": {
+		"message": "Зберегти резервну копію у файл"
+	},
+	"aboutBackupFilename": {
+		"message": "Adblock-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Відновити з файлу..."
+	},
+	"aboutResetDataButton": {
+		"message": "Відновити налаштування за промовчанням..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Поточні налаштування буде замінено даними з резервної копії від {{time}}, а Adblock перезапуститься.\n\nПерезаписати всі параметри даними з резервної копії?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Дані неправильні або недоступні"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Усі налаштування буде видалено, а Adblock перезапущено.\n\nВідновити початкові налаштування Adblock?"
+	},
+	"errorCantConnectTo": {
+		"message": "Мережева помилка: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "Adblock. Додати цю URL-адресу до списку ваших фільтрів?\n\nНазва: \"{{title}}\"\nURL-адреса: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "хвилину тому"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} хв тому"
+	},
+	"elapsedOneHourAgo": {
+		"message": "годину тому"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} год тому"
+	},
+	"elapsedOneDayAgo": {
+		"message": "день тому"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} д. тому"
+	},
+	"showDashboardButton": {
+		"message": "Показати панель керування"
+	},
+	"showNetworkLogButton": {
+		"message": "Показати журнал"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "вимк."
+	},
+	"docblockedPrompt1": {
+		"message": "Засіб Adblock запобіг завантаженню такої сторінки:"
+	},
+	"docblockedPrompt2": {
+		"message": "Згідно з таким фільтром"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "без параметрів"
+	},
+	"docblockedFoundIn": {
+		"message": "Знайдено в:"
+	},
+	"docblockedBack": {
+		"message": "Назад"
+	},
+	"docblockedClose": {
+		"message": "Закрити це вікно"
+	},
+	"docblockedProceed": {
+		"message": "Вимкнути повне блокування для {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Тимчасово"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Назавжди"
+	},
+	"cloudPush": {
+		"message": "Експортувати у хмарне сховище"
+	},
+	"cloudPull": {
+		"message": "Імпортувати з хмарного сховища"
+	},
+	"cloudPullAndMerge": {
+		"message": "Імпортувати з хмарного сховища й об’єднати з поточними налаштуваннями"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Ім’я цього пристрою:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Увага! За наслідки змінення цих додаткових налаштувань відповідаєте ви."
+	},
+	"genericSubmit": {
+		"message": "Надіслати"
+	},
+	"genericApplyChanges": {
+		"message": "Застосувати зміни"
+	},
+	"genericRevert": {
+		"message": "Скасувати зміни"
+	},
+	"genericBytes": {
+		"message": "байт"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Тимчасово дозволити показ великих елементів мультимедіа"
+	},
+	"dummy": {
+		"message": "Цей запис повинен бути останнім"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Докладніше"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Рекламні модулі на цьому сайті заблоковано"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Рекламні модулі на цьому сайті дозволено"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Не вдалося ввімкнути захист на цьому сайті"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Більше параметрів"
+	},
+	"popupExtraLessOptions": {
+		"message": "Менше параметрів"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Показати список усіх дозволених сайтів"
+	},
+	"popupAdvancedSettings": {
+		"message": "Розширені налаштування"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Заблоковані рекламні модулі на цій сторінці"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Усі заблоковані рекламні модулі"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Список дозволених сайтів"
+	},
+	"extraSlider0": {
+		"message": "Без блокування рекламних модулів"
+	},
+	"extraSlider50": {
+		"message": "Помірне блокування реклами"
+	},
+	"extraSlider100": {
+		"message": "Максимальне блокування реклами"
+	},
+	"extraIndexDescription": {
+		"message": "Блокування рекламних модулів для швидшого й безпечнішого перегляду сайтів"
+	},
+	"extraGeneralSettings": {
+		"message": "Загальні налаштування"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Керування інформацією, що відображається розширенням Adblock"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Сторонні фільтри рекламних модулів і конфіденційності"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Керування власними фільтрами"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Список динамічних правил фільтрації"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Список сайтів із дозволеною рекламою"
+	},
+	"extraIndexHeader": {
+		"message": "Розширені налаштування Adblock"
+	},
+	"extraIndexFooter": {
+		"message": "На основі технології uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Докладніше"
+	},
+	"extraBtnImport": {
+		"message": "імпортувати"
+	},
+	"extraBtnExport": {
+		"message": "експортувати"
+	},
+	"extraBtnAdd": {
+		"message": "додати"
+	},
+	"extraBtnCancel": {
+		"message": "скасувати"
+	},
+	"extraBtnEdit": {
+		"message": "Змінити"
+	},
+	"extraBtnRemove": {
+		"message": "Видалити"
+	},
+	"extraBtnUpdateAll": {
+		"message": "оновити все"
+	},
+	"extraLabelFilter": {
+		"message": "Фільтр"
+	},
+	"extraMyCustomFilter": {
+		"message": "Фільтри користувача"
+	},
+	"extraManageFilters": {
+		"message": "Керування фільтрами"
+	},
+	"extraAdsFilters": {
+		"message": "Фільтри рекламних модулів"
+	},
+	"extraEditFilter": {
+		"message": "Змінити фільтр"
+	},
+	"extraAddFilter": {
+		"message": "Додати фільтр"
+	},
+	"extraLearnMore": {
+		"message": "Докладніше"
+	},
+	"extraRuleSyntax": {
+		"message": "Синтаксис правил"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "джерело призначення тип дія."
+	},
+	"extraRuleDefinition": {
+		"message": "Визначення правила"
+	},
+	"extraRule": {
+		"message": "Правило"
+	},
+	"extraEditRule": {
+		"message": "Змінити тимчасове правило"
+	},
+	"extraAddRrule": {
+		"message": "Додати тимчасове правило"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Розширені налаштування користувача"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Блокувати елементи мультимедія розміром більше"
+	},
+	"extraSetting": {
+		"message": "Налаштування"
+	},
+	"extraEditSetting": {
+		"message": "Змінити налаштування"
+	},
+	"extraAddSetting": {
+		"message": "Додати налаштування"
+	},
+	"extraSite": {
+		"message": "Сайт"
+	},
+	"extraAllowOnSites": {
+		"message": "Дозволити рекламу на цих сайтах"
+	},
+	"extraEditSite": {
+		"message": "Змінити сайт"
+	},
+	"extraAddSite": {
+		"message": "Додати сайт"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Поведінка за замовчуванням"
+	},
+	"extraPrivacy": {
+		"message": "Конфіденційність"
+	},
+	"3pGroupDefault": {
+		"message": "Мережеві фільтри та фільтри відображення"
+	},
+	"1pPageName": {
+		"message": " Мої фільтри"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Неможливо ввімкнути захист цього сеансу"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Поки не додано жодного сайту"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Увімкнути блокування рекламних вставок"
+	},
+	"shortcutsPageName": {
+		"message": "Ярлики"
+	},
+	"popupTipDashboard": {
+		"message": "Відкрити панель керування"
+	},
+	"popupTipZapper": {
+		"message": "Ввімкнути режим приховування елементів"
+	},
+	"popupTipPicker": {
+		"message": "Ввімкнути режим вибору елементів"
+	},
+	"popupTipLog": {
+		"message": "Відкрити засіб ведення журналу"
+	},
+	"popupTipNoPopups": {
+		"message": "Блокування всіх спливаючих вікон на цьому сайті"
+	},
+	"popupTipNoPopups1": {
+		"message": "Натисніть, щоб блокувати всі спливаючі вікна на цьому сайті"
+	},
+	"popupTipNoPopups2": {
+		"message": "Натисніть, щоб більше не блокувати всі спливаючі вікна на цьому сайті"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Блокування великих мультимедійних елементів на цьому сайті"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Натисніть, щоб блокувати великі мультимедійні елементи на цьому сайті"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Натисніть, щоб більше не блокувати великі мультимедійні елементи на цьому сайті"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Косметичні фільтри на цьому сайті"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Натисніть, щоб вимкнути косметичні фільтри на цьому сайті"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Натисніть, щоб ввімкнути косметичні фільтри на цьому сайті"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Блокування віддалених шрифтів на цьому сайті"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Натисніть, щоб блокувати віддалені шрифти на цьому сайті"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Натисніть, щоб більше не блокувати віддалені шрифти на цьому сайті"
+	},
+	"popupTipGlobalRules": {
+		"message": "Глобальні правила: у цьому стовпці наведено правила, які діють на всіх сайтах."
+	},
+	"popupTipLocalRules": {
+		"message": "Локальні правила: у цьому стовпці наведено правила, які діють лише на поточному сайті.\nЛокальні правила мають вищий пріоритет, ніж глобальні."
+	},
+	"popupTipSaveRules": {
+		"message": "Натисніть, щоб зробити зміни постійними."
+	},
+	"popupTipRevertRules": {
+		"message": "Натисніть, щоб скасувати зміни."
+	},
+	"popupAnyRulePrompt": {
+		"message": "усе"
+	},
+	"popupImageRulePrompt": {
+		"message": "зображення"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "сторонні"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "сторонні: css/зображення"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "вбудовані скрипти"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "власні скрипти"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "сторонні скрипти"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "сторонні фрейми"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "підключені домени"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} з {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Блокувати мультимедійні елементи, більші за {{input:number}} КБ"
+	},
+	"3pImport": {
+		"message": "Імпорт..."
+	},
+	"loggerCurrentTab": {
+		"message": "Поточна вкладка"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Контекст:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Тип:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Динамічна фільтрація URL-адрес"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Статична фільтрація"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} запити мережі типу «{{type}}», {{br}}якщо URL-адреса збігається з {{url}}, {{br}}а джерело — {{origin}},{{br}}{{importance}} є відповідний фільтр винятку."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Блокувати"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Дозволити"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "тип: ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "будь-який тип"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "джерело: ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "будь-яке джерело"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "за винятком випадків, коли"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "навіть якщо"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Статичний фільтр <code>{{filter}}</code> знайдено в:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Статичний фільтр <code>{{filter}}</code> не знайдено в жодному з активних списків фільтрів."
+	},
+	"aboutIssues": {
+		"message": "Відстеження проблем"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Введіть сполучення клавіш"
+	},
+	"assetViewerPageName": {
+		"message": "Перегляд ресурсів uBlock? ?"
+	},
+	"popupTipNoScripting1": {
+		"message": "Натисніть, щоб блокувати JavaScript на цьому сайті"
+	},
+	"popupTipNoScripting2": {
+		"message": "Натисніть, щоб дозволити JavaScript на цьому сайті"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "Блокувати JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "Зовнішні залежності (сумісно з GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "Перезавантажити вміст вкладки"
+	},
+	"loggerDomInspectorTip": {
+		"message": "Увімкнути інспектор DOM"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Увімкнути спливаючу панель"
+	},
+	"loggerInfoTip": {
+		"message": "Вікі uBlock Origin: засіб ведення журналу"
+	},
+	"loggerClearTip": {
+		"message": "Видалити дані засобу ведення журналу"
+	},
+	"loggerPauseTip": {
+		"message": "Призупинити ведення журналу (відхиляти всі вхідні дані)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Відновити ведення журналу"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Увімкнення фільтрації під час ведення журналу"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Параметри фільтрації засобу ведення журналу"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Немає"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "з подіями"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "заблоковано"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "дозволено"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "власні"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "сторонні"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Детальніше"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Фільтр"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Список фільтрів"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Правило"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Контекст"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Кореневий контекст"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Приналежність"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Тип"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL-адреса"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Записи засобу ведення журналу, які не відповідають цим трьом критеріям, буде автоматично відхилено:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Зберігати записи за останні {{input}} хв"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Максимальна кількість завантажень сторінки на вкладку: {{input}}"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Максимальна кількість записів на вкладку: {{input}}"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Кількість рядків запису у вертикально розгорнутому поданні: {{input}}"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Приховати стовпці:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}}: час"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}}: фільтр/правило"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}}: контекст"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}}: приналежність"
+	},
+	"loggerExportFormatList": {
+		"message": "Список"
+	},
+	"loggerExportFormatTable": {
+		"message": "Таблиця"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Звичайний текст"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Розмітка"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Блокування прокрутки"
+	},
+	"genericCopyToClipboard": {
+		"message": "Копіювати в буфер обміну"
+	}
+}

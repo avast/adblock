@@ -1,1 +1,1 @@
-# adblock
+Avast browser extension for ad blocking based on uBlock Origin (https://github.com/gorhill/uBlock).

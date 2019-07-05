@@ -1,0 +1,467 @@
+{
+	"popupExtraMoreInformation": {
+		"message": "Més informació"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "La publicitat està bloquejada en aquest lloc"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "La publicitat està permesa en aquest lloc"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "No es pot habilitar la protecció en aquest lloc"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Més opcions"
+	},
+	"popupExtraLessOptions": {
+		"message": "Menys opcions"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Vegeu la llista de tots els llocs permesos"
+	},
+	"popupAdvancedSettings": {
+		"message": "Configuració avançada"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Publicitat bloquejada en aquesta pàgina"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Publicitat bloquejada en total"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Llista de llocs permesos"
+	},
+	"extraSlider0": {
+		"message": "No bloquegis la publicitat"
+	},
+	"extraSlider50": {
+		"message": "Bloqueig de publicitat moderat"
+	},
+	"extraSlider100": {
+		"message": "Bloqueig de publicitat màxim"
+	},
+	"extraIndexTitle": {
+		"message": "Adblock"
+	},
+	"extraIndexDescription": {
+		"message": "Bloquegeu la publicitat per navegar de manera més ràpida i segura"
+	},
+	"extraGeneralSettings": {
+		"message": "Configuració general"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Administreu la informació que mostra Adblock"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Publicitat i filtres de privacitat de tercers"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Administreu els vostres filtres personalitzats"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Llista de les vostres regles de filtratge dinàmic"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Llista dels llocs on es permet la publicitat"
+	},
+	"extraIndexHeader": {
+		"message": "Configuració avançada de Adblock"
+	},
+	"extraIndexFooter": {
+		"message": "Desenvolupat per uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Mostra'n més"
+	},
+	"extraBtnImport": {
+		"message": "importa"
+	},
+	"extraBtnExport": {
+		"message": "exporta"
+	},
+	"extraBtnAdd": {
+		"message": "afegeix"
+	},
+	"extraBtnCancel": {
+		"message": "cancel·la"
+	},
+	"extraBtnEdit": {
+		"message": "Edita"
+	},
+	"extraBtnRemove": {
+		"message": "Suprimeix"
+	},
+	"extraBtnUpdateAll": {
+		"message": "actualitza-ho tot"
+	},
+	"extraLabelFilter": {
+		"message": "Filtre"
+	},
+	"extraMyCustomFilter": {
+		"message": "Els meus filtres personalitzats"
+	},
+	"extraManageFilters": {
+		"message": "Administra els filtres"
+	},
+	"extraAdsFilters": {
+		"message": "Filtres de publicitat"
+	},
+	"extraEditFilter": {
+		"message": "Edita el filtre"
+	},
+	"extraAddFilter": {
+		"message": "Afegeix un filtre"
+	},
+	"extraLearnMore": {
+		"message": "Més informació"
+	},
+	"extraRuleSyntax": {
+		"message": "Sintaxi de regla"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "origen destinació tipus acció."
+	},
+	"extraRuleDefinition": {
+		"message": "Definició de la regla"
+	},
+	"extraRule": {
+		"message": "Regla"
+	},
+	"extraEditRule": {
+		"message": "Edita la regla provisional"
+	},
+	"extraAddRrule": {
+		"message": "Afegeix una regla provisional"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Configuració d'usuari avançada"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Bloqueja elements de mitjans superiors a"
+	},
+	"extraSetting": {
+		"message": "Configuració"
+	},
+	"extraEditSetting": {
+		"message": "Edita la configuració"
+	},
+	"extraAddSetting": {
+		"message": "Afegeix configuració"
+	},
+	"extraSite": {
+		"message": "Lloc"
+	},
+	"extraAllowOnSites": {
+		"message": "Permet publicitat en aquests llocs"
+	},
+	"extraEditSite": {
+		"message": "Edita el lloc"
+	},
+	"extraAddSite": {
+		"message": "Afegeix un lloc"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Comportament predeterminat"
+	},
+	"extraPrivacy": {
+		"message": "Privacitat"
+	},
+	"3pGroupDefault": {
+		"message": "Filtres cosmètics i de xarxa"
+	},
+	"1pPageName": {
+		"message": " Els meus filtres"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Activa el bloqueig d'anuncis intersticials"
+	},
+	"shortcutsPageName": {
+		"message": "Dreceres"
+	},
+	"popupTipDashboard": {
+		"message": "Obre el quadre de comandament"
+	},
+	"popupTipZapper": {
+		"message": "Entra en mode comandament d'elements"
+	},
+	"popupTipPicker": {
+		"message": "Entra en mode selector d'elements"
+	},
+	"popupTipLog": {
+		"message": "Obre l'enregistrador"
+	},
+	"popupTipNoPopups": {
+		"message": "Commuta el bloqueig de totes les finestres emergents en aquest lloc"
+	},
+	"popupTipNoPopups1": {
+		"message": "Feu clic per bloquejar totes les finestres emergents en aquest lloc"
+	},
+	"popupTipNoPopups2": {
+		"message": "Feu clic per deixar de bloquejar totes les finestres emergents en aquest lloc"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Commuta el bloqueig d'elements multimèdia de mida gran en aquest lloc"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Feu clic per bloquejar els elements multimèdia de mida gran en aquest lloc"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Feu clic per deixar de bloquejar els elements multimèdia de mida gran en aquest lloc"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Commuta el filtratge estètic en aquest lloc"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Feu clic per inhabilitar el filtratge estètic en aquest lloc"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Feu clic per habilitar el filtratge estètic en aquest lloc"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Commuta el bloqueig de fonts remotes en aquest lloc"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Feu clic per bloquejar les fonts remotes en aquest lloc"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Feu clic per deixar de bloquejar les fonts remotes en aquest lloc"
+	},
+	"popupTipGlobalRules": {
+		"message": "Regles globals: en aquesta columna figuren les regles aplicables a tots els llocs."
+	},
+	"popupTipLocalRules": {
+		"message": "Regles locals: en aquesta columna figuren les regles aplicables únicament al lloc actual. Les regles locals reemplacen les regles globals."
+	},
+	"popupTipSaveRules": {
+		"message": "Feu clic perquè els canvis siguin permanents."
+	},
+	"popupTipRevertRules": {
+		"message": "Feu clic per desfer els canvis."
+	},
+	"popupAnyRulePrompt": {
+		"message": "tot"
+	},
+	"popupImageRulePrompt": {
+		"message": "imatges"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "tercer"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "css/imatges de tercers"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "scripts en línia"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "scripts propis"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "scripts de tercers"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "marcs de tercer"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "dominis connectats"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} de {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Bloqueja els elements multimèdia més grans de {{input:number}} kB"
+	},
+	"3pImport": {
+		"message": "Importa..."
+	},
+	"loggerCurrentTab": {
+		"message": "Pestanya actual"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Context:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Tipus:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Filtratge d'URL dinàmic"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Filtratge estàtic"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} sol·licituds de xarxa de {{type}} {{br}}l'URL del qual coincideix amb {{url}} {{br}}i que s'origina a {{origin}},{{br}}{{importance}} hi ha un filtre d'excepció coincident."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Bloqueja"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Permet"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "tipus ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "qualsevol tipus"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "de ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "de qualsevol lloc"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "excepte quan"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "fins i tot si"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "S'ha trobat el filtre estàtic <code>{{filter}}</code> a:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "No s'ha pogut trobar el filtre estàtic <code>{{filter}}</code> a cap de les llistes de filtres habilitades actualment"
+	},
+	"aboutIssues": {
+		"message": "Rastrejador de problemes"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Escriviu una drecera"
+	},
+	"assetViewerPageName": {
+		"message": "Visor de recursos d'uBlock? ?"
+	},
+	"popupTipNoScripting1": {
+		"message": "Feu clic per inhabilitar JavaScript en aquest lloc"
+	},
+	"popupTipNoScripting2": {
+		"message": "Feu clic per deixar d'inhabilitar JavaScript en aquest lloc"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "Inhabilita JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "Dependències externes (compatibles amb GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "Torna a carregar el contingut de la pestanya"
+	},
+	"loggerDomInspectorTip": {
+		"message": "Commuta l'inspector DOM"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Commuta el panell emergent"
+	},
+	"loggerInfoTip": {
+		"message": "Wiki d'uBlock Origin: l'enregistrador"
+	},
+	"loggerClearTip": {
+		"message": "Esborra l'enregistrador"
+	},
+	"loggerPauseTip": {
+		"message": "Posa en pausa l'enregistrador (descarta totes les dades entrants)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Cancel·la la pausa"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Commuta el filtratge de l'enregistrador"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Opcions de filtratge de l'enregistrador"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "No"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "activitat intensa"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "bloquejat"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "permès"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "propi"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "tercer"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Detalls"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Filtre"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Llista de filtres"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Regla"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Context"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Context arrel"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Pertinença"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Tipus"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Les entrades de l'enregistrador que no compleixin les tres condicions següents es descartaran automàticament:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Manteniu les entrades dels darrers {{input}} minuts"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Manteniu {{input}} càrregues de pàgina per pestanya com a màxim"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Manteniu {{input}} entrades per pestanya com a màxim"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Utilitzeu {{input}} línies per entrada en mode ampliat en vertical"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Amagueu les columnes:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} Hora"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} Filtre/regla"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} Context"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} Pertinença"
+	},
+	"loggerExportFormatList": {
+		"message": "Llista"
+	},
+	"loggerExportFormatTable": {
+		"message": "Taula"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Sense format"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Amb anotacions"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Commuta el desplaçament bloquejat"
+	},
+	"genericCopyToClipboard": {
+		"message": "Copia al porta-retalls"
+	}
+}

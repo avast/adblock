@@ -1,0 +1,875 @@
+{
+	"extShortDesc": {
+		"message": "Visbeidzot efektīvs bloķētājs. Vienkārši izmantot centrālajam procesoram un atmiņai."
+	},
+	"dashboardName": {
+		"message": "Adblock — informācijas panelis"
+	},
+	"settingsPageName": {
+		"message": "Iestatījumi"
+	},
+	"3pPageName": {
+		"message": "Trešās puses filtri"
+	},
+	"rulesPageName": {
+		"message": "Mani noteikumi"
+	},
+	"whitelistPageName": {
+		"message": "Baltais saraksts"
+	},
+	"statsPageName": {
+		"message": "Adblock — nolasītājs"
+	},
+	"aboutPageName": {
+		"message": "Par"
+	},
+	"advancedSettingsPageName": {
+		"message": "Papildu iestatījumi"
+	},
+	"pickerCreate": {
+		"message": "Izveidot"
+	},
+	"pickerPick": {
+		"message": "Paņemt"
+	},
+	"pickerQuit": {
+		"message": "Iziet"
+	},
+	"pickerPreview": {
+		"message": "Priekšskatījums"
+	},
+	"pickerNetFilters": {
+		"message": "Tīkla filtri"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Kosmētiskie filtri"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Klikšķis, Ctrl-klikšķis"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Bloķēt elementu"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Slēpt bloķētu elementu vietturus"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Rādīt bloķēto pieprasījumu skaitu uz ikonas"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Izslēgt rīku padomus"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Izmantojiet konteksta izvēlni, ja tas ir piemēroti"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Draudzīgs daltoniķiem"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Iespējot mākoņa krātuves atbalstu"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Es esmu pieredzējis lietotājs (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>nepieciešama lasīšana</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "papildu iestatījumi"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Atspējot iepriekšēju paņemšanu (lai novērstu jebkuru savienojumu bloķētiem tīkla pieprasījumiem)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Atspējot hipersaites pārbaudi"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "Neļaut WebRTC nopludināt vietējās IP adreses"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Noklusējuma rīcība"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Šīs noklusējuma darbības var tikt ignorētas konkrētai vietnei"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Atspējot kosmētisko filtrēšanu"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Bloķēt attālos fontus"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "Bloķēt CSP ziņojumus"
+	},
+	"settingsStorageUsed": {
+		"message": "Izmantotā krātus: {{value}} baiti"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Pēdējā atjaunošana:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Pēdējā dublēšana:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} tīkla filtri ＋ {{cosmeticFilterCount}} kosmētiskie filtri no:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} izmantoti no {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Automātiskās atjaunināšanas filtru saraksti"
+	},
+	"3pUpdateNow": {
+		"message": "Atjaunināt tūlīt"
+	},
+	"3pPurgeAll": {
+		"message": "Iztīrīt visas kešatmiņas"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Parsēt un ieviest kosmētiskos filtrus"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Ar šo opciju tiek iespējota parsēšana un ieviešana <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">ar Adblock Plus saderīgiem &ldquo;elementu slēpšanas&rdquo; filtriem</a>. Šie filtri būtībā ir kosmētiski, tiek izmantoti to elementu paslēpšanai tīmekļa lapā, kuri tiek uzskatīti par vizuālu traucējumu un kurus nevar bloķēt ar tīkla pieprasījuma bāzes filtrēšanas programmu.</p><p>Ieslēdzot šo līdzekli, palielinās Adblock atmiņas lietojuma apjoms.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Ignorēt vispārējos kosmētiskos filtrus"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Vispārēji kosmētiskie filtri ir kosmētiski filtri, ko paredzēts izmantot visās tīmekļa vietnēs.<p>Kaut arī kosmētiskos filtrus efektīvi apstrādā Adblock, tie joprojām var ievērojami tērēt atmiņu un pārslogot centrālo procesoru dažās tīmekļa lapās, it īpaši lielās un sen pastāvošās.<p>Iespējojot šo opciju, tiek samazināta atmiņas un centrālā procesora pārslodze, kas tīmekļa lapām tiek pievienota vispārēju kosmētisko filtru apstrādes gadījumā, kā arī samazināts pašas Adblock atmiņas patēriņa apjoms.<p>Ieteicams šo opciju iespējot mazāk jaudīgās ierīcēs."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Bloķēto resursdatoru saraksti"
+	},
+	"3pApplyChanges": {
+		"message": "Pielietot izmaiņas"
+	},
+	"3pGroupAds": {
+		"message": "Reklāmas"
+	},
+	"3pGroupPrivacy": {
+		"message": "Privātums"
+	},
+	"3pGroupMalware": {
+		"message": "Ļaunprogrammatūras domēni"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Apgrūtinājumi"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Universāls"
+	},
+	"3pGroupRegions": {
+		"message": "Reģioni, valodas"
+	},
+	"3pGroupCustom": {
+		"message": "Pielāgots"
+	},
+	"3pExternalListsHint": {
+		"message": "Viens URL katrā rindā. Rindas, kurām ir prefikss &lsquo;!&rsquo;, tiks ignorētas. Nederīgie URL tiks klusām ignorēti."
+	},
+	"3pExternalListObsolete": {
+		"message": "Novecojis."
+	},
+	"3pLastUpdate": {
+		"message": "Pēdējoreiz atjaunināts: {{ago}}.\nNoklikšķiniet, lai atjauninātu piespiedu kārtā."
+	},
+	"3pUpdating": {
+		"message": "Atjaunina..."
+	},
+	"3pNetworkError": {
+		"message": "Tīkla kļūda neļāva atjaunināt resursu."
+	},
+	"1pFormatHint": {
+		"message": "Viens filtrs katrai rindai. Filtrs var būt vienkāršs resursdatora nosaukums vai ar Adblock Plus saderīgs filtrs. Rindas ar prefiksu &lsquo;!&rsquo; tiks ignorētas."
+	},
+	"1pImport": {
+		"message": "Importēt un pievienot"
+	},
+	"1pExport": {
+		"message": "Eksportēt"
+	},
+	"1pExportFilename": {
+		"message": "Adblock-static-filters_{{datetime}}.txt"
+	},
+	"1pApplyChanges": {
+		"message": "Pielietot izmaiņas"
+	},
+	"rulesPermanentHeader": {
+		"message": "Pastāvīgie noteikumi"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Pagaidu noteikumi"
+	},
+	"rulesRevert": {
+		"message": "Atjaunot iepriekšējo"
+	},
+	"rulesCommit": {
+		"message": "Iesniegt"
+	},
+	"rulesEdit": {
+		"message": "Rediģēt"
+	},
+	"rulesEditSave": {
+		"message": "Saglabāt"
+	},
+	"rulesEditDiscard": {
+		"message": "Atmest"
+	},
+	"rulesImport": {
+		"message": "Importēt no faila..."
+	},
+	"rulesExport": {
+		"message": "Eksportēt uz failu"
+	},
+	"rulesDefaultFileName": {
+		"message": "Adblock-dynamic-rules_{{datetime}}.txt"
+	},
+	"rulesHint": {
+		"message": "Jūsu dinamisko filtrēšanas kārtulu saraksts."
+	},
+	"rulesFormatHint": {
+		"message": "Kārtulas sintakse: <code>avota mērķa tipa darbība</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>pilna dokumentācija</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "Baltā saraksta direktīvas norāda, kurās tīmekļa lapās Adblock ir jāatspējo. Viens ieraksts katrā rindā. Nederīgās direktīvas tiks klusām ignorētas un atzīmētas ar komentāru."
+	},
+	"whitelistImport": {
+		"message": "Importēt un pievienot"
+	},
+	"whitelistExport": {
+		"message": "Eksportēt"
+	},
+	"whitelistExportFilename": {
+		"message": "Adblock-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Pielietot izmaiņas"
+	},
+	"logRequestsHeaderType": {
+		"message": "Tips"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Domēns"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Filtrs"
+	},
+	"logAll": {
+		"message": "Viss"
+	},
+	"logBehindTheScene": {
+		"message": "Aiz skatuves"
+	},
+	"logFilterPrompt": {
+		"message": "filtrēt žurnāla ierakstus"
+	},
+	"logMaxEntriesTip": {
+		"message": "Maksimālais žurnāla ierakstu skaits"
+	},
+	"aboutChangelog": {
+		"message": "Mainīt žurnālu"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "Atbalsts"
+	},
+	"aboutCode": {
+		"message": "Avota kods (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Atbalstītāji"
+	},
+	"aboutBackupDataButton": {
+		"message": "Atpakaļ uz failu"
+	},
+	"aboutBackupFilename": {
+		"message": "Adblock-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Atjaunot no faila..."
+	},
+	"aboutResetDataButton": {
+		"message": "Atjaunot noklusējuma iestatījumus..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Visi iestatījumi tiks pārrakstīti, izmantojot {{time}} dublētos datus, un Adblock tiks restartēts.\n\nVai pārrakstīt visus esošos iestatījumus, izmantojot dublētos datus?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Datus nevarēja nolasīt vai tie nav derīgi"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Visi jūsu iestatījumi tiks noņemti, un Adblock tiks restartēts.\n\nVai Adblock atiestatīt uz rūpnīcas iestatījumiem?"
+	},
+	"errorCantConnectTo": {
+		"message": "Tīkla kļūda: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "Adblock: vai šo URL pievienot jūsu pielāgoto filtru sarakstam?\n\nNosaukums: “{{title}}”\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "pirms minūtes"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "pirms {{value}} minūtēm"
+	},
+	"elapsedOneHourAgo": {
+		"message": "pirms stundas"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "pirms {{value}} stundām"
+	},
+	"elapsedOneDayAgo": {
+		"message": "pirms dienas"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "pirms {{value}} dienām"
+	},
+	"showDashboardButton": {
+		"message": "Rādīt informācijas paneli"
+	},
+	"showNetworkLogButton": {
+		"message": "Rādīt nolasītāju"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "izslēgts"
+	},
+	"docblockedPrompt1": {
+		"message": "Adblock neļāva ielādēt šo lapu:"
+	},
+	"docblockedPrompt2": {
+		"message": "Šī filtra dēļ"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "bez parametriem"
+	},
+	"docblockedFoundIn": {
+		"message": "Atrasts šeit:"
+	},
+	"docblockedBack": {
+		"message": "Doties atpakaļ"
+	},
+	"docblockedClose": {
+		"message": "Aizvērt šo logu"
+	},
+	"docblockedProceed": {
+		"message": "Atspējot {{hostname}} stingro bloķēšanu"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Īslaicīgi"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Pastāvīgi"
+	},
+	"cloudPush": {
+		"message": "Eksportēt uz mākoņa krātuvi"
+	},
+	"cloudPull": {
+		"message": "Importēt no mākoņa krātuves"
+	},
+	"cloudPullAndMerge": {
+		"message": "Importēt no mākoņa krātuves un sapludināt ar pašreizējiem iestatījumiem"
+	},
+	"cloudNoData": {
+		"message": "...\n..."
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Šīs ierīces nosaukums:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Brīdinājums! Mainot papildu iestatījumus, jūs pats uzņematies risku."
+	},
+	"genericSubmit": {
+		"message": "Iesniegt"
+	},
+	"genericApplyChanges": {
+		"message": "Pielietot izmaiņas"
+	},
+	"genericRevert": {
+		"message": "Atjaunot iepriekšējo"
+	},
+	"genericBytes": {
+		"message": "baiti"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Īslaicīgi atļaut lielus multivides elementus"
+	},
+	"dummy": {
+		"message": "Šai ievadnei ir jābūt pēdējai"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Papildinformācija"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Reklāmas šajā vietnē tiek bloķētas"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Reklāmas šajā vietnē ir atļautas"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Nevar iespējot aizsardzību šajā vietnē"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Vairāk opciju"
+	},
+	"popupExtraLessOptions": {
+		"message": "Mazāk opciju"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Skatīt atļauto vietņu sarakstu"
+	},
+	"popupAdvancedSettings": {
+		"message": "Papildu iestatījumi"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Šajā lapā bloķētās reklāmas"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Bloķētās reklāmas kopumā"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Atļauto vietņu saraksts"
+	},
+	"extraSlider0": {
+		"message": "Nebloķēt reklāmas"
+	},
+	"extraSlider50": {
+		"message": "Mērena reklāmu bloķēšana"
+	},
+	"extraSlider100": {
+		"message": "Maksimāla reklāmu bloķēšana"
+	},
+	"extraIndexTitle": {
+		"message": "#uzruna#"
+	},
+	"extraIndexDescription": {
+		"message": "Bloķēt reklāmas ātrākai un drošākai pārlūkošanai"
+	},
+	"extraGeneralSettings": {
+		"message": "Vispārējie iestatījumi"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Pārvaldīt Adblock rādīto informāciju"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Reklāmas un privātuma trešo pušu filtri"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Pārvaldiet savus pielāgotos filtrus"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Jūsu dinamisko filtrēšanas kārtulu saraksts"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Saraksts ar vietnēm, kurās reklāmas ir atļautas"
+	},
+	"extraIndexHeader": {
+		"message": "Adblock papildu iestatījumi"
+	},
+	"extraIndexFooter": {
+		"message": "Nodrošina uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Rādīt vairāk"
+	},
+	"extraBtnImport": {
+		"message": "importēt"
+	},
+	"extraBtnExport": {
+		"message": "eksportēt"
+	},
+	"extraBtnAdd": {
+		"message": "pievienot"
+	},
+	"extraBtnCancel": {
+		"message": "atcelt"
+	},
+	"extraBtnEdit": {
+		"message": "Rediģēt"
+	},
+	"extraBtnRemove": {
+		"message": "Noņemt"
+	},
+	"extraBtnUpdateAll": {
+		"message": "atjaunināt visu"
+	},
+	"extraLabelFilter": {
+		"message": "Filtrs"
+	},
+	"extraMyCustomFilter": {
+		"message": "Mani pielāgotie filtri"
+	},
+	"extraManageFilters": {
+		"message": "Pārvaldīt filtrus"
+	},
+	"extraAdsFilters": {
+		"message": "Reklāmu filtri"
+	},
+	"extraEditFilter": {
+		"message": "Rediģēt filtru"
+	},
+	"extraAddFilter": {
+		"message": "Pievienot filtru"
+	},
+	"extraLearnMore": {
+		"message": "Uzzināt vairāk"
+	},
+	"extraRuleSyntax": {
+		"message": "Kārtulas sintakse"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "avota mērķa tipa darbība."
+	},
+	"extraRuleDefinition": {
+		"message": "Kārtulas definīcija"
+	},
+	"extraRule": {
+		"message": "Kārtula"
+	},
+	"extraEditRule": {
+		"message": "Rediģēt pagaidu kārtulu"
+	},
+	"extraAddRrule": {
+		"message": "Pievienot pagaidu kārtulu"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Papildu lietotāja iestatījumi"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Bloķēt multivides elementus, kas lielāki par"
+	},
+	"extraSetting": {
+		"message": "Iestatījums"
+	},
+	"extraEditSetting": {
+		"message": "Rediģēt iestatījumu"
+	},
+	"extraAddSetting": {
+		"message": "Pievienot iestatījumu"
+	},
+	"extraSite": {
+		"message": "Vietne"
+	},
+	"extraAllowOnSites": {
+		"message": "Atļaut reklāmas šajās vietnēs"
+	},
+	"extraEditSite": {
+		"message": "Rediģēt vietni"
+	},
+	"extraAddSite": {
+		"message": "Pievienot vietni"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Noklusējuma rīcība"
+	},
+	"extraPrivacy": {
+		"message": "Privātums"
+	},
+	"3pGroupDefault": {
+		"message": "Tīkla & kosmētikas filtri"
+	},
+	"1pPageName": {
+		"message": " Mani filtri"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Nevar iespējot aizsardzību šai sesijai"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Vēl nav pievienotas vietnes"
+	},
+	"extName": {
+		"message": "Adblock"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Iespējot iespiešanās bloķēšanu"
+	},
+	"shortcutsPageName": {
+		"message": "Saīsnes"
+	},
+	"popupTipDashboard": {
+		"message": "Atvērt informācijas paneli"
+	},
+	"popupTipZapper": {
+		"message": "Atvērt elementu iznīcināšanas režīmu"
+	},
+	"popupTipPicker": {
+		"message": "Atvērt elementu paņemšanas režīmu"
+	},
+	"popupTipLog": {
+		"message": "Atvērt nolasītāju"
+	},
+	"popupTipNoPopups": {
+		"message": "Pārslēgt visu uzniru bloķēšanu šai vietnei"
+	},
+	"popupTipNoPopups1": {
+		"message": "Noklikšķiniet, lai bloķētu visas uznires šai vietnei"
+	},
+	"popupTipNoPopups2": {
+		"message": "Noklikšķiniet, lai vairs nebloķētu visas uznires šajā vietnē"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Pārslēgt lielo multivides elementu bloķēšanu šai vietnei"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Noklikšķiniet, lai bloķētu lielos multivides elementus šajā vietnē"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Noklikšķiniet, lai vairs nebloķētu lielos multivides elementus šajā vietnē"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Pārslēgt kosmētisko filtrēšanu šai vietnei"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Noklikšķiniet, lai atspējotu kosmētisko filtrēšanu šajā vietnē"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Noklikšķiniet, lai iespējotu kosmētisko filtrēšanu šajā vietnē"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Pārslēgt attālo fontu bloķēšanu šai vietnei"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Noklikšķiniet, lai bloķētu attālos fontus šajā vietnē"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Noklikšķiniet, lai vairs nebloķētu attālos fontus šajā vietnē"
+	},
+	"popupTipGlobalRules": {
+		"message": "Globālās kārtulas: šī kolonna ir paredzēta kārtulām, kas attiecas uz visām vietnēm."
+	},
+	"popupTipLocalRules": {
+		"message": "Vietējās kārtulas: šī kolonna ir paredzēta kārtulām, kas attiecas tikai uz pašreizējo vietni.\nVietējās kārtulas ignorē globālās kārtulas."
+	},
+	"popupTipSaveRules": {
+		"message": "Noklikšķiniet, lai izmaiņas kļūtu neatgriezeniskas."
+	},
+	"popupTipRevertRules": {
+		"message": "Noklikšķiniet, lai atgrieztu savas izmaiņas."
+	},
+	"popupAnyRulePrompt": {
+		"message": "viss"
+	},
+	"popupImageRulePrompt": {
+		"message": "attēli"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "3. puse"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "3. puses css/attēli"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "iekļautie skripti"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "1. puses skripti"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "3. puses skripti"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "Trešās puses struktūras"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "savienotie domēni"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} no {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Bloķēt multivides elementus, kas lielāki par {{input:number}} kB"
+	},
+	"3pImport": {
+		"message": "Importēt..."
+	},
+	"loggerCurrentTab": {
+		"message": "Pašreizējā cilne"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Konteksts:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Tips:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Dinamiskā URL filtrēšana"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Statiskā filtrēšana"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} tīkla pieprasījumiem ar tipu {{type}} {{br}}, kura URL adrese atbilst {{url}} {{br}}un kura izcelsme ir {{origin}},{{br}}{{importance}} ir atbilstīgs izņēmuma filtrs."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Bloķēt"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Atļaut"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "tips ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "jebkurš tips"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "no ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "no jebkuras vietas"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "izņemot, kad"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "pat ja"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Statiskais filtrs <code>{{filter}}</code> atrasts šeit:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Statisko filtru <code>{{filter}}</code> nevarēja atrast nevienā no pašlaik iespējotajiem filtru sarakstiem"
+	},
+	"aboutIssues": {
+		"message": "Problēmu izsekotājs"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Ievadiet saīsni"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? Aktīva skatītājs"
+	},
+	"popupTipNoScripting1": {
+		"message": "Noklikšķiniet, lai atspējotu JavaScript šajā vietnē"
+	},
+	"popupTipNoScripting2": {
+		"message": "Noklikšķiniet, lai vairs neatspējotu JavaScript šajā vietnē"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "Atspējot JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "Ārējās atkarības (saderība ar GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "Atkārtoti ielādēt cilnes saturu"
+	},
+	"loggerDomInspectorTip": {
+		"message": "Pārslēgt DOM inspektoru"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Pārslēgt uzniru paneli"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock izcelsmes wiki: nolasītājs"
+	},
+	"loggerClearTip": {
+		"message": "Notīrīt nolasītāju"
+	},
+	"loggerPauseTip": {
+		"message": "Pauzēt nolasītāju (atmest visus ienākošos datus)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Pārtraukt nolasītāja pauzi"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Pārslēgt nolasītāja filtrēšanu"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Nolasītāja filtrēšanas opcijas"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Nav"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "notikumiem bagāts"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "bloķēts"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "atļauts"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "1. puse"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "3. puse"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Dati"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Filtrs"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Filtru saraksts"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Kārtula"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Konteksts"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Saknes konteksts"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Piesaiste"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Tips"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Nolasītāja ievadnes, kas neatbilst visiem trim tālāk norādītajiem nosacījumiem, tiks automātiski atmestas:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Saglabāt ievadnes no pēdējām {{input}} minūtēm"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Saglabāt ne vairāk kā {{input}} lapas ielādes katrai cilnei"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Saglabāt ne vairāk kā {{input}} ievadnes katrai cilnei"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Izmantot {{input}} rindas katrai ievadnei vertikālā izvērsuma režīmā"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Paslēpt kolonnas:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} laiks"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} filtrs/kārtula"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} konteksts"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} iesaiste"
+	},
+	"loggerExportFormatList": {
+		"message": "Saraksts"
+	},
+	"loggerExportFormatTable": {
+		"message": "Tabula"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Vienkāršs"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Pazemināšana"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Pārslēgt bloķēto ritināšanu"
+	},
+	"genericCopyToClipboard": {
+		"message": "Kopēt uz starpliktuvi"
+	}
+}

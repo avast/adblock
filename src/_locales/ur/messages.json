@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "بالآخر ایک مؤثر بلاکر، سی پی یو اور میموری پر آسان۔"
+	},
+	"dashboardName": {
+		"message": "#title # — ڈیش بورڈ"
+	},
+	"settingsPageName": {
+		"message": "سيٹنگز"
+	},
+	"3pPageName": {
+		"message": "فریق ثالث فلٹرز"
+	},
+	"rulesPageName": {
+		"message": "میرے قواعد"
+	},
+	"whitelistPageName": {
+		"message": "وائٹ لسٹ"
+	},
+	"statsPageName": {
+		"message": "#title # — لاگر"
+	},
+	"aboutPageName": {
+		"message": "متعلق"
+	},
+	"advancedSettingsPageName": {
+		"message": "اعلی درجے کی ترتیبات"
+	},
+	"pickerCreate": {
+		"message": "بنائیں"
+	},
+	"pickerPick": {
+		"message": "چنیں"
+	},
+	"pickerQuit": {
+		"message": "چھوڑیں"
+	},
+	"pickerPreview": {
+		"message": "پیش منظر"
+	},
+	"pickerNetFilters": {
+		"message": "نیٹ ورک فلٹرز"
+	},
+	"pickerCosmeticFilters": {
+		"message": "کاسمیٹک فلٹرز"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Click, Ctrl-click"
+	},
+	"pickerContextMenuEntry": {
+		"message": "بلاک عنصر"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "بلاک عناصر کے پلیس ہولڈرز چھپائیں"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "آئیکن پر بلاک کردہ درخواستوں کی تعداد دکھائیں"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "ٹول ٹپس کو غیر فعال بنائیں"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "جہاں مناسب ہو سیاق و سباق مینو کا استعمال کریں"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "کور رنگوں کے لیے مناسب"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "کلاؤڈ اسٹوریج معاونت فعال کریں"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "مجھے ایک اعلی درجے کے صارف <a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>) کے ذریعہ پڑھنا ضروری ہے</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "اعلی درجے کی ترتیبات"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "(بلاک شدہ نیٹ ورک کی درخواستوں کے ذریعے کسی بھی کنیکشن کو روکنے کے لئے) پہلے سے لانا غیر فعال بنائیں"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "ہائپرلنک آڈٹ کاری غیرفعال بنائیں"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "مقامی IP پتوں کا انکشاف کرنے سے WebRTC کو روکیں"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "طے شدہ طرز عمل"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "یہ طے شدہ طرزعمل فی سائٹ کی بنیاد پر سبقت لے سکتے ہیں"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "کاسمیٹک فلٹر کاری کو غیر فعال بنائیں"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "ریموٹ فانٹس بلاک کریں"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "CSP رپورٹس بلاک کریں"
+	},
+	"settingsStorageUsed": {
+		"message": "استعمال شدہ اسٹوریج: {{value}} بائٹس"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "آخری بحالی:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "آخری بیک اپ:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} نیٹ ورک فلٹرز + {{cosmeticFilterCount}} کاسمیٹک فلٹرز یہاں سے:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{total}} میں سے {{used}} استعمال شدہ"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "فلٹرز کی فہرستیں خودکار طور پر اپڈیٹ کریں"
+	},
+	"3pUpdateNow": {
+		"message": "ابھی اپ ڈيٹ کريں"
+	},
+	"3pPurgeAll": {
+		"message": "تمام کیسہ صاف کریں"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "کاسمیٹک فلٹرز کا تجزیہ و نفاذ کریں"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>یہ اختیار <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">ایڈ بلاک پلس-ہم آہنگ &ldquo;عناصر پوشیدگی&rdquo;فلٹرز</a>کے تجزیہ و نفاذ کو فعال کرتا ہے۔ یہ فلٹرز لازمی طور پر کاسمیٹک ہیں، یہ کسی ویب پیج میں ایسے عناصر کو چھپانے کا کام کرتا ہے جو صفحہ پر بصری پریشانی کا باعث ہو سکتے ہیں اور جنھیں نیٹ پر مبنی فلٹر انجن کے ذریعہ بلاک نہیں کیا جا سکتا۔</p><p>اس فیچر کو فعال کرنے سے Adblock کی میموری فوٹ پرنٹ میں اضافہ ہوتا ہے۔</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "عمومی کاسمیٹک فلٹرز نظرانداز کریں"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>عمومی کاسمیٹک فلٹرز وہ فلٹرز ہوتے ہیں جن کا اطلاق تمام ویب سائٹس پر کیا جانا ضروری ہے۔<p>اگرچہ Adblock کے ذریعہ مؤثر طریقے پر ہی کیوں نہ ہینڈل کیا جائے، عمومی کاسمیٹک فلٹرز اب بھی بعض ویب صفحوں پر، خاص طور پر بڑے اور دیر تک باقی رہنے والے صفحوں پر قابل پیمائش میموری اور سی پی یو اوورہیڈ میں معاونت کر سکتے ہیں۔<p>اس اختیار کو فعال کرنے سے عمومی کاسمیٹک فلٹرز کی ہینڈلنگ کے نتیجے میں ویب پیج پر میموری اور سی پی یو اوورہیڈ کے اضافہ کو دور کیا جا سکتا ہے، اور مزید Adblock کے میموری فوٹ پرنٹ کو بھی کم کیا جا سکتا ہے۔<p>سفارش کی جاتی ہے کی کم قوتی ڈیوائسز پر اس اختیار کو فعال کریں۔"
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "بلاک شدہ ہوسٹس کی فہرستیں"
+	},
+	"3pApplyChanges": {
+		"message": "تبدیلیاں لاگو کریں"
+	},
+	"3pGroupAds": {
+		"message": "اشتہارات"
+	},
+	"3pGroupPrivacy": {
+		"message": "رازداری"
+	},
+	"3pGroupMalware": {
+		"message": "مل ویئر ڈومینز"
+	},
+	"3pGroupAnnoyances": {
+		"message": "بد مزگیاں"
+	},
+	"3pGroupMultipurpose": {
+		"message": "کثیرالمقصد"
+	},
+	"3pGroupRegions": {
+		"message": "خطے، زبانیں"
+	},
+	"3pGroupCustom": {
+		"message": "حسب ضرورت"
+	},
+	"3pExternalListsHint": {
+		"message": "فی لائن ایک یوآرایل۔ &lsquo;&rsquo; سابقہ والی لائنیں نظرانداز کر دی جائیں گی۔ غلط یوآرایل کو خاموشی سے نظرانداز کردیا جائے گا۔"
+	},
+	"3pExternalListObsolete": {
+		"message": "تاریخ سے باہر."
+	},
+	"3pLastUpdate": {
+		"message": "آخری اپ ڈیٹ: {{ago}}. \nکسی اپ ڈیٹ کو بالجبر کرنے کے لیے کلک کریں۔"
+	},
+	"3pUpdating": {
+		"message": "اپ ڈيٹ کيا جا رہا ہے..."
+	},
+	"3pNetworkError": {
+		"message": "ایک نیٹ ورک کی خامی نے وسیلہ کو اپ ڈیٹ ہونے سے روک دیا۔"
+	},
+	"1pFormatHint": {
+		"message": "فی لائن ایک فلٹر. فلٹر ایک سادہ سا ہوسٹ نام، یا ایک ایڈ بلاک پلس-مطابقت ولا فلٹر ہو سکتا ہے۔ &lsquo;&rsquo; کے سابقہ والی لائنز نظرانداز نہیں کی جائیں گی۔"
+	},
+	"1pImport": {
+		"message": "امپورٹ اور شامل کریں"
+	},
+	"1pExport": {
+		"message": "ایکسپورٹ کریں"
+	},
+	"1pApplyChanges": {
+		"message": "تبدیلیاں لاگو کریں"
+	},
+	"rulesPermanentHeader": {
+		"message": "مستقل قواعد"
+	},
+	"rulesTemporaryHeader": {
+		"message": "عارضی قواعد"
+	},
+	"rulesRevert": {
+		"message": "پلٹ دیں"
+	},
+	"rulesCommit": {
+		"message": "سونپیں"
+	},
+	"rulesEdit": {
+		"message": "ترمیم کریں"
+	},
+	"rulesEditSave": {
+		"message": "محفوظ کریں"
+	},
+	"rulesEditDiscard": {
+		"message": "مسترد کریں"
+	},
+	"rulesImport": {
+		"message": "فائل سے امپورٹ کریں..."
+	},
+	"rulesExport": {
+		"message": "فائل میں ایکسپورٹ کریں"
+	},
+	"rulesHint": {
+		"message": "آپ کے متحرک فلٹرنگ کے قواعد کی فہرست۔"
+	},
+	"rulesFormatHint": {
+		"message": "اصول نحو: <code>ماخذ کے مقصود کی قسم کی کارروائی</code><a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>مکمل دستاویز سازی</a>)۔"
+	},
+	"whitelistPrompt": {
+		"message": "وائٹ لسٹ ہدایات تصریح کرتی ہیں کہ کن ویب صفحات پر Adblock کو غیرفعال ہونا چاہیے۔ فی لائن ایک اینٹری۔ غلط ہدایات کو خاموشی سے نظرانداز کردیا جائے گا اور ان کی وضاحت کی جائے گی۔"
+	},
+	"whitelistImport": {
+		"message": "امپورٹ اور شامل کریں"
+	},
+	"whitelistExport": {
+		"message": "ایکسپورٹ کریں"
+	},
+	"whitelistExportFilename": {
+		"message": "Adblock-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "تبدیلیاں لاگو کریں"
+	},
+	"logRequestsHeaderType": {
+		"message": "قسم"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "ڈومین"
+	},
+	"logRequestsHeaderURL": {
+		"message": "یو آر ایل"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "فلٹر"
+	},
+	"logAll": {
+		"message": "تمام"
+	},
+	"logBehindTheScene": {
+		"message": "پردے کے پیچھے"
+	},
+	"logFilterPrompt": {
+		"message": "فلٹر لاگ اندراجات"
+	},
+	"logMaxEntriesTip": {
+		"message": "لاگ اینٹریز کی زیادہ سے زیادہ تعداد"
+	},
+	"aboutChangelog": {
+		"message": "لاگ تبدیل کریں"
+	},
+	"aboutWiki": {
+		"message": "وکی"
+	},
+	"aboutSupport": {
+		"message": "سپورٹ"
+	},
+	"aboutCode": {
+		"message": "ماخذ کوڈ (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "اعانت دہندگان"
+	},
+	"aboutBackupDataButton": {
+		"message": "فائل میں بیک اپ کریں"
+	},
+	"aboutBackupFilename": {
+		"message": "Adblock-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "فائل سے بحال کریں..."
+	},
+	"aboutResetDataButton": {
+		"message": "ڈیفالٹ سیٹنگز ری سیٹ کریں..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "آپ کی تمام سیٹنگز {{time}} پر بیک اپ شدہ ڈیٹا کا استعمال کرتے ہوئے دوبارہ تحریر کی جائیں گی، اور Adblock دوبارہ شروع ہوگا۔\n\nبیک اپ شدہ ڈیٹا کا استعمال کرتے ہوئے تمام موجودہ سیٹنگز دوبارہ لکھی جائیں؟"
+	},
+	"aboutRestoreDataError": {
+		"message": "ڈیٹا پڑھا نہیں جاسکا یا غلط ہے"
+	},
+	"aboutResetDataConfirm": {
+		"message": "آپ کی تمام سیٹنگز کو ہٹا دیا جائے گا اور #title # دوبارہ شروع ہو گا۔\n\nAdblock کی فیکٹری سیٹنگز ری سیٹ کریں؟"
+	},
+	"errorCantConnectTo": {
+		"message": "نیٹ ورک کی خامی: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "Adblock: اپنی حسب ضرورت فلٹرز کی فہرستوں میں ذیل کے یو آر ایل کا اضافہ کریں؟\n\nٹائٹل: \"{{title}}\"\nیو آر ایل: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "ایک منٹ پہلے"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} منٹ پہلے"
+	},
+	"elapsedOneHourAgo": {
+		"message": "ایک گھنٹے پہلے"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} گھنٹے پہلے"
+	},
+	"elapsedOneDayAgo": {
+		"message": "ایک دن پہلے"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} دن پہلے"
+	},
+	"showDashboardButton": {
+		"message": "ڈیش بورڈ دکھائیں"
+	},
+	"showNetworkLogButton": {
+		"message": "لاگر دکھائیں"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "بند کریں"
+	},
+	"docblockedPrompt1": {
+		"message": "Adblock نے ذیل کے صفحہ کو لوڈ کرنے سے روک دیا ہے:"
+	},
+	"docblockedPrompt2": {
+		"message": "ذیل کے فلٹر کی وجہ سے"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "پیرا میٹر کے بغیر"
+	},
+	"docblockedFoundIn": {
+		"message": "میں پایا گیا:"
+	},
+	"docblockedBack": {
+		"message": "پیچھے جائیں"
+	},
+	"docblockedClose": {
+		"message": "یہ ونڈو بند کریں"
+	},
+	"docblockedProceed": {
+		"message": "{{hostname}} کے لیے سخت بلاکنگ غیر فعال کریں"
+	},
+	"docblockedDisableTemporary": {
+		"message": "عارضی طور پر"
+	},
+	"docblockedDisablePermanent": {
+		"message": "مستقل طور پر"
+	},
+	"cloudPush": {
+		"message": "کلاؤڈ سٹوریج پر ایکسپورٹ کریں"
+	},
+	"cloudPull": {
+		"message": "کلاؤڈ سٹوریج سے امپورٹ کریں"
+	},
+	"cloudPullAndMerge": {
+		"message": "کلاؤڈ سٹوریج سے امپورٹ کریں اور حالیہ ترتیبات کے ساتھ ضم کریں"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "اس آلہ کا نام:"
+	},
+	"advancedSettingsWarning": {
+		"message": "انتباہ! ان اعلی ترتیبات کو خود اپنے جوکھم پر تبدیل کریں۔"
+	},
+	"genericSubmit": {
+		"message": "جمع کروائيں"
+	},
+	"genericApplyChanges": {
+		"message": "تبدیلیاں لاگو کریں"
+	},
+	"genericRevert": {
+		"message": "پلٹ دیں"
+	},
+	"genericBytes": {
+		"message": "بائٹس"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "عارضی طور پر بڑے میڈیا عناصر کی اجازت دیں"
+	},
+	"dummy": {
+		"message": "اس اندراج کو لازماً آخری ہونا چاہیے"
+	},
+	"popupExtraMoreInformation": {
+		"message": "مزيد معلومات"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "اس سائٹ پر اشتہارات بلاک ہو گئی ہیں"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "اس سائٹ پر اشتہارات کی منظور شدہ ہیں"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "اس سائٹ پر تحفظ اہل نہیں بنایا جا سکتا"
+	},
+	"popupExtraMoreOptions": {
+		"message": "مزید اختیارات"
+	},
+	"popupExtraLessOptions": {
+		"message": "کم اختیارات"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "تمام اجازت یافتہ سائٹوں کی فہرست دیکھیں"
+	},
+	"popupAdvancedSettings": {
+		"message": "اعلی درجے کی ترتیبات"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "اس صفحہ پر مسدود اشتھارات"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "کُل مسدود اشتہارات"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "اجازت یافتہ سائٹوں کی فہرست"
+	},
+	"extraSlider0": {
+		"message": "اشتہارات مسدود نہ کریں"
+	},
+	"extraSlider50": {
+		"message": "معتدل انسداد اشتہار"
+	},
+	"extraSlider100": {
+		"message": "زیادہ سے زیادہ اشتہار کا انسداد "
+	},
+	"extraIndexDescription": {
+		"message": "تیز اور محفوظ براؤزنگ کے لئے اشتہارات مسدود کریں"
+	},
+	"extraGeneralSettings": {
+		"message": "عام ترتیبات"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Adblock کی دکھائی جانے والی معلومات کا نظم کریں"
+	},
+	"extra3pPageNameDesc": {
+		"message": "اشتہارات اور رازداری فریق ثالث فلٹرز"
+	},
+	"extra1pPageNameDesc": {
+		"message": "اپنے کسٹم فلٹرز کا نظم کریں"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "آپ کے متحرک فلٹر کاری قواعد کی فہرست"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "ان سائٹس کی فہرست جہاں اشتہارات منظور شدہ ہے"
+	},
+	"extraIndexHeader": {
+		"message": "Adblock اعلی درجے کی ترتیبات"
+	},
+	"extraIndexFooter": {
+		"message": "پاورڈ بائے یو بلاک اوریجین۔"
+	},
+	"extraShowMore": {
+		"message": "مزید دکھائیں"
+	},
+	"extraBtnImport": {
+		"message": "درآمد کریں"
+	},
+	"extraBtnExport": {
+		"message": "برآمد کریں"
+	},
+	"extraBtnAdd": {
+		"message": "شامل کریں"
+	},
+	"extraBtnCancel": {
+		"message": "منسوخ کریں"
+	},
+	"extraBtnEdit": {
+		"message": "ترمیم کریں"
+	},
+	"extraBtnRemove": {
+		"message": "ہٹائیں"
+	},
+	"extraBtnUpdateAll": {
+		"message": "تمام کو اپ ڈیٹ کریں"
+	},
+	"extraLabelFilter": {
+		"message": "فلٹر"
+	},
+	"extraMyCustomFilter": {
+		"message": "میرے حسب ضرورت فلٹرز"
+	},
+	"extraManageFilters": {
+		"message": "فلٹرز کا نظم کریں"
+	},
+	"extraAdsFilters": {
+		"message": "فلٹرز شامل کریں"
+	},
+	"extraEditFilter": {
+		"message": "فلٹر میں ترمیم کریں"
+	},
+	"extraAddFilter": {
+		"message": "فلٹر شامل کریں"
+	},
+	"extraLearnMore": {
+		"message": "مزید معلومات حاصل کریں"
+	},
+	"extraRuleSyntax": {
+		"message": "اصول ترکیب کلام"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "ماخذ منزل مقصود قسم عمل۔"
+	},
+	"extraRuleDefinition": {
+		"message": "قاعدہ کی تعریف"
+	},
+	"extraRule": {
+		"message": "اصول"
+	},
+	"extraEditRule": {
+		"message": "عارضی قاعدہ میں ترمیم کریں"
+	},
+	"extraAddRrule": {
+		"message": "عارضی قاعدہ شامل کریں"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "اعلی درجے کی صارف کی ترتیبات"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "سے بڑے میڈیا کی عناصر مسدود کریں"
+	},
+	"extraSetting": {
+		"message": "سیٹنگ"
+	},
+	"extraEditSetting": {
+		"message": "سیٹنگ میں ترمیم کریں"
+	},
+	"extraAddSetting": {
+		"message": "سیٹنگ شامل کریں"
+	},
+	"extraSite": {
+		"message": "سائٹ"
+	},
+	"extraAllowOnSites": {
+		"message": "ان سائٹس پر اشتہارات کی اجازت دیں"
+	},
+	"extraEditSite": {
+		"message": "سائٹ میں ترمیم کریں"
+	},
+	"extraAddSite": {
+		"message": "سائٹ شامل کریں"
+	},
+	"extraDefaultBehaviour": {
+		"message": "طے شدہ طرز عمل"
+	},
+	"extraPrivacy": {
+		"message": "رازداری"
+	},
+	"3pGroupDefault": {
+		"message": "نیٹ ورک اور کاسمیٹک فلٹر"
+	},
+	"1pPageName": {
+		"message": " میرے فلٹر"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "اس سیشن کے لیے تحفظ اہل نہیں بنایا جا سکتا"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "اب تک کوئی سائٹس شامل نہیں کی گئی"
+	},
+	"extraInterstitialBlocking": {
+		"message": "فاصلہ دار بلاکنگ کو فعال کریں"
+	},
+	"shortcutsPageName": {
+		"message": "شارٹ کٹس"
+	},
+	"popupTipDashboard": {
+		"message": "ڈیش بورڈ کھولیں"
+	},
+	"popupTipZapper": {
+		"message": "عنصر زپپر موڈ درج کریں"
+	},
+	"popupTipPicker": {
+		"message": "عنصر پکر موڈ درج کریں"
+	},
+	"popupTipLog": {
+		"message": "لاگر کھولیں"
+	},
+	"popupTipNoPopups": {
+		"message": "اس سائٹ کے لئے پاپ اپس کی تمام بلاکنگ کو ٹوگل کریں"
+	},
+	"popupTipNoPopups1": {
+		"message": "اس سائٹ پر تمام پاپ اپس کو بلاک کرنے کے لئے کلک کریں"
+	},
+	"popupTipNoPopups2": {
+		"message": "اس سائٹ پر تمام پاپ اپس کو مزید بلاک نہ کرنے کے لئے کلک کریں"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "اس سائٹ کے لئے بڑے میڈیا عناصر کی بلاکنگ کو ٹوگل کریں"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "اس سائٹ پر بڑے میڈیا عناصر کو بلاک کرنے کے لئے کلک کریں"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "اس سائٹ پر بڑے میڈیا کے عناصر کو مزید بلاک نہ کرنے کے لئے کلک کریں"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "اس سائٹ کے لئے کاسمیٹک فلٹرنگ کو ٹوگل کریں"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "اس سائٹ پر کاسمیٹک فلٹرنگ کو غیر فعال کرنے کے لئے کلک کریں"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "اس سائٹ پر کاسمیٹک فلٹرنگ کو فعال کرنے کے لئے کلک کریں"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "اس سائٹ کے لئے ریموٹ فانٹس کی بلاکنگ کو ٹوگل کریں"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "اس سائٹ پر ریموٹ فانٹس کو بلاک کرنے کے لئے کلک کریں"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "اس سائٹ پر ریموٹ فانٹس کو مزید بلاک نہ کرنے کے لئے کلک کریں"
+	},
+	"popupTipGlobalRules": {
+		"message": "عالمی قوانین: یہ کالم ان قوانین کے لئے ہے جو تمام سائٹس پر لاگو ہوتے ہیں۔"
+	},
+	"popupTipLocalRules": {
+		"message": "مقامی قوانین: یہ کالم ان قوانین کے لئے جو صرف موجودہ سائٹ کے لئے لاگو ہوتے ہیں۔"
+	},
+	"popupTipSaveRules": {
+		"message": "اپنی تبدیلیوں کو مستقل بنانے کے لئے کلک کریں۔"
+	},
+	"popupTipRevertRules": {
+		"message": "اپنی تبدیلیوں کو پلٹنے کے لئے کلک کریں"
+	},
+	"popupAnyRulePrompt": {
+		"message": "تمام"
+	},
+	"popupImageRulePrompt": {
+		"message": "تصاویر"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "فریق ثالث"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "فریق ثالث css/تصاویر"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "ان لائن سکرپٹس"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "پہلی پارٹی سکرپٹس"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "فریق ثالث سکرپٹس"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "فریق ثالث فریمز"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "ڈومینز مربوط"
+	},
+	"popupHitDomainCount": {
+		"message": "{{total}} میں سے {{count}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "{{input:number}} kB سے بڑے میڈیا کے عناصر کو بلاک کریں"
+	},
+	"3pImport": {
+		"message": "درآمد کریں..."
+	},
+	"loggerCurrentTab": {
+		"message": "موجودہ ٹیب"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "سیاق و سباق:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "قسم:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "متحرک URL فلٹرنگ"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "سٹیٹک فلٹرنگ"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{type}} {{br}} کی {{action}} نیٹ ورک کی درخواستیں جس کی URL کا پتہ {{url}} {{br}} سے میل کھاتا ہے اور جو {{origin}} کو وجود میں لاتا ہے،{{br}}{{importance}} ایک مماثل استثنا فلٹر ہے۔"
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "بلاک کریں"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "اجازت دیں"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "قسم ؟{{type}}؟"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "کوئی بھی قسم"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "سے ؟{{origin}}؟"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "کہیں سے بھی"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "اس کے علاوہ جب"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "اگرچہ"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "سٹیٹک فلٹر <code>{{filter}}</code> میں پایا گیا:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "سٹیٹک فلٹر <code>{{filter}}</code> موجودہ فعال فلٹر کی فہرستوں میں سے کسی میں بھی نہیں پایا جا سکا"
+	},
+	"aboutIssues": {
+		"message": "مسئلہ ٹریکر"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "شارٹ کٹ ٹائپ کریں"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock؟ ؟ اثاثہ ویور"
+	},
+	"popupTipNoScripting1": {
+		"message": "اس سائٹ پر JavaScript کو غیر فعال کرنے کے لئے کلک کریں"
+	},
+	"popupTipNoScripting2": {
+		"message": "اس سائٹ پر JavaScript کو مزید غیر فعال نہ کرنے کے لئے کلک کریں"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "JavaScript غیر فعال کریں"
+	},
+	"aboutDependencies": {
+		"message": "بیرونی انحصار (GPLv3-مطابقت):"
+	},
+	"loggerReloadTip": {
+		"message": "ٹیب کے مواد کو دوبارہ لوڈ کریں"
+	},
+	"loggerDomInspectorTip": {
+		"message": "DOM انسپکٹر کو ٹوگل کریں"
+	},
+	"loggerPopupPanelTip": {
+		"message": "پاپ اپ پینل کو ٹوگل کریں"
+	},
+	"loggerInfoTip": {
+		"message": "اصل ویکی کو یو بلاک کریں: دی لاگر"
+	},
+	"loggerClearTip": {
+		"message": "لاگر کو صاف کریں"
+	},
+	"loggerPauseTip": {
+		"message": "لاگر کو وقفہ دیں (آنے والے تمام ڈیٹا کو مسترد کریں)"
+	},
+	"loggerUnpauseTip": {
+		"message": "لاگر کو بے وقفہ کریں"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "لاگر فلٹرنگ کو ٹوگل کریں"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "لاگر فلٹرنگ کے اختیارات"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "نہیں"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "پر از واقعات"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "بلاک شدە"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "اجازت شدە"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "پہلی پارٹی"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "فریق ثالث"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "تفصیلات"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "فلٹر"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "فلٹر کی فہرست"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "اصول"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "سیاق و سباق"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "روٹ سیاق و سباق"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "پارٹی نیس"
+	},
+	"loggerEntryDetailsType": {
+		"message": "قسم"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "ذیل کی تمام تین شرائط کی تکمیل نہ کرنے والی لاگر کی اندراجات کو خودکارانہ طریقے سے مسترد کر دیا جائے گا:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "اندراجات کو آخری {{input}} منٹوں سے محفوظ کریں"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "فی ٹیب سب سے زیادہ {{input}} صفحہ پر محفوظ کریں"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "فی ٹیب سب سے زیادہ {{input}} اندراجات پر محفوظ کریں"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "عمودی طور پر توسیع شدہ موڈ میں فی اندراج {{input}} لائنوں کا استعمال کریں"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "کالمز چھپائیں:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} وقت"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} فلٹر/اصول"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} سیاق و سباق"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} پارٹی نیس"
+	},
+	"loggerExportFormatList": {
+		"message": "فہرست"
+	},
+	"loggerExportFormatTable": {
+		"message": "ٹیبل"
+	},
+	"loggerExportEncodePlain": {
+		"message": "سادہ"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "مارک ڈاؤن"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "لاک شدہ اسکرولنگ کو ٹوگل کریں"
+	},
+	"genericCopyToClipboard": {
+		"message": "کلپ بورڈ میں کاپى کريں"
+	}
+}

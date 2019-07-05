@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "অবশেষে, এক সুদক্ষ ব্লকার। CPU এবং মেমরিতে চাপ ফেলে না।"
+	},
+	"dashboardName": {
+		"message": "Adblock — ড্যাশবোর্ড"
+	},
+	"settingsPageName": {
+		"message": "সেটিংস"
+	},
+	"3pPageName": {
+		"message": "তৃতীয়-পক্ষের ফিল্টার"
+	},
+	"rulesPageName": {
+		"message": "আমার নিয়ম"
+	},
+	"whitelistPageName": {
+		"message": "হোয়াইটলিস্ট"
+	},
+	"statsPageName": {
+		"message": "Adblock — লগার"
+	},
+	"aboutPageName": {
+		"message": "সম্পর্কে"
+	},
+	"advancedSettingsPageName": {
+		"message": "উন্নত সেটিংস"
+	},
+	"pickerCreate": {
+		"message": "তৈরি করুন"
+	},
+	"pickerPick": {
+		"message": "বাছাই করুন"
+	},
+	"pickerQuit": {
+		"message": "প্রস্থান করুন"
+	},
+	"pickerPreview": {
+		"message": "পূর্বরূপ"
+	},
+	"pickerNetFilters": {
+		"message": "নেটওয়ার্ক ফিল্টার"
+	},
+	"pickerCosmeticFilters": {
+		"message": "কসমেটিক ফিল্টার"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "ক্লিক, Ctrl-click"
+	},
+	"pickerContextMenuEntry": {
+		"message": "এলিমেন্ট ব্লক করুন"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "ব্লক করা এলিমেন্টের প্লেসহোল্ডার লুকান"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "আইকনে ব্লক করা অনুরোধের সংখ্যা দেখান"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "টুলটিপ্স অক্ষম করুন"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "উপযুক্ত ক্ষেত্রে প্রসঙ্গ মেনু ব্যবহার করুন"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "কালার ব্লাইন্ড ফ্রেন্ডলি"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "ক্লাউড স্টোরেজ সহায়তা চালু করুন"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "আমি একজন উন্নত ব্যবহারকারী (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>required reading</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "উন্নত সেটিংস"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "প্রি-ফেচিং বন্ধ করুন (ব্লক করা নেটওয়ার্ক অনুরোধের জন্য যেকোনও সংযোগ আটকান)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "হাইপারলিঙ্ক অডিটিং বন্ধ করুন"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "লোকাল IP অ্যাড্রেস ফাঁস করে দেওয়া থেকে WebRTC কে আটকান"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "ডিফল্ট আচরণ"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "এই ডিফল্ট আচরণগুলি সাইট প্রতি ভিত্তিতে ওভাররাইড করা যাবে"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "কসমেটিক ফিল্টার অক্ষম করুন"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "রিমোট ফন্ট ব্লক করুন"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "CSP রিপোর্ট ব্লক করুন"
+	},
+	"settingsStorageUsed": {
+		"message": "ব্যবহৃত স্টোরেজ: {{value}} বাইট"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "শেষবার রিস্টোর:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "শেষবার ব্যাকআপ:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "এখান থেকে {{netFilterCount}}টি নেটওয়ার্ক ফিল্টার ＋ {{cosmeticFilterCount}}টি কসমেটিক ফিল্টার:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{total}} এর মধ্যে {{used}} ব্যবহৃত হয়েছে"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "ফিল্টার তালিকাগুলি স্বতঃ আপডেট করুন"
+	},
+	"3pUpdateNow": {
+		"message": "এখন আপডেট করুন"
+	},
+	"3pPurgeAll": {
+		"message": "সকল ক্যাশে পার্জ করুন"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "কসমেটিক ফিল্টারগুলি পার্জ এবং প্রয়োগ করুন"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>এই অপশন <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">অ্যাডব্লক প্লাস-সুসংগত &ldquo;এলিমেন্ট লুকানোর&rdquo; ফিল্টার</a> পার্জ এবং প্রয়োগ সক্ষম করে। এই ফিল্টারগুলি কসমেটিক ফিল্টার, ওয়েব পেজে দেখতে অসুবিধা করে এবং নেট অনুরোধ ভিত্তিক ফিল্টারিং ইঞ্জিনের পক্ষে ব্লক করা সম্ভব নয় এমন বিষয়গুলিকে লুকানোর কাজ করে।</p><p>এই বৈশিষ্ট্য চালু করলে Adblock এর মেমরি ফুটপ্রিন্ট বাড়ায়।</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "সাধারণ কসমেটিক ফিল্টারগুলিকে উপেক্ষা করুন"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>সাধারণ কসমেটিক ফিল্টার হল সকল ওয়েব সাইটে প্রয়োগ করা সম্ভব এমন কসমেটিক ফিল্টার।<p>Adblock সুদক্ষভাবে পরিচালনা করলেও, কিছু ওয়েব পেজে সাধারণ কসমেটিক ফিল্টারের কারণে উল্লেখযোগ্য মেমরি এবং CPU ওভারহেড হতে পারে, বিশেষ ভাবে বড় এবং বেশি স্থায়ীগুলির জন্য।<p>এই অপশন চালু করলে, সাধারণ কসমেটিক ফিল্টার পরিচালনার কারণে যে মেমরি এবং CPU ওভারহেড দেখা দেয় তা আর থাকবে না এবং নিজে থেকেই Adblock এর মেমরি ফুটপ্রিন্ট কমিয়ে দেবে।<p>অপেক্ষাকৃত কম শক্তিশালী ডিভাইসগুলিতে এটি চালু করার পরামর্শ দেওয়া হয়।"
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "ব্লক করা হোস্টের তালিকা"
+	},
+	"3pApplyChanges": {
+		"message": "পরিবর্তনগুলি প্রয়োগ করুন"
+	},
+	"3pGroupAds": {
+		"message": "বিজ্ঞাপন"
+	},
+	"3pGroupPrivacy": {
+		"message": "গোপনীয়তা"
+	},
+	"3pGroupMalware": {
+		"message": "ম্যালওয়্যার ডোমেন"
+	},
+	"3pGroupAnnoyances": {
+		"message": "বিরক্তিকর"
+	},
+	"3pGroupMultipurpose": {
+		"message": "বহুমুখী"
+	},
+	"3pGroupRegions": {
+		"message": "অঞ্চল, ভাষা"
+	},
+	"3pGroupCustom": {
+		"message": "কাস্টম"
+	},
+	"3pExternalListsHint": {
+		"message": "লাইন প্রতি একটি URL, &lsquo;!&rsquo; প্রিফিক্স থাকা লাইন উপেক্ষা করা হবে। অমান্য URLগুলি নীরবে উপেক্ষা করা হবে।"
+	},
+	"3pExternalListObsolete": {
+		"message": "পুরনো।"
+	},
+	"3pLastUpdate": {
+		"message": "শেষবার করা আপডেট: {{ago}}।\nজোড় করতে আপডেট করতে ক্লিক করুন।"
+	},
+	"3pUpdating": {
+		"message": "আপডেট করা হচ্ছে..."
+	},
+	"3pNetworkError": {
+		"message": "নেটওয়ার্ক সমস্যার কারণে রিসোর্স আপডেট সম্ভব হয়নি।"
+	},
+	"1pFormatHint": {
+		"message": "লাইন প্রতি একটি ফিল্টার। ফিল্টার এক সাধারণ হোস্টনাম অথবা এক অ্যাডব্লক প্লাস সুসংগত ফিল্টার হতে পারে। &lsquo;!&rsquo; প্রিফিক্স থাকা লাইনগুলিকে অগ্রাহ্য করা হবে।"
+	},
+	"1pImport": {
+		"message": "ইম্পোর্ট এবং প্রয়োগ করুন"
+	},
+	"1pExport": {
+		"message": "এক্সপোর্ট করুন"
+	},
+	"1pApplyChanges": {
+		"message": "পরিবর্তনগুলি প্রয়োগ করুন"
+	},
+	"rulesPermanentHeader": {
+		"message": "স্থায়ী নিয়ম"
+	},
+	"rulesTemporaryHeader": {
+		"message": "অস্থায়ী নিয়ম"
+	},
+	"rulesRevert": {
+		"message": "ফিরে যান"
+	},
+	"rulesCommit": {
+		"message": "প্রয়োগ করুন"
+	},
+	"rulesEdit": {
+		"message": "সম্পাদনা করুন"
+	},
+	"rulesEditSave": {
+		"message": "সেভ করুন"
+	},
+	"rulesEditDiscard": {
+		"message": "বাতিল করুন"
+	},
+	"rulesImport": {
+		"message": "ফাইল থেকে ইম্পোর্ট করুন..."
+	},
+	"rulesExport": {
+		"message": "ফাইলে এক্সপোর্ট করুন"
+	},
+	"rulesHint": {
+		"message": "আপনার ডাইন্যামিক ফিল্টার নিয়মাবলীর তালিকা।"
+	},
+	"rulesFormatHint": {
+		"message": "নিয়মের ফর্ম্যাট: <code>সোর্স ডেস্টিনেশন টাইপ অ্যাকশন</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>সম্পূর্ণ ডকুমেন্টেশন</a>)।"
+	},
+	"whitelistPrompt": {
+		"message": "হোয়াইটলিস্ট ডিরেক্টিভ Adblock কোন ওয়েব পেজে অক্ষম করা হবে তা বলে দেয়। লাইন প্রতি একটি এন্ট্রি। অমান্য ডিরেক্টিভ নীরবে অগ্রাহ্য করা হবে এবং মন্তব্য রাখা হবে।"
+	},
+	"whitelistImport": {
+		"message": "ইম্পোর্ট এবং প্রয়োগ করুন"
+	},
+	"whitelistExport": {
+		"message": "এক্সপোর্ট করুন"
+	},
+	"whitelistExportFilename": {
+		"message": "Adblock-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "পরিবর্তনগুলি প্রয়োগ করুন"
+	},
+	"logRequestsHeaderType": {
+		"message": "ধরণ"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "ডোমেন"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "ফিল্টার"
+	},
+	"logAll": {
+		"message": "সব"
+	},
+	"logBehindTheScene": {
+		"message": "দৃশ্যের পেছনে"
+	},
+	"logFilterPrompt": {
+		"message": "ফিল্টার লগ এন্ট্রি"
+	},
+	"logMaxEntriesTip": {
+		"message": "সর্বোচ্চ সংখ্যক লগ এন্ট্রি"
+	},
+	"aboutChangelog": {
+		"message": "পরিবর্তনের লগ"
+	},
+	"aboutWiki": {
+		"message": "উইকি"
+	},
+	"aboutSupport": {
+		"message": "সমর্থন"
+	},
+	"aboutCode": {
+		"message": "সোর্স কোড (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "কন্ট্রিবিউটর"
+	},
+	"aboutBackupDataButton": {
+		"message": "ফাইলে ব্যাক আপ নিন"
+	},
+	"aboutBackupFilename": {
+		"message": "Adblock-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "ফাইল থেকে রিস্টোর করুন..."
+	},
+	"aboutResetDataButton": {
+		"message": "ডিফল্ট সেটিংস এ রিসেট করুন..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "{{time}} এ ব্যাক আপ নেওয়া ডেটা দিয়ে আপনার সমস্ত সেটিংস ওভাররাইট করা হবে এবং Adblock রিস্টার্ট হবে।\n\nব্যাক আপ নেওয়া ডেটা দিয়ে সমস্ত বর্তমান সেটিংস ওভাররাইট করবেন?"
+	},
+	"aboutRestoreDataError": {
+		"message": "ডেটা পড়া গেল না অথবা তা অমান্য"
+	},
+	"aboutResetDataConfirm": {
+		"message": "আপনার সমস্ত সেটিংস সরিয়ে দেওয়া হবে এবং Adblock রিস্টার্ট হবে।\n\nAdblock কে ফ্যাক্টরি সেটিংস এ রিসেট করবেন?"
+	},
+	"errorCantConnectTo": {
+		"message": "নেটওয়ার্ক সমস্যা: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "Adblock: নিম্নলিখিত URL আপনার কাস্টম ফিল্টার তালিকাগুলিতে যোগ করবেন?\n\nটাইটেল: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "এক মিনিট আগে"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} মিনিট আগে"
+	},
+	"elapsedOneHourAgo": {
+		"message": "এক ঘণ্টা আগে"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} ঘণ্টা আগে"
+	},
+	"elapsedOneDayAgo": {
+		"message": "এক দিন আগে"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} দিন আগে"
+	},
+	"showDashboardButton": {
+		"message": "ড্যাশবোর্ড দেখান"
+	},
+	"showNetworkLogButton": {
+		"message": "লগার দেখান"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "বন্ধ"
+	},
+	"docblockedPrompt1": {
+		"message": "Adblock নিম্নলিখিত পেজটিকে লোড হতে দেয়নি:"
+	},
+	"docblockedPrompt2": {
+		"message": "নিম্নলিখিত ফিল্টারের কারণে"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "প্যারামিটার ছাড়া"
+	},
+	"docblockedFoundIn": {
+		"message": "এখানে পাওয়া গেছে:"
+	},
+	"docblockedBack": {
+		"message": "ফিরে আসুন"
+	},
+	"docblockedClose": {
+		"message": "এই উইন্ডোটি বন্ধ করুন"
+	},
+	"docblockedProceed": {
+		"message": "{{hostname}} এর জন্য কঠোর ব্লকিং বন্ধ করুন"
+	},
+	"docblockedDisableTemporary": {
+		"message": "সাময়িক"
+	},
+	"docblockedDisablePermanent": {
+		"message": "স্থায়ীভাবে"
+	},
+	"cloudPush": {
+		"message": "ক্লাউড স্টোরেজে এক্সপোর্ট করুন"
+	},
+	"cloudPull": {
+		"message": "ক্লাউড স্টোরেজ থেকে ইম্পোর্ট করুন"
+	},
+	"cloudPullAndMerge": {
+		"message": "ক্লাউড স্টোরেজ থেকে ইম্পোর্ট করুন এবং বর্তমান সেটিংয়ে মার্জ করুন"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "এই ডিভাইসের নাম:"
+	},
+	"advancedSettingsWarning": {
+		"message": "সতর্কতা! আপনার নিজের ঝুঁকিতে এই উন্নত সেটিংস পাল্টান।"
+	},
+	"genericSubmit": {
+		"message": "জমা দিন"
+	},
+	"genericApplyChanges": {
+		"message": "পরিবর্তনগুলি প্রয়োগ করুন"
+	},
+	"genericRevert": {
+		"message": "ফিরে যান"
+	},
+	"genericBytes": {
+		"message": "বাইট"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "বড় মিডিয়া এলিমেন্ট সাময়িক ভাবে অনুমোদন করুন"
+	},
+	"dummy": {
+		"message": "এই এন্ট্রি অবশ্যই অন্তিমটি হতে হবে"
+	},
+	"popupExtraMoreInformation": {
+		"message": "আরও তথ্য"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "এই সাইটে বিজ্ঞাপন ব্লক করা আছে"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "এই সাইটে বিজ্ঞাপনের অনুমোদন দেওয়া আছে"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "এই সাইটে সুরক্ষা সক্ষম করা যাবে না"
+	},
+	"popupExtraMoreOptions": {
+		"message": "আরও বিকল্প"
+	},
+	"popupExtraLessOptions": {
+		"message": "কম বিকল্প"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "সমস্ত অনুমোদিত সাইটের তালিকা দেখুন"
+	},
+	"popupAdvancedSettings": {
+		"message": "উন্নত সেটিংস"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "এই পৃষ্ঠায় বিজ্ঞাপন ব্লক করুন"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "সর্বমোট ব্লক করা বিজ্ঞাপন"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "অনুমোদিত সাইটগুলির তালিকা"
+	},
+	"extraSlider0": {
+		"message": "বিজ্ঞাপন ব্লক করবেন না"
+	},
+	"extraSlider50": {
+		"message": "মাঝারি মানে বিজ্ঞাপন ব্লক করা"
+	},
+	"extraSlider100": {
+		"message": "সর্বোচ্চ পরিমানে বিজ্ঞাপন ব্লক করা"
+	},
+	"extraIndexDescription": {
+		"message": "দ্রুত ও নিরাপদে ব্রাউজ করার জন্য বিজ্ঞাপন ব্লক করুন"
+	},
+	"extraGeneralSettings": {
+		"message": "জেনারেল সেটিংস"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Adblockকোন তথ্য দেখাবে তা পরিচালনা করুন"
+	},
+	"extra3pPageNameDesc": {
+		"message": "বিজ্ঞাপন এবং 3য়-পক্ষের ফিল্টারের গোপনীয়তা"
+	},
+	"extra1pPageNameDesc": {
+		"message": "আপনার কাস্টম ফিল্টারগুলি পরিচালনা করুন"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "আপনার ডাইন্যামিক ফিল্টার নিয়মাবলীর তালিকা"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "যেখানে বিজ্ঞাপনের অনুমতি দেওয়া হয়েছে সেই সাইটগুলির তালিকা"
+	},
+	"extraIndexHeader": {
+		"message": "Adblock উন্নত সেটিংস"
+	},
+	"extraIndexFooter": {
+		"message": "uBlock Origin দ্বারা পরিচালিত।"
+	},
+	"extraShowMore": {
+		"message": "আরও দেখান"
+	},
+	"extraBtnImport": {
+		"message": "আমদানি করুন"
+	},
+	"extraBtnExport": {
+		"message": "রপ্তানি করুন"
+	},
+	"extraBtnAdd": {
+		"message": "যুক্ত করুন"
+	},
+	"extraBtnCancel": {
+		"message": "বাতিল করুন"
+	},
+	"extraBtnEdit": {
+		"message": "সম্পাদনা করুন"
+	},
+	"extraBtnRemove": {
+		"message": "অপসারণ করুন"
+	},
+	"extraBtnUpdateAll": {
+		"message": "সব আপডেট করুন"
+	},
+	"extraLabelFilter": {
+		"message": "ফিল্টার"
+	},
+	"extraMyCustomFilter": {
+		"message": "আমার কাস্টম ফিল্টার"
+	},
+	"extraManageFilters": {
+		"message": "ফিল্টার পরিচালনা করুন"
+	},
+	"extraAdsFilters": {
+		"message": "বিজ্ঞাপনের ফিল্টার"
+	},
+	"extraEditFilter": {
+		"message": "সম্পাদনা ফিল্টার"
+	},
+	"extraAddFilter": {
+		"message": "ফিল্টার যুক্ত করুন"
+	},
+	"extraLearnMore": {
+		"message": "আরও জানুন"
+	},
+	"extraRuleSyntax": {
+		"message": "বাক্যগঠনের নিয়ম"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "উৎস ঠিকানা টাইপের ব্যবস্থা।"
+	},
+	"extraRuleDefinition": {
+		"message": "নিয়মের সংজ্ঞা"
+	},
+	"extraRule": {
+		"message": "নিয়ম"
+	},
+	"extraEditRule": {
+		"message": "সাময়িক নিয়ম সম্পাদনা করুন"
+	},
+	"extraAddRrule": {
+		"message": "সাময়িক নিয়ম যোগ করুন"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "উন্নত ব্যবহারকারী সেটিংস"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "ব্লক মিডিয়া উপাদান-এর থেকে বৃহত্তর"
+	},
+	"extraSetting": {
+		"message": "সেটিং"
+	},
+	"extraEditSetting": {
+		"message": "সেটিং সম্পাদনা করুন"
+	},
+	"extraAddSetting": {
+		"message": "সেটিং যোগ করুন"
+	},
+	"extraSite": {
+		"message": "সাইট"
+	},
+	"extraAllowOnSites": {
+		"message": "এই সাইটগুলিতে বিজ্ঞাপনকে অনুমতি দিন"
+	},
+	"extraEditSite": {
+		"message": "সাইট সম্পাদনা করুন"
+	},
+	"extraAddSite": {
+		"message": "সাইট যোগ করুন"
+	},
+	"extraDefaultBehaviour": {
+		"message": "ডিফল্ট আচরণ"
+	},
+	"extraPrivacy": {
+		"message": "গোপনীয়তা"
+	},
+	"3pGroupDefault": {
+		"message": "নেটওয়ার্ক ও প্রসাধনী ফিল্টার"
+	},
+	"1pPageName": {
+		"message": " আমার ফিল্টারগুলি"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "এই সেশনের জন্য সুরক্ষা সক্ষম করা যাবে না"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "এখনও পর্যন্ত কোনো সাইট যোগ করা হয়নি"
+	},
+	"extraInterstitialBlocking": {
+		"message": "অন্তর্বর্তী ব্লকিং সক্রিয় করুন"
+	},
+	"shortcutsPageName": {
+		"message": "শর্টকাট"
+	},
+	"popupTipDashboard": {
+		"message": "ড্যাশবোর্ড খুলুন"
+	},
+	"popupTipZapper": {
+		"message": "এলিমেন্ট জেপার মোডে লিখুন"
+	},
+	"popupTipPicker": {
+		"message": "এলিমেন্ট জেপার মোডে লিখুন"
+	},
+	"popupTipLog": {
+		"message": "লোগার খুলুন"
+	},
+	"popupTipNoPopups": {
+		"message": "এই সাইটের জন্য সব ব্লক করা পপ আপ টগল করুন"
+	},
+	"popupTipNoPopups1": {
+		"message": "এই সাইটটিতে সব পপ আপ ব্লক করতে ক্লিক করুন"
+	},
+	"popupTipNoPopups2": {
+		"message": "এই সাইটটিতে কখনও পপ আপ ব্লক করা যাবে না তে ক্লিক করুন"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "এই সাইটটিতে বড় মিডিয়া উপাদান ব্লক করতে টগল করুন"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "এই সাইটটিতে বড় মিডিয়ার উপাদান ব্লক করতে ক্লিক করুন"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "এই সাইটটিতে বড় মিডিয়ার উপাদান কখনও ব্লক করা যাবে না তে ক্লিক করুন"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "এই সাইটটিতে কসমেটিক ফিল্টারিংয়ে টগল করুন"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "এই সাইটটিতে কসমেটিক ফিল্টারিং নিষ্ক্রিয় করুন-এ ক্লিক করুন"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "এই সাইটটিতে কসমেটিক ফিল্টারিং সক্রিয় করুন-এ ক্লিক করুন"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "এই সাইটটিতে রিমোট ফন্ট ব্লক করা টগল করুন"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "এই সাইটটিতে রিমোট ফন্ট ব্লক করতে ক্লিক করুন"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "এই সাইটটিতে কখনও রিমোট ফন্ট ব্লক করা যাবে না তে ক্লিক করুন"
+	},
+	"popupTipGlobalRules": {
+		"message": "বিশ্বজনীন নিয়ম: এই কলামটি নিয়মের জন্য যা সব সাইটে প্রযোজ্য হবে।"
+	},
+	"popupTipLocalRules": {
+		"message": "স্থানীয় নিয়ম: এই কলামটি নিয়মের জন্য যা শুধুমাত্র বর্তমান সাইটে প্রযোজ্য হবে।\nস্থানীয় নিয়ম বিশ্বজনীন নিয়মকে ওভাররাইড করবে।"
+	},
+	"popupTipSaveRules": {
+		"message": "স্থায়ীভাবে আপনার পরিবর্তন করতে ক্লিক করুন।"
+	},
+	"popupTipRevertRules": {
+		"message": "আপনার পরিবর্তনগুলো ফিরিয়ে আনতে ক্লিক করুন।"
+	},
+	"popupAnyRulePrompt": {
+		"message": "সব"
+	},
+	"popupImageRulePrompt": {
+		"message": "ছবিগুলো"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "তৃতীয়-পক্ষ"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "তৃতীয়-পক্ষ css/ছবিগুলো"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "ইনলাইন স্ক্রিপ্ট"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "প্রথম-পক্ষের স্ক্রিপ্ট"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "তৃতীয়-পক্ষের স্ক্রিপ্ট"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "তৃতীয়-পক্ষের ফ্রেম"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "সংযুক্ত ডোমেন"
+	},
+	"popupHitDomainCount": {
+		"message": "{{total}}-এর মধ্যে {{count}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "{{input:number}} kB-এর চাইতে নড় মিডিয়া উপাদান ব্লক করুন"
+	},
+	"3pImport": {
+		"message": "আমদানি করুন..."
+	},
+	"loggerCurrentTab": {
+		"message": "বর্তমান ট্যাব"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "প্রসঙ্গ:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "ধরন:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "ডাইন্যামিক URL ফিল্টারিং"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "স্ট্যাটিক ফিল্টারিং"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} {{type}}-এর জন্য নেটওয়ার্কের অনুরোধ {{br}}যা URL ঠিকানার সাথে মেলে {{url}} {{br}}এবং যা {{origin}} তৈরি করে,{{br}}{{importance}} এখানে একটি ম্যাচিং ব্যতিক্রমী ফিল্টার আছে।"
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "ব্লক করুন"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "অনুমতি দিন"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "প্রকার ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "যেকোনো প্রকার"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "থেকে ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "যেকোনো জায়গা থেকে"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "এই সময় বাদে"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "এমনকি যদি"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "স্ট্যাটিক ফিল্টার<code>{{filter}}</code> এতে পাওয়া গেছে:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "স্ট্যাটিক ফিল্টার <code>{{filter}}</code>বর্তমানে সক্ষমিত যেকোনো ফিল্টার তালিকাতে পাওয়া যাবে না"
+	},
+	"aboutIssues": {
+		"message": "সমস্যা ট্র্যাকার"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "একটি শর্টকাট টাইপ করুন"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? অ্যাসেট দর্শক"
+	},
+	"popupTipNoScripting1": {
+		"message": "এই সাইটে JavaScript নিষ্ক্রিয় করতে ক্লিক করুন"
+	},
+	"popupTipNoScripting2": {
+		"message": "এই সাইটে কখনও JavaScript নিষ্ক্রিয় করা যাবে না তে ক্লিক করুন"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "JavaScript নিষ্ক্রিয় করুন"
+	},
+	"aboutDependencies": {
+		"message": "বাইরের নির্ভরতা (GPLv3-সঙ্গতিপূর্ণ):"
+	},
+	"loggerReloadTip": {
+		"message": "ট্যাবের সামগ্রী পুনরায় লোড করুন"
+	},
+	"loggerDomInspectorTip": {
+		"message": "DOM ইন্সপেক্টর টগল করুন"
+	},
+	"loggerPopupPanelTip": {
+		"message": "পপ আপ প্যানেলে টগল করুন"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin উইকি: লগার"
+	},
+	"loggerClearTip": {
+		"message": "লগার সাফ করুন"
+	},
+	"loggerPauseTip": {
+		"message": "লগারে বিরাম দিন (সমস্ত ইনকামিং ডেটা বাতিল করুন)"
+	},
+	"loggerUnpauseTip": {
+		"message": "লগারে বিরাম দেওয়া থামান"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "লগার ফিল্টারিংয়ে টগল করুন"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "লগার ফিল্টারিং বিকল্প"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "না"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "ঘটনাবহুল"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "ব্লক করা"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "অনুমোদিত"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "প্রথম-পক্ষ"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "তৃতীয়-পক্ষ"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "বিস্তারিত"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "ফিল্টার"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "ফিল্টার তালিকা"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "নিয়ম"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "প্রসঙ্গ"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "মূল প্রসঙ্গ"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "পার্টিনিস"
+	},
+	"loggerEntryDetailsType": {
+		"message": "ধরণ"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "লগার এন্ট্রি যেগুলো নীচের অবস্থা পূরণ করছে সেগুলো স্বয়ংক্রিয়ভাবে বাতিল হয়ে যাবে:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "শেষ {{input}} মিনিটের এন্ট্রিগুলো সংরক্ষণ করুন"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "সবচেয়ে বেশি {{input}} পৃষ্ঠার ট্যাব প্রতি লোড সংরক্ষণ করুন"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "সবচেয়ে বেশি {{input}} এন্ট্রি ট্যাব প্রতি সংরক্ষণ করুন"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "উল্লম্বভাবে বিস্তৃত মোডে {{input}} লাইন প্রতি এন্ট্রিতে ব্যবহার করুন"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "কলাম লুকান:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} সময়"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} ফিল্টার/নিয়ম"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} প্রসঙ্গ"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} পার্টিনিস"
+	},
+	"loggerExportFormatList": {
+		"message": "তালিকা"
+	},
+	"loggerExportFormatTable": {
+		"message": "টেবিল"
+	},
+	"loggerExportEncodePlain": {
+		"message": "প্লেইন"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "চিহ্নিত করুন"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "লক করা স্ক্রোলিং টগল করুন"
+	},
+	"genericCopyToClipboard": {
+		"message": "ক্লিপবোর্ডে কপি করুন"
+	}
+}

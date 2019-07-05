@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="en_US">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-i18n="3pPageName"></title>
+    <meta name="description" content="Control Center">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav id="header">
+    <span class="nav-title" data-i18n="extraIndexHeader"></span>
+</nav>
+
+<div class="container-opt tab active" id="3p-filters">
+    <div class="wrapper-head">
+        <a href="index.html">
+            <img src="img/Icon-arrow-2.svg">
+            <div class="arrow-ripple-back"></div>
+        </a>
+        <span data-i18n="3pPageName"></span>
+    </div>
+    <div class="wrapper-list trd filter-list-settings">
+        <div class="wrapper-list-content filters">
+            <div class="wrapper-list-content-text">
+                <p data-i18n="3pAutoUpdatePrompt1"></p>
+            </div>
+            <div class="switch">
+                <label>
+                    <input type="checkbox" checked id="autoUpdate">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+        <div class="wrapper-list-content filters">
+            <div class="wrapper-list-content-text">
+                <p data-i18n="3pParseAllABPHideFiltersPrompt1"></p>
+            </div>
+            <div class="switch">
+                <label>
+                    <input type="checkbox" checked id="parseCosmeticFilters">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+        <div class="wrapper-list-content filters">
+            <div class="wrapper-list-content-text">
+                <p data-i18n="3pIgnoreGenericCosmeticFilters"></p>
+            </div>
+            <div class="switch">
+                <label>
+                    <input type="checkbox" checked id="ignoreGenericCosmeticFilters">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-privacy-default">
+        <div class="wrapper-privacy-default-head custom">
+            <h4 data-i18n="extraManageFilters"></h4>
+            <div class="wrapper-head-btn">
+                <a class="btn" id="extraButtonUpdate" data-i18n="extraBtnUpdateAll"></a>
+            </div>
+        </div>
+        <div id="lists" class="wrapper-privacy-default-list">
+        </div>
+    </div>
+</div>
+
+<div class="container-opt tab" id="filter-list">
+    <div class="wrapper-head">
+        <a href="#3p-filters" class="tab-toggle">
+            <img src="img/Icon-arrow-2.svg">
+            <div class="arrow-ripple-back"></div>
+        </a>
+        <span class="filter-title"></span>
+    </div>
+    <div class="wrapper-list filter-list"></div>
+</div>
+
+<div class="template">
+    <div class="wrapper-list-content template-filter-item">
+        <div class="wrapper-list-content-text">
+            <p class="item-title"></p>
+        </div>
+        <div class="open-window">
+            <a href="#" target="_blank" class="item-link">
+                <img src="img/Icon-open-window.svg">
+                <span class="link-ripple"></span>
+            </a>
+        </div>
+        <div class="switch filtr">
+            <label>
+                <input type="checkbox" checked>
+                <span class="lever"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<div id="templates" class="hidden">
+    <div>
+        <a class="btn" id="buttonPurgeAll" data-i18n="3pPurgeAll"></a>
+        <a class="btn" id="buttonUpdate" data-i18n="extraBtnUpdateAll"></a>
+        <a class="wrapper-list-content manage link groupEntry">
+            <div class="wrapper-list-content-text">
+                <p>
+                    <span class="geName"></span>
+                    <span class="geCount dim"></span>
+                </p>
+            </div>
+            <div class="wrapper-list-arrow-block">
+                <div class="wrapper-list-content-arrow icon"></div>
+                <span class="arrow-ripple-trd"></span>
+            </div>
+            <div class="listEntries hidden"></div>
+        </a>
+        <div class="listEntry">
+            <input type="checkbox"><!--
+         --><a class="content" type="text/plain" target="_blank" href=""></a>&#8203;<!--
+         --><a class="fa support" href="" target="_blank">&#xf015;</a>&#8203;<!--
+         --><a class="fa remove" href="">&#xf014;</a>&#8203;<!--
+         --><a class="fa mustread" href="" target="_blank">&#xf05a;</a>&#8203;<!--
+         --><span class="fa status unsecure" title="http">&#xf13e;</span>&#8203;<!--
+         --><span class="counts dim"></span>&#8203;<!--
+         --><span class="fa status obsolete" title="3pExternalListObsolete">&#xf071;</span>&#8203;<!--
+         --><span class="fa status cache">&#xf017;</span>&#8203;<!--
+         --><span class="fa status updating" title="3pUpdating">&#xf110;</span>&#8203;<!--
+         --><span class="fa status failed" title="3pNetworkError">&#xf127;</span>
+        </div>
+    </div>
+</div>
+<!-- standart ui -->
+<div class="hidden">
+    <span id="listsOfBlockedHostsPrompt"></span>
+    <input type="checkbox" id="importLists"><label for="importLists" data-i18n="3pImport"></label>
+    <textarea id="externalLists"></textarea>
+    <button id="buttonApply" class="custom important disabled" data-i18n="3pApplyChanges"></button>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script src="../js/vapi.js"></script>
+<script src="../js/vapi-common.js"></script>
+<script src="../js/vapi-client.js"></script>
+<script src="../js/udom.js"></script>
+<script src="../js/i18n.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/3p-filters.js"></script>
+
+<script src="../js/cloud-ui.js"></script>
+<script src="../js/3p-filters.js"></script>
+
+</body>
+</html>

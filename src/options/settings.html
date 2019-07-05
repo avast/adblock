@@ -1,0 +1,313 @@
+<!doctype html>
+<html class="no-js" lang="en_US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-i18n="extraGeneralSettings"></title>
+    <meta name="description" content="Control Center">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav id="header">
+    <span class="nav-title" data-i18n="extraIndexHeader"></span>
+</nav>
+<div class="container-opt tab active" id="settings">
+        <div class="wrapper-head">
+            <!-- <div class="back-arrow"></div> -->
+            <a href="index.html">            
+                <img src="img/Icon-arrow-2.svg">
+                <div class="arrow-ripple-back"></div>
+                <!-- <div class="icon"></div> -->          
+            </a>
+            <span data-i18n="extraGeneralSettings"></span>
+        </div>
+        <div class="wrapper-list">
+            <div class="wrapper-list-content">
+                <div class="wrapper-list-content-text">
+                    <p data-i18n="settingsCollapseBlockedPrompt"></p>
+                </div>
+                <div class="switch">
+                    <label>
+                        <input type="checkbox" checked data-setting-name="collapseBlocked" data-setting-type="bool">
+                        <span class="lever"></span>
+                    </label>
+                 </div>
+            </div>
+            <div class="wrapper-list-content">
+                <div class="wrapper-list-content-text">
+                    <p data-i18n="settingsIconBadgePrompt"></p>
+                </div>
+                <div class="switch">
+                    <label>
+                        <input type="checkbox" checked data-setting-name="showIconBadge" data-setting-type="bool">
+                        <span class="lever"></span>
+                    </label>
+                 </div>
+            </div>
+            <div class="wrapper-list-content">
+                <div class="wrapper-list-content-text">
+                    <p data-i18n="settingsContextMenuPrompt"></p>
+                </div>
+                <div class="switch">
+                    <label>
+                        <input type="checkbox" checked data-setting-name="contextMenuEnabled" data-setting-type="bool">
+                        <span class="lever"></span>
+                    </label>
+                 </div>
+            </div>
+            <div class="wrapper-list-content hidden">
+                <div class="wrapper-list-content-text">
+                    <p data-i18n="settingsTooltipsPrompt"></p>
+                </div>
+                <div class="switch">
+                    <label>
+                        <input type="checkbox" checked data-setting-name="tooltipsDisabled" data-setting-type="bool">
+                        <span class="lever"></span>
+                    </label>
+                 </div>
+            </div>
+            <div class="wrapper-list-content hidden">
+                <div class="wrapper-list-content-text">
+                    <p data-i18n="settingsColorBlindPrompt"></p>
+                </div>
+                <div class="switch">
+                    <label>
+                        <input type="checkbox" checked data-setting-name="colorBlindFriendly" data-setting-type="bool">
+                        <span class="lever"></span>
+                    </label>
+                 </div>
+            </div>
+            <div class="wrapper-list-content">
+                <div class="wrapper-list-content-text">
+                    <p><span data-i18n="extraInterstitialBlocking"></span></p>
+                </div>
+                <div class="switch">
+                    <label>
+                        <input type="checkbox" checked data-setting-name="extraInterstitialBlocking" data-setting-type="bool">
+                        <span class="lever"></span>
+                    </label>
+                 </div>
+            </div>
+            <div class="wrapper-list-content">
+                <div class="wrapper-list-content-text">
+                    <p><span data-i18n="settingsCloudStorageEnabledPrompt"></span> <a href="https://github.com/gorhill/uBlock/wiki/Cloud-storage" class="learn" target="_blank" data-i18n="extraLearnMore"></a></p>
+                </div>
+                <div class="switch">
+                    <label>
+                        <input type="checkbox" checked data-setting-name="cloudStorageEnabled" data-setting-type="bool">
+                        <span class="lever"></span>
+                    </label>
+                </div>
+            </div>
+            <a href="#advanced-settings" class="wrapper-list-content tab-toggle">
+                <div class="wrapper-list-content-text">
+                    <p data-i18n="extraAdvancedUserSettings"></p>
+                </div>
+
+                <div class="wrapper-list-arrow-block">
+                    <div class="wrapper-list-content-arrow icon"></div>
+                    <span class="arrow-ripple-trd gener_sett"></span>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper-privacy-default">
+            <div class="wrapper-privacy-default-head"><h4 data-i18n="extraPrivacy"></h4></div>
+            <div class="wrapper-privacy-default-list">
+                <div class="wrapper-privacy-default-list-content">
+                    <div class="wrapper-privacy-default-list-text">
+                        <p><span data-i18n="settingsPrefetchingDisabledPrompt"></span> <a href="https://en.wikipedia.org/wiki/Link_prefetching#Issues_and_criticisms" class="learn" target="_blank" data-i18n="extraLearnMore"></a></p>
+                    </div>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox" checked data-setting-name="prefetchingDisabled" data-setting-type="bool">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="wrapper-privacy-default-list-content">
+                    <div class="wrapper-privacy-default-list-text">
+                        <p><span data-i18n="settingsHyperlinkAuditingDisabledPrompt"></span> <a href="https://github.com/gorhill/uBlock/wiki/Disable-hyperlink-auditing-beacon" class="learn" target="_blank" data-i18n="extraLearnMore"></a></p>
+                    </div>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox" checked data-setting-name="hyperlinkAuditingDisabled" data-setting-type="bool">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="wrapper-privacy-default-list-content">
+                    <div class="wrapper-privacy-default-list-text">
+                        <p><span data-i18n="settingsWebRTCIPAddressHiddenPrompt"></span> <a href="https://github.com/gorhill/uBlock/wiki/Prevent-WebRTC-from-leaking-local-IP-address" class="learn" target="_blank" data-i18n="extraLearnMore"></a></p>
+                    </div>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox" checked data-setting-name="webrtcIPAddressHidden" data-setting-type="bool">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="wrapper-privacy-default-list-content">
+                    <div class="wrapper-privacy-default-list-text">
+                        <p><span data-i18n="settingsNoCSPReportsPrompt"></span> <a href="https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings#block-csp-reports" class="learn" target="_blank" data-i18n="extraLearnMore"></a></p>
+                    </div>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox" checked data-setting-name="noCSPReports" data-setting-type="bool">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-privacy-default">
+            <div class="wrapper-privacy-default-head"><h4 data-i18n="extraDefaultBehaviour"></h4></div>
+            <div class="wrapper-privacy-default-list">
+                <div class="wrapper-privacy-default-list-content">
+                    <div class="wrapper-privacy-default-list-text">
+                        <p><span data-i18n="settingsNoCosmeticFilteringPrompt"></span> <a href="https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-cosmetic-filtering" class="learn" target="_blank" data-i18n="extraLearnMore"></a></p>
+                    </div>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox" checked data-setting-name="noCosmeticFiltering" data-setting-type="bool">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="wrapper-privacy-default-list-content">
+                    <div class="wrapper-privacy-default-list-text">
+                        <p><span data-i18n="extraBlockMediaElementsLargerThan"></span>
+                        <span id="data">
+                            <input name="vol" value="" type="number" data-setting-name="largeMediaSize" data-setting-type="input">
+                        </span>
+                        kB.
+                        <a href="https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-large-media-elements" class="learn" target="_blank" data-i18n="extraLearnMore"></a></p>
+                    </div>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox" checked data-setting-name="noLargeMedia" data-setting-type="bool">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="wrapper-privacy-default-list-content">
+                    <div class="wrapper-privacy-default-list-text">
+                        <p><span data-i18n="settingsNoRemoteFontsPrompt"></span> <a href="https://github.com/gorhill/uBlock/wiki/Per-site-switches#no-remote-fonts" class="learn" target="_blank" data-i18n="extraLearnMore"></a></p>
+                    </div>
+                    <div class="switch">
+                        <label>
+                            <input type="checkbox" checked data-setting-name="noRemoteFonts" data-setting-type="bool">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="container-opt tab" id="advanced-settings">
+    <div class="wrapper-head">
+        <a href="#settings" class="tab-toggle">
+            <img src="img/Icon-arrow-2.svg">
+            <div class="arrow-ripple-back"></div>
+        </a>
+        <span data-i18n="extraAdvancedUserSettings"></span>
+    </div>
+
+
+    <div class="wrapper-privacy-default">
+
+        <!--modal-->
+        <div class="modal_form">
+            <div class="modal-header">
+                <span class="modal-header-tittle"></span>
+                <div class="modal_close">
+                    <img src="img/Icon-close.svg">
+                    <span class="close-ripple"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form class="form-group">
+                    <label for="name" data-i18n="extraSetting"></label>
+                    <input type="text" id="name" class="form-control">
+                </form>
+                <div class="modal-body-bottom">
+                    <div class="btn-cancel">
+                        <a class="btn cancel" data-i18n="extraBtnCancel"></a>
+                    </div>
+                    <a class="btn-add" data-i18n="extraBtnAdd"></a>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <!--modal-->
+
+        <div class="wrapper-list bank">
+            <div class="wrapper-list-content">
+                <div class="wrapper-list-content-text">
+                    <p data-i18n="extraAdvancedUserSettings"></p>
+                </div>
+                <div class="switch">
+                    <label>
+                        <input id="advanced-user-enabled" type="checkbox" checked data-setting-name="advancedUserEnabled" data-setting-type="bool">
+                        <span class="lever"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="wrapper-list-switch change">
+                <div class="wrapper-list-content-text">
+                    <p><span data-i18n="advancedSettingsWarning"></span> <a
+                            href="https://github.com/gorhill/uBlock/wiki/Advanced-settings" class="learn"
+                            target="_blank" data-i18n="extraLearnMore"></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-privacy-default-head custom">
+            <h4 data-i18n="popupAdvancedSettings"></h4>
+        </div>
+        <div class="wrapper-privacy-default-list list-items">
+        </div>
+    </div>
+</div>
+<!--template-->
+<div class="template">
+    <div class="wrapper-list-content manage list-item">
+        <div class="wrapper-list-content-text">
+            <p class="item-value"></p>
+        </div>
+        <div class="nav-dropdown">
+            <button type="button" class="nav-toggle-dropdown">
+                <div class="icon"></div>
+                <span class="nav-ripple"></span>
+            </button>
+            <ul class="dropdown-menu" aria-expanded="false">
+                <li class="active" data-value="edit">
+                    <a class="edit edit-item" data-i18n="extraBtnEdit"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- standart ui -->
+<div class="hidden">
+    <button id="advancedSettingsApply" class="custom important" type="button" disabled="true" data-i18n="genericApplyChanges"></button>&ensp;
+    <textarea id="advancedSettings" dir="auto" spellcheck="false" class="list-items-value"></textarea>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script src="../js/vapi.js"></script>
+<script src="../js/vapi-common.js"></script>
+<script src="../js/vapi-client.js"></script>
+<script src="../js/udom.js"></script>
+<script src="../js/i18n.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/advanced-settings.js"></script>
+
+<script src="../js/settings.js"></script>
+
+
+</body>
+</html>

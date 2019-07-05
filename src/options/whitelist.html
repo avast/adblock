@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="en_US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-i18n="whitelistPageName"></title>
+    <meta name="description" content="Control Center">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav id="header">
+    <span class="nav-title" data-i18n="extraIndexHeader"></span>
+</nav>
+<div class="container-opt">
+    <div class="wrapper-head with_btn">
+        <a href="index.html">
+            <img src="img/Icon-arrow-2.svg">
+            <div class="arrow-ripple-back"></div>
+        </a>
+        <span data-i18n="whitelistPageName"></span>
+        <div class="imp_exp">
+            <div class="wrapper-head-btn">
+                <a class="btn" id="importWhitelistFromFile" data-i18n="extraBtnImport"></a>
+            </div>
+            <div class="wrapper-head-btn">
+                <a class="btn" id="exportWhitelistToFile" data-i18n="extraBtnExport"></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-privacy-default">
+
+        <!--modal-->
+        <div class="modal_form">
+            <div class="modal-header">
+                <span class="modal-header-tittle"></span>
+                <div class="modal_close">
+                    <img src="img/Icon-close.svg">
+                    <span class="close-ripple"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form class="form-group">
+                    <label for="name" data-i18n="extraSite"></label>
+                    <input type="text" id="name" class="form-control">
+                </form>
+                <div class="modal-body-bottom">
+                    <div class="btn-cancel">
+                        <a class="btn cancel" data-i18n="extraBtnCancel"></a>
+                    </div>
+                    <a class="btn-add" data-i18n="extraBtnAdd"></a>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <!--modal-->
+
+        <div class="wrapper-privacy-default-head custom">
+            <h4 data-i18n="extraAllowOnSites"></h4>
+            <div class="wrapper-head-btn">
+                <a class="btn add add-item" data-i18n="extraBtnAdd"></a>
+            </div>
+        </div>
+        <div class="wrapper-privacy-default-list list-items">
+        </div>
+    </div>
+</div>
+
+<!--template-->
+<div class="template">
+    <div class="wrapper-list-content manage list-item">
+        <div class="wrapper-list-content-text">
+            <p>
+                <span class="item-value"></span><span class="item-punycode"></span>
+                <span class="item-error"></span>
+            </p>
+        </div>
+        <div class="nav-dropdown">
+            <button type="button" class="nav-toggle-dropdown">
+                <div class="icon"></div>
+                <span class="nav-ripple"></span>
+            </button>
+            <ul class="dropdown-menu" aria-expanded="false">
+                <li class="active" data-value="edit">
+                    <a class="edit edit-item" data-i18n="extraBtnEdit"></a>
+                </li>
+                <li data-value="remove">
+                    <a class="remove remove-item" data-i18n="extraBtnRemove"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- standart ui -->
+<div class="hidden">
+    <section id="whitelist">
+        <textarea dir="auto" spellcheck="false" class="list-items-value"></textarea>
+        <div>E</div>
+    </section>
+    <button id="whitelistApply" class="custom important" type="button" disabled="true" data-i18n="whitelistApply"></button>&ensp;
+    <button id="whitelistRevert" class="custom" type="button" disabled="true" data-i18n="genericRevert"></button>
+    <input id="importFilePicker" type="file" accept="text/plain" class="hiddenFileInput">
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script src="../lib/punycode.js"></script>
+<script src="../js/vapi.js"></script>
+<script src="../js/vapi-common.js"></script>
+<script src="../js/vapi-client.js"></script>
+<script src="../js/udom.js"></script>
+<script src="../js/i18n.js"></script>
+
+<script src="../js/cloud-ui.js"></script>
+
+<script src="js/dashboard-common.js"></script>
+<script src="js/main.js"></script>
+<script src="js/whitelist.js"></script>
+
+</body>
+</html>
