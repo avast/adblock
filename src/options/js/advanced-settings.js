@@ -59,43 +59,39 @@ $(document).ready(function() {
 
     /******************************************************************************/
 
-    function renderAdvancedSettings() {
-        var onRead = function(raw) {
-            cachedData = hashFromAdvancedSettings(raw);
-            var pretty = [],
-                whitespaces = '                                ',
-                lines = raw.split('\n'),
-                max = 0,
-                pos,
-                i, n = lines.length;
-            for ( i = 0; i < n; i++ ) {
-                pos = lines[i].indexOf(' ');
-                if ( pos > max ) {
-                    max = pos;
-                }
-            }
-            for ( i = 0; i < n; i++ ) {
-                pos = lines[i].indexOf(' ');
-                pretty.push(whitespaces.slice(0, max - pos) + lines[i]);
-            }
-            rawAdvancedSettings.value = pretty.join('\n') + '\n';
-            advancedSettingsChanged();
-            rawAdvancedSettings.focus();
-        };
-        messaging.send('dashboard', { what: 'readHiddenSettings' }, onRead);
-    }
+    const renderAdvancedSettings = async function(first) {
+        const raw = await vAPI.messaging.send('dashboard', {
+            what: 'readHiddenSettings',
+        });
+
+        beforeHash = hashFromAdvancedSettings(raw);
+        cachedData = hashFromAdvancedSettings(raw);
+        let pretty = [],
+            whitespaces = '                                ',
+            lines = raw.split('\n'),
+            max = 0;
+        for ( let line of lines ) {
+            let pos = line.indexOf(' ');
+            if ( pos > max ) { max = pos; }
+        }
+        for ( let line of lines ) {
+            let pos = line.indexOf(' ');
+            pretty.push(whitespaces.slice(0, max - pos) + line);
+        }
+
+        rawAdvancedSettings.value = pretty.join('\n') + '\n';
+        advancedSettingsChanged();
+        rawAdvancedSettings.focus();
+    };
 
     /******************************************************************************/
 
-    var applyChanges = function() {
-        messaging.send(
-            'dashboard',
-            {
-                what: 'writeHiddenSettings',
-                content: rawAdvancedSettings.value
-            },
-            renderAdvancedSettings
-        );
+    var applyChanges = async function() {
+        await vAPI.messaging.send('dashboard', {
+            what: 'writeHiddenSettings',
+            content: rawAdvancedSettings.value,
+        });
+        renderAdvancedSettings();
     };
 
     /******************************************************************************/

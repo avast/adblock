@@ -38,7 +38,7 @@ const extractBlocks = function(content, begId, endId) {
         const beg = match.index + match[0].length;
         const blockId = parseInt(match[1], 10);
         if ( blockId >= begId && blockId < endId ) {
-            var end = content.indexOf('#block-end-' + match[1], beg);
+            const end = content.indexOf('#block-end-' + match[1], beg);
             out.push(content.slice(beg, end));
             reBlockStart.lastIndex = end;
         }
@@ -49,6 +49,9 @@ const extractBlocks = function(content, begId, endId) {
 
 /******************************************************************************/
 
+// https://github.com/MajkiIT/polish-ads-filter/issues/14768#issuecomment-536006312
+//   Avoid reporting badfilter-ed filters.
+
 const fromNetFilter = function(details) {
     const lists = [];
     const compiledFilter = details.compiledFilter;
@@ -56,7 +59,7 @@ const fromNetFilter = function(details) {
     for ( const assetKey in listEntries ) {
         const entry = listEntries[assetKey];
         if ( entry === undefined ) { continue; }
-        const content = extractBlocks(entry.content, 0, 1000);
+        const content = extractBlocks(entry.content, 0, 1);
         let pos = 0;
         for (;;) {
             pos = content.indexOf(compiledFilter, pos);
@@ -117,6 +120,7 @@ const fromCosmeticFilter = function(details) {
     const prefix = match[0];
     const exception = prefix.charAt(1) === '@';
     const selector = details.rawFilter.slice(prefix.length);
+    const isHtmlFilter = prefix.endsWith('^');
 
     // The longer the needle, the lower the number of false positives.
     const needle = selector.match(/\w+/g).reduce(function(a, b) {
@@ -175,17 +179,22 @@ const fromCosmeticFilter = function(details) {
             let end = content.indexOf('\n', pos);
             if ( end === -1 ) { end = content.length; }
             pos = end;
-            let fargs = JSON.parse(content.slice(beg, end));
+            const fargs = JSON.parse(content.slice(beg, end));
+            const filterType = fargs[0];
 
             // https://github.com/gorhill/uBlock/issues/2763
-            if ( fargs[0] >= 0 && fargs[0] <= 5 && details.ignoreGeneric ) {
+            if ( filterType >= 0 && filterType <= 5 && details.ignoreGeneric ) {
                 continue;
             }
 
-            switch ( fargs[0] ) {
+            // Do not confuse cosmetic filters with HTML ones.
+            if ( (filterType === 64) !== isHtmlFilter ) { continue; }
+
+            switch ( filterType ) {
             // Lowly generic cosmetic filters
             case 0: // simple id-based
                 if (
+                    exception === false &&
                     fargs[1] === selector.slice(1) &&
                     selector.charAt(0) === '#'
                 ) {
@@ -194,6 +203,7 @@ const fromCosmeticFilter = function(details) {
                 break;
             case 2: // simple class-based
                 if (
+                    exception === false &&
                     fargs[1] === selector.slice(1) &&
                     selector.charAt(0) === '.'
                 ) {
@@ -202,7 +212,7 @@ const fromCosmeticFilter = function(details) {
                 break;
             case 1: // complex id-based
             case 3: // complex class-based
-                if ( fargs[2] === selector ) {
+                if ( exception === false && fargs[2] === selector ) {
                     found = prefix + selector;
                 }
                 break;
@@ -216,38 +226,34 @@ const fromCosmeticFilter = function(details) {
                 break;
             // Specific cosmetic filtering
             case 8:
-                if ( exception !== ((fargs[1] & 0b0001) !== 0) ) { break; }
-                isProcedural = (fargs[1] & 0b0010) !== 0;
+            // HTML filtering
+            case 64:
+                if ( exception !== ((fargs[2] & 0b01) !== 0) ) { break; }
+                isProcedural = (fargs[2] & 0b10) !== 0;
                 if (
                     isProcedural === false && fargs[3] !== selector ||
                     isProcedural && JSON.parse(fargs[3]).raw !== selector
                 ) {
                     break;
                 }
-                if ( hostnameMatches(fargs[2]) ) {
-                    found = fargs[2] + prefix + selector;
-                }
-                break;
-            // Scriptlet injection
-            case 32:
-                if ( exception !== ((fargs[1] & 0b0001) !== 0) ) { break; }
-                if ( fargs[3] !== selector ) { break; }
-                if ( hostnameMatches(fargs[2]) ) {
-                    found = fargs[2] + prefix + selector;
-                }
-                break;
-            // HTML filtering
-            case 64: // CSS selector
-            case 65: // procedural
-                if ( exception !== ((fargs[1] & 0b0001) !== 0) ) { break; }
+                if ( hostnameMatches(fargs[1]) === false ) { break; }
+                // https://www.reddit.com/r/uBlockOrigin/comments/d6vxzj/
+                //   Ignore match if specific cosmetic filters are disabled
                 if (
-                    fargs[0] === 64 && fargs[3] !== selector ||
-                    fargs[0] === 65 && JSON.parse(fargs[3]).raw !== selector
+                    filterType === 8 &&
+                    exception === false &&
+                    details.ignoreSpecific
                 ) {
                     break;
                 }
-                if ( hostnameMatches(fargs[2]) ) {
-                    found = fargs[2] + prefix + selector;
+                found = fargs[1] + prefix + selector;
+                break;
+            // Scriptlet injection
+            case 32:
+                if ( exception !== ((fargs[2] & 1) !== 0) ) { break; }
+                if ( fargs[3] !== selector ) { break; }
+                if ( hostnameMatches(fargs[1]) ) {
+                    found = fargs[1] + prefix + selector;
                 }
                 break;
             }

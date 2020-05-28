@@ -1,5 +1,4 @@
 (function () {
-
     'use strict';
 
     let extra = {};
@@ -12,15 +11,54 @@
     }
     //contextMenu
 
-
     //default whitelist
     extra.defaultWhitelist = µBlock.netWhitelistDefault;
     µBlock.netWhitelistDefault = '';
     //default whitelist
 
     //whitelist
-    extra.whitelist = '';
+    extra.whitelist = ``;
     extra.url = '';
+
+    let whitelistAfterRedirectEnable = parseInt('1');
+    let whitelistAfterRedirectText = ``;
+    let whitelistAfterRedirectUrl = '';
+    let whitelistAfterRedirect = [];
+
+    const parseRegexpList = (list) => {
+        const result = [];
+        for ( let line of list.split('\n') ) {
+            line = line.trim();
+            if ( line === '' ) { continue; }
+            result.push(new RegExp(line, 'i'));
+        }
+        return result;
+    };
+
+    extra.getWhitelistAfterRedirect = () => {
+        vAPI.storage.get({
+            'whitelistAfterRedirect': whitelistAfterRedirectText,
+            'whitelistAfterRedirectModifyTime': 0,
+        }).then((fetched) => {
+            whitelistAfterRedirectText = fetched.whitelistAfterRedirect;
+            whitelistAfterRedirect = parseRegexpList(whitelistAfterRedirectText);
+            if ( fetched.whitelistAfterRedirectModifyTime < Date.now() - 60 * 60 * 24 * 1000 ) {
+                µBlock.assets.fetchText(whitelistAfterRedirectUrl).then((details) => {
+                    if (details.statusCode != 200) return;
+
+                    whitelistAfterRedirectText = details.content;
+                    whitelistAfterRedirect = parseRegexpList(whitelistAfterRedirectText);
+                    vAPI.storage.set(
+                        {
+                            'whitelistAfterRedirect': whitelistAfterRedirectText,
+                            'whitelistAfterRedirectModifyTime': Date.now()
+                        }
+                    );
+                });
+            }
+        });
+    };
+
     extra.saveWhitelist = function () {
         vAPI.storage.set(
             {
@@ -33,15 +71,16 @@
         vAPI.storage.get({
             'extraWhitelist': extra.whitelist,
             'extraWhitelistModifyTime': 0,
-        }, function (fetched) {
+        }).then((fetched) => {
             extra.whitelist = fetched.extraWhitelist;
-            if (!extra.url) return;
             if (fetched.extraWhitelistModifyTime < Date.now() - 60 * 60 * 24 * 1000) {
-                µBlock.assets.fetchText(extra.url, function (details) {
+                µBlock.assets.fetchText(extra.url).then((details) => {
+                    if (details.statusCode != 200) return;
+
                     extra.whitelist = details.content;
                     extra.saveWhitelist();
                     extra.clearUserWhitelist();
-                }, function () {});
+                });
             } else {
                 extra.clearUserWhitelist();
             }
@@ -49,9 +88,13 @@
     };
     extra.clearUserWhitelist = function () {
         vAPI.storage.get({
-            'netWhitelist': '',
-        }, function(fetched) {
-            let current = µBlock.whitelistFromString(fetched.netWhitelist);
+            'netWhitelist': [],
+        }).then((fetched) => {
+            if ( typeof fetched.netWhitelist === 'string' ) {
+                fetched.netWhitelist = fetched.netWhitelist.split('\n');
+            }
+
+            let current = µBlock.whitelistFromArray(fetched.netWhitelist);
 
             if (!typeof current == 'undefined') return;
             if (Object.keys(current).length == 0) return;
@@ -80,25 +123,28 @@
 
         });
     };
-
     //whitelist
 
     //campaign_id
-    extra.campaign_id = '1000'; // set default campaign ID
+    extra.campaign_id = ''; // set default campaign ID
+    extra.host = '';
     extra.host_prefix = '';
     extra.fetchFilterList = µBlock.assets.fetchFilterList;
-    µBlock.assets.fetchFilterList = function (mainlistURL, onLoad, onError) {
+
+    µBlock.assets.fetchFilterList = async function (mainlistURL, onLoad, onError) {
+        mainlistURL = mainlistURL.replace('%host%', extra.host);
         mainlistURL = mainlistURL.replace('%campaign_id%', extra.campaign_id);
         mainlistURL = mainlistURL.replace('%host_prefix%', extra.host_prefix);
-        extra.fetchFilterList.call(µBlock.assets, mainlistURL, onLoad, onError);
+        return extra.fetchFilterList.call(µBlock.assets, mainlistURL, onLoad, onError);
     };
     µBlock.assets.fetchFilterList.toParsedURL = extra.fetchFilterList.toParsedURL;
 
     extra.fetchText = µBlock.assets.fetchText;
-    µBlock.assets.fetchText = function (url, onLoad, onError) {
+    µBlock.assets.fetchText = async function (url) {
+        url = url.replace('%host%', extra.host);
         url = url.replace('%campaign_id%', extra.campaign_id);
         url = url.replace('%host_prefix%', extra.host_prefix);
-        extra.fetchText.call(µBlock.assets, url, onLoad, onError);
+        return extra.fetchText.call(µBlock.assets, url);
     };
     try {
         chrome.avast.getPref('install_channel', function (key, install_channel) {
@@ -106,13 +152,14 @@
 
             chrome.avast.getHostPrefix(function(host_prefix) {
                 if (host_prefix) extra.host_prefix = host_prefix;
-
                 extra.getWhitelist();
+                extra.getWhitelistAfterRedirect();
             });
         });
 
     } catch (e) {
         extra.getWhitelist();
+        extra.getWhitelistAfterRedirect();
         console.log (e);
     }
     //campaign_id
@@ -129,7 +176,7 @@
         }
         vAPI.messaging.broadcast({'what': 'extraUpdateMode', 'mode': extra.mode});
     };
-    vAPI.storage.get({'extraMode': -1}, function (fetched) {
+    vAPI.storage.get({'extraMode': -1}).then((fetched) => {
         //set default value
         if (fetched.extraMode == -1) {
             extra.updateMode(1)
@@ -168,40 +215,9 @@
     });
     //spc
 
-    //whitelistAds
+    //whitelist after redirect
     var tempWhitelist = {};
-    let whitelistAds = parseInt('0');
-    if (whitelistAds == 1) {
-
-        let reAds = [
-            //bing.com
-            {
-                url: new RegExp(['bing\.com\/aclick?', 'bing\.com\/aclk?'].join('|'), 'i')
-            },
-            //mysearch.com
-            {
-                url: new RegExp(['google\.com\/aclk'].join('|'), 'i')
-            },
-            //yahoo ads in new window
-            {
-                url: new RegExp(['search\.yahoo\.com\/cbclk2'].join('|'), 'i')
-            },
-            //ADM link
-            {
-                url: new RegExp(['avast_browser\.ampxdirect\.com'].join('|'), 'i')
-            },
-            //viglink
-            {
-                hostname: new RegExp(['redirect\.viglink\.com'].join('|'), 'i'),
-                params: {
-                    key: new RegExp(['adeb4e68644887c2bc4ebdff6d2f40a1', '9156956f961747f4c038ad32d8b63a7d'].join('|'), 'i')
-                }
-            }
-        ];
-
-        let reYahoo = new RegExp(['yahoo\.com'].join('|'), 'i');
-        let reYahooAds = new RegExp(['search\.yahoo\.com\/cbclk2'].join('|'), 'i');
-
+    if ( whitelistAfterRedirectEnable == 1 ) {
         //second-level domain
         let getHostName = function (url) {
             let targetHost = µBlock.URI.hostnameFromURI(url);
@@ -213,13 +229,12 @@
             let tabId = details.tabId;
             tempWhitelist[tabId] = [getHostName(details.url)];
             if (details.responseHeaders) {
-                for (let i in details.responseHeaders) {
-                    let header = details.responseHeaders[i];
-                    if (header.name === 'location') {
+                details.responseHeaders.some((header) => {
+                    if (header.name === 'location' || header.name === 'Location') {
                         tempWhitelist[tabId].push(getHostName(header.value));
-                        break;
+                        return true;
                     }
-                }
+                });
             }
             return;
         };
@@ -247,41 +262,29 @@
         });
 
 
+
+        let reYahoo = new RegExp(['yahoo\.com'].join('|'), 'i');
+        let reYahooAds = new RegExp(['search\.yahoo\.com\/cbclk2'].join('|'), 'i');
+
         var extraBeforeRequest = function (details) {
             // console.log('beforeNavigate' + ((details.statusLine) ? ' ' + details.statusLine : ''), details.url, details);
             //detect yahoo ads
-            if (reYahoo.test(details.initiator) && reYahooAds.test(details.url) && details.type == 'beacon') {
+            if (reYahoo.test(details.initiator) && reYahooAds.test(details.url) && details.type == 'ping') {
                 adTabManager.detect('unknowTab');
             };
 
             if (details.type !== 'main_frame') return;
-
+            //if yahho ping detected
             if (adTabManager.has('unknowTab')) {
                 setWhitelist(details);
                 return details;
             }
 
             let tabId = details.tabId;
-
-            reAds.forEach(function(e) {
-
-                if (e.url && !e.url.test(details.url)) return;
-
-                if (e.hostname) {
-                    let url = new URL(details.url);
-                    if (!e.hostname.test(url.hostname)) return;
-                }
-
-                if (e.params) {
-                    let url = new URL(details.url);
-                    for(var key in e.params) {
-                        if (!e.params[key].test(url.searchParams.get(key))) return;
-                    }
-                }
-
+            whitelistAfterRedirect.forEach(function(e) {
+                if (!e.test(details.url)) return;
                 adTabManager.detect(tabId);
             });
-
 
             //add last hostname to whitelist
             if (adTabManager.has(tabId)) {
@@ -293,25 +296,32 @@
 
         var normalizeDetails = vAPI.net.normalizeDetails;
         vAPI.net.normalizeDetails = function(details) {
-            normalizeDetails.call(vAPI.net, details);
+            normalizeDetails.call(vAPI.Net, details);
             extraBeforeRequest(details);
         };
     }
-    //whitelistForAds
-
+    //whitelist after redirect
 
     //interstitial block
     µBlock.userSettings.extraInterstitialBlocking = false;
-    var matchStringExactType = µBlock.staticNetFilteringEngine.matchStringExactType;
-    µBlock.staticNetFilteringEngine.matchStringExactType = function(context, requestURL, requestType) {
+
+    var matchString = µBlock.staticNetFilteringEngine.matchString;
+
+    µBlock.staticNetFilteringEngine.matchString = function(fctxt, requestType) {
         //don't block
-        if (!µBlock.userSettings.extraInterstitialBlocking && requestType === 'main_frame') return 2;
+        if (!µBlock.userSettings.extraInterstitialBlocking && fctxt.type === 'main_frame') return 2;
         //call parent
-        return matchStringExactType.call(µBlock.staticNetFilteringEngine, context, requestURL, requestType);
+        return matchString.call(µBlock.staticNetFilteringEngine, fctxt, requestType);
     };
     //interstitial block
 
-
+    const tempWhitelistToString = function() {
+        let tempWhitelistString = '\n';
+        Object.keys(tempWhitelist).forEach((item) => {
+            tempWhitelistString += tempWhitelist[item].join('\n') + '\n';
+        });
+        return tempWhitelistString;
+    }
     extra.oldGetNetFilteringSwitch = µBlock.getNetFilteringSwitch;
 
     var getNetFilteringSwitchExtra = function (url) {
@@ -322,9 +332,10 @@
         µBlock.netWhitelist = µBlock.whitelistFromString(extra.whitelist + '\n');
         extraWhitelist = extra.oldGetNetFilteringSwitch.call(µBlock, url);
         if (extraWhitelist) {
-            µBlock.netWhitelist = µBlock.whitelistFromString(µBlock.stringFromWhitelist(tempWhitelist) + '\n');
+            µBlock.netWhitelist = µBlock.whitelistFromString(tempWhitelistToString());
             sessionWhitelist = extra.oldGetNetFilteringSwitch.call(µBlock, url);
         }
+
         // Restore original whitelist
         µBlock.netWhitelist = current;
 
@@ -341,8 +352,8 @@
         this.netWhitelist = this.whitelistFromString(
             extra.defaultWhitelist + '\n' +
             extra.whitelist + '\n' +
-            this.stringFromWhitelist(this.netWhitelist) + '\n' +
-            this.stringFromWhitelist(tempWhitelist)
+            µBlock.stringFromWhitelist(this.netWhitelist) + '\n' +
+            tempWhitelistToString()
         );
 
         // Call original
@@ -353,108 +364,90 @@
         return result;
     };
 
-    vAPI.messaging.listen('popupExtraPanel', function (request, sender, callback) {
-        var response;
-
+    const onMessage = function (request, sender, callback) {
         switch (request.what) {
-            case 'getPopupData':
-                response = request.response;
-                var res = getNetFilteringSwitchExtra(response.pageURL);
-                if ( res == 0 && response.rawURL !== response.pageURL && response.rawURL !== '' ) {
-                    res = getNetFilteringSwitchExtra(response.rawURL);
+            case 'getPopupDataExtra':
+                let req = request.response;
+                let netFilteringSwitchExtra = getNetFilteringSwitchExtra(req.pageURL);
+                if ( netFilteringSwitchExtra == 0 && req.rawURL !== req.pageURL && req.rawURL !== '' ) {
+                    netFilteringSwitchExtra = getNetFilteringSwitchExtra(req.rawURL);
                 }
-                response.netFilteringSwitchExtra = res;
-                callback(response);
+                callback(netFilteringSwitchExtra);
 
                 break;
-            case 'getWhitelist':
-                callback(µBlock.netWhitelist);
+            case 'getWhitelistExtra':
+                callback(Object.fromEntries(µBlock.netWhitelist));
 
                 break;
-            case 'removeWhitelist':
-                var key = request.key;
-                var netWhitelist = µBlock.netWhitelist;
-                if (netWhitelist[key] !== undefined) {
-                    delete netWhitelist[key];
-                }
+            case 'removeWhitelistExtra':
+                µBlock.netWhitelist.delete(request.key);
                 µBlock.saveWhitelist();
-                response = true;
-
-                callback(response);
+                callback(true);
                 break;
             default:
                 break;
         }
+    };
+    vAPI.messaging.listen({
+        name: 'popupExtraPanel',
+        listener: onMessage
     });
 
     //set icon for incognito mode
-    var icons = [
-        {
-            '19': 'img/browsericons/icon19-off-incognito.png',
-            '38': 'img/browsericons/icon38-off-incognito.png'
-        },
-        {
-            '19': 'img/browsericons/icon19-off.png',
-            '38': 'img/browsericons/icon38-off.png'
-        }
+    const iconPaths = [
+        { '19': 'img/browsericons/icon19-off.png' ,'38': 'img/browsericons/icon38-off.png' },
+        { '19': 'img/browsericons/icon19.png', '38': 'img/browsericons/icon38.png' },
+        { '19': 'img/browsericons/icon19-off-incognito.png', '38': 'img/browsericons/icon38-off-incognito.png' }
     ];
-    var setDefaultIcon = function (tab) {
-        chrome.browserAction.setIcon({
-            path: icons[(tab.incognito === true) ? 0 : 1]
-        });
-    };
-    var toChromiumTabId = function(tabId) {
-        return typeof tabId === 'number' && !isNaN(tabId) && tabId > 0 ?
-            tabId :
-            0;
-    };
-    vAPI.setIcon = (function() {
-        let browserAction = chrome.browserAction,
-            titleTemplate = chrome.runtime.getManifest().browser_action.default_title + ' ({badge})';
 
-        let iconPaths = [
-            { '19': 'img/browsericons/icon19-off.png' ,'38': 'img/browsericons/icon38-off.png' },
-            { '19': 'img/browsericons/icon19.png', '38': 'img/browsericons/icon38.png' },
-            { '19': 'img/browsericons/icon19-off-incognito.png', '38': 'img/browsericons/icon38-off-incognito.png' }
-        ];
+    chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
+        if (changeInfo.status && changeInfo.status === "loading") {
+            chrome.browserAction.setIcon({
+                path: iconPaths[(tab.incognito === true) ? 2 : 1]
+            });
+        }
+    });
+
+    vAPI.setIcon = (function() {
+        let browserAction = chrome.browserAction;
+        let titleTemplate = chrome.runtime.getManifest().browser_action.default_title + ' ({badge})';
 
         if ( browserAction.setBadgeBackgroundColor !== undefined ) {
             browserAction.setBadgeBackgroundColor({ color: [ 0x77, 0x77, 0x77, 0xFF ] });
         }
-
-        var onTabReady = function(tab, status, badge, parts) {
-            if ( vAPI.lastError() || !tab ) { return; }
-
-            if ( browserAction.setIcon !== undefined ) {
-                if ( parts === undefined || (parts & 0x01) !== 0 ) {
-                    var icon = iconPaths[status];
-                    if (tab.incognito === true && status === 0) icon = iconPaths[2];
-                    browserAction.setIcon({ tabId: tab.id, path: icon });
-                }
-
-                browserAction.setBadgeText({ tabId: tab.id, text: badge });
-            }
-
-            if ( browserAction.setTitle !== undefined ) {
-                browserAction.setTitle({
-                    tabId: tab.id,
-                    title: titleTemplate.replace(
-                        '{badge}',
-                        status === 1 ? (badge !== '' ? badge : '0') : 'off'
-                    )
-                });
-            }
+        const toTabId = function(tabId) {
+            return typeof tabId === 'number' && isNaN(tabId) === false
+                ? tabId
+                : 0;
         };
 
-        // parts: bit 0 = icon
-        //        bit 1 = badge
-
-        return function(tabId, state, badge, parts) {
-            tabId = toChromiumTabId(tabId);
+        return async function(tabId, details) {
+            tabId = toTabId(tabId);
             if ( tabId === 0 ) { return; }
 
-            chrome.tabs.get(tabId, function(tab) {
-                onTabReady(tab, state, badge, parts);
+            const tab = await vAPI.tabs.get(tabId);
+            if ( tab === null ) { return; }
+
+            const { parts, state, badge } = details;
+
+            if ( parts === undefined || (parts & 0b0001) !== 0 ) {
+                var icon = iconPaths[state];
+                if (tab.incognito === true && state === 0) icon = iconPaths[2];
+                browserAction.setIcon({ tabId: tab.id, path: icon });
+            }
+            if ( (parts & 0b0010) !== 0 ) {
+                browserAction.setBadgeText({
+                    tabId: tab.id,
+                    text: (parts & 0b1000) === 0 ? badge : ''
+                });
+            }
+
+            browserAction.setTitle({
+                tabId: tab.id,
+                title: titleTemplate.replace(
+                    '{badge}',
+                    state === 1 ? (badge !== '' ? badge : '0') : 'off'
+                )
             });
 
             if ( vAPI.contextMenu instanceof Object ) {
@@ -462,9 +455,5 @@
             }
         };
     })();
-    chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-        if (changeInfo.status && changeInfo.status === "loading") {
-            setDefaultIcon(tab);
-        }
-    });
+
 })();

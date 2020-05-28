@@ -82,7 +82,8 @@
 
 ! https://www.eff.org/deeplinks/2014/07/white-house-website-includes-unique-non-cookie-tracker-despite-privacy-policy
 ! https://github.com/uBlockOrigin/uAssets/issues/1713
-||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
+! https://github.com/uBlockOrigin/uAssets/issues/6319
+||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs|~sitecore.com
 ! https://github.com/gorhill/uBlock/issues/1384
 ||addthis.com/*/addthis_widget.js$script,redirect=addthis.com/addthis_widget.js
 ##.addthis_toolbox
@@ -169,3 +170,12 @@ rediff.com##+js(remove-attr.js, onmousedown, [onmousedown^="return enc(this,'htt
 
 ! https://github.com/uBlockOrigin/uAssets/pull/5578
 ||colpirio.com^$3p
+
+! https://www.reddit.com/r/uBlockOrigin/comments/bvlumg/oldredditcom_outbound_link_redirect/
+old.reddit.com##+js(remove-attr.js, data-outbound-url)
+
+! https://github.com/uBlockOrigin/uAssets/pull/5997
+||docs.google.com/*/logImpressions?$xhr,redirect=nooptext,domain=docs.google.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5795#issuecomment-500244236
+||browser-update.org^$3p

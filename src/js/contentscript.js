@@ -30,7 +30,7 @@
 
 if ( typeof vAPI === 'object' ) {
     vAPI.supportsUserStylesheets =
-        /\bChrom(?:e|ium)\/(?:6[6789]|[789]|1\d\d)/.test(navigator.userAgent);
+        /\bChrom(?:e|ium)\/(?:5\d|6[012345])\b/.test(navigator.userAgent) === false;
 }
 
 
@@ -92,8 +92,11 @@ vAPI.userStylesheet = {
         vAPI.messaging.send('vapi', {
             what: 'userCSS',
             add: Array.from(this.added),
-            remove: Array.from(this.removed)
-        }, callback);
+            remove: Array.from(this.removed),
+        }).then(( ) => {
+            if ( callback instanceof Function === false ) { return; }
+            callback();
+        });
         this.added.clear();
         this.removed.clear();
     },
@@ -111,31 +114,31 @@ vAPI.userStylesheet = {
 
 /******************************************************************************/
 
-vAPI.DOMFilterer = function() {
-    this.commitTimer = new vAPI.SafeAnimationFrame(this.commitNow.bind(this));
-    this.domIsReady = document.readyState !== 'loading';
-    this.disabled = false;
-    this.listeners = [];
-    this.filterset = new Set();
-    this.excludedNodeSet = new WeakSet();
-    this.addedCSSRules = new Set();
+vAPI.DOMFilterer = class {
+    constructor() {
+        this.commitTimer = new vAPI.SafeAnimationFrame(this.commitNow.bind(this));
+        this.domIsReady = document.readyState !== 'loading';
+        this.disabled = false;
+        this.listeners = [];
+        this.filterset = new Set();
+        this.excludedNodeSet = new WeakSet();
+        this.addedCSSRules = new Set();
+        this.exceptedCSSRules = [];
+        this.reOnlySelectors = /\n\{[^\n]+/g;
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/167
-    //   By the time the DOMContentLoaded is fired, the content script might
-    //   have been disconnected from the background page. Unclear why this
-    //   would happen, so far seems to be a Chromium-specific behavior at
-    //   launch time.
-    if ( this.domIsReady !== true ) {
-        document.addEventListener('DOMContentLoaded', ( ) => {
-            if ( vAPI instanceof Object === false ) { return; }
-            this.domIsReady = true;
-            this.commit();
-        });
+        // https://github.com/uBlockOrigin/uBlock-issues/issues/167
+        //   By the time the DOMContentLoaded is fired, the content script might
+        //   have been disconnected from the background page. Unclear why this
+        //   would happen, so far seems to be a Chromium-specific behavior at
+        //   launch time.
+        if ( this.domIsReady !== true ) {
+            document.addEventListener('DOMContentLoaded', ( ) => {
+                if ( vAPI instanceof Object === false ) { return; }
+                this.domIsReady = true;
+                this.commit();
+            });
+        }
     }
-};
-
-vAPI.DOMFilterer.prototype = {
-    reOnlySelectors: /\n\{[^\n]+/g,
 
     // Here we will deal with:
     // - Injecting low priority user styles;
@@ -146,11 +149,11 @@ vAPI.DOMFilterer.prototype = {
     //   process. Another approach would be to have vAPI.SafeAnimationFrame
     //   register a shutdown job: to evaluate. For now I will keep the fix
     //   trivial.
-    commitNow: function() {
+    commitNow() {
         this.commitTimer.clear();
         if ( vAPI instanceof Object === false ) { return; }
-        let userStylesheet = vAPI.userStylesheet;
-        for ( let entry of this.addedCSSRules ) {
+        const userStylesheet = vAPI.userStylesheet;
+        for ( const entry of this.addedCSSRules ) {
             if (
                 this.disabled === false &&
                 entry.lazy &&
@@ -163,25 +166,24 @@ vAPI.DOMFilterer.prototype = {
         }
         this.addedCSSRules.clear();
         userStylesheet.apply();
-    },
+    }
 
-    commit: function(commitNow) {
+    commit(commitNow) {
         if ( commitNow ) {
             this.commitTimer.clear();
             this.commitNow();
         } else {
             this.commitTimer.start();
         }
-    },
+    }
 
-    addCSSRule: function(selectors, declarations, details) {
+    addCSSRule(selectors, declarations, details = {}) {
         if ( selectors === undefined ) { return; }
-        var selectorsStr = Array.isArray(selectors)
+        const selectorsStr = Array.isArray(selectors)
                 ? selectors.join(',\n')
                 : selectors;
         if ( selectorsStr.length === 0 ) { return; }
-        if ( details === undefined ) { details = {}; }
-        var entry = {
+        const entry = {
             selectors: selectorsStr,
             declarations,
             lazy: details.lazy === true,
@@ -197,69 +199,76 @@ vAPI.DOMFilterer.prototype = {
             vAPI.userStylesheet.add(selectorsStr + '\n{' + declarations + '}');
         }
         this.commit();
-        if ( this.hasListeners() ) {
+        if ( details.silent !== true && this.hasListeners() ) {
             this.triggerListeners({
                 declarative: [ [ selectorsStr, declarations ] ]
             });
         }
-    },
+    }
 
-    addListener: function(listener) {
+    exceptCSSRules(exceptions) {
+        if ( exceptions.length === 0 ) { return; }
+        this.exceptedCSSRules.push(...exceptions);
+        if ( this.hasListeners() ) {
+            this.triggerListeners({ exceptions });
+        }
+    }
+
+    addListener(listener) {
         if ( this.listeners.indexOf(listener) !== -1 ) { return; }
         this.listeners.push(listener);
-    },
+    }
 
-    removeListener: function(listener) {
-        var pos = this.listeners.indexOf(listener);
+    removeListener(listener) {
+        const pos = this.listeners.indexOf(listener);
         if ( pos === -1 ) { return; }
         this.listeners.splice(pos, 1);
-    },
+    }
 
-    hasListeners: function() {
+    hasListeners() {
         return this.listeners.length !== 0;
-    },
+    }
 
-    triggerListeners: function(changes) {
-        var i = this.listeners.length;
-        while ( i-- ) {
-            this.listeners[i].onFiltersetChanged(changes);
+    triggerListeners(changes) {
+        for ( const listener of this.listeners ) {
+            listener.onFiltersetChanged(changes);
         }
-    },
+    }
 
-    excludeNode: function(node) {
+    excludeNode(node) {
         this.excludedNodeSet.add(node);
         this.unhideNode(node);
-    },
+    }
 
-    unexcludeNode: function(node) {
+    unexcludeNode(node) {
         this.excludedNodeSet.delete(node);
-    },
+    }
 
-    hideNode: function(node) {
+    hideNode(node) {
         if ( this.excludedNodeSet.has(node) ) { return; }
         if ( this.hideNodeAttr === undefined ) { return; }
         node.setAttribute(this.hideNodeAttr, '');
-        if ( this.hideNodeStyleSheetInjected === false ) {
-            this.hideNodeStyleSheetInjected = true;
-            this.addCSSRule(
-                '[' + this.hideNodeAttr + ']',
-                'display:none!important;'
-            );
-        }
-    },
+        if ( this.hideNodeStyleSheetInjected ) { return; }
+        this.hideNodeStyleSheetInjected = true;
+        this.addCSSRule(
+            `[${this.hideNodeAttr}]`,
+            'display:none!important;',
+            { silent: true }
+        );
+    }
 
-    unhideNode: function(node) {
+    unhideNode(node) {
         if ( this.hideNodeAttr === undefined ) { return; }
         node.removeAttribute(this.hideNodeAttr);
-    },
+    }
 
-    toggle: function(state, callback) {
+    toggle(state, callback) {
         if ( state === undefined ) { state = this.disabled; }
         if ( state !== this.disabled ) { return; }
         this.disabled = !state;
-        var userStylesheet = vAPI.userStylesheet;
-        for ( var entry of this.filterset ) {
-            var rule = entry.selectors + '\n{' + entry.declarations + '}';
+        const userStylesheet = vAPI.userStylesheet;
+        for ( const entry of this.filterset ) {
+            const rule = `${entry.selectors}\n{${entry.declarations}}`;
             if ( this.disabled ) {
                 userStylesheet.remove(rule);
             } else {
@@ -267,38 +276,35 @@ vAPI.DOMFilterer.prototype = {
             }
         }
         userStylesheet.apply(callback);
-    },
+    }
 
-    getAllSelectors_: function(all) {
-        var out = {
-            declarative: []
+    getAllSelectors_(all) {
+        const out = {
+            declarative: [],
+            exceptions: this.exceptedCSSRules,
         };
-        var selectors;
-        for ( var entry of this.filterset ) {
-            selectors = entry.selectors;
+        for ( const entry of this.filterset ) {
+            let selectors = entry.selectors;
             if ( all !== true && this.hideNodeAttr !== undefined ) {
                 selectors = selectors
-                                .replace('[' + this.hideNodeAttr + ']', '')
+                                .replace(`[${this.hideNodeAttr}]`, '')
                                 .replace(/^,\n|,\n$/gm, '');
                 if ( selectors === '' ) { continue; }
             }
             out.declarative.push([ selectors, entry.declarations ]);
         }
         return out;
-    },
+    }
 
-    getFilteredElementCount: function() {
-        let details = this.getAllSelectors_(true);
+    getFilteredElementCount() {
+        const details = this.getAllSelectors_(true);
         if ( Array.isArray(details.declarative) === false ) { return 0; }
-        let selectors = details.declarative.reduce(function(acc, entry) {
-            acc.push(entry[0]);
-            return acc;
-        }, []);
+        const selectors = details.declarative.map(entry => entry[0]);
         if ( selectors.length === 0 ) { return 0; }
         return document.querySelectorAll(selectors.join(',\n')).length;
-    },
+    }
 
-    getAllSelectors: function() {
+    getAllSelectors() {
         return this.getAllSelectors_(false);
     }
 };
@@ -370,10 +376,10 @@ vAPI.userStylesheet = {
     inject: function() {
         this.style = document.createElement('style');
         this.style.disabled = this.disabled;
-        var parent = document.head || document.documentElement;
+        const parent = document.head || document.documentElement;
         if ( parent === null ) { return; }
         parent.appendChild(this.style);
-        var observer = new MutationObserver(function() {
+        const observer = new MutationObserver(function() {
             if ( this.style === null ) { return; }
             if ( this.style.sheet !== null ) { return; }
             this.styleFixCount += 1;
@@ -388,31 +394,31 @@ vAPI.userStylesheet = {
     add: function(cssText) {
         if ( cssText === '' || this.css.has(cssText) ) { return; }
         if ( this.style === null ) { this.inject(); }
-        var sheet = this.style.sheet;
+        const sheet = this.style.sheet;
         if ( !sheet ) { return; }
-        var i = sheet.cssRules.length;
+        const i = sheet.cssRules.length;
         sheet.insertRule(cssText, i);
         this.css.set(cssText, sheet.cssRules[i]);
     },
     remove: function(cssText) {
         if ( cssText === '' ) { return; }
-        var cssRule = this.css.get(cssText);
+        const cssRule = this.css.get(cssText);
         if ( cssRule === undefined ) { return; }
         this.css.delete(cssText);
         if ( this.style === null ) { return; }
-        var sheet = this.style.sheet;
+        const sheet = this.style.sheet;
         if ( !sheet ) { return; }
-        var rules = sheet.cssRules,
-            i = rules.length;
+        const rules = sheet.cssRules;
+        let i = rules.length;
         while ( i-- ) {
             if ( rules[i] !== cssRule ) { continue; }
             sheet.deleteRule(i);
             break;
         }
         if ( rules.length !== 0 ) { return; }
-        var style = this.style;
+        const style = this.style;
         this.style = null;
-        var parent = style.parentNode;
+        const parent = style.parentNode;
         if ( parent !== null ) {
             parent.removeChild(style);
         }
@@ -429,55 +435,54 @@ vAPI.userStylesheet = {
 
 /******************************************************************************/
 
-vAPI.DOMFilterer = function() {
-    this.commitTimer = new vAPI.SafeAnimationFrame(this.commitNow.bind(this));
-    this.domIsReady = document.readyState !== 'loading';
-    this.listeners = [];
-    this.excludedNodeSet = new WeakSet();
-    this.addedNodes = new Set();
-    this.removedNodes = false;
+vAPI.DOMFilterer = class {
+    constructor() {
+        this.commitTimer = new vAPI.SafeAnimationFrame(this.commitNow.bind(this));
+        this.domIsReady = document.readyState !== 'loading';
+        this.listeners = [];
+        this.excludedNodeSet = new WeakSet();
+        this.addedNodes = new Set();
+        this.removedNodes = false;
 
-    this.specificSimpleHide = new Set();
-    this.specificSimpleHideAggregated = undefined;
-    this.addedSpecificSimpleHide = [];
-    this.specificComplexHide = new Set();
-    this.specificComplexHideAggregated = undefined;
-    this.addedSpecificComplexHide = [];
-    this.specificOthers = [];
-    this.genericSimpleHide = new Set();
-    this.genericComplexHide = new Set();
+        this.specificSimpleHide = new Set();
+        this.specificSimpleHideAggregated = undefined;
+        this.addedSpecificSimpleHide = [];
+        this.specificComplexHide = new Set();
+        this.specificComplexHideAggregated = undefined;
+        this.addedSpecificComplexHide = [];
+        this.specificOthers = [];
+        this.genericSimpleHide = new Set();
+        this.genericComplexHide = new Set();
+        this.exceptedCSSRules = [];
 
-    this.hideNodeExpando = undefined;
-    this.hideNodeBatchProcessTimer = undefined;
-    this.hiddenNodeObserver = undefined;
-    this.hiddenNodesetToProcess = new Set();
-    this.hiddenNodeset = new WeakSet();
+        this.hideNodeExpando = undefined;
+        this.hideNodeBatchProcessTimer = undefined;
+        this.hiddenNodeObserver = undefined;
+        this.hiddenNodesetToProcess = new Set();
+        this.hiddenNodeset = new WeakSet();
 
-    if ( vAPI.domWatcher instanceof Object ) {
-        vAPI.domWatcher.addListener(this);
+        if ( vAPI.domWatcher instanceof Object ) {
+            vAPI.domWatcher.addListener(this);
+        }
+
+        // https://www.w3.org/community/webed/wiki/CSS/Selectors#Combinators
+        this.reCSSCombinators = /[ >+~]/;
     }
-};
 
-vAPI.DOMFilterer.prototype = {
-    // https://www.w3.org/community/webed/wiki/CSS/Selectors#Combinators
-    reCSSCombinators: /[ >+~]/,
-
-    commitNow: function() {
+    commitNow() {
         this.commitTimer.clear();
 
         if ( this.domIsReady !== true || vAPI.userStylesheet.disabled ) {
             return;
         }
 
-        var nodes, node;
-
         // Filterset changed.
 
         if ( this.addedSpecificSimpleHide.length !== 0 ) {
             //console.time('specific simple filterset changed');
             //console.log('added %d specific simple selectors', this.addedSpecificSimpleHide.length);
-            nodes = document.querySelectorAll(this.addedSpecificSimpleHide.join(','));
-            for ( node of nodes ) {
+            const nodes = document.querySelectorAll(this.addedSpecificSimpleHide.join(','));
+            for ( const node of nodes ) {
                 this.hideNode(node);
             }
             this.addedSpecificSimpleHide = [];
@@ -488,8 +493,8 @@ vAPI.DOMFilterer.prototype = {
         if ( this.addedSpecificComplexHide.length !== 0 ) {
             //console.time('specific complex filterset changed');
             //console.log('added %d specific complex selectors', this.addedSpecificComplexHide.length);
-            nodes = document.querySelectorAll(this.addedSpecificComplexHide.join(','));
-            for ( node of nodes ) {
+            const nodes = document.querySelectorAll(this.addedSpecificComplexHide.join(','));
+            for ( const node of nodes ) {
                 this.hideNode(node);
             }
             this.addedSpecificComplexHide = [];
@@ -499,8 +504,8 @@ vAPI.DOMFilterer.prototype = {
 
         // DOM layout changed.
 
-        var domNodesAdded = this.addedNodes.size !== 0,
-            domLayoutChanged = domNodesAdded || this.removedNodes;
+        const domNodesAdded = this.addedNodes.size !== 0;
+        const domLayoutChanged = domNodesAdded || this.removedNodes;
 
         if ( domNodesAdded === false || domLayoutChanged === false ) {
             return;
@@ -514,12 +519,12 @@ vAPI.DOMFilterer.prototype = {
                 this.specificSimpleHideAggregated =
                     Array.from(this.specificSimpleHide).join(',\n');
             }
-            for ( node of this.addedNodes ) {
+            for ( const node of this.addedNodes ) {
                 if ( node[vAPI.matchesProp](this.specificSimpleHideAggregated) ) {
                     this.hideNode(node);
                 }
-                nodes = node.querySelectorAll(this.specificSimpleHideAggregated);
-                for ( node of nodes ) {
+                const nodes = node.querySelectorAll(this.specificSimpleHideAggregated);
+                for ( const node of nodes ) {
                     this.hideNode(node);
                 }
             }
@@ -532,8 +537,8 @@ vAPI.DOMFilterer.prototype = {
                 this.specificComplexHideAggregated =
                     Array.from(this.specificComplexHide).join(',\n');
             }
-            nodes = document.querySelectorAll(this.specificComplexHideAggregated);
-            for ( node of nodes ) {
+            const nodes = document.querySelectorAll(this.specificComplexHideAggregated);
+            for ( const node of nodes ) {
                 this.hideNode(node);
             }
             //console.timeEnd('dom layout changed/specific complex selectors');
@@ -541,30 +546,28 @@ vAPI.DOMFilterer.prototype = {
 
         this.addedNodes.clear();
         this.removedNodes = false;
-    },
+    }
 
-    commit: function(now) {
+    commit(now) {
         if ( now ) {
             this.commitTimer.clear();
             this.commitNow();
         } else {
             this.commitTimer.start();
         }
-    },
+    }
 
-    addCSSRule: function(selectors, declarations, details) {
+    addCSSRule(selectors, declarations, details = {}) {
         if ( selectors === undefined ) { return; }
 
-        if ( details === undefined ) { details = {}; }
-
-        var selectorsStr = Array.isArray(selectors) ?
+        const selectorsStr = Array.isArray(selectors) ?
             selectors.join(',\n') :
             selectors;
         if ( selectorsStr.length === 0 ) { return; }
 
         vAPI.userStylesheet.add(selectorsStr + '\n{' + declarations + '}');
         this.commit();
-        if ( this.hasListeners() ) {
+        if ( details.silent !== true && this.hasListeners() ) {
             this.triggerListeners({
                 declarative: [ [ selectorsStr, declarations ] ]
             });
@@ -578,13 +581,9 @@ vAPI.DOMFilterer.prototype = {
             return;
         }
 
-        // Do not strongly enforce internal CSS rules.
-        if ( details.internal ) { return; }
-
-        var isGeneric= details.lazy === true,
-            isSimple = details.type === 'simple',
-            isComplex = details.type === 'complex',
-            selector;
+        const isGeneric= details.lazy === true;
+        const isSimple = details.type === 'simple';
+        const isComplex = details.type === 'complex';
 
         if ( isGeneric ) {
             if ( isSimple ) {
@@ -597,12 +596,12 @@ vAPI.DOMFilterer.prototype = {
             }
         }
 
-        var selectorsArr = Array.isArray(selectors) ?
+        const selectorsArr = Array.isArray(selectors) ?
             selectors :
             selectors.split(',\n');
 
         if ( isGeneric ) {
-            for ( selector of selectorsArr ) {
+            for ( const selector of selectorsArr ) {
                 if ( this.reCSSCombinators.test(selector) ) {
                     this.genericComplexHide.add(selector);
                 } else {
@@ -613,7 +612,7 @@ vAPI.DOMFilterer.prototype = {
         }
 
         // Specific cosmetic filters.
-        for ( selector of selectorsArr ) {
+        for ( const selector of selectorsArr ) {
             if (
                 isComplex ||
                 isSimple === false && this.reCSSCombinators.test(selector)
@@ -627,44 +626,51 @@ vAPI.DOMFilterer.prototype = {
                 this.addedSpecificSimpleHide.push(selector);
             }
         }
-    },
+    }
 
-    onDOMCreated: function() {
+    exceptCSSRules(exceptions) {
+        if ( exceptions.length === 0 ) { return; }
+        this.exceptedCSSRules.push(...exceptions);
+        if ( this.hasListeners() ) {
+            this.triggerListeners({ exceptions });
+        }
+    }
+
+    onDOMCreated() {
         this.domIsReady = true;
         this.addedNodes.clear();
         this.removedNodes = false;
         this.commit();
-    },
+    }
 
-    onDOMChanged: function(addedNodes, removedNodes) {
-        for ( var node of addedNodes ) {
+    onDOMChanged(addedNodes, removedNodes) {
+        for ( const node of addedNodes ) {
             this.addedNodes.add(node);
         }
         this.removedNodes = this.removedNodes || removedNodes;
         this.commit();
-    },
+    }
 
-    addListener: function(listener) {
+    addListener(listener) {
         if ( this.listeners.indexOf(listener) !== -1 ) { return; }
         this.listeners.push(listener);
-    },
+    }
 
-    removeListener: function(listener) {
-        var pos = this.listeners.indexOf(listener);
+    removeListener(listener) {
+        const pos = this.listeners.indexOf(listener);
         if ( pos === -1 ) { return; }
         this.listeners.splice(pos, 1);
-    },
+    }
 
-    hasListeners: function() {
+    hasListeners() {
         return this.listeners.length !== 0;
-    },
+    }
 
-    triggerListeners: function(changes) {
-        var i = this.listeners.length;
-        while ( i-- ) {
-            this.listeners[i].onFiltersetChanged(changes);
+    triggerListeners(changes) {
+        for ( const listener of this.listeners ) {
+            listener.onFiltersetChanged(changes);
         }
-    },
+    }
 
     // https://jsperf.com/clientheight-and-clientwidth-vs-getcomputedstyle
     //   Avoid getComputedStyle(), detecting whether a node is visible can be
@@ -681,10 +687,10 @@ vAPI.DOMFilterer.prototype = {
     //   However, toggling off/on cosmetic filtering repeatedly is not
     //   a real use case, but this shows this will help performance
     //   on sites which try to use inline styles to bypass blockers.
-    hideNodeBatchProcess: function() {
+    hideNodeBatchProcess() {
         this.hideNodeBatchProcessTimer.clear();
-        var expando = this.hideNodeExpando;
-        for ( var node of this.hiddenNodesetToProcess ) {
+        const expando = this.hideNodeExpando;
+        for ( const node of this.hiddenNodesetToProcess ) {
             if (
                 this.hiddenNodeset.has(node) === false ||
                 node[expando] === undefined ||
@@ -692,7 +698,7 @@ vAPI.DOMFilterer.prototype = {
             ) {
                 continue;
             }
-            var attr = node.getAttribute('style');
+            let attr = node.getAttribute('style');
             if ( attr === null ) {
                 attr = '';
             } else if (
@@ -704,24 +710,18 @@ vAPI.DOMFilterer.prototype = {
             node.setAttribute('style', attr + 'display:none!important;');
         }
         this.hiddenNodesetToProcess.clear();
-    },
+    }
 
-    hideNodeObserverHandler: function(mutations) {
+    hideNodeObserverHandler(mutations) {
         if ( vAPI.userStylesheet.disabled ) { return; }
-        var i = mutations.length,
-            stagedNodes = this.hiddenNodesetToProcess;
-        while ( i-- ) {
-            stagedNodes.add(mutations[i].target);
+        const stagedNodes = this.hiddenNodesetToProcess;
+        for ( const mutation of mutations ) {
+            stagedNodes.add(mutation.target);
         }
         this.hideNodeBatchProcessTimer.start();
-    },
+    }
 
-    hiddenNodeObserverOptions: {
-        attributes: true,
-        attributeFilter: [ 'style' ]
-    },
-
-    hideNodeInit: function() {
+    hideNodeInit() {
         this.hideNodeExpando = vAPI.randomToken();
         this.hideNodeBatchProcessTimer =
             new vAPI.SafeAnimationFrame(this.hideNodeBatchProcess.bind(this));
@@ -730,21 +730,21 @@ vAPI.DOMFilterer.prototype = {
         if ( this.hideNodeStyleSheetInjected === false ) {
             this.hideNodeStyleSheetInjected = true;
             vAPI.userStylesheet.add(
-                '[' + this.hideNodeAttr + ']\n{display:none!important;}'
+                `[${this.hideNodeAttr}]\n{display:none!important;}`
             );
         }
-    },
+    }
 
-    excludeNode: function(node) {
+    excludeNode(node) {
         this.excludedNodeSet.add(node);
         this.unhideNode(node);
-    },
+    }
 
-    unexcludeNode: function(node) {
+    unexcludeNode(node) {
         this.excludedNodeSet.delete(node);
-    },
+    }
 
-    hideNode: function(node) {
+    hideNode(node) {
         if ( this.excludedNodeSet.has(node) ) { return; }
         if ( this.hideNodeAttr === undefined ) { return; }
         if ( this.hiddenNodeset.has(node) ) { return; }
@@ -760,15 +760,15 @@ vAPI.DOMFilterer.prototype = {
         this.hiddenNodesetToProcess.add(node);
         this.hideNodeBatchProcessTimer.start();
         this.hiddenNodeObserver.observe(node, this.hiddenNodeObserverOptions);
-    },
+    }
 
-    unhideNode: function(node) {
+    unhideNode(node) {
         if ( this.hiddenNodeset.has(node) === false ) { return; }
         node.hidden = false;
         node.removeAttribute(this.hideNodeAttr);
         this.hiddenNodesetToProcess.delete(node);
         if ( this.hideNodeExpando === undefined ) { return; }
-        var attr = node[this.hideNodeExpando];
+        const attr = node[this.hideNodeExpando];
         if ( attr === false ) {
             node.removeAttribute('style');
         } else if ( typeof attr === 'string' ) {
@@ -776,28 +776,28 @@ vAPI.DOMFilterer.prototype = {
         }
         node[this.hideNodeExpando] = undefined;
         this.hiddenNodeset.delete(node);
-    },
+    }
 
-    showNode: function(node) {
+    showNode(node) {
         node.hidden = false;
-        var attr = node[this.hideNodeExpando];
+        const attr = node[this.hideNodeExpando];
         if ( attr === false ) {
             node.removeAttribute('style');
         } else if ( typeof attr === 'string' ) {
             node.setAttribute('style', attr);
         }
-    },
+    }
 
-    unshowNode: function(node) {
+    unshowNode(node) {
         node.hidden = true;
         this.hiddenNodesetToProcess.add(node);
-    },
+    }
 
-    toggle: function(state, callback) {
+    toggle(state, callback) {
         vAPI.userStylesheet.toggle(state);
-        var disabled = vAPI.userStylesheet.disabled,
-            nodes = document.querySelectorAll('[' + this.hideNodeAttr + ']');
-        for ( var node of nodes ) {
+        const disabled = vAPI.userStylesheet.disabled;
+        const nodes = document.querySelectorAll(`[${this.hideNodeAttr}]`);
+        for ( const node of nodes ) {
             if ( disabled ) {
                 this.showNode(node);
             } else {
@@ -810,11 +810,12 @@ vAPI.DOMFilterer.prototype = {
         if ( typeof callback === 'function' ) {
             callback();
         }
-    },
+    }
 
-    getAllSelectors_: function(all) {
-        var out = {
-            declarative: []
+    getAllSelectors_(all) {
+        const out = {
+            declarative: [],
+            exceptions: this.exceptedCSSRules,
         };
         if ( this.specificSimpleHide.size !== 0 ) {
             out.declarative.push([
@@ -846,26 +847,28 @@ vAPI.DOMFilterer.prototype = {
                 'display:none!important;'
             ]);
         }
-        for ( var entry of this.specificOthers ) {
+        for ( const entry of this.specificOthers ) {
             out.declarative.push([ entry.selectors, entry.declarations ]);
         }
         return out;
-    },
+    }
 
-    getFilteredElementCount: function() {
-        var details = this.getAllSelectors_(true);
+    getFilteredElementCount() {
+        const details = this.getAllSelectors_(true);
         if ( Array.isArray(details.declarative) === false ) { return 0; }
-        var selectors = details.declarative.reduce(function(acc, entry) {
-            acc.push(entry[0]);
-            return acc;
-        }, []);
+        const selectors = details.declarative.map(entry => entry[0]);
         if ( selectors.length === 0 ) { return 0; }
         return document.querySelectorAll(selectors.join(',\n')).length;
-    },
+    }
 
-    getAllSelectors: function() {
+    getAllSelectors() {
         return this.getAllSelectors_(false);
     }
+};
+
+vAPI.DOMFilterer.prototype.hiddenNodeObserverOptions = {
+    attributes: true,
+    attributeFilter: [ 'style' ]
 };
 
 /******************************************************************************/
@@ -1043,6 +1046,7 @@ vAPI.SafeAnimationFrame = function(callback) {
 
 vAPI.SafeAnimationFrame.prototype = {
     start: function(delay) {
+        if ( self.vAPI instanceof Object === false ) { return; }
         if ( delay === undefined ) {
             if ( this.fid === undefined ) {
                 this.fid = requestAnimationFrame(( ) => { this.onRAF(); } );
@@ -1092,7 +1096,76 @@ vAPI.SafeAnimationFrame.prototype = {
 /******************************************************************************/
 /******************************************************************************/
 
-vAPI.domWatcher = (function() {
+// https://github.com/uBlockOrigin/uBlock-issues/issues/552
+//   Listen and report CSP violations so that blocked resources through CSP
+//   are properly reported in the logger.
+
+{
+    const newEvents = new Set();
+    const allEvents = new Set();
+    let timer;
+
+    const send = function() {
+        vAPI.messaging.send('scriptlets', {
+            what: 'securityPolicyViolation',
+            type: 'net',
+            docURL: document.location.href,
+            violations: Array.from(newEvents),
+        }).then(response => {
+            if ( response === true ) { return; }
+            stop();
+        });
+        for ( const event of newEvents ) {
+            allEvents.add(event);
+        }
+        newEvents.clear();
+    };
+
+    const sendAsync = function() {
+        if ( timer !== undefined ) { return; }
+        timer = self.requestIdleCallback(
+            ( ) => { timer = undefined; send(); },
+            { timeout: 2063 }
+        );
+    };
+
+    const listener = function(ev) {
+        if ( ev.isTrusted !== true ) { return; }
+        if ( ev.disposition !== 'enforce' ) { return; }
+        const json = JSON.stringify({
+            url: ev.blockedURL || ev.blockedURI,
+            policy: ev.originalPolicy,
+            directive: ev.effectiveDirective || ev.violatedDirective,
+        });
+        if ( allEvents.has(json) ) { return; }
+        newEvents.add(json);
+        sendAsync();
+    };
+
+    const stop = function() {
+        newEvents.clear();
+        allEvents.clear();
+        if ( timer !== undefined ) {
+            self.cancelIdleCallback(timer);
+            timer = undefined;
+        }
+        document.removeEventListener('securitypolicyviolation', listener);
+        vAPI.shutdown.remove(stop);
+    };
+
+    document.addEventListener('securitypolicyviolation', listener);
+    vAPI.shutdown.add(stop);
+
+    // We need to call at least once to find out whether we really need to
+    // listen to CSP violations.
+    sendAsync();
+}
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+
+vAPI.domWatcher = (( ) => {
 
     const addedNodeLists = [];
     const removedNodeLists = [];
@@ -1136,7 +1209,8 @@ vAPI.domWatcher = (function() {
         //console.timeEnd('dom watcher/safe observer handler');
         if ( addedNodes.length === 0 && removedNodes === false ) { return; }
         for ( const listener of getListenerIterator() ) {
-            listener.onDOMChanged(addedNodes, removedNodes);
+            try { listener.onDOMChanged(addedNodes, removedNodes); }
+            catch (ex) { }
         }
         addedNodes.length = 0;
         removedNodes = false;
@@ -1198,7 +1272,8 @@ vAPI.domWatcher = (function() {
         listeners.push(listener);
         listenerIteratorDirty = true;
         if ( domIsReady !== true ) { return; }
-        listener.onDOMCreated();
+        try { listener.onDOMCreated(); }
+        catch (ex) { }
         startMutationObserver();
     };
 
@@ -1226,7 +1301,8 @@ vAPI.domWatcher = (function() {
     const start = function() {
         domIsReady = true;
         for ( const listener of getListenerIterator() ) {
-            listener.onDOMCreated();
+            try { listener.onDOMCreated(); }
+            catch (ex) { }
         }
         startMutationObserver();
     };
@@ -1238,7 +1314,7 @@ vAPI.domWatcher = (function() {
 /******************************************************************************/
 /******************************************************************************/
 
-vAPI.matchesProp = (function() {
+vAPI.matchesProp = (( ) => {
     const docElem = document.documentElement;
     if ( typeof docElem.matches !== 'function' ) {
         if ( typeof docElem.mozMatchesSelector === 'function' ) {
@@ -1298,14 +1374,10 @@ vAPI.DOMFilterer = (function() {
             }
             this.needle = new RegExp(arg0, arg1);
         }
-        exec(input) {
-            const output = [];
-            for ( const node of input ) {
-                if ( this.needle.test(node.textContent) ) {
-                    output.push(node);
-                }
+        transpose(node, output) {
+            if ( this.needle.test(node.textContent) ) {
+                output.push(node);
             }
-            return output;
         }
     };
 
@@ -1313,24 +1385,17 @@ vAPI.DOMFilterer = (function() {
         constructor(task) {
             this.pselector = new PSelector(task[1]);
         }
-        exec(input) {
-            const output = [];
-            for ( const node of input ) {
-                if ( this.pselector.test(node) === this.target ) {
-                    output.push(node);
-                }
+        transpose(node, output) {
+            if ( this.pselector.test(node) === this.target ) {
+                output.push(node);
             }
-            return output;
         }
     };
     PSelectorIfTask.prototype.target = true;
 
     const PSelectorIfNotTask = class extends PSelectorIfTask {
-        constructor(task) {
-            super(task);
-            this.target = false;
-        }
     };
+    PSelectorIfNotTask.prototype.target = false;
 
     const PSelectorMatchesCSSTask = class {
         constructor(task) {
@@ -1341,31 +1406,31 @@ vAPI.DOMFilterer = (function() {
             }
             this.value = new RegExp(arg0, arg1);
         }
-        exec(input) {
-            const output = [];
-            for ( const node of input ) {
-                const style = window.getComputedStyle(node, this.pseudo);
-                if ( style === null ) { return null; } /* FF */
-                if ( this.value.test(style[this.name]) ) {
-                    output.push(node);
-                }
+        transpose(node, output) {
+            const style = window.getComputedStyle(node, this.pseudo);
+            if ( style !== null && this.value.test(style[this.name]) ) {
+                output.push(node);
             }
-            return output;
         }
     };
     PSelectorMatchesCSSTask.prototype.pseudo = null;
 
     const PSelectorMatchesCSSAfterTask = class extends PSelectorMatchesCSSTask {
-        constructor(task) {
-            super(task);
-            this.pseudo = ':after';
-        }
     };
+    PSelectorMatchesCSSAfterTask.prototype.pseudo = ':after';
 
     const PSelectorMatchesCSSBeforeTask = class extends PSelectorMatchesCSSTask {
+    };
+    PSelectorMatchesCSSBeforeTask.prototype.pseudo = ':before';
+
+    const PSelectorMinTextLengthTask = class {
         constructor(task) {
-            super(task);
-            this.pseudo = ':before';
+            this.min = task[1];
+        }
+        transpose(node, output) {
+            if ( node.textContent.length >= this.min ) {
+                output.push(node);
+            }
         }
     };
 
@@ -1373,20 +1438,15 @@ vAPI.DOMFilterer = (function() {
         constructor(task) {
             this.nth = task[1];
         }
-        exec(input) {
-            const output = [];
-            for ( let node of input ) {
-                let nth = this.nth;
-                for (;;) {
-                    node = node.parentElement;
-                    if ( node === null ) { break; }
-                    nth -= 1;
-                    if ( nth !== 0 ) { continue; }
-                    output.push(node);
-                    break;
-                }
+        transpose(node, output) {
+            let nth = this.nth;
+            for (;;) {
+                node = node.parentElement;
+                if ( node === null ) { return; }
+                nth -= 1;
+                if ( nth === 0 ) { break; }
             }
-            return output;
+            output.push(node);
         }
     };
 
@@ -1394,25 +1454,21 @@ vAPI.DOMFilterer = (function() {
         constructor(task) {
             this.spath = task[1];
         }
-        exec(input) {
-            const output = [];
-            for ( let node of input ) {
-                const parent = node.parentElement;
-                if ( parent === null ) { continue; }
-                let pos = 1;
-                for (;;) {
-                    node = node.previousElementSibling;
-                    if ( node === null ) { break; }
-                    pos += 1;
-                }
-                const nodes = parent.querySelectorAll(
-                    ':scope > :nth-child(' + pos + ')' + this.spath
-                );
-                for ( const node of nodes ) {
-                    output.push(node);
-                }
+        transpose(node, output) {
+            const parent = node.parentElement;
+            if ( parent === null ) { return; }
+            let pos = 1;
+            for (;;) {
+                node = node.previousElementSibling;
+                if ( node === null ) { break; }
+                pos += 1;
             }
-            return output;
+            const nodes = parent.querySelectorAll(
+                `:scope > :nth-child(${pos})${this.spath}`
+            );
+            for ( const node of nodes ) {
+                output.push(node);
+            }
         }
     };
 
@@ -1437,17 +1493,14 @@ vAPI.DOMFilterer = (function() {
                 filterer.onDOMChanged([ null ]);
             }
         }
-        exec(input) {
-            if ( input.length === 0 ) { return input; }
+        transpose(node, output) {
+            output.push(node);
+            if ( this.observed.has(node) ) { return; }
             if ( this.observer === null ) {
                 this.observer = new MutationObserver(this.handler);
             }
-            for ( const node of input ) {
-                if ( this.observed.has(node) ) { continue; }
-                this.observer.observe(node, this.observerOptions);
-                this.observed.add(node);
-            }
-            return input;
+            this.observer.observe(node, this.observerOptions);
+            this.observed.add(node);
         }
     };
 
@@ -1456,23 +1509,19 @@ vAPI.DOMFilterer = (function() {
             this.xpe = document.createExpression(task[1], null);
             this.xpr = null;
         }
-        exec(input) {
-            const output = [];
-            for ( const node of input ) {
-                this.xpr = this.xpe.evaluate(
-                    node,
-                    XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
-                    this.xpr
-                );
-                let j = this.xpr.snapshotLength;
-                while ( j-- ) {
-                    const node = this.xpr.snapshotItem(j);
-                    if ( node.nodeType === 1 ) {
-                        output.push(node);
-                    }
+        transpose(node, output) {
+            this.xpr = this.xpe.evaluate(
+                node,
+                XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
+                this.xpr
+            );
+            let j = this.xpr.snapshotLength;
+            while ( j-- ) {
+                const node = this.xpr.snapshotItem(j);
+                if ( node.nodeType === 1 ) {
+                    output.push(node);
                 }
             }
-            return output;
         }
     };
 
@@ -1487,10 +1536,11 @@ vAPI.DOMFilterer = (function() {
                     [ ':matches-css', PSelectorMatchesCSSTask ],
                     [ ':matches-css-after', PSelectorMatchesCSSAfterTask ],
                     [ ':matches-css-before', PSelectorMatchesCSSBeforeTask ],
+                    [ ':min-text-length', PSelectorMinTextLengthTask ],
                     [ ':not', PSelectorIfNotTask ],
                     [ ':nth-ancestor', PSelectorNthAncestorTask ],
                     [ ':spath', PSelectorSpathTask ],
-                    [ ':watch-attrs', PSelectorWatchAttrs ],
+                    [ ':watch-attr', PSelectorWatchAttrs ],
                     [ ':xpath', PSelectorXpathTask ],
                 ]);
             }
@@ -1508,48 +1558,51 @@ vAPI.DOMFilterer = (function() {
         }
         prime(input) {
             const root = input || document;
-            if ( this.selector !== '' ) {
-                return root.querySelectorAll(this.selector);
-            }
-            return [ root ];
+            if ( this.selector === '' ) { return [ root ]; }
+            return root.querySelectorAll(this.selector);
         }
         exec(input) {
             let nodes = this.prime(input);
             for ( const task of this.tasks ) {
                 if ( nodes.length === 0 ) { break; }
-                nodes = task.exec(nodes);
+                const transposed = [];
+                for ( const node of nodes ) {
+                    task.transpose(node, transposed);
+                }
+                nodes = transposed;
             }
             return nodes;
         }
         test(input) {
             const nodes = this.prime(input);
-            const AA = [ null ];
             for ( const node of nodes ) {
-                AA[0] = node;
-                let aa = AA;
+                let output = [ node ];
                 for ( const task of this.tasks ) {
-                    aa = task.exec(aa);
-                    if ( aa.length === 0 ) { break; }
+                    const transposed = [];
+                    for ( const node of output ) {
+                        task.transpose(node, transposed);
+                    }
+                    output = transposed;
+                    if ( output.length === 0 ) { break; }
                 }
-                if ( aa.length !== 0 ) { return true; }
+                if ( output.length !== 0 ) { return true; }
             }
             return false;
         }
     };
     PSelector.prototype.operatorToTaskMap = undefined;
 
-    const DOMProceduralFilterer = function(domFilterer) {
-        this.domFilterer = domFilterer;
-        this.domIsReady = false;
-        this.domIsWatched = false;
-        this.mustApplySelectors = false;
-        this.selectors = new Map();
-        this.hiddenNodes = new Set();
-    };
+    const DOMProceduralFilterer = class {
+        constructor(domFilterer) {
+            this.domFilterer = domFilterer;
+            this.domIsReady = false;
+            this.domIsWatched = false;
+            this.mustApplySelectors = false;
+            this.selectors = new Map();
+            this.hiddenNodes = new Set();
+        }
 
-    DOMProceduralFilterer.prototype = {
-
-        addProceduralSelectors: function(aa) {
+        addProceduralSelectors(aa) {
             const addedSelectors = [];
             let mustCommit = this.domIsWatched;
             for ( let i = 0, n = aa.length; i < n; i++ ) {
@@ -1586,9 +1639,9 @@ vAPI.DOMFilterer = (function() {
                     procedural: addedSelectors
                 });
             }
-        },
+        }
 
-        commitNow: function() {
+        commitNow() {
             if ( this.selectors.size === 0 || this.domIsReady === false ) {
                 return;
             }
@@ -1633,18 +1686,18 @@ vAPI.DOMFilterer = (function() {
                 this.domFilterer.unhideNode(node);
             }
             //console.timeEnd('procedural selectors/dom layout changed');
-        },
+        }
 
-        createProceduralFilter: function(o) {
+        createProceduralFilter(o) {
             return new PSelector(o);
-        },
+        }
 
-        onDOMCreated: function() {
+        onDOMCreated() {
             this.domIsReady = true;
             this.domFilterer.commitNow();
-        },
+        }
 
-        onDOMChanged: function(addedNodes, removedNodes) {
+        onDOMChanged(addedNodes, removedNodes) {
             if ( this.selectors.size === 0 ) { return; }
             this.mustApplySelectors =
                 this.mustApplySelectors ||
@@ -1654,66 +1707,60 @@ vAPI.DOMFilterer = (function() {
         }
     };
 
-    const DOMFiltererBase = vAPI.DOMFilterer;
+    const DOMFilterer = class extends vAPI.DOMFilterer {
+        constructor() {
+            super();
+            this.exceptions = [];
+            this.proceduralFilterer = new DOMProceduralFilterer(this);
+            this.hideNodeAttr = undefined;
+            this.hideNodeStyleSheetInjected = false;
+            if ( vAPI.domWatcher instanceof Object ) {
+                vAPI.domWatcher.addListener(this);
+            }
+        }
 
-    const domFilterer = function() {
-        DOMFiltererBase.call(this);
-        this.exceptions = [];
-        this.proceduralFilterer = new DOMProceduralFilterer(this);
-        this.hideNodeAttr = undefined;
-        this.hideNodeStyleSheetInjected = false;
+        commitNow() {
+            super.commitNow();
+            this.proceduralFilterer.commitNow();
+        }
 
-        // May or may not exist: cache locally since this may be called often.
-        this.baseOnDOMChanged = DOMFiltererBase.prototype.onDOMChanged;
+        addProceduralSelectors(aa) {
+            this.proceduralFilterer.addProceduralSelectors(aa);
+        }
 
-        if ( vAPI.domWatcher instanceof Object ) {
-            vAPI.domWatcher.addListener(this);
+        createProceduralFilter(o) {
+            return this.proceduralFilterer.createProceduralFilter(o);
+        }
+
+        getAllSelectors() {
+            const out = super.getAllSelectors();
+            out.procedural = Array.from(this.proceduralFilterer.selectors.values());
+            return out;
+        }
+
+        getAllExceptionSelectors() {
+            return this.exceptions.join(',\n');
+        }
+
+        onDOMCreated() {
+            if ( super.onDOMCreated instanceof Function ) {
+                super.onDOMCreated();
+            }
+            this.proceduralFilterer.onDOMCreated();
+        }
+
+        onDOMChanged() {
+            if ( super.onDOMChanged instanceof Function ) {
+                super.onDOMChanged.apply(this, arguments);
+            }
+            this.proceduralFilterer.onDOMChanged.apply(
+                this.proceduralFilterer,
+                arguments
+            );
         }
     };
-    domFilterer.prototype = Object.create(DOMFiltererBase.prototype);
-    domFilterer.prototype.constructor = domFilterer;
 
-    domFilterer.prototype.commitNow = function() {
-        DOMFiltererBase.prototype.commitNow.call(this);
-        this.proceduralFilterer.commitNow();
-    };
-
-    domFilterer.prototype.addProceduralSelectors = function(aa) {
-        this.proceduralFilterer.addProceduralSelectors(aa);
-    };
-
-    domFilterer.prototype.createProceduralFilter = function(o) {
-        return this.proceduralFilterer.createProceduralFilter(o);
-    };
-
-    domFilterer.prototype.getAllSelectors = function() {
-        const out = DOMFiltererBase.prototype.getAllSelectors.call(this);
-        out.procedural = Array.from(this.proceduralFilterer.selectors.values());
-        return out;
-    };
-
-    domFilterer.prototype.getAllExceptionSelectors = function() {
-        return this.exceptions.join(',\n');
-    };
-
-    domFilterer.prototype.onDOMCreated = function() {
-        if ( DOMFiltererBase.prototype.onDOMCreated !== undefined ) {
-            DOMFiltererBase.prototype.onDOMCreated.call(this);
-        }
-        this.proceduralFilterer.onDOMCreated();
-    };
-
-    domFilterer.prototype.onDOMChanged = function() {
-        if ( this.baseOnDOMChanged !== undefined ) {
-            this.baseOnDOMChanged.apply(this, arguments);
-        }
-        this.proceduralFilterer.onDOMChanged.apply(
-            this.proceduralFilterer,
-            arguments
-        );
-    };
-
-    return domFilterer;
+    return DOMFilterer;
 })();
 
 vAPI.domFilterer = new vAPI.DOMFilterer();
@@ -1759,7 +1806,8 @@ vAPI.domCollapser = (function() {
     // https://github.com/chrisaljoudi/uBlock/issues/174
     //   Do not remove fragment from src URL
     const onProcessed = function(response) {
-        if ( !response ) { // This happens if uBO is disabled or restarted.
+        // This happens if uBO is disabled or restarted.
+        if ( response instanceof Object === false ) {
             toCollapse.clear();
             return;
         }
@@ -1815,29 +1863,27 @@ vAPI.domCollapser = (function() {
         }
 
         if ( selectors.length !== 0 ) {
-            messaging.send(
-                'contentscript',
-                {
-                    what: 'cosmeticFiltersInjected',
-                    type: 'net',
-                    hostname: window.location.hostname,
-                    selectors: selectors
-                }
-            );
+            messaging.send('contentscript', {
+                what: 'cosmeticFiltersInjected',
+                type: 'net',
+                hostname: window.location.hostname,
+                selectors,
+            });
         }
     };
 
     const send = function() {
         processTimer = undefined;
         toCollapse.set(resquestIdGenerator, toProcess);
-        const msg = {
+        messaging.send('contentscript', {
             what: 'getCollapsibleBlockedRequests',
             id: resquestIdGenerator,
             frameURL: window.location.href,
             resources: toFilter,
-            hash: cachedBlockedSetHash
-        };
-        messaging.send('contentscript', msg, onProcessed);
+            hash: cachedBlockedSetHash,
+        }).then(response => {
+            onProcessed(response);
+        });
         toProcess = [];
         toFilter = [];
         resquestIdGenerator += 1;
@@ -1918,7 +1964,7 @@ vAPI.domCollapser = (function() {
 
     const domWatcherInterface = {
         onDOMCreated: function() {
-            if ( vAPI instanceof Object === false ) { return; }
+            if ( self.vAPI instanceof Object === false ) { return; }
             if ( vAPI.domCollapser instanceof Object === false ) {
                 if ( vAPI.domWatcher instanceof Object ) {
                     vAPI.domWatcher.removeListener(domWatcherInterface);
@@ -2107,18 +2153,16 @@ vAPI.domSurveyor = (function() {
         //console.info(`domSurveyor> Surveyed ${processed} nodes in ${(t1-t0).toFixed(2)} ms`);
         // Phase 2: Ask main process to lookup relevant cosmetic filters.
         if ( ids.length !== 0 || classes.length !== 0 ) {
-            messaging.send(
-                'contentscript',
-                {
-                    what: 'retrieveGenericCosmeticSelectors',
-                    hostname: hostname,
-                    ids: ids,
-                    classes: classes,
-                    exceptions: domFilterer.exceptions,
-                    cost: surveyCost
-                },
-                surveyPhase3
-            );
+            messaging.send('contentscript', {
+                what: 'retrieveGenericCosmeticSelectors',
+                hostname,
+                ids,
+                classes,
+                exceptions: domFilterer.exceptions,
+                cost: surveyCost,
+            }).then(response => {
+                surveyPhase3(response);
+            });
         } else {
             surveyPhase3(null);
         }
@@ -2169,6 +2213,10 @@ vAPI.domSurveyor = (function() {
                 );
                 mustCommit = true;
             }
+            selectors = result.excepted;
+            if ( Array.isArray(selectors) && selectors.length !== 0 ) {
+                domFilterer.exceptCSSRules(selectors);
+            }
         }
 
         if ( pendingNodes.stopped === false ) {
@@ -2196,11 +2244,11 @@ vAPI.domSurveyor = (function() {
     const domWatcherInterface = {
         onDOMCreated: function() {
             if (
-                vAPI instanceof Object === false ||
+                self.vAPI instanceof Object === false ||
                 vAPI.domSurveyor instanceof Object === false ||
                 vAPI.domFilterer instanceof Object === false
             ) {
-                if ( vAPI instanceof Object ) {
+                if ( self.vAPI instanceof Object ) {
                     if ( vAPI.domWatcher instanceof Object ) {
                         vAPI.domWatcher.removeListener(domWatcherInterface);
                     }
@@ -2253,12 +2301,11 @@ vAPI.bootstrap = (function() {
         // This can happen on Firefox. For instance:
         // https://github.com/gorhill/uBlock/issues/1893
         if ( window.location === null ) { return; }
-        if ( vAPI instanceof Object === false ) { return; }
+        if ( self.vAPI instanceof Object === false ) { return; }
 
-        vAPI.messaging.send(
-            'contentscript',
-            { what: 'shouldRenderNoscriptTags' }
-        );
+        vAPI.messaging.send('contentscript', {
+            what: 'shouldRenderNoscriptTags',
+        });
 
         if ( vAPI.domWatcher instanceof Object ) {
             vAPI.domWatcher.start();
@@ -2272,27 +2319,26 @@ vAPI.bootstrap = (function() {
             return;
         }
 
-        // To send mouse coordinates to main process, as the chrome API fails
-        // to provide the mouse position to context menu listeners.
-        // https://github.com/chrisaljoudi/uBlock/issues/1143
-        // Also, find a link under the mouse, to try to avoid confusing new tabs
-        // as nuisance popups.
-        // Ref.: https://developer.mozilla.org/en-US/docs/Web/Events/contextmenu
+        // To be used by element picker/zapper.
+        vAPI.mouseClick = { x: -1, y: -1 };
 
         const onMouseClick = function(ev) {
+            if ( ev.isTrusted === false ) { return; }
+            vAPI.mouseClick.x = ev.clientX;
+            vAPI.mouseClick.y = ev.clientY;
+
+            // https://github.com/chrisaljoudi/uBlock/issues/1143
+            //   Find a link under the mouse, to try to avoid confusing new tabs
+            //   as nuisance popups.
             let elem = ev.target;
             while ( elem !== null && elem.localName !== 'a' ) {
                 elem = elem.parentElement;
             }
-            vAPI.messaging.send(
-                'contentscript',
-                {
-                    what: 'mouseClick',
-                    x: ev.clientX,
-                    y: ev.clientY,
-                    url: elem !== null && ev.isTrusted !== false ? elem.href : ''
-                }
-            );
+            if ( elem === null ) { return; }
+            vAPI.messaging.send('contentscript', {
+                what: 'maybeGoodPopup',
+                url: elem.href || '',
+            });
         };
 
         document.addEventListener('mousedown', onMouseClick, true);
@@ -2310,7 +2356,8 @@ vAPI.bootstrap = (function() {
     //   to try bootstrapping again later.
 
     const bootstrapPhase1 = function(response) {
-        if ( response === null ) { return; }
+        if ( response instanceof Object === false ) { return; }
+
         vAPI.bootstrap = undefined;
 
         // cosmetic filtering engine aka 'cfe'
@@ -2353,6 +2400,7 @@ vAPI.bootstrap = (function() {
                 { injected: true }
             );
             domFilterer.addProceduralSelectors(cfeDetails.proceduralFilters);
+            domFilterer.exceptCSSRules(cfeDetails.exceptedFilters);
         }
 
         if ( cfeDetails.networkFilters.length !== 0 ) {
@@ -2392,16 +2440,14 @@ vAPI.bootstrap = (function() {
     };
 
     return function() {
-        vAPI.messaging.send(
-            'contentscript',
-            {
-                what: 'retrieveContentScriptParameters',
-                url: window.location.href,
-                isRootFrame: window === window.top,
-                charset: document.characterSet,
-            },
-            bootstrapPhase1
-        );
+        vAPI.messaging.send('contentscript', {
+            what: 'retrieveContentScriptParameters',
+            url: window.location.href,
+            isRootFrame: window === window.top,
+            charset: document.characterSet,
+        }).then(response => {
+            bootstrapPhase1(response);
+        });
     };
 })();
 

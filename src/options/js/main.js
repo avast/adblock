@@ -90,6 +90,8 @@ $('.modal_close, .btn-cancel, .btn-add, .cancel, .overlay').click(function () {
         $(this).css('display', 'none');
         $('.overlay').fadeOut(400);
     });
+
+    return false;
 });
 
 var ListEdit = {
@@ -132,19 +134,23 @@ var ListEdit = {
     observe: function() {
         var self = ListEdit;
         var value = '';
+        var loading = false;
+        var list = $('.list-items');
         $(self.textarea).on('change', function () {
+            loading = true;
             value = self.textarea.val();
-            $('.list-items').html('');
+            list.html('')
             var items = self.textarea.val().split(/\n/);
             for (var i in items) {
                 if (!items[i].length) continue;
                 var item = self.template.clone();
                 item.find('.item-value').text(items[i].trim());
-                $('.list-items').append(item);
+                list.append(item);
             }
+            loading = false;
         });
         setInterval(function () {
-            if (self.textarea.val() != value) self.textarea.change();
+            if (self.textarea.val() != value && !loading) self.textarea.change();
         }, 100);
     },
     init: function() {

@@ -898,5 +898,20 @@
 	},
 	"popupOr": {
 		"message": "or"
+	},
+	"dashboardUnsavedWarning": {
+		"message": "Warning! You have unsaved changes"
+	},
+	"dashboardUnsavedWarningStay": {
+		"message": "Stay"
+	},
+	"dashboardUnsavedWarningIgnore": {
+		"message": "Ignore"
+	},
+	"toggleBlockingProfile": {
+		"message": "Toggle blocking profile"
+	},
+	"relaxBlockingMode": {
+		"message": "Relax blocking mode"
 	}
 }

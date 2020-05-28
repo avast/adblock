@@ -25,18 +25,17 @@
 
 /******************************************************************************/
 
-(function() {
+(( ) => {
 
 /******************************************************************************/
 
-const messaging = vAPI.messaging;
 const cmEditor = new CodeMirror(
     document.getElementById('userFilters'),
     {
         autofocus: true,
         lineNumbers: true,
         lineWrapping: true,
-        styleActiveLine: true
+        styleActiveLine: true,
     }
 );
 
@@ -58,14 +57,13 @@ window.addEventListener('beforeunload', ( ) => {
     );
 });
 
-
 /******************************************************************************/
 
 // This is to give a visual hint that the content of user blacklist has changed.
 
 const userFiltersChanged = function(changed) {
     if ( typeof changed !== 'boolean' ) {
-        changed = cmEditor.getValue().trim() !== cachedUserFilters;
+        changed = self.hasUnsavedData();
     }
     uDom.nodeFromId('userFiltersApply').disabled = !changed;
     uDom.nodeFromId('userFiltersRevert').disabled = !changed;
@@ -73,37 +71,31 @@ const userFiltersChanged = function(changed) {
 
 /******************************************************************************/
 
-const renderUserFilters = function(first) {
-    const onRead = function(details) {
-        if ( details.error ) { return; }
-        let content = details.content.trim();
-        cachedUserFilters = content;
-        if ( content.length !== 0 ) {
-            content += '\n';
-        }
-        cmEditor.setValue(content);
-        if ( first ) {
-            cmEditor.clearHistory();
-            try {
-                const line = JSON.parse(
-                    vAPI.localStorage.getItem('myFiltersCursorPosition')
-                );
-                if ( typeof line === 'number' ) {
-                    cmEditor.setCursor(line, 0);
-                }
-            } catch(ex) {
+const renderUserFilters = async function(first) {
+    const details = await vAPI.messaging.send('dashboard', {
+        what: 'readUserFilters',
+    });
+    if ( details instanceof Object === false || details.error ) { return; }
+
+    let content = details.content.trim();
+    cachedUserFilters = content;
+    if ( content.length !== 0 ) {
+        content += '\n';
+    }
+    cmEditor.setValue(content);
+    if ( first ) {
+        cmEditor.clearHistory();
+        try {
+            const line = JSON.parse(
+                vAPI.localStorage.getItem('myFiltersCursorPosition')
+            );
+            if ( typeof line === 'number' ) {
+                cmEditor.setCursor(line, 0);
             }
+        } catch(ex) {
         }
-        userFiltersChanged(false);
-    };
-    messaging.send('dashboard', { what: 'readUserFilters' }, onRead);
-};
-
-/******************************************************************************/
-
-const allFiltersApplyHandler = function() {
-    messaging.send('dashboard', { what: 'reloadAllFilters' });
-    uDom('#userFiltersApply').prop('disabled', true );
+    }
+    userFiltersChanged(false);
 };
 
 /******************************************************************************/
@@ -178,19 +170,18 @@ const exportUserFiltersToFile = function() {
 
 /******************************************************************************/
 
-const applyChanges = function() {
-    messaging.send(
-        'dashboard',
-        {
-            what: 'writeUserFilters',
-            content: cmEditor.getValue()
-        },
-        details => {
-            if ( details.error ) { return; }
-            cachedUserFilters = details.content.trim();
-            allFiltersApplyHandler();
-        }
-    );
+const applyChanges = async function() {
+    const details = await vAPI.messaging.send('dashboard', {
+        what: 'writeUserFilters',
+        content: cmEditor.getValue(),
+    });
+    if ( details instanceof Object === false || details.error ) { return; }
+
+    cachedUserFilters = details.content.trim();
+    userFiltersChanged(false);
+    vAPI.messaging.send('dashboard', {
+        what: 'reloadAllFilters',
+    });
 };
 
 const revertChanges = function() {
@@ -220,11 +211,17 @@ self.cloud.onPull = setCloudData;
 
 /******************************************************************************/
 
+self.hasUnsavedData = function() {
+    return cmEditor.getValue().trim() !== cachedUserFilters;
+};
+
+/******************************************************************************/
+
 // Handle user interaction
 uDom('#importUserFiltersFromFile').on('click', startImportFilePicker);
 uDom('#importFilePicker').on('change', handleImportFilePicker);
 uDom('#exportUserFiltersToFile').on('click', exportUserFiltersToFile);
-uDom('#userFiltersApply').on('click', applyChanges);
+uDom('#userFiltersApply').on('click', ( ) => { applyChanges(); });
 uDom('#userFiltersRevert').on('click', revertChanges);
 
 renderUserFilters(true);

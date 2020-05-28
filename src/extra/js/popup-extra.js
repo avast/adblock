@@ -73,6 +73,9 @@
             ui.append(li);
         }
         ui.find('.down-arrow-blocks').hide();
+
+        $('.page-allow, .page-block, .page-main').hide();
+        $('.page-main').show();
     };
 
     formatData = function (bytes) {
@@ -151,17 +154,14 @@
     var pollForContentChange = (function () {
         var pollTimer = null;
 
-        var pollCallback = function () {
+        var pollCallback = async function () {
             pollTimer = null;
-            messaging.send(
-                'popupPanel',
-                {
-                    what: 'hasPopupContentChanged',
-                    tabId: popupData.tabId,
-                    contentLastModified: popupData.contentLastModified
-                },
-                queryCallback
-            );
+            const response = await messaging.send('popupPanel', {
+                what: 'hasPopupContentChanged',
+                tabId: popupData.tabId,
+                contentLastModified: popupData.contentLastModified,
+            });
+            queryCallback(response);
         };
 
         var queryCallback = function (response) {
@@ -182,23 +182,12 @@
         return poll;
     })();
 
-    var getPopupData = function (tabId) {
-        var onDataReceived = function (response) {
-            messaging.send(
-                'popupExtraPanel',
-                {what: 'getPopupData', tabId: tabId, response: response},
-                function (response) {
-                    cachePopupData(response);
-                    renderPopup(popupData);
-                    pollForContentChange();
-                }
-            );
-        };
-        messaging.send(
-            'popupPanel',
-            {what: 'getPopupData', tabId: tabId},
-            onDataReceived
-        );
+    var getPopupData = async function (tabId) {
+        let response = await messaging.send('popupPanel', {what: 'getPopupData', tabId: tabId});
+        response.netFilteringSwitchExtra = await messaging.send('popupExtraPanel', {what: 'getPopupDataExtra', tabId: tabId, response: response});
+        cachePopupData(response);
+        renderPopup(popupData);
+        pollForContentChange();
     };
 
 
@@ -232,15 +221,15 @@
     $('.page-allow .footer-allow').on('click', '.cross-icon', function (e) {
 
         var key = $(this).closest(".footer-allow-body").text();
-        messaging.send('popupExtraPanel', {what: 'removeWhitelist', key: key}, renderWhitelist);
+        messaging.send('popupExtraPanel', {what: 'removeWhitelistExtra', key: key}).then(() => {
+            renderWhitelist();
+        });
 
         $(this).closest(".footer-allow-body").remove();
     });
-    var renderWhitelist = function() {
-        var onRead = function(whitelist) {
-            renderWhitelistUI(whitelist);
-        };
-        messaging.send('popupExtraPanel', { what: 'getWhitelist' }, onRead);
+    var renderWhitelist = async function() {
+        let whitelist = await messaging.send('popupExtraPanel', { what: 'getWhitelistExtra' });
+        renderWhitelistUI(whitelist);
     };
     renderWhitelist();
 

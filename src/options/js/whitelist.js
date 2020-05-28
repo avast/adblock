@@ -6,6 +6,13 @@ $(document).ready(function() {
     var reComment = /^\s*#/,
         reRegex = /^\/.+\/$/;
 
+    const directiveFromLine = function(line) {
+        const match = reComment.exec(line);
+        return match === null
+            ? line.trim()
+            : line.slice(match.index + match[0].length).trim();
+    };
+
     var validate = function(line) {
 
         var result = {
@@ -129,18 +136,44 @@ $(document).ready(function() {
 
     /******************************************************************************/
 
-    var renderWhitelist = function() {
-        var onRead = function(whitelist) {
-            var first = reBadHostname === undefined;
-            if ( first ) {
-                reBadHostname = new RegExp(whitelist.reBadHostname);
-                reHostnameExtractor = new RegExp(whitelist.reHostnameExtractor);
+    var renderWhitelist = async function() {
+        const details = await messaging.send('dashboard', {
+            what: 'getWhitelist',
+        });
+
+        const first = reBadHostname === undefined;
+        if ( first ) {
+            reBadHostname = new RegExp(details.reBadHostname);
+            reHostnameExtractor = new RegExp(details.reHostnameExtractor);
+            whitelistDefaultSet = new Set(details.whitelistDefault);
+        }
+        //const toAdd = new Set(whitelistDefaultSet);
+        const toAdd = new Set();
+        for ( const line of details.whitelist ) {
+            const directive = directiveFromLine(line);
+            if ( whitelistDefaultSet.has(directive) === false ) { continue; }
+            toAdd.delete(directive);
+            if ( toAdd.size === 0 ) { break; }
+        }
+
+        if ( toAdd.size !== 0 ) {
+            details.whitelist.push(...Array.from(toAdd).map(a => `# ${a}`));
+        }
+        details.whitelist.sort((a, b) => {
+            const ad = directiveFromLine(a);
+            const bd = directiveFromLine(b);
+            const abuiltin = whitelistDefaultSet.has(ad);
+            if ( abuiltin !== whitelistDefaultSet.has(bd) ) {
+                return abuiltin ? -1 : 1;
             }
-            whitelist = whitelist.whitelist;
-            cachedWhitelist = whitelist.trim();
-            getTextareaNode().value = cachedWhitelist + '\n';
-        };
-        messaging.send('dashboard', { what: 'getWhitelist' }, onRead);
+            return ad.localeCompare(bd);
+        });
+        let whitelistStr = details.whitelist.join('\n').trim();
+        if ( whitelistStr !== '' ) {
+            whitelistStr += '\n';
+        }
+        cachedWhitelist = whitelistStr;
+        getTextareaNode().value = cachedWhitelist;
     };
 
     /******************************************************************************/
@@ -190,13 +223,14 @@ $(document).ready(function() {
 
     /******************************************************************************/
 
-    var applyChanges = function() {
+    var applyChanges = async function() {
         cachedWhitelist = getTextareaNode().value.trim();
-        var request = {
+
+        await messaging.send('dashboard', {
             what: 'setWhitelist',
-            whitelist: cachedWhitelist
-        };
-        messaging.send('dashboard', request, renderWhitelist);
+            whitelist: cachedWhitelist,
+        });
+        renderWhitelist();
     };
 
     var revertChanges = function() {
@@ -228,7 +262,7 @@ $(document).ready(function() {
     uDom('#importWhitelistFromFile').on('click', startImportFilePicker);
     uDom('#importFilePicker').on('change', handleImportFilePicker);
     uDom('#exportWhitelistToFile').on('click', exportWhitelistToFile);
-    uDom('#whitelistApply').on('click', applyChanges);
+    uDom('#whitelistApply').on('click', ( ) => { applyChanges(); });
     uDom('#whitelistRevert').on('click', revertChanges);
 
     renderWhitelist();

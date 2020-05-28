@@ -5,8 +5,7 @@
 		"contentURL": [
 			"https://raw.githubusercontent.com/gorhill/uBlock/master/assets/assets.json",
 			"assets/assets.json"
-		],
-		"off": true
+		]
 	},
 	"public_suffix_list.dat": {
 		"content": "internal",
@@ -15,17 +14,12 @@
 			"https://publicsuffix.org/list/public_suffix_list.dat",
 			"https://gitcdn.xyz/repo/publicsuffix/list/master/public_suffix_list.dat",
 			"assets/thirdparties/publicsuffix.org/list/effective_tld_names.dat"
-		],
-		"off": true
+		]
 	},
 	"ublock-resources": {
 		"content": "internal",
 		"updateAfter": 7,
-		"contentURL": [
-			"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resources.txt",
-			"assets/ublock/resources.txt"
-		],
-		"off": true
+		"contentURL": "assets/ublock/resources.txt"
 	},
 	"ublock-filters": {
 		"content": "filters",
@@ -35,8 +29,7 @@
 			"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
 			"assets/ublock/filters.txt"
 		],
-		"supportURL": "https://github.com/uBlockOrigin/uAssets/issues",
-		"off": true
+		"supportURL": "https://github.com/uBlockOrigin/uAssets/issues"
 	},
 	"ublock-badware": {
 		"content": "filters",
@@ -47,8 +40,7 @@
 			"assets/ublock/badware.txt"
 		],
 		"supportURL": "https://github.com/gorhill/uBlock/wiki/Badware-risks",
-		"instructionURL": "https://github.com/gorhill/uBlock/wiki/Badware-risks",
-		"off": true
+		"instructionURL": "https://github.com/gorhill/uBlock/wiki/Badware-risks"
 	},
 	"ublock-experimental": {
 		"content": "filters",
@@ -69,8 +61,7 @@
 		"contentURL": [
 			"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
 			"assets/ublock/privacy.txt"
-		],
-		"off": true
+		]
 	},
 	"ublock-abuse": {
 		"content": "filters",
@@ -79,8 +70,7 @@
 		"contentURL": [
 			"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
 			"assets/ublock/resource-abuse.txt"
-		],
-		"off": true
+		]
 	},
 	"ublock-annoyances": {
 		"content": "filters",
@@ -96,8 +86,7 @@
 		"contentURL": [
 			"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
 			"assets/ublock/unbreak.txt"
-		],
-		"off": true
+		]
 	},
 	"awrl-0": {
 		"content": "filters",
@@ -136,8 +125,7 @@
 			"https://easylist-downloads.adblockplus.org/easylist.txt",
 			"assets/thirdparties/easylist-downloads.adblockplus.org/easylist.txt"
 		],
-		"supportURL": "https://forums.lanik.us/",
-		"off": false
+		"supportURL": "https://forums.lanik.us/"
 	},
 	"adguard-spyware": {
 		"content": "filters",
@@ -158,8 +146,7 @@
 			"https://easylist-downloads.adblockplus.org/easyprivacy.txt",
 			"assets/thirdparties/easylist-downloads.adblockplus.org/easyprivacy.txt"
 		],
-		"supportURL": "https://forums.lanik.us/",
-		"off": true
+		"supportURL": "https://forums.lanik.us/"
 	},
 	"fanboy-enhanced": {
 		"content": "filters",
@@ -187,8 +174,7 @@
 			"https://gitcdn.xyz/repo/NanoMeow/MDLMirror/master/filter.txt",
 			"https://raw.githubusercontent.com/NanoMeow/MDLMirror/master/filter.txt",
 			"assets/thirdparties/www.malwaredomainlist.com/hostslist/hosts.txt"
-		],
-		"off": true
+		]
 	},
 	"malware-1": {
 		"content": "filters",
@@ -200,8 +186,7 @@
 			"assets/thirdparties/mirror1.malwaredomains.com/files/justdomains.txt",
 			"assets/thirdparties/mirror1.malwaredomains.com/files/justdomains"
 		],
-		"supportURL": "https://www.malwaredomains.com/",
-		"off": true
+		"supportURL": "https://www.malwaredomains.com/"
 	},
 	"spam404-0": {
 		"content": "filters",
@@ -307,8 +292,7 @@
 			"assets/thirdparties/pgl.yoyo.org/as/serverlist.txt",
 			"assets/thirdparties/pgl.yoyo.org/as/serverlist"
 		],
-		"supportURL": "https://pgl.yoyo.org/adservers/",
-		"off": true
+		"supportURL": "https://pgl.yoyo.org/adservers/"
 	},
 	"ara-0": {
 		"content": "filters",
@@ -368,15 +352,6 @@
 		],
 		"supportURL": "https://forums.lanik.us/viewforum.php?f=90"
 	},
-	"DNK-0": {
-		"content": "filters",
-		"group": "regions",
-		"off": true,
-		"title": "DNK: Schacks Adblock Plus liste",
-		"lang": "da",
-		"contentURL": "https://adblock.dk/block.csv",
-		"supportURL": "https://henrik.schack.dk/adblock/"
-	},
 	"EST-0": {
 		"content": "filters",
 		"group": "regions",
@@ -404,6 +379,7 @@
 		"contentURL": "https://easylist-downloads.adblockplus.org/liste_fr.txt",
 		"supportURL": "https://forums.lanik.us/viewforum.php?f=91"
 	},
+	
 	"GRC-0": {
 		"content": "filters",
 		"group": "regions",
@@ -582,16 +558,6 @@
 		"contentURL": "https://easylist-downloads.adblockplus.org/advblock+cssfixes.txt",
 		"supportURL": "https://forums.lanik.us/viewforum.php?f=102",
 		"instructionURL": "https://forums.lanik.us/viewtopic.php?f=102&t=22512"
-	},
-	"RUS-2": {
-		"content": "filters",
-		"group": "regions",
-		"off": true,
-		"title": "RUS: AdGuard Russian",
-		"lang": "be kk ru uk uz",
-		"contentURL": "https://filters.adtidy.org/extension/ublock/filters/1.txt",
-		"supportURL": "https://forum.adguard.com/forumdisplay.php?69-%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D1%8B-Adguard",
-		"instructionURL": "https://kb.adguard.com/ru/general/adguard-ad-filters#russian"
 	},
 	"spa-0": {
 		"content": "filters",

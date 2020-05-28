@@ -59,17 +59,14 @@ $(document).ready(function() {
 
     /******************************************************************************/
 
-    var applyDiff = function(permanent, toAdd, toRemove) {
-        messaging.send(
-            'dashboard',
-            {
-                what: 'modifyRuleset',
-                permanent: permanent,
-                toAdd: toAdd,
-                toRemove: toRemove
-            },
-            renderRules
-        );
+    var applyDiff = async function(permanent, toAdd, toRemove) {
+        const details = await vAPI.messaging.send('dashboard', {
+            what: 'modifyRuleset',
+            permanent: permanent,
+            toAdd: toAdd,
+            toRemove: toRemove,
+        });
+        renderRules(details);
     };
 
     /******************************************************************************/
@@ -155,7 +152,11 @@ $(document).ready(function() {
 
     /******************************************************************************/
 
-    messaging.send('dashboard', { what: 'getRules' }, renderRules);
+    vAPI.messaging.send('dashboard', {
+        what: 'getRules',
+    }).then((details) => {
+        renderRules(details);
+    });
 
     // Handle user interaction
     uDom('#importButton').on('click', startImportFilePicker);

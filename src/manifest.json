@@ -20,6 +20,9 @@
 		},
 		"launch-logger": {
 			"description": "__MSG_popupTipLog__"
+		},
+		"relax-blocking-mode": {
+			"description": "__MSG_relaxBlockingMode__"
 		}
 	},
 	"content_scripts": [
@@ -48,6 +51,7 @@
 			"run_at": "document_idle"
 		}
 	],
+	"content_security_policy": "script-src 'self'; object-src 'self'",
 	"default_locale": "en",
 	"description": "__MSG_extShortDesc__",
 	"icons": {
@@ -74,9 +78,13 @@
 	"storage": {
 		"managed_schema": "managed_storage.json"
 	},
-	"version": "1.19.4",
+	"version": "1.23.0",
 	"web_accessible_resources": [
 		"/web_accessible_resources/*"
 	],
-	"options_page": "options/index.html"
+	"options_page": "options/index.html",
+	"dataKeys": [
+		"blockedRequestCount",
+		"allowedRequestCount"
+	]
 }

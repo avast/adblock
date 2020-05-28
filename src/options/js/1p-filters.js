@@ -58,28 +58,28 @@ $(document).ready(function() {
 
     /******************************************************************************/
 
-    function renderUserFilters(first) {
-        var onRead = function(details) {
-            if ( details.error ) { return; }
-            var textarea = uDom.nodeFromId('userFilters');
-            cachedUserFilters = details.content.trim();
-            textarea.value = details.content;
-            if ( first ) {
-                textarea.value += '\n';
-                var textlen = textarea.value.length;
-                textarea.setSelectionRange(textlen, textlen);
-                textarea.focus();
-            }
-            userFiltersChanged(false);
-        };
-        messaging.send('dashboard', { what: 'readUserFilters' }, onRead);
-    }
+    const renderUserFilters = async function (first) {
+        const details = await vAPI.messaging.send('dashboard', {
+            what: 'readUserFilters',
+        });
 
-    /******************************************************************************/
+        if ( details instanceof Object === false || details.error ) { return; }
 
-    function allFiltersApplyHandler() {
-        messaging.send('dashboard', { what: 'reloadAllFilters' });
-        uDom('#userFiltersApply').prop('disabled', true );
+        let content = details.content.trim();
+        cachedUserFilters = content;
+        if ( content.length !== 0 ) {
+            content += '\n';
+        }
+
+        var textarea = uDom.nodeFromId('userFilters');
+        textarea.value = content;
+        if ( first ) {
+            var textlen = textarea.value.length;
+            textarea.setSelectionRange(textlen, textlen);
+            textarea.focus();
+        }
+
+        userFiltersChanged(false);
     }
 
     /******************************************************************************/
@@ -158,25 +158,22 @@ $(document).ready(function() {
 
     /******************************************************************************/
 
-    var applyChanges = function() {
+    var applyChanges = async function() {
         var textarea = uDom.nodeFromId('userFilters');
 
-        var onWritten = function(details) {
-            if ( details.error ) {
-                return;
-            }
-            textarea.value = details.content;
-            cachedUserFilters = details.content.trim();
-            userFiltersChanged();
-            allFiltersApplyHandler();
-            textarea.focus();
-        };
-
-        var request = {
+        const details = await vAPI.messaging.send('dashboard', {
             what: 'writeUserFilters',
-            content: textarea.value
-        };
-        messaging.send('dashboard', request, onWritten);
+            content: textarea.value,
+        });
+        if ( details instanceof Object === false || details.error ) { return; }
+
+        textarea.value = details.content;
+        cachedUserFilters = details.content.trim();
+
+        userFiltersChanged(false);
+        vAPI.messaging.send('dashboard', {
+            what: 'reloadAllFilters',
+        });
     };
 
     var revertChanges = function() {

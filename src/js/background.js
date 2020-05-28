@@ -33,43 +33,39 @@ if ( vAPI.webextFlavor === undefined ) {
 
 /******************************************************************************/
 
-const µBlock = (function() { // jshint ignore:line
+const µBlock = (( ) => { // jshint ignore:line
 
     const hiddenSettingsDefault = {
+        allowGenericProceduralFilters: false,
         assetFetchTimeout: 30,
         autoCommentFilterTemplate: '{{date}} {{origin}}',
         autoUpdateAssetFetchPeriod: 120,
+        autoUpdateDelayAfterLaunch: 180,
         autoUpdatePeriod: 7,
+        blockingProfiles: '11111/#F00 11011/#C0F 11001/#00F 00001',
         cacheStorageAPI: 'unset',
         cacheStorageCompression: true,
         cacheControlForFirefox1376932: 'no-cache, no-store, must-revalidate',
         consoleLogLevel: 'unset',
         debugScriptlets: false,
+        debugScriptletInjector: false,
         disableWebAssembly: false,
+        extensionUpdateForceReload: false,
         ignoreRedirectFilters: false,
         ignoreScriptInjectFilters: false,
+        filterAuthorMode: false,
+        loggerPopupType: 'popup',
         manualUpdateAssetFetchPeriod: 500,
         popupFontSize: 'unset',
         requestJournalProcessPeriod: 1000,
-        selfieAfter: 11,
+        selfieAfter: 3,
         strictBlockingBypassDuration: 120,
         suspendTabsUntilReady: 'unset',
-        userResourcesLocation: 'unset'
+        updateAssetBypassBrowserCache: false,
+        userResourcesLocation: 'unset',
     };
 
-    const whitelistDefault = [
-        'about-scheme',
-        'chrome-extension-scheme',
-        'chrome-scheme',
-        'moz-extension-scheme',
-        'opera-scheme',
-        'vivaldi-scheme',
-        'wyciwyg-scheme',   // Firefox's "What-You-Cache-Is-What-You-Get"
-    ];
-
     return {
-        firstInstall: false,
-
         userSettings: {
             advancedUserEnabled: false,
             alwaysDetachLogger: true,
@@ -82,18 +78,18 @@ const µBlock = (function() { // jshint ignore:line
             externalLists: [],
             firewallPaneMinimized: true,
             hyperlinkAuditingDisabled: true,
-            ignoreGenericCosmeticFilters: false,
+            ignoreGenericCosmeticFilters: vAPI.webextFlavor.soup.has('mobile'),
             largeMediaSize: 50,
             parseAllABPHideFilters: true,
             prefetchingDisabled: true,
             requestLogMaxEntries: 1000,
             showIconBadge: true,
             tooltipsDisabled: false,
-            webrtcIPAddressHidden: false
+            webrtcIPAddressHidden: false,
         },
 
         hiddenSettingsDefault: hiddenSettingsDefault,
-        hiddenSettings: (function() {
+        hiddenSettings: (( ) => {
             const out = Object.assign({}, hiddenSettingsDefault);
             const json = vAPI.localStorage.getItem('immediateHiddenSettings');
             if ( typeof json !== 'string' ) { return out; }
@@ -124,28 +120,36 @@ const µBlock = (function() { // jshint ignore:line
 
         // https://github.com/chrisaljoudi/uBlock/issues/180
         // Whitelist directives need to be loaded once the PSL is available
-        netWhitelist: {},
+        netWhitelist: new Map(),
         netWhitelistModifyTime: 0,
-        netWhitelistDefault: whitelistDefault.join('\n'),
+        netWhitelistDefault: [
+            'about-scheme',
+            'chrome-extension-scheme',
+            'chrome-scheme',
+            'moz-extension-scheme',
+            'opera-scheme',
+            'vivaldi-scheme',
+            'wyciwyg-scheme',   // Firefox's "What-You-Cache-Is-What-You-Get"
+        ],
 
         localSettings: {
             blockedRequestCount: 0,
-            allowedRequestCount: 0
+            allowedRequestCount: 0,
         },
         localSettingsLastModified: 0,
         localSettingsLastSaved: 0,
 
         // Read-only
         systemSettings: {
-            compiledMagic: 14,  // Increase when compiled format changes
-            selfieMagic: 14     // Increase when selfie format changes
+            compiledMagic: 21,  // Increase when compiled format changes
+            selfieMagic: 22,    // Increase when selfie format changes
         },
 
         restoreBackupSettings: {
             lastRestoreFile: '',
             lastRestoreTime: 0,
             lastBackupFile: '',
-            lastBackupTime: 0
+            lastBackupTime: 0,
         },
 
         commandShortcuts: new Map(),
@@ -153,7 +157,7 @@ const µBlock = (function() { // jshint ignore:line
         // Allows to fully customize uBO's assets, typically set through admin
         // settings. The content of 'assets.json' will also tell which filter
         // lists to enable by default when uBO is first installed.
-        assetsBootstrapLocation: 'assets/assets.json',
+        assetsBootstrapLocation: undefined,
 
         userFiltersPath: 'user-filters',
         pslAssetKey: 'public_suffix_list.dat',
@@ -171,18 +175,26 @@ const µBlock = (function() { // jshint ignore:line
 
         apiErrorCount: 0,
 
-        mouseEventRegister: {
-            tabId: '',
-            x: -1,
-            y: -1,
-            url: ''
+        maybeGoodPopup: {
+            tabId: 0,
+            url: '',
         },
 
-        epickerTarget: '',
-        epickerZap: false,
-        epickerEprom: null,
+        epickerArgs: {
+            eprom: null,
+            mouse: false,
+            target: '',
+            zap: false,
+        },
 
         scriptlets: {},
+
+        cspNoInlineScript: "script-src 'unsafe-eval' * blob: data:",
+        cspNoScripting: 'script-src http: https:',
+        cspNoInlineFont: 'font-src *',
+
+        liveBlockingProfiles: [],
+        blockingProfileColorCache: new Map(),
     };
 
 })();

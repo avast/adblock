@@ -44,13 +44,13 @@
   optional.
 
   The static extended filtering engine also offers parsing capabilities which
-  are available to all other specialized fitlering engines. For example,
+  are available to all other specialized filtering engines. For example,
   cosmetic and html filtering can ask the extended filtering engine to
   compile/validate selectors.
 
 **/
 
-µBlock.staticExtFilteringEngine = (function() {
+µBlock.staticExtFilteringEngine = (( ) => {
     const µb = µBlock;
     const reHasUnicode = /[^\x00-\x7F]/;
     const reParseRegexLiteral = /^\/(.+)\/([imu]+)?$/;
@@ -68,9 +68,9 @@
         parsed.suffix = '';
     };
 
-    const isValidCSSSelector = (function() {
-        var div = document.createElement('div'),
-            matchesFn;
+    const isValidCSSSelector = (( ) => {
+        const div = document.createElement('div');
+        let matchesFn;
         // Keep in mind:
         //   https://github.com/gorhill/uBlock/issues/693
         //   https://github.com/gorhill/uBlock/issues/1955
@@ -95,11 +95,11 @@
         }
         // Quick regex-based validation -- most cosmetic filters are of the
         // simple form and in such case a regex is much faster.
-        var reSimple = /^[#.][\w-]+$/;
-        return function(s) {
+        const reSimple = /^[#.][\w-]+$/;
+        return s => {
             if ( reSimple.test(s) ) { return true; }
             try {
-                matchesFn(s + ', ' + s + ':not(#foo)');
+                matchesFn(`${s}, ${s}:not(#foo)`);
             } catch (ex) {
                 return false;
             }
@@ -152,7 +152,7 @@
         return hostnames;
     };
 
-    const compileProceduralSelector = (function() {
+    const compileProceduralSelector = (( ) => {
         const reProceduralOperator = new RegExp([
             '^(?:',
                 [
@@ -166,8 +166,10 @@
                 'matches-css',
                 'matches-css-after',
                 'matches-css-before',
+                'min-text-length',
                 'not',
                 'nth-ancestor',
+                'watch-attr',
                 'watch-attrs',
                 'xpath'
                 ].join('|'),
@@ -176,8 +178,9 @@
 
         const reEatBackslashes = /\\([()])/g;
         const reEscapeRegex = /[.*+?^${}()|[\]\\]/g;
-        const reNeedScope = /^\s*[+>~]/;
-        const reIsDanglingSelector = /(?:[+>~]\s*|\s+)$/;
+        const reNeedScope = /^\s*>/;
+        const reIsDanglingSelector = /[+>~\s]\s*$/;
+        const reIsSiblingSelector = /^\s*[+~]/;
 
         const regexToRawValue = new Map();
         let lastProceduralSelector = '',
@@ -224,11 +227,19 @@
 
         const compileConditionalSelector = function(s) {
             // https://github.com/AdguardTeam/ExtendedCss/issues/31#issuecomment-302391277
-            // Prepend `:scope ` if needed.
+            //   Prepend `:scope ` if needed.
             if ( reNeedScope.test(s) ) {
-                s = ':scope ' + s;
+                s = `:scope ${s}`;
             }
             return compile(s);
+        };
+
+        const compileInteger = function(s, min = 0, max = 0x7FFFFFFF) {
+            if ( /^\d+$/.test(s) === false ) { return; }
+            const n = parseInt(s, 10);
+            if ( n >= min && n < max ) {
+                return n;
+            }
         };
 
         const compileNotSelector = function(s) {
@@ -242,10 +253,7 @@
         };
 
         const compileNthAncestorSelector = function(s) {
-            const n = parseInt(s, 10);
-            if ( isNaN(n) === false && n >= 1 && n < 256 ) {
-                return n;
-            }
+            return compileInteger(s, 1, 256);
         };
 
         const compileSpathExpression = function(s) {
@@ -279,6 +287,7 @@
             [ ':-abp-contains', ':has-text' ],
             [ ':-abp-has', ':has' ],
             [ ':contains', ':has-text' ],
+            [ ':watch-attrs', ':watch-attr' ],
         ]);
 
         const compileArgument = new Map([
@@ -289,11 +298,12 @@
             [ ':matches-css', compileCSSDeclaration ],
             [ ':matches-css-after', compileCSSDeclaration ],
             [ ':matches-css-before', compileCSSDeclaration ],
+            [ ':min-text-length', compileInteger ],
             [ ':not', compileNotSelector ],
             [ ':nth-ancestor', compileNthAncestorSelector ],
             [ ':spath', compileSpathExpression ],
-            [ ':watch-attrs', compileAttrList ],
-            [ ':xpath', compileXpathExpression ]
+            [ ':watch-attr', compileAttrList ],
+            [ ':xpath', compileXpathExpression ],
         ]);
 
         // https://github.com/gorhill/uBlock/issues/2793#issuecomment-333269387
@@ -344,13 +354,12 @@
                 case ':if-not':
                     raw.push(`:not(${decompile(task[1])})`);
                     break;
-                case ':nth-ancestor':
-                    raw.push(`:nth-ancestor(${task[1]})`);
-                    break;
                 case ':spath':
                     raw.push(task[1]);
                     break;
-                case ':watch-attrs':
+                case ':min-text-length':
+                case ':nth-ancestor':
+                case ':watch-attr':
                 case ':xpath':
                     raw.push(`${task[0]}(${task[1]})`);
                     break;
@@ -359,7 +368,7 @@
             return raw.join('');
         };
 
-        const compile = function(raw) {
+        const compile = function(raw, root = false) {
             if ( raw === '' ) { return; }
             let prefix = '',
                 tasks = [];
@@ -428,16 +437,31 @@
             // At least one task found: nothing should be left to parse.
             if ( tasks.length === 0 ) {
                 prefix = raw;
-                tasks = undefined;
             } else if ( opPrefixBeg < n ) {
                 const spath = compileSpathExpression(raw.slice(opPrefixBeg));
                 if ( spath === undefined ) { return; }
                 tasks.push([ ':spath', spath ]);
             }
             // https://github.com/NanoAdblocker/NanoCore/issues/1#issuecomment-354394894
+            // https://www.reddit.com/r/uBlockOrigin/comments/c6iem5/
+            //   Convert sibling-selector prefix into :spath operator, but
+            //   only if context is not the root.
             if ( prefix !== '' ) {
                 if ( reIsDanglingSelector.test(prefix) ) { prefix += '*'; }
-                if ( isValidCSSSelector(prefix) === false ) { return; }
+                if ( isValidCSSSelector(prefix) === false ) {
+                    if (
+                        root ||
+                        reIsSiblingSelector.test(prefix) === false ||
+                        compileSpathExpression(prefix) === undefined
+                    ) {
+                        return;
+                    }
+                    tasks.unshift([ ':spath', prefix ]);
+                    prefix = '';
+                }
+            }
+            if ( tasks.length === 0 ) {
+                tasks = undefined;
             }
             return { selector: prefix, tasks: tasks };
         };
@@ -447,7 +471,7 @@
                 return lastProceduralSelectorCompiled;
             }
             lastProceduralSelector = raw;
-            let compiled = compile(raw);
+            let compiled = compile(raw, true);
             if ( compiled !== undefined ) {
                 compiled.raw = decompile(compiled);
                 compiled = JSON.stringify(compiled);
@@ -486,83 +510,165 @@
     // Public classes
     //--------------------------------------------------------------------------
 
-    api.HostnameBasedDB = function(selfie) {
-        if ( selfie !== undefined ) {
-            this.db = new Map(selfie.map);
-            this.size = selfie.size;
-        } else {
-            this.db = new Map();
+    api.HostnameBasedDB = class {
+        constructor(nBits, selfie = undefined) {
+            this.nBits = nBits;
+            this.timer = undefined;
+            this.strToIdMap = new Map();
+            this.hostnameToSlotIdMap = new Map();
+            // Array of integer pairs
+            this.hostnameSlots = [];
+            // Array of strings (selectors and pseudo-selectors)
+            this.strSlots = [];
+            this.size = 0;
+            if ( selfie !== undefined ) {
+                this.fromSelfie(selfie);
+            }
+        }
+
+        store(hn, bits, s) {
+            this.size += 1;
+            let iStr = this.strToIdMap.get(s);
+            if ( iStr === undefined ) {
+                iStr = this.strSlots.length;
+                this.strSlots.push(s);
+                this.strToIdMap.set(s, iStr);
+                if ( this.timer === undefined ) {
+                    this.collectGarbage(true);
+                }
+            }
+            const strId = iStr << this.nBits | bits;
+            let iHn = this.hostnameToSlotIdMap.get(hn);
+            if ( iHn === undefined ) {
+                this.hostnameToSlotIdMap.set(hn, this.hostnameSlots.length);
+                this.hostnameSlots.push(strId, 0);
+                return;
+            }
+            // Add as last item.
+            while ( this.hostnameSlots[iHn+1] !== 0 ) {
+                iHn = this.hostnameSlots[iHn+1];
+            }
+            this.hostnameSlots[iHn+1] = this.hostnameSlots.length;
+            this.hostnameSlots.push(strId, 0);
+        }
+
+        clear() {
+            this.hostnameToSlotIdMap.clear();
+            this.hostnameSlots.length = 0;
+            this.strSlots.length = 0;
+            this.strToIdMap.clear();
             this.size = 0;
         }
-    };
 
-    api.HostnameBasedDB.prototype = {
-        add: function(hash, entry) {
-            let bucket = this.db.get(hash);
-            if ( bucket === undefined ) {
-                this.db.set(hash, entry);
-            } else if ( Array.isArray(bucket) ) {
-                bucket.push(entry);
-            } else {
-                this.db.set(hash, [ bucket, entry ]);
-            }
-            this.size += 1;
-        },
-        clear: function() {
-            this.db.clear();
-            this.size = 0;
-        },
-        retrieve: function(hash, hostname, out) {
-            let bucket = this.db.get(hash);
-            if ( bucket === undefined ) { return; }
-            if ( Array.isArray(bucket) === false ) {
-                bucket = [ bucket ];
-            }
-            for ( let entry of bucket ) {
-                if ( hostname.endsWith(entry.hostname) === false ) {
-                    continue;
+        collectGarbage(later = false) {
+            if ( later === false ) {
+                if ( this.timer !== undefined ) {
+                    self.cancelIdleCallback(this.timer);
+                    this.timer = undefined;
                 }
-                let i = hostname.length - entry.hostname.length;
-                if (
-                    i === 0 ||
-                    i === hostname.length ||
-                    hostname.charCodeAt(i-1) === 0x2E /* '.' */
-                ) {
-                    out.push(entry);
+                this.strToIdMap.clear();
+                return;
+            }
+            if ( this.timer !== undefined ) { return; }
+            this.timer = self.requestIdleCallback(
+                ( ) => {
+                    this.timer = undefined;
+                    this.strToIdMap.clear();
+                },
+                { timeout: 10000 }
+            );
+        }
+
+        // modifiers = 1: return only specific items
+        // modifiers = 2: return only generic items
+        //
+        retrieve(hostname, out, modifiers = 0) {
+            if ( modifiers === 2 ) {
+                hostname = '';
+            }
+            const mask = out.length - 1; // out.length must be power of two
+            for (;;) {
+                let iHn = this.hostnameToSlotIdMap.get(hostname);
+                if ( iHn !== undefined ) {
+                    do {
+                        const strId = this.hostnameSlots[iHn+0];
+                        out[strId & mask].add(
+                            this.strSlots[strId >>> this.nBits]
+                        );
+                        iHn = this.hostnameSlots[iHn+1];
+                    } while ( iHn !== 0 );
+                }
+                if ( hostname === '' ) { break; }
+                const pos = hostname.indexOf('.');
+                if ( pos === -1 ) {
+                    if ( modifiers === 1 ) { break; }
+                    hostname = '';
+                } else {
+                    hostname = hostname.slice(pos + 1);
                 }
             }
-        },
-        toSelfie: function() {
+        }
+
+        toSelfie() {
             return {
-                map: Array.from(this.db),
+                hostnameToSlotIdMap: Array.from(this.hostnameToSlotIdMap),
+                hostnameSlots: this.hostnameSlots,
+                strSlots: this.strSlots,
                 size: this.size
             };
         }
+
+        fromSelfie(selfie) {
+            this.hostnameToSlotIdMap = new Map(selfie.hostnameToSlotIdMap);
+            this.hostnameSlots = selfie.hostnameSlots;
+            this.strSlots = selfie.strSlots;
+            this.size = selfie.size;
+        }
     };
 
-    api.HostnameBasedDB.prototype[Symbol.iterator] = (function() {
-        const Iter = function(db) {
-            this.mapIter = db.values();
-            this.arrayIter = undefined;
-        };
-        Iter.prototype.next = function() {
-            let result;
-            if ( this.arrayIter !== undefined ) {
-                result = this.arrayIter.next();
-                if ( result.done === false ) { return result; }
-                this.arrayIter = undefined;
+    api.SessionDB = class {
+        constructor() {
+            this.db = new Map();
+        }
+        compile(s) {
+            return s;
+        }
+        add(bits, s) {
+            const bucket = this.db.get(bits);
+            if ( bucket === undefined ) {
+                this.db.set(bits, new Set([ s ]));
+            } else {
+                bucket.add(s);
             }
-            result = this.mapIter.next();
-            if ( result.done || Array.isArray(result.value) === false ) {
-                return result;
+        }
+        remove(bits, s) {
+            const bucket = this.db.get(bits);
+            if ( bucket === undefined ) { return; }
+            bucket.delete(s);
+            if ( bucket.size !== 0 ) { return; }
+            this.db.delete(bits);
+        }
+        retrieve(out) {
+            const mask = out.length - 1;
+            for ( const [ bits, bucket ] of this.db ) {
+                const i = bits & mask;
+                if ( out[i] instanceof Object === false ) { continue; }
+                for ( const s of bucket ) {
+                    out[i].add(s);
+                }
             }
-            this.arrayIter = result.value[Symbol.iterator]();
-            return this.arrayIter.next(); // array should never be empty
-        };
-        return function() {
-            return new Iter(this.db);
-        };
-    })();
+        }
+        has(bits, s) {
+            const selectors = this.db.get(bits);
+            return selectors !== undefined && selectors.has(s);
+        }
+        clear() {
+            this.db.clear();
+        }
+        get isNotEmpty() {
+            return this.db.size !== 0;
+        }
+    };
 
     //--------------------------------------------------------------------------
     // Public methods
@@ -584,60 +690,6 @@
         resetParsed(parsed);
     };
 
-    // HHHHHHHHHHHH0000
-    //            |   |
-    //            |   |
-    //            |   +-- bit  3-0: reserved
-    //            +------ bit 15-4: FNV
-    api.makeHash = function(token) {
-        // Based on: FNV32a
-        // http://www.isthe.com/chongo/tech/comp/fnv/index.html#FNV-reference-source
-        // The rest is custom, suited for uBlock.
-        const i1 = token.length;
-        if ( i1 === 0 ) { return 0; }
-        const i2 = i1 >> 1;
-        const i4 = i1 >> 2;
-        const i8 = i1 >> 3;
-        let hval = (0x811c9dc5 ^ token.charCodeAt(0)) >>> 0;
-        hval += (hval<<1) + (hval<<4) + (hval<<7) + (hval<<8) + (hval<<24);
-        hval >>>= 0;
-        hval ^= token.charCodeAt(i8);
-        hval += (hval<<1) + (hval<<4) + (hval<<7) + (hval<<8) + (hval<<24);
-        hval >>>= 0;
-        hval ^= token.charCodeAt(i4);
-        hval += (hval<<1) + (hval<<4) + (hval<<7) + (hval<<8) + (hval<<24);
-        hval >>>= 0;
-        hval ^= token.charCodeAt(i4+i8);
-        hval += (hval<<1) + (hval<<4) + (hval<<7) + (hval<<8) + (hval<<24);
-        hval >>>= 0;
-        hval ^= token.charCodeAt(i2);
-        hval += (hval<<1) + (hval<<4) + (hval<<7) + (hval<<8) + (hval<<24);
-        hval >>>= 0;
-        hval ^= token.charCodeAt(i2+i8);
-        hval += (hval<<1) + (hval<<4) + (hval<<7) + (hval<<8) + (hval<<24);
-        hval >>>= 0;
-        hval ^= token.charCodeAt(i2+i4);
-        hval += (hval<<1) + (hval<<4) + (hval<<7) + (hval<<8) + (hval<<24);
-        hval >>>= 0;
-        hval ^= token.charCodeAt(i1-1);
-        hval += (hval<<1) + (hval<<4) + (hval<<7) + (hval<<8) + (hval<<24);
-        hval >>>= 0;
-        hval &= 0xFFF0;
-        // Can't return 0, it's reserved for empty string.
-        return hval !== 0 ? hval : 0xfff0;
-    };
-
-    api.compileHostnameToHash = function(hostname) {
-        let domain;
-        if ( hostname.endsWith('.*') ) {
-            const pos = hostname.lastIndexOf('.', hostname.length - 3);
-            domain = pos !== -1 ? hostname.slice(pos + 1) : hostname;
-        } else {
-            domain = µb.URI.domainFromHostname(hostname);
-        }
-        return api.makeHash(domain);
-    };
-
     // https://github.com/chrisaljoudi/uBlock/issues/1004
     //   Detect and report invalid CSS selectors.
 
@@ -651,10 +703,9 @@
     // https://github.com/uBlockOrigin/uBlock-issues/issues/89
     //   Do not discard unknown pseudo-elements.
 
-    api.compileSelector = (function() {
+    api.compileSelector = (( ) => {
         const reAfterBeforeSelector = /^(.+?)(::?after|::?before|::[a-z-]+)$/;
         const reStyleSelector = /^(.+?):style\((.+?)\)$/;
-        const reStyleBad = /url\(/;
         const reExtendedSyntax = /\[-(?:abp|ext)-[a-z-]+=(['"])(?:.+?)(?:\1)\]/;
         const reExtendedSyntaxParser = /\[-(?:abp|ext)-([a-z-]+)=(['"])(.+?)\2\]/;
         const div = document.createElement('div');
@@ -674,6 +725,8 @@
             div.style.cssText = '';
             return true;
         };
+        // https://github.com/uBlockOrigin/uBlock-issues/issues/668
+        const reStyleBad = /url\(|\\/i;
 
         const entryPoint = function(raw) {
             entryPoint.pseudoclass = false;
@@ -735,8 +788,8 @@
             }
 
             // Procedural selector?
-            let compiled;
-            if ( (compiled = compileProceduralSelector(raw)) ) {
+            const compiled = compileProceduralSelector(raw);
+            if ( compiled !== undefined ) {
                 return compiled;
             }
         };

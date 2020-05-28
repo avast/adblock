@@ -60,6 +60,7 @@
         <div class="wrapper-privacy-default-head custom">
             <h4 data-i18n="extraManageFilters"></h4>
             <div class="wrapper-head-btn">
+                <a class="btn add add-item" data-i18n="3pImport"></a>
                 <a class="btn" id="extraButtonUpdate" data-i18n="extraBtnUpdateAll"></a>
             </div>
         </div>
@@ -79,12 +80,41 @@
     <div class="wrapper-list filter-list"></div>
 </div>
 
+<!--modal-->
+<div class="modal_form">
+    <div class="modal-header">
+        <span class="modal-header-tittle" data-i18n="extraAddFilter"></span>
+        <div class="modal_close">
+            <img src="img/Icon-close.svg">
+            <span class="close-ripple"></span>
+        </div>
+    </div>
+    <div class="modal-body">
+        <form class="form-group">
+            <label for="name" data-i18n="extraAddFilter"></label>
+            <input type="text" id="name" class="form-control">
+        </form>
+        <div class="modal-body-bottom">
+            <div class="btn-cancel">
+                <a class="btn cancel" data-i18n="extraBtnCancel"></a>
+            </div>
+            <a class="btn-add" data-i18n="extraBtnAdd"></a>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+<!--modal-->
+
 <div class="template">
     <div class="wrapper-list-content template-filter-item">
         <div class="wrapper-list-content-text">
             <p class="item-title"></p>
         </div>
         <div class="open-window">
+            <a class="fa btn-remove">
+                <span class="btn-remove-icon">&#xf014;</span>
+                <span class="link-ripple"></span>
+            </a>
             <a href="#" target="_blank" class="item-link">
                 <img src="img/Icon-open-window.svg">
                 <span class="link-ripple"></span>
@@ -144,6 +174,7 @@
 <script src="../js/vapi.js"></script>
 <script src="../js/vapi-common.js"></script>
 <script src="../js/vapi-client.js"></script>
+<script src="../js/vapi-client-extra.js"></script>
 <script src="../js/udom.js"></script>
 <script src="../js/i18n.js"></script>
 

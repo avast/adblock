@@ -23,7 +23,8 @@
 
 /******************************************************************************/
 
-(function() {
+(( ) => {
+// >>>>>>>> start of private namespace
 
 /******************************************************************************/
 
@@ -35,33 +36,55 @@ if (
     return;
 }
 
-let reHasCSSCombinators = /[ >+~]/,
-    reHasPseudoClass = /:+(?:after|before)$/,
-    sanitizedSelectors = new Map(),
-    simpleDeclarativeSet = new Set(),
-    simpleDeclarativeStr,
-    complexDeclarativeSet = new Set(),
-    complexDeclarativeStr,
-    proceduralDict = new Map(),
-    nodesToProcess = new Set(),
-    shouldProcessDeclarativeComplex = false,
-    shouldProcessProcedural = false,
-    loggedSelectors = new Set();
+const reHasCSSCombinators = /[ >+~]/;
+const simpleDeclarativeSet = new Set();
+let simpleDeclarativeStr;
+const complexDeclarativeSet = new Set();
+let complexDeclarativeStr;
+const declarativeStyleDict = new Map();
+let declarativeStyleStr;
+const proceduralDict = new Map();
+const exceptionDict = new Map();
+let exceptionStr;
+const proceduralExceptionDict = new Map();
+const nodesToProcess = new Set();
+const loggedSelectors = new Set();
 
 /******************************************************************************/
 
-let shouldProcess = function() {
-    return nodesToProcess.size !== 0 ||
-           shouldProcessDeclarativeComplex ||
-           shouldProcessProcedural;
+const rePseudoElements = /:(?::?after|:?before|:[a-z-]+)$/;
+
+const safeMatchSelector = function(selector, context) {
+    const safeSelector = rePseudoElements.test(selector)
+        ? selector.replace(rePseudoElements, '')
+        : selector;
+    return context.matches(safeSelector);
+};
+
+const safeQuerySelector = function(selector, context = document) {
+    const safeSelector = rePseudoElements.test(selector)
+        ? selector.replace(rePseudoElements, '')
+        : selector;
+    return context.querySelector(safeSelector);
+};
+
+const safeGroupSelectors = function(selectors) {
+    const arr = Array.isArray(selectors)
+        ? selectors
+        : Array.from(selectors);
+    return arr.map(s => {
+        return rePseudoElements.test(s)
+            ? s.replace(rePseudoElements, '')
+            : s;
+    }).join(',\n');
 };
 
 /******************************************************************************/
 
-let processDeclarativeSimple = function(node, out) {
+const processDeclarativeSimple = function(node, out) {
     if ( simpleDeclarativeSet.size === 0 ) { return; }
     if ( simpleDeclarativeStr === undefined ) {
-        simpleDeclarativeStr = Array.from(simpleDeclarativeSet).join(',\n');
+        simpleDeclarativeStr = safeGroupSelectors(simpleDeclarativeSet);
     }
     if (
         (node === document || node.matches(simpleDeclarativeStr) === false) &&
@@ -69,127 +92,164 @@ let processDeclarativeSimple = function(node, out) {
     ) {
         return;
     }
-    for ( let selector of simpleDeclarativeSet ) {
+    for ( const selector of simpleDeclarativeSet ) {
         if (
-            (node === document || node.matches(selector) === false) &&
-            (node.querySelector(selector) === null)
+            (node === document || safeMatchSelector(selector, node) === false) &&
+            (safeQuerySelector(selector, node) === null)
         ) {
             continue;
         }
-        out.push(sanitizedSelectors.get(selector) || selector);
+        out.push(`##${selector}`);
         simpleDeclarativeSet.delete(selector);
         simpleDeclarativeStr = undefined;
         loggedSelectors.add(selector);
-        if ( simpleDeclarativeSet.size === 0 ) { return; }
     }
 };
 
 /******************************************************************************/
 
-let processDeclarativeComplex = function(out) {
+const processDeclarativeComplex = function(out) {
     if ( complexDeclarativeSet.size === 0 ) { return; }
     if ( complexDeclarativeStr === undefined ) {
-        complexDeclarativeStr = Array.from(complexDeclarativeSet).join(',\n');
+        complexDeclarativeStr = safeGroupSelectors(complexDeclarativeSet);
     }
     if ( document.querySelector(complexDeclarativeStr) === null ) { return; }
-    for ( let selector of complexDeclarativeSet ) {
-        if ( document.querySelector(selector) === null ) { continue; }
-        out.push(sanitizedSelectors.get(selector) || selector);
+    for ( const selector of complexDeclarativeSet ) {
+        if ( safeQuerySelector(selector) === null ) { continue; }
+        out.push(`##${selector}`);
         complexDeclarativeSet.delete(selector);
         complexDeclarativeStr = undefined;
         loggedSelectors.add(selector);
-        if ( complexDeclarativeSet.size === 0 ) { return; }
     }
 };
 
 /******************************************************************************/
 
-let processProcedural = function(out) {
+const processDeclarativeStyle = function(out) {
+    if ( declarativeStyleDict.size === 0 ) { return; }
+    if ( declarativeStyleStr === undefined ) {
+        declarativeStyleStr = safeGroupSelectors(declarativeStyleDict.keys());
+    }
+    if ( document.querySelector(declarativeStyleStr) === null ) { return; }
+    for ( const selector of declarativeStyleDict.keys() ) {
+        if ( safeQuerySelector(selector) === null ) { continue; }
+        for ( const style of declarativeStyleDict.get(selector) ) {
+            const raw = `##${selector}:style(${style})`;
+            out.push(raw);
+            loggedSelectors.add(raw);
+        }
+        declarativeStyleDict.delete(selector);
+        declarativeStyleStr = undefined;
+    }
+};
+
+/******************************************************************************/
+
+const processProcedural = function(out) {
     if ( proceduralDict.size === 0 ) { return; }
-    for ( let entry of proceduralDict ) {
+    for ( const entry of proceduralDict ) {
         if ( entry[1].test() === false ) { continue; }
-        out.push(entry[1].raw);
+        out.push(`##${entry[1].raw}`);
         proceduralDict.delete(entry[0]);
-        if ( proceduralDict.size === 0 ) { break; }
     }
 };
 
 /******************************************************************************/
 
-let processTimer = new vAPI.SafeAnimationFrame(() => {
+const processExceptions = function(out) {
+    if ( exceptionDict.size === 0 ) { return; }
+    if ( exceptionStr === undefined ) {
+        exceptionStr = safeGroupSelectors(exceptionDict.keys());
+    }
+    if ( document.querySelector(exceptionStr) === null ) { return; }
+    for ( const [ selector, raw ] of exceptionDict ) {
+        if ( safeQuerySelector(selector) === null ) { continue; }
+        out.push(`#@#${raw}`);
+        exceptionDict.delete(selector);
+        exceptionStr = undefined;
+        loggedSelectors.add(raw);
+    }
+};
+
+/******************************************************************************/
+
+const processProceduralExceptions = function(out) {
+    if ( proceduralExceptionDict.size === 0 ) { return; }
+    for ( const exception of proceduralExceptionDict.values() ) {
+        if ( exception.test() === false ) { continue; }
+        out.push(`#@#${exception.raw}`);
+        proceduralExceptionDict.delete(exception.raw);
+    }
+};
+
+/******************************************************************************/
+
+const processTimer = new vAPI.SafeAnimationFrame(( ) => {
     //console.time('dom logger/scanning for matches');
     processTimer.clear();
-    let toLog = [];
-    if ( nodesToProcess.size !== 0 && simpleDeclarativeSet.size !== 0 ) {
-        if ( nodesToProcess.size !== 1 && nodesToProcess.has(document) ) {
-            nodesToProcess.clear();
-            nodesToProcess.add(document);
-        }
-        for ( let node of nodesToProcess ) {
+    if ( nodesToProcess.size === 0 ) { return; }
+
+    if ( nodesToProcess.size !== 1 && nodesToProcess.has(document) ) {
+        nodesToProcess.clear();
+        nodesToProcess.add(document);
+    }
+
+    const toLog = [];
+    if ( simpleDeclarativeSet.size !== 0 ) {
+        for ( const node of nodesToProcess ) {
             processDeclarativeSimple(node, toLog);
         }
-        nodesToProcess.clear();
     }
-    if ( shouldProcessDeclarativeComplex ) {
-        processDeclarativeComplex(toLog);
-        shouldProcessDeclarativeComplex = false;
-    }
-    if ( shouldProcessProcedural ) {
-        processProcedural(toLog);
-        shouldProcessProcedural = false;
-    }
+
+    processDeclarativeComplex(toLog);
+    processDeclarativeStyle(toLog);
+    processProcedural(toLog);
+    processExceptions(toLog);
+    processProceduralExceptions(toLog);
+
+    nodesToProcess.clear();
+
     if ( toLog.length === 0 ) { return; }
-    vAPI.messaging.send(
-        'scriptlets',
-        {
-            what: 'logCosmeticFilteringData',
-            frameURL: window.location.href,
-            frameHostname: window.location.hostname,
-            matchedSelectors: toLog
-        }
-    );
+
+    vAPI.messaging.send('scriptlets', {
+        what: 'logCosmeticFilteringData',
+        frameURL: window.location.href,
+        frameHostname: window.location.hostname,
+        matchedSelectors: toLog,
+    });
     //console.timeEnd('dom logger/scanning for matches');
 });
 
 /******************************************************************************/
 
-let attributeObserver = new MutationObserver(mutations => {
-    if ( simpleDeclarativeSet.size !== 0 ) {
-        for ( let mutation of mutations ) {
-            let node = mutation.target;
-            if ( node.nodeType !== 1 ) { continue; }
-            nodesToProcess.add(node);
-        }
+const attributeObserver = new MutationObserver(mutations => {
+    if ( nodesToProcess.has(document) ) { return; }
+    for ( const mutation of mutations ) {
+        const node = mutation.target;
+        if ( node.nodeType !== 1 ) { continue; }
+        nodesToProcess.add(node);
     }
-    if ( complexDeclarativeSet.size !== 0 ) {
-        shouldProcessDeclarativeComplex = true;
-    }
-    if ( proceduralDict.size !== 0 ) {
-        shouldProcessProcedural = true;
-    }
-    if ( shouldProcess() ) {
+    if ( nodesToProcess.size !== 0 ) {
         processTimer.start(100);
     }
 });
 
 /******************************************************************************/
 
-let handlers = {
+const handlers = {
     onFiltersetChanged: function(changes) {
         //console.time('dom logger/filterset changed');
-        let simpleSizeBefore = simpleDeclarativeSet.size,
-            complexSizeBefore = complexDeclarativeSet.size,
-            logNow = [];
-        for ( let entry of (changes.declarative || []) ) {
+        for ( const entry of (changes.declarative || []) ) {
             for ( let selector of entry[0].split(',\n') ) {
                 if ( entry[1] !== 'display:none!important;' ) {
-                    logNow.push(selector + ':style(' + entry[1] + ')');
+                    declarativeStyleStr = undefined;
+                    const styles = declarativeStyleDict.get(selector);
+                    if ( styles === undefined ) {
+                        declarativeStyleDict.set(selector, [ entry[1] ]);
+                        continue;
+                    }
+                    styles.push(entry[1]);
                     continue;
-                }
-                if ( reHasPseudoClass.test(selector) ) {
-                    let sanitized = selector.replace(reHasPseudoClass, '');
-                    sanitizedSelectors.set(sanitized, selector);
-                    selector = sanitized;
                 }
                 if ( loggedSelectors.has(selector) ) { continue; }
                 if ( reHasCSSCombinators.test(selector) ) {
@@ -201,35 +261,36 @@ let handlers = {
                 }
             }
         }
-        if ( logNow.length !== 0 ) {
-            vAPI.messaging.send(
-                'scriptlets',
-                {
-                    what: 'logCosmeticFilteringData',
-                    frameURL: window.location.href,
-                    frameHostname: window.location.hostname,
-                    matchedSelectors: logNow
-                }
-            );
-        }
-        if ( simpleDeclarativeSet.size !== simpleSizeBefore ) {
-            nodesToProcess.add(document.documentElement);
-        }
-        if ( complexDeclarativeSet.size !== complexSizeBefore ) {
-            shouldProcessDeclarativeComplex = true;
-        }
         if (
             Array.isArray(changes.procedural) &&
             changes.procedural.length !== 0
         ) {
-            for ( let selector of changes.procedural ) {
+            for ( const selector of changes.procedural ) {
                 proceduralDict.set(selector.raw, selector);
             }
-            shouldProcessProcedural = true;
         }
-        if ( shouldProcess() ) {
-            processTimer.start(1);
+        if ( Array.isArray(changes.exceptions) ) {
+            for ( const selector of changes.exceptions ) {
+                if ( loggedSelectors.has(selector) ) { continue; }
+                if ( selector.charCodeAt(0) !== 0x7B /* '{' */ ) {
+                    exceptionDict.set(selector, selector);
+                    continue;
+                }
+                const details = JSON.parse(selector);
+                if ( Array.isArray(details.style) ) {
+                    exceptionDict.set(details.style[0], details.raw);
+                    continue;
+                }
+                proceduralExceptionDict.set(
+                    details.raw,
+                    vAPI.domFilterer.createProceduralFilter(details)
+                );
+            }
+            exceptionStr = undefined;
         }
+        nodesToProcess.clear();
+        nodesToProcess.add(document);
+        processTimer.start(1);
         //console.timeEnd('dom logger/filterset changed');
     },
 
@@ -243,21 +304,12 @@ let handlers = {
     },
 
     onDOMChanged: function(addedNodes) {
-        // This is to guard against runaway job queue. I suspect this could
-        // occur on slower devices.
-        if ( simpleDeclarativeSet.size !== 0 ) {
-            for ( let node of addedNodes ) {
-                if ( node.parentNode === null ) { continue; }
-                nodesToProcess.add(node);
-            }
+        if ( nodesToProcess.has(document) ) { return; }
+        for ( const node of addedNodes ) {
+            if ( node.parentNode === null ) { continue; }
+            nodesToProcess.add(node);
         }
-        if ( complexDeclarativeSet.size !== 0 ) {
-            shouldProcessDeclarativeComplex = true;
-        }
-        if ( proceduralDict.size !== 0 ) {
-            shouldProcessProcedural = true;
-        }
-        if ( shouldProcess() ) {
+        if ( nodesToProcess.size !== 0 ) {
             processTimer.start(100);
         }
     }
@@ -265,21 +317,25 @@ let handlers = {
 
 /******************************************************************************/
 
-let onMessage = function(msg) {
-    if ( msg.what === 'loggerDisabled' ) {
-        processTimer.clear();
-        attributeObserver.disconnect();
-        vAPI.domFilterer.removeListener(handlers);
-        vAPI.domWatcher.removeListener(handlers);
-        vAPI.messaging.removeChannelListener('domLogger', onMessage);
-    }
-};
-vAPI.messaging.addChannelListener('domLogger', onMessage);
+vAPI.messaging.extend().then(extended => {
+    if ( extended !== true ) { return; }
+    const broadcastListener = msg => {
+        if ( msg.what === 'loggerDisabled' ) {
+            processTimer.clear();
+            attributeObserver.disconnect();
+            vAPI.domFilterer.removeListener(handlers);
+            vAPI.domWatcher.removeListener(handlers);
+            vAPI.broadcastListener.remove(broadcastListener);
+        }
+    };
+    vAPI.broadcastListener.add(broadcastListener);
+});
 
 vAPI.domWatcher.addListener(handlers);
 
 /******************************************************************************/
 
+// <<<<<<<< end of private namespace
 })();
 
 

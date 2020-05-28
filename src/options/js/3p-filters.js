@@ -1,4 +1,44 @@
 $(document).ready(function() {
+    var ListEdit = {
+        update: function (res) {
+            if (!res) return;
+            $('#externalLists').val(res);
+            uDom('#buttonApply').trigger('click');
+        },
+        edit: function(value, callback) {
+            var self = ListEdit;
+            var item = $(this).parents('.list-item').find('.item-value');
+            $('.overlay').fadeIn(400, function () {
+                $('.modal_form').css('display', 'block').animate({opacity: 1, top: '35%'}, 200);
+                $('.modal_form.err').css('display', 'block').animate({opacity: 1, top: '75%'}, 200);
+
+                $('#name').val('');
+                $('#name').focus();
+
+                $('.btn-add').unbind('click.edit').bind('click.edit', function() {
+                    var res = $('#name').val();
+                    if (callback) callback(res);
+                });
+            });
+        },
+        init: function() {
+            var self = ListEdit;
+            //item add
+            $('.add-item').bind('click', function (event) {
+                event.preventDefault();
+
+                self.edit('', function(res) {
+                    self.update(res);
+                })
+            });
+
+            $('.btn-remove').bind('click', function(){
+                return false;
+            })
+        }
+    };
+    ListEdit.init();
+
     let messaging = vAPI.messaging;
 
     $('.filter-list-settings').find('input').bind('change', function(){
@@ -6,21 +46,9 @@ $(document).ready(function() {
     });
 
     $('#extraButtonUpdate').bind('click', function() {
-        uDom('#extraButtonUpdate').toggleClass('disabled');
-        // uDom('#buttonPurgeAll').trigger('click');
-        messaging.send(
-            'dashboard',
-            {
-                what: 'purgeAllCaches',
-                hard: false
-            },
-            function() {
-                messaging.send('dashboard', { what: 'forceUpdateAssets' }, function () {
-                    // uDom('#buttonUpdate').trigger('click');
-                    uDom('#extraButtonUpdate').toggleClass('disabled');
-                })
-            }
-        );
+        // uDom('#extraButtonUpdate').toggleClass('disabled');
+        messaging.send('dashboard', { what: 'purgeAllCaches', hard: false });
+        messaging.send('dashboard', { what: 'forceUpdateAssets' });
         return false;
     });
 
@@ -44,6 +72,18 @@ $(document).ready(function() {
                     var support = ui.find('.support').attr('href');
                     if (support.length) title += ' <a href="' + support + '" class="learn" target="_blank">' + vAPI.i18n('extraLearnMore') + '</a>';
                     var item = $('.template .template-filter-item').clone();
+                    if (ui.hasClass('external')) {
+                        item.addClass('external');
+                        item.find('.btn-remove').bind('click', function(){
+                            let listKey = ui.data('listkey');
+                            if ( listKey ) {
+                                item.remove();
+                                ui.toggleClass('toRemove');
+                            }
+                            uDom('#buttonApply').trigger('click');
+                            return false;
+                        });
+                    }
                     item.find('.item-title').html(title);
                     item.find('.item-link').attr('href', link);
                     item.find('input').prop('checked', checked).bind('change', function () {

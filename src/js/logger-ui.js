@@ -25,7 +25,7 @@
 
 /******************************************************************************/
 
-(function() {
+(( ) => {
 
 /******************************************************************************/
 
@@ -41,6 +41,7 @@ let filteredLoggerEntryVoidedCount = 0;
 let popupLoggerBox;
 let popupLoggerTooltips;
 let activeTabId = 0;
+let filterAuthorMode = false;
 let selectedTabId = 0;
 let netInspectorPaused = false;
 
@@ -64,7 +65,7 @@ const tabIdFromAttribute = function(elem) {
 
 // Current design allows for only one modal DOM-based dialog at any given time.
 //
-const modalDialog = (function() {
+const modalDialog = (( ) => {
     const overlay = uDom.nodeFromId('modalOverlay');
     const container = overlay.querySelector(
         ':scope > div > div:nth-of-type(1)'
@@ -153,22 +154,38 @@ const regexFromURLFilteringResult = function(result) {
 
 // Emphasize hostname in URL, as this is what matters in uMatrix's rules.
 
-const nodeFromURL = function(url, re) {
+const nodeFromURL = function(parent, url, re) {
+    const fragment = document.createDocumentFragment();
     if ( re instanceof RegExp === false ) {
-        return document.createTextNode(url);
+        fragment.textContent = url;
+    } else {
+        const matches = re.exec(url);
+        if ( matches === null || matches[0].length === 0 ) {
+            fragment.textContent = url;
+        } else {
+            if ( matches.index !== 0 ) {
+                fragment.appendChild(
+                    document.createTextNode(url.slice(0, matches.index))
+                );
+            }
+            const b = document.createElement('b');
+            b.textContent = url.slice(matches.index, re.lastIndex);
+            fragment.appendChild(b);
+            if ( re.lastIndex !== url.length ) {
+                fragment.appendChild(
+                    document.createTextNode(url.slice(re.lastIndex))
+                );
+            }
+        }
     }
-    const matches = re.exec(url);
-    if ( matches === null || matches[0].length === 0 ) {
-        return document.createTextNode(url);
+    if ( /^https?:\/\//.test(url) ) {
+        const a = document.createElement('a');
+        a.setAttribute('href', url);
+        a.setAttribute('target', '_blank');
+        fragment.appendChild(a);
     }
-    const node = renderedURLTemplate.cloneNode(true);
-    node.childNodes[0].textContent = url.slice(0, matches.index);
-    node.childNodes[1].textContent = url.slice(matches.index, re.lastIndex);
-    node.childNodes[2].textContent = url.slice(re.lastIndex);
-    return node;
+    parent.appendChild(fragment);
 };
-
-const renderedURLTemplate = document.querySelector('#renderedURLTemplate > span');
 
 /******************************************************************************/
 
@@ -263,6 +280,10 @@ const processLoggerEntries = function(response) {
 
     for ( const entry of entries ) {
         const unboxed = JSON.parse(entry);
+        if ( unboxed.filter instanceof Object ){
+            loggerStats.processFilter(unboxed.filter);
+        }
+        if ( netInspectorPaused ) { continue; }
         const parsed = parseLogEntry(unboxed);
         if (
             parsed.tabId !== undefined &&
@@ -384,7 +405,7 @@ const parseLogEntry = function(details) {
 
 /******************************************************************************/
 
-const viewPort = (function() {
+const viewPort = (( ) => {
     const vwRenderer = document.getElementById('vwRenderer');
     const vwScroller = document.getElementById('vwScroller');
     const vwVirtualContent = document.getElementById('vwVirtualContent');
@@ -567,6 +588,19 @@ const viewPort = (function() {
 
     updateLayout();
 
+    const renderFilterToSpan = function(span, filter) {
+        if ( filter.charCodeAt(0) !== 0x23 /* '#' */ ) { return false; }
+        const match = /^#@?#/.exec(filter);
+        if ( match === null ) { return false; }
+        let child = document.createElement('span');
+        child.textContent = match[0];
+        span.appendChild(child);
+        child = document.createElement('span');
+        child.textContent = filter.slice(match[0].length);
+        span.appendChild(child);
+        return true;
+    };
+
     const renderToDiv = function(vwEntry, i) {
         if ( i >= filteredLoggerEntries.length ) {
             vwEntry.logEntry = undefined;
@@ -622,17 +656,19 @@ const viewPort = (function() {
         if ( filter !== undefined ) {
             if ( typeof filter.source === 'string' ) {
                 filteringType = filter.source;
-                divcl.add(filteringType);
             }
             if ( filteringType === 'static' ) {
                 divcl.add('canLookup');
                 div.setAttribute('data-filter', filter.compiled);
             } else if ( filteringType === 'cosmetic' ) {
                 divcl.add('canLookup');
+                divcl.toggle('isException', filter.raw.startsWith('#@#'));
             }
         }
         span = div.children[1];
-        span.textContent = cells[1];
+        if ( renderFilterToSpan(span, cells[1]) === false ) {
+            span.textContent = cells[1];
+        }
 
         // Event
         if ( cells[2] === '--' ) {
@@ -684,8 +720,7 @@ const viewPort = (function() {
         } else if ( filteringType === 'dynamicUrl' ) {
             re = regexFromURLFilteringResult(filter.rule.join(' '));
         }
-        span = div.children[6];
-        span.appendChild(nodeFromURL(cells[6], re));
+        nodeFromURL(div.children[6], cells[6], re);
 
         return div;
     };
@@ -787,14 +822,14 @@ const viewPort = (function() {
 
 /******************************************************************************/
 
-const updateCurrentTabTitle = (function() {
+const updateCurrentTabTitle = (( ) => {
     const i18nCurrentTab = vAPI.i18n('loggerCurrentTab');
 
     return function() {
         const select = uDom.nodeFromId('pageSelector');
         if ( select.value !== '_' || activeTabId === 0 ) { return; }
         const opt0 = select.querySelector('[value="_"]');
-        const opt1 = select.querySelector('[value="' + activeTabId + '"]');
+        const opt1 = select.querySelector(`[value="${activeTabId}"]`);
         let text = i18nCurrentTab;
         if ( opt1 !== null ) {
             text += ' / ' + opt1.textContent;
@@ -915,13 +950,13 @@ const onLogBufferRead = function(response) {
         allTabIdsToken = response.tabIdsToken;
     }
 
+    filterAuthorMode = response.filterAuthorMode === true;
+
     if ( activeTabIdChanged ) {
         pageSelectorFromURLHash();
     }
 
-    if ( netInspectorPaused === false ) {
-        processLoggerEntries(response);
-    }
+    processLoggerEntries(response);
 
     // Synchronize DOM with sent logger data
     document.body.classList.toggle(
@@ -940,10 +975,10 @@ const onLogBufferRead = function(response) {
 
 /******************************************************************************/
 
-const readLogBuffer = (function() {
+const readLogBuffer = (( ) => {
     let timer;
 
-    const readLogBufferNow = function() {
+    const readLogBufferNow = async function() {
         if ( logger.ownerId === undefined ) { return; }
 
         const msg = {
@@ -970,11 +1005,11 @@ const readLogBuffer = (function() {
             msg.popupLoggerBoxChanged = true;
         }
 
-        vAPI.messaging.send('loggerUI', msg, response => {
-            timer = undefined;
-            onLogBufferRead(response);
-            readLogBufferLater();
-        });
+        const response = await vAPI.messaging.send('loggerUI', msg);
+
+        timer = undefined;
+        onLogBufferRead(response);
+        readLogBufferLater();
     };
 
     const readLogBufferLater = function() {
@@ -996,7 +1031,7 @@ const pageSelectorChanged = function() {
     pageSelectorFromURLHash();
 };
 
-const pageSelectorFromURLHash = (function() {
+const pageSelectorFromURLHash = (( ) => {
     let lastHash;
     let lastSelectedTabId;
 
@@ -1046,23 +1081,22 @@ const reloadTab = function(ev) {
     messaging.send('loggerUI', {
         what: 'reloadTab',
         tabId: tabId,
-        bypassCache: ev && (ev.ctrlKey || ev.metaKey || ev.shiftKey)
+        bypassCache: ev && (ev.ctrlKey || ev.metaKey || ev.shiftKey),
     });
 };
 
 /******************************************************************************/
 /******************************************************************************/
 
-(function() {
+(( ) => {
     const reRFC3986 = /^([^:\/?#]+:)?(\/\/[^\/?#]*)?([^?#]*)(\?[^#]*)?(#.*)?/;
+    const reSchemeOnly = /^[\w-]+:$/;
     const staticFilterTypes = {
-        'beacon': 'other',
+        'beacon': 'ping',
         'doc': 'document',
         'css': 'stylesheet',
         'frame': 'subdocument',
-        'ping': 'other',
         'object_subrequest': 'object',
-        'xhr': 'xmlhttprequest'
     };
     const createdStaticFilters = {};
 
@@ -1111,17 +1145,14 @@ const reloadTab = function(ev) {
         }
     };
 
-    const colorize = function() {
-        messaging.send(
-            'loggerUI',
-            {
-                what: 'getURLFilteringData',
-                context: selectValue('select.dynamic.origin'),
-                urls: targetURLs,
-                type: uglyTypeFromSelector('dynamic')
-            },
-            onColorsReady
-        );
+    const colorize = async function() {
+        const response = await messaging.send('loggerUI', {
+            what: 'getURLFilteringData',
+            context: selectValue('select.dynamic.origin'),
+            urls: targetURLs,
+            type: uglyTypeFromSelector('dynamic'),
+        });
+        onColorsReady(response);
     };
 
     const parseStaticInputs = function() {
@@ -1133,12 +1164,16 @@ const reloadTab = function(ev) {
         }
         let value = selectValue('select.static.url');
         if ( value !== '' ) {
-            if ( value.slice(-1) === '/' ) {
-                value += '*';
-            } else if ( /[/?]/.test(value) === false ) {
-                value += '^';
+            if ( reSchemeOnly.test(value) ) {
+                value = `|${value}`;
+            } else {
+                if ( value.endsWith('/') ) {
+                    value += '*';
+                } else if ( /[/?]/.test(value) === false ) {
+                    value += '^';
+                }
+                value = `||${value}`;
             }
-            value = '||' + value;
         }
         filter += value;
         value = selectValue('select.static.type');
@@ -1148,7 +1183,7 @@ const reloadTab = function(ev) {
         value = selectValue('select.static.origin');
         if ( value !== '' ) {
             if ( value === targetDomain ) {
-                options.push('first-party');
+                options.push('1p');
             } else {
                 options.push('domain=' + value);
             }
@@ -1171,55 +1206,59 @@ const reloadTab = function(ev) {
         );
     };
 
-    const onClick = function(ev) {
+    const onClick = async function(ev) {
         const target = ev.target;
         const tcl = target.classList;
 
         // Select a mode
         if ( tcl.contains('header') ) {
-            dialog.setAttribute('data-pane', target.getAttribute('data-pane') );
             ev.stopPropagation();
+            dialog.setAttribute('data-pane', target.getAttribute('data-pane') );
             return;
         }
 
+        // Toggle temporary exception filter
+        if ( tcl.contains('exceptor') ) {
+            ev.stopPropagation();
+            const status = await messaging.send('loggerUI', {
+                what: 'toggleTemporaryException',
+                filter: filterFromTargetRow(),
+            });
+            const row = target.closest('div');
+            row.classList.toggle('exceptored', status);
+            return;
+        }
+        
         // Create static filter
         if ( target.id === 'createStaticFilter' ) {
+            ev.stopPropagation();
             const value = staticFilterNode().value;
             // Avoid duplicates
-            if ( createdStaticFilters.hasOwnProperty(value) ) {
-                return;
-            }
+            if ( createdStaticFilters.hasOwnProperty(value) ) { return; }
             createdStaticFilters[value] = true;
             if ( value !== '' ) {
-                messaging.send(
-                    'loggerUI',
-                    {
-                        what: 'createUserFilter',
-                        autoComment: true,
-                        filters: value,
-                        origin: targetPageDomain,
-                        pageDomain: targetPageDomain,
-                    }
-                );
+                messaging.send('loggerUI', {
+                    what: 'createUserFilter',
+                    autoComment: true,
+                    filters: value,
+                    origin: targetPageDomain,
+                    pageDomain: targetPageDomain,
+                });
             }
             updateWidgets();
-            ev.stopPropagation();
             return;
         }
 
         // Save url filtering rule(s)
         if ( target.id === 'saveRules' ) {
-                messaging.send(
-                'loggerUI',
-                {
-                    what: 'saveURLFilteringRules',
-                    context: selectValue('select.dynamic.origin'),
-                    urls: targetURLs,
-                    type: uglyTypeFromSelector('dynamic')
-                },
-                colorize
-            );
             ev.stopPropagation();
+            await messaging.send('loggerUI', {
+                what: 'saveURLFilteringRules',
+                context: selectValue('select.dynamic.origin'),
+                urls: targetURLs,
+                type: uglyTypeFromSelector('dynamic'),
+            });
+            colorize();
             return;
         }
 
@@ -1227,101 +1266,83 @@ const reloadTab = function(ev) {
 
         // Remove url filtering rule
         if ( tcl.contains('action') ) {
-            messaging.send(
-                'loggerUI',
-                {
-                    what: 'setURLFilteringRule',
-                    context: selectValue('select.dynamic.origin'),
-                    url: target.getAttribute('data-url'),
-                    type: uglyTypeFromSelector('dynamic'),
-                    action: 0,
-                    persist: persist
-                },
-                colorize
-            );
             ev.stopPropagation();
+            await messaging.send('loggerUI', {
+                what: 'setURLFilteringRule',
+                context: selectValue('select.dynamic.origin'),
+                url: target.getAttribute('data-url'),
+                type: uglyTypeFromSelector('dynamic'),
+                action: 0,
+                persist: persist,
+            });
+            colorize();
             return;
         }
 
         // add "allow" url filtering rule
         if ( tcl.contains('allow') ) {
-            messaging.send(
-                'loggerUI',
-                {
-                    what: 'setURLFilteringRule',
-                    context: selectValue('select.dynamic.origin'),
-                    url: target.parentNode.getAttribute('data-url'),
-                    type: uglyTypeFromSelector('dynamic'),
-                    action: 2,
-                    persist: persist
-                },
-                colorize
-            );
             ev.stopPropagation();
+            await messaging.send('loggerUI', {
+                what: 'setURLFilteringRule',
+                context: selectValue('select.dynamic.origin'),
+                url: target.parentNode.getAttribute('data-url'),
+                type: uglyTypeFromSelector('dynamic'),
+                action: 2,
+                persist: persist,
+            });
+            colorize();
             return;
         }
 
         // add "block" url filtering rule
         if ( tcl.contains('noop') ) {
-            messaging.send(
-                'loggerUI',
-                {
-                    what: 'setURLFilteringRule',
-                    context: selectValue('select.dynamic.origin'),
-                    url: target.parentNode.getAttribute('data-url'),
-                    type: uglyTypeFromSelector('dynamic'),
-                    action: 3,
-                    persist: persist
-                },
-                colorize
-            );
             ev.stopPropagation();
+            await messaging.send('loggerUI', {
+                what: 'setURLFilteringRule',
+                context: selectValue('select.dynamic.origin'),
+                url: target.parentNode.getAttribute('data-url'),
+                type: uglyTypeFromSelector('dynamic'),
+                action: 3,
+                persist: persist,
+            });
+            colorize();
             return;
         }
 
         // add "block" url filtering rule
         if ( tcl.contains('block') ) {
-            messaging.send(
-                'loggerUI',
-                {
-                    what: 'setURLFilteringRule',
-                    context: selectValue('select.dynamic.origin'),
-                    url: target.parentNode.getAttribute('data-url'),
-                    type: uglyTypeFromSelector('dynamic'),
-                    action: 1,
-                    persist: persist
-                },
-                colorize
-            );
             ev.stopPropagation();
+            await messaging.send('loggerUI', {
+                what: 'setURLFilteringRule',
+                context: selectValue('select.dynamic.origin'),
+                url: target.parentNode.getAttribute('data-url'),
+                type: uglyTypeFromSelector('dynamic'),
+                action: 1,
+                persist: persist,
+            });
+            colorize();
             return;
         }
 
         // Force a reload of the tab
         if ( tcl.contains('reload') ) {
-            messaging.send(
-                'loggerUI',
-                {
-                    what: 'reloadTab',
-                    tabId: targetTabId
-                }
-            );
             ev.stopPropagation();
+            messaging.send('loggerUI', {
+                what: 'reloadTab',
+                tabId: targetTabId,
+            });
             return;
         }
 
         // Hightlight corresponding element in target web page
         if ( tcl.contains('picker') ) {
-            messaging.send(
-                'loggerUI',
-                {
-                    what: 'launchElementPicker',
-                    tabId: targetTabId,
-                    targetURL: 'img\t' + targetURLs[0],
-                    select: true
-                }
-            );
             ev.stopPropagation();
+            messaging.send('loggerUI', {
+                what: 'launchElementPicker',
+                tabId: targetTabId,
+                targetURL: 'img\t' + targetURLs[0],
+                select: true,
+            });
             return;
         }
     };
@@ -1386,12 +1407,13 @@ const reloadTab = function(ev) {
 
     // Build list of candidate URLs
     const createTargetURLs = function(url) {
-        const urls = [];
         const matches = reRFC3986.exec(url);
-        if ( matches === null || !matches[1] || !matches[2] ) {
-            return urls;
+        if ( matches === null ) { return []; }
+        if ( typeof matches[2] !== 'string' || matches[2].length === 0 ) {
+            return [ matches[1] ];
         }
         // Shortest URL for a valid URL filtering rule
+        const urls = [];
         const rootURL = matches[1] + matches[2];
         urls.unshift(rootURL);
         const path = matches[3] || '';
@@ -1412,7 +1434,36 @@ const reloadTab = function(ev) {
         return urls;
     };
 
-    const fillSummaryPaneFilterList = function(rows) {
+    const filterFromTargetRow = function() {
+        return targetRow.children[1].textContent;
+    };
+
+    const toSummaryPaneFilterNode = async function(receiver, filter) {
+        receiver.children[1].textContent = filter;
+        if ( filterAuthorMode !== true ) { return; }
+        const match = /#@?#/.exec(filter);
+        if ( match === null ) { return; }
+        const fragment = document.createDocumentFragment();
+        const pos = match.index + match[0].length;
+        fragment.appendChild(document.createTextNode(filter.slice(0, pos)));
+        const selector = filter.slice(pos);
+        const span = document.createElement('span');
+        span.className = 'filter';
+        span.textContent = selector;
+        fragment.appendChild(span);
+        const isTemporaryException = await messaging.send('loggerUI', {
+            what: 'hasTemporaryException',
+            filter,
+        });
+        receiver.classList.toggle('exceptored', isTemporaryException);
+        if ( match[0] === '##' || isTemporaryException ) {
+            receiver.children[2].style.visibility = '';
+        }
+        receiver.children[1].textContent = '';
+        receiver.children[1].appendChild(fragment);
+    };
+
+    const fillSummaryPaneFilterList = async function(rows) {
         const rawFilter = targetRow.children[1].textContent;
         const compiledFilter = targetRow.getAttribute('data-filter');
 
@@ -1454,7 +1505,7 @@ const reloadTab = function(ev) {
                 bestMatchFilter !== '' &&
                 Array.isArray(response[bestMatchFilter])
             ) {
-                rows[0].children[1].textContent = bestMatchFilter;
+                toSummaryPaneFilterNode(rows[0], bestMatchFilter);
                 rows[1].children[1].appendChild(nodeFromFilter(
                     bestMatchFilter,
                     response[bestMatchFilter]
@@ -1471,27 +1522,21 @@ const reloadTab = function(ev) {
         };
 
         if ( targetRow.classList.contains('networkRealm') ) {
-            messaging.send(
-                'loggerUI',
-                {
-                    what: 'listsFromNetFilter',
-                    compiledFilter: compiledFilter,
-                    rawFilter: rawFilter
-                },
-                handleResponse
-            );
+            const response = await messaging.send('loggerUI', {
+                what: 'listsFromNetFilter',
+                compiledFilter: compiledFilter,
+                rawFilter: rawFilter,
+            });
+            handleResponse(response);
         } else if ( targetRow.classList.contains('cosmeticRealm') ) {
-            messaging.send(
-                'loggerUI',
-                {
-                    what: 'listsFromCosmeticFilter',
-                    url: targetRow.children[6].textContent,
-                    rawFilter: rawFilter,
-                },
-                handleResponse
-            );
+            const response = await messaging.send('loggerUI', {
+                what: 'listsFromCosmeticFilter',
+                url: targetRow.children[6].textContent,
+                rawFilter: rawFilter,
+            });
+            handleResponse(response);
         }
-    };
+    } ;
 
     const fillSummaryPane = function() {
         const rows = dialog.querySelectorAll('.pane.details > div');
@@ -1500,12 +1545,12 @@ const reloadTab = function(ev) {
         const trch = tr.children;
         let text;
         // Filter and context
-        text = trch[1].textContent;
+        text = filterFromTargetRow();
         if (
             (text !== '') &&
-            (trcl.contains('cosmetic') || trcl.contains('static'))
+            (trcl.contains('cosmeticRealm') || trcl.contains('networkRealm'))
         ) {
-            rows[0].children[1].textContent = text;
+            toSummaryPaneFilterNode(rows[0], text);
         } else {
             rows[0].style.display = 'none';
         }
@@ -1572,6 +1617,14 @@ const reloadTab = function(ev) {
     const fillDynamicPane = function() {
         if ( targetRow.classList.contains('cosmeticRealm') ) { return; }
 
+        // https://github.com/uBlockOrigin/uBlock-issues/issues/662#issuecomment-509220702
+        if ( targetType === 'doc' ) { return; }
+
+        // https://github.com/gorhill/uBlock/issues/2469
+        if ( targetURLs.length === 0 || reSchemeOnly.test(targetURLs[0]) ) {
+            return;
+        }
+
         // Fill context selector
         let select = selectNode('select.dynamic.origin');
         fillOriginSelect(select, targetPageHostname, targetPageDomain);
@@ -1589,15 +1642,16 @@ const reloadTab = function(ev) {
         // Fill entries
         const menuEntryTemplate = dialog.querySelector('.dynamic .toolbar .entry');
         const tbody = dialog.querySelector('.dynamic .entries');
-        for ( let i = 0; i < targetURLs.length; i++ ) {
-            const url = targetURLs[i];
+        for ( const targetURL of  targetURLs ) {
             const menuEntry = menuEntryTemplate.cloneNode(true);
-            menuEntry.children[0].setAttribute('data-url', url);
-            menuEntry.children[1].textContent = shortenLongString(url, 128);
+            menuEntry.children[0].setAttribute('data-url', targetURL);
+            menuEntry.children[1].textContent = shortenLongString(targetURL, 128);
             tbody.appendChild(menuEntry);
         }
 
         colorize();
+
+        uDom('#modalOverlayContainer [data-pane="dynamic"]').removeClass('hide');
     };
 
     const fillOriginSelect = function(select, hostname, domain) {
@@ -1667,8 +1721,8 @@ const reloadTab = function(ev) {
             case '{{url}}':
                 select = document.createElement('select');
                 select.className = 'static url';
-                for ( let i = 0, n = targetURLs.length; i < n; i++ ) {
-                    const value = targetURLs[i].replace(/^[a-z-]+:\/\//, '');
+                for ( const targetURL of targetURLs ) {
+                    const value = targetURL.replace(/^[a-z-]+:\/\//, '');
                     option = document.createElement('option');
                     option.setAttribute('value', value);
                     option.textContent = shortenLongString(value, 128);
@@ -1736,13 +1790,13 @@ const reloadTab = function(ev) {
         fillSummaryPane();
         fillDynamicPane();
         fillStaticPane();
-        dialog.addEventListener('click', onClick, true);
+        dialog.addEventListener('click', ev => { onClick(ev); }, true);
         dialog.addEventListener('change', onSelectChange, true);
         dialog.addEventListener('input', onInputChange, true);
         modalDialog.show();
     };
 
-    const toggleOn = function(ev) {
+    const toggleOn = async function(ev) {
         targetRow = ev.target.closest('.canDetails');
         if ( targetRow === null ) { return; }
         ev.stopPropagation();
@@ -1753,20 +1807,21 @@ const reloadTab = function(ev) {
         targetFrameHostname = targetRow.getAttribute('data-dochn') || '';
 
         // We need the root domain names for best user experience.
-        messaging.send(
-            'loggerUI',
-            {
-                what: 'getDomainNames',
-                targets: [targetURLs[0], targetPageHostname, targetFrameHostname]
-            },
-            fillDialog
-        );
+        const domains = await messaging.send('loggerUI', {
+            what: 'getDomainNames',
+            targets: [
+                targetURLs[0],
+                targetPageHostname,
+                targetFrameHostname
+            ],
+        });
+        fillDialog(domains);
     };
 
     uDom('#netInspector').on(
         'click',
         '.canDetails > span:nth-of-type(2),.canDetails > span:nth-of-type(3),.canDetails > span:nth-of-type(5)',
-        toggleOn
+        ev => { toggleOn(ev); }
     );
 })();
 
@@ -1775,7 +1830,7 @@ const reloadTab = function(ev) {
 /******************************************************************************/
 /******************************************************************************/
 
-const rowFilterer = (function() {
+const rowFilterer = (( ) => {
     const userFilters = [];
     const builtinFilters = [];
 
@@ -1986,7 +2041,7 @@ const rowFilterer = (function() {
 // - Max number of entry per distinct tab
 // - Max entry age
 
-const rowJanitor = (function() {
+const rowJanitor = (( ) => {
     const tabIdToDiscard = new Set();
     const tabIdToLoadCountMap = new Map();
     const tabIdToEntryCountMap = new Map();
@@ -2195,7 +2250,7 @@ const toggleVCompactView = function() {
 
 /******************************************************************************/
 
-const popupManager = (function() {
+const popupManager = (( ) => {
     let realTabId = 0;
     let popup = null;
     let popupObserver = null;
@@ -2285,7 +2340,95 @@ const popupManager = (function() {
 
 /******************************************************************************/
 
-(function() {
+// Filter hit stats' MVP ("minimum viable product")
+//
+const loggerStats = (( ) => {
+    const filterHits = new Map();
+    let dialog;
+    let timer;
+
+    const makeRow = function() {
+        const div = document.createElement('div');
+        div.appendChild(document.createElement('span'));
+        div.appendChild(document.createElement('span'));
+        return div;
+    };
+
+    const fillRow = function(div, entry) {
+        div.children[0].textContent = entry[1].toLocaleString();
+        div.children[1].textContent = entry[0];
+    };
+
+    const updateList = function() {
+        const sortedHits = Array.from(filterHits).sort((a, b) => {
+            return b[1] - a[1];
+        });
+
+        const doc = document;
+        const parent = dialog.querySelector('.sortedEntries');
+        let i = 0;
+
+        // Reuse existing rows
+        for ( let iRow = 0; iRow < parent.childElementCount; iRow++ ) {
+            if ( i === sortedHits.length ) { break; }
+            fillRow(parent.children[iRow], sortedHits[i]);
+            i += 1;
+        }
+
+        // Append new rows
+        if ( i < sortedHits.length ) {
+            const list = doc.createDocumentFragment();
+            for ( ; i < sortedHits.length; i++ ) {
+                const div = makeRow();
+                fillRow(div, sortedHits[i]);
+                list.appendChild(div);
+            }
+            parent.appendChild(list);
+        }
+
+        // Remove extraneous rows
+        // [Should never happen at this point in this current
+        //  bare-bone implementation]
+    };
+
+    const toggleOn = function() {
+        dialog = modalDialog.create(
+            '#loggerStatsDialog',
+            ( ) => {
+                dialog = undefined;
+                if ( timer !== undefined ) {
+                    self.cancelIdleCallback(timer);
+                    timer = undefined;
+                }
+            }
+        );
+        updateList();
+        modalDialog.show();
+    };
+
+    uDom.nodeFromId('loggerStats').addEventListener('click', toggleOn);
+
+    return {
+        processFilter: function(filter) {
+            if ( filter.source !== 'static' && filter.source !== 'cosmetic' ) {
+                return;
+            }
+            filterHits.set(filter.raw, (filterHits.get(filter.raw) || 0) + 1);
+            if ( dialog === undefined || timer !== undefined ) { return; }
+            timer = self.requestIdleCallback(
+                ( ) => {
+                    timer = undefined;
+                    updateList();
+                },
+                { timeout: 2001 }
+            );
+        }
+    };
+})();
+
+/******************************************************************************/
+
+(( ) => {
     const lines = [];
     const options = {
         format: 'list',
@@ -2474,7 +2617,7 @@ const popupManager = (function() {
 //   - an option to discard immediately filtered out new entries
 //   - max entry count _per load_
 //
-const loggerSettings = (function() {
+const loggerSettings = (( ) => {
     const settings = {
         discard: {
             maxAge: 240,            // global
@@ -2580,7 +2723,7 @@ const loggerSettings = (function() {
         viewPort.updateLayout();
     };
 
-    uDom.nodeFromId('settings').addEventListener('click', toggleOn);
+    uDom.nodeFromId('loggerSettings').addEventListener('click', toggleOn);
 
     return settings;
 })();
@@ -2627,10 +2770,10 @@ const grabView = function() {
 
 const releaseView = function() {
     if ( logger.ownerId === undefined ) { return; }
-    vAPI.messaging.send(
-        'loggerUI',
-        { what: 'releaseView', ownerId: logger.ownerId }
-    );
+    vAPI.messaging.send('loggerUI', {
+        what: 'releaseView',
+        ownerId: logger.ownerId,
+    });
     logger.ownerId = undefined;
 };
 

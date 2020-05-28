@@ -368,8 +368,16 @@ h4{
   	color: #242424;
 }
 
-.wrapper-list-content-text{
-  font-weight: normal;
+.wrapper-list-content-text {
+    font-weight: normal;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.wrapper-list-content-text p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
@@ -576,10 +584,8 @@ h4{
 
 
 .link-ripple{
-    height: 20px;
-    width: 20px;
-    right: 80px;
-    top: 13px;
+    left: 0px;
+    top: 0px;
 }
 
 .close-ripple{
@@ -640,11 +646,10 @@ h4{
 
 
 .link-ripple:active{
-
-  width: 36px;
-  height: 36px;
-  top: 5px;
-    right: 72px;
+    width: 36px;
+    height: 36px;
+    top: -11px;
+    left: -11px;
 }
 
 .nav-ripple:active{
@@ -1024,7 +1029,7 @@ top: 6px;
     position: fixed;
     display: none;
     opacity: 0;
-    z-index: 6;
+    z-index: 600;
 
     left: 50%;
     /*transform: translate(-50%,-50%);*/
@@ -1210,7 +1215,7 @@ top: 6px;
 }
  
 .overlay {
-    z-index:5;
+    z-index:500;
     position:fixed;
    /* overflow: auto;*/
     background-color: rgba(17, 20, 28, 0.6);
@@ -1906,7 +1911,6 @@ input[type=range]:focus::-ms-fill-upper {
     cursor: pointer;
 }
 
-#lists .groupEntry[data-groupkey="custom"],
 #lists .groupEntry[data-groupkey="user"] {
     display: none;
 }
@@ -1921,4 +1925,28 @@ input[type=range]:focus::-ms-fill-upper {
 
 .item-error {
     color: #a94442;
+}
+
+.btn-remove {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    display: none;
+    cursor: pointer;
+}
+
+.external .btn-remove {
+    display: inline-block;
+}
+
+.item-link {
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+
+.btn-remove-icon {
+    z-index: 1;
+    position: relative;
 }

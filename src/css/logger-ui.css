@@ -265,11 +265,11 @@ body.colorBlind #netFilteringDialog > .panes > .details > div[data-status="2"] {
 #vwRenderer .logEntry > div[data-tabid="-1"] {
     text-shadow: 0 0.2em 0.4em #aaa;
     }
-#vwRenderer .logEntry > div.cosmetic,
+#vwRenderer .logEntry > div.cosmeticRealm,
 #vwRenderer .logEntry > div.redirect {
     background-color: rgba(255, 255, 0, 0.1);
     }
-body.colorBlind #vwRenderer .logEntry > div.cosmetic,
+body.colorBlind #vwRenderer .logEntry > div.cosmeticRealm,
 body.colorBlind #vwRenderer .logEntry > div.redirect {
     background-color: rgba(0, 19, 110, 0.1);
     }
@@ -326,6 +326,15 @@ body[dir="rtl"] #vwRenderer .logEntry > div > span:first-child {
 #vwRenderer .logEntry > div.messageRealm[data-type="tabLoad"] > span:nth-of-type(2) {
     text-align: center;
     }
+#vwRenderer .logEntry > div.cosmeticRealm > span:nth-of-type(2) > span:first-of-type {
+    display: none;
+    }
+#vwRenderer .logEntry > div.cosmeticRealm > span:nth-of-type(2) > span:last-of-type {
+    pointer-events: none;
+    }
+#vwRenderer .logEntry > div.cosmeticRealm.isException > span:nth-of-type(2) > span:last-of-type {
+    text-decoration: line-through rgba(0,0,255,0.7);
+    }
 #vwRenderer .logEntry > div > span:nth-of-type(3) {
     font: 12px monospace;
     padding-left: 0.3em;
@@ -363,6 +372,7 @@ body[dir="rtl"] #vwRenderer .logEntry > div > span:first-child {
 #vwRenderer #vwContent .logEntry > div > span:nth-of-type(6) {
     }
 #vwRenderer .logEntry > div > span:nth-of-type(7) {
+    position: relative;
     }
 #vwRenderer #vwContent .logEntry > div > span:nth-of-type(7) {
     text-overflow: ellipsis;
@@ -371,11 +381,8 @@ body[dir="rtl"] #vwRenderer .logEntry > div > span:first-child {
     overflow-y: auto;
     white-space: pre-line;
     }
-#vwRenderer .logEntry > div > span:nth-of-type(7) > span > b {
-    font-weight: bold;
-    }
 #vwRenderer .logEntry > div > span:nth-of-type(7) b {
-    font-weight: normal;
+    font-weight: bold;
     }
 #vwRenderer .logEntry > div[data-status="1"] > span:nth-of-type(7) b,
 #netFilteringDialog > .panes > .details > div[data-status="1"] b {
@@ -399,6 +406,35 @@ body.colorBlind #vwRenderer .logEntry > div[data-status="2"] > span:nth-of-type(
 body.colorBlind #netFilteringDialog > .panes > .details > div[data-status="2"] b {
     background-color: rgba(255, 194, 57, 0.2);
     }
+#vwRenderer .logEntry > div > span:nth-of-type(7) a {
+    background-color: dimgray;
+    color: white;
+    display: none;
+    height: 100%;
+    padding: 0 0.25em;
+    opacity: 0.4;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    }
+#netInspector.vExpanded #vwRenderer .logEntry > div > span:nth-of-type(7) a {
+    bottom: 0px;
+    height: unset;
+    padding: 0.25em;
+    top: unset;
+    }
+#vwRenderer .logEntry > div > span:nth-of-type(7) a::after {
+    content: '\2197';
+    }
+#vwRenderer .logEntry > div.networkRealm > span:nth-of-type(7):hover a {
+    align-items: center;
+    display: inline-flex;
+    }
+#vwRenderer .logEntry > div > span:nth-of-type(7) a:hover {
+    opacity: 1;
+    }
+
 #vwRenderer #vwBottom {
     background-color: #00F;
     height: 0;
@@ -521,11 +557,11 @@ body[dir="rtl"] #modalOverlay > div > div:nth-of-type(2) {
     text-align: center;
     }
 #netFilteringDialog > .preview > * {
-    background-color: white;
     max-width: 100%;
     max-height: 20vh;
     }
 #netFilteringDialog > .preview > span {
+    background-color: white;
     cursor: pointer;
     padding: 0.5em;
     }
@@ -624,6 +660,7 @@ body[dir="rtl"] #netFilteringDialog > .panes > .details > div > span:nth-of-type
     border-left: 1px solid white;
     }
 #netFilteringDialog > .panes > .details > div > span:nth-of-type(2) {
+    flex-grow: 1;
     max-height: 20vh;
     overflow: hidden auto;
     white-space: pre-line
@@ -638,6 +675,26 @@ body[dir="rtl"] #netFilteringDialog > .panes > .details > div > span:nth-of-type
     }
 #netFilteringDialog > .panes > .details > div > span:nth-of-type(2) .fa-icon:hover {
     opacity: 1;
+    }
+#netFilteringDialog > .panes > .details .exceptor {
+    align-items: center;
+    border-left: 1px solid white;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: monospace;
+    opacity: 0.8;
+    }
+#netFilteringDialog > .panes > .details .exceptor:hover {
+    opacity: 1;
+    }
+#netFilteringDialog > .panes > .details .exceptored .filter {
+    text-decoration: line-through;
+    }
+#netFilteringDialog > .panes > .details .exceptored .exceptor {
+    background-color: lightblue;
+    }
+#netFilteringDialog > .panes > .details .exceptor::before {
+    content: '#@#';
     }
 #netFilteringDialog > div.panes > .dynamic > .toolbar {
     padding-bottom: 1em;
@@ -820,31 +877,25 @@ body.colorBlind  #netFilteringDialog > div.panes > .dynamic .entry > .action > .
     margin-bottom: 0;
     }
 
-#loggerSettingsDialog {
+#loggerStatsDialog .sortedEntries {
     display: flex;
     flex-direction: column;
+    font-size: smaller;
     }
-#loggerSettingsDialog > div {
-    padding-bottom: 1em;
+#loggerStatsDialog .sortedEntries > div {
+    display: flex;
     }
-#loggerSettingsDialog > div:last-of-type {
-    padding-bottom: 0;
+#loggerStatsDialog .sortedEntries > div > span:first-of-type {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 2em 0 0;
+    text-align: right;
+    width: 3em;
     }
-#loggerSettingsDialog ul {
-    padding: 0;
-    }
-body[dir="ltr"] #loggerSettingsDialog ul {
-    padding-left: 2em;
-    }
-body[dir="rtl"] #loggerSettingsDialog ul {
-    padding-right: 2em;
-    }
-#loggerSettingsDialog li {
-    list-style-type: none;
-    margin: 0.5em 0 0 0;
-    }
-#loggerSettingsDialog input {
-    max-width: 6em;
+#loggerStatsDialog .sortedEntries > div > span:last-of-type {
+    flex-grow: 1;
+    flex-shrink: 1;
+    white-space: pre;
     }
 
 #loggerExportDialog {
@@ -879,6 +930,33 @@ body[dir="rtl"] #loggerSettingsDialog ul {
     height: 60vh;
     padding: 0.5em;
     white-space: pre;
+    }
+
+#loggerSettingsDialog {
+    display: flex;
+    flex-direction: column;
+    }
+#loggerSettingsDialog > div {
+    padding-bottom: 1em;
+    }
+#loggerSettingsDialog > div:last-of-type {
+    padding-bottom: 0;
+    }
+#loggerSettingsDialog ul {
+    padding: 0;
+    }
+body[dir="ltr"] #loggerSettingsDialog ul {
+    padding-left: 2em;
+    }
+body[dir="rtl"] #loggerSettingsDialog ul {
+    padding-right: 2em;
+    }
+#loggerSettingsDialog li {
+    list-style-type: none;
+    margin: 0.5em 0 0 0;
+    }
+#loggerSettingsDialog input {
+    max-width: 6em;
     }
 
 .hide {
