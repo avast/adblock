@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Adblock"
+  },
+  "adBlockSettings": {
+    "message": "Adblock - Einstellungen"
+  },
+  "adblockIsPaused": {
+    "message": "Adblock wurde auf allen Seiten angehalten"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Adblock wurde auf dieser Seite angehalten"
+  },
+  "adblockIsOff": {
+    "message": "Adblock ist deaktiviert"
+  },
+  "addSite": {
+    "message": "Seite hinzufügen"
+  },
+  "adsBlocked": {
+    "message": "Blockierte Werbeanzeigen: "
+  },
+  "allowAdsOnSite": {
+    "message": "Werbung auf dieser Seite zulassen"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Werbung auf den folgenden Seiten immer zulassen"
+  },
+  "balancedBlocking": {
+    "message": "Ausgewogene Blockierung"
+  },
+  "balancedBlockingName": {
+    "message": "Ausgewogen"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Werbung auf dieser Seite blockieren"
+  },
+  "blockingOptions": {
+    "message": "Blockierungsoptionen"
+  },
+  "btnAdd": {
+    "message": "Hinzufügen"
+  },
+  "cancel": {
+    "message": "Abbrechen"
+  },
+  "edit": {
+    "message": "Bearbeiten"
+  },
+  "essentialBlocking": {
+    "message": "Grundlegende Blockierung"
+  },
+  "essentialBlockingName": {
+    "message": "Grundlegend"
+  },
+  "extShortDesc": {
+    "message": "Endlich ein effizienter Blocker mit geringem CPU- und Arbeitsspeicherbedarf."
+  },
+  "generalSettings": {
+    "message": "Allgemeine Einstellungen"
+  },
+  "indexDescription": {
+    "message": "Blockieren Sie Werbung für ein schnelleres und sichereres Surferlebnis"
+  },
+  "keep_essential": {
+    "message": "Grundlegende Blockierung beibehalten"
+  },
+  "keep_balanced": {
+    "message": "Ausgewogene Blockierung beibehalten"
+  },
+  "learnMore": {
+    "message": "Mehr erfahren"
+  },
+  "noAdsToBlock": {
+    "message": "Auf dieser Seite gibt es keine zu blockierenden Anzeigen"
+  },
+  "pauseAdBlock": {
+    "message": "Adblock anhalten"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Adblock auf allen Seiten anhalten"
+  },
+  "pauseOnAllSites": {
+    "message": "Auf allen Seiten anhalten"
+  },
+  "pauseOnThisSite": {
+    "message": "Auf dieser Seite anhalten"
+  },
+  "poweredByUblock": {
+    "message": "Unterstützt von <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Entfernen"
+  },
+  "save": {
+    "message": "Speichern"
+  },
+  "setStrict": {
+    "message": "Strenge Blockierung einstellen"
+  },
+  "setStrictDescription_avast": {
+    "message": "Die Finanzierung von Avast Secure Browser erfolgt mithilfe einer sehr geringen Anzahl nicht invasiver Werbeanzeigen. Diese führen zu einer Beeinträchtigung Ihres Surferlebnisses und sorgen dafür, dass Ihre Browser weiterhin kostenlos bleibt. Wir bitten Sie daher inständig, diese Anzeigen zuzulassen."
+  },
+  "setStrictDescription_avg": {
+    "message": "Die Finanzierung von AVG Secure Browser erfolgt mithilfe einer sehr geringen Anzahl nicht invasiver Werbeanzeigen. Diese führen zu einer Beeinträchtigung Ihres Surferlebnisses und sorgen dafür, dass Ihre Browser weiterhin kostenlos bleibt. Wir bitten Sie daher inständig, diese Anzeigen zuzulassen."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Die Finanzierung von CCleaner Browser erfolgt mithilfe einer sehr geringen Anzahl nicht invasiver Werbeanzeigen. Diese führen zu einer Beeinträchtigung Ihres Surferlebnisses und sorgen dafür, dass Ihre Browser weiterhin kostenlos bleibt. Wir bitten Sie daher inständig, diese Anzeigen zuzulassen."
+  },
+  "setStrictTitle": {
+    "message": "Blockierung durch Adblock auf streng einstellen"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Blockieren Sie störende Anzeigen, die gegen\n die Industriestandards für benutzerfreundliche Werbung verstoßen. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Erfahren Sie mehr</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Empfohlen</b> - Blockiert die meisten Werbeanzeigen für ein schnelleres und ungestörtes Surferlebnis."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Blockiert nahezu alle Werbeanzeigen für ein schnelleres und ungestörtes Surferlebnis. <b>Dies kann auf einigen Webseiten zu fehlerhaften Anzeigen führen.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Werbepopups und Werbebanner"
+  },
+  "settingsCardDisruptive": {
+    "message": "Andere störende Anzeigen"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Einige Social-Media-Anzeigen"
+  },
+  "settingsCardOtherAds": {
+    "message": "99 % aller sonstigen Anzeigen"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Anzahl der blockierten Anzeigen auf dem Symbol anzeigen"
+  },
+  "site": {
+    "message": "Seite"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Seiten, auf denen Sie Anzeigen zugelassen haben, werden hier angeführt"
+  },
+  "strictBlocking": {
+    "message": "Strenge Blockierung"
+  },
+  "strictBlockingName": {
+    "message": "Streng"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Anhalten aufheben"
+  },
+  "turnAdblockOn": {
+    "message": "Aktivieren"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Sie haben auf dieser Seite Werbeanzeigen zugelassen "
+  },
+  "adsAreAllowed": {
+    "message": "Werbeanzeigen werden auf dieser Seite zugelassen"
+  },
+  "openSettings": {
+    "message": "Einstellungen öffnen"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Adblock auf allen Seiten anhalten"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Mehr über Adblock erfahren"
+  },
+  "pauseAdsOnSite": {
+    "message": "Werbung auf dieser Seite anhalten"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Werbung auf allen Seiten anhalten"
+  },
+  "turnOn": {
+    "message": "Adblock aktivieren"
+  },
+  "turnOff": {
+    "message": "Adblock deaktivieren"
+  },
+  "setEssentialMode": {
+    "message": "Grundlegenden Modus auswählen"
+  },
+  "setBalancedMode": {
+    "message": "Ausgewogenen Modus auswählen"
+  },
+  "setStrictMode": {
+    "message": "Strengen Modus auswählen"
+  },
+  "showAmountAds": {
+    "message": "Anzahl der blockierten Werbeanzeigen anzeigen"
+  },
+  "hideAmountAds": {
+    "message": "Anzahl der blockierten Werbeanzeigen ausblenden"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "\"Webseite\" hinzufügen um Werbeanzeigen zuzulassen"
+  },
+  "learnMoreAAS": {
+    "message": "Mehr über den \"Acceptable Ads\"-Standard erfahren"
+  },
+  "learnMoreUblock": {
+    "message": "Mehr über uBlock erfahren"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Webseite in der Whitelist speichern"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Vorgang zum Hinzufügen einer Webseite abbrechen"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Webseite aus der Whitelist bearbeiten"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Vorgang zum Bearbeiten einer Webseite abbrechen"
+  },
+  "removeFromWhitelist": {
+    "message": "Webseite aus der Whitelist entfernen"
+  },
+  "editFromWhitelist": {
+    "message": "Webseite aus der Whitelist bearbeiten"
+  },
+  "stayOn_balanced": {
+    "message": "Ausgewogenen Modus beibehalten"
+  },
+  "stayOn_essential": {
+    "message": "Grundlegenden Modus beibehalten"
+  },
+  "cancelSetStrict": {
+    "message": "Vorgang zur Auswahl des strengen Modus abbrechen"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Webseite aus der Whitelist anpassen"
+  },
+  "whitelistModalDescription": {
+    "message": "Auf welcher Webseite möchten Sie Werbeanzeigen zulassen?"
+  }
+}

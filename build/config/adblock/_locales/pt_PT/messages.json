@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Bloqueio de anúncios"
+  },
+  "adBlockSettings": {
+    "message": "Bloqueio de anúncios - Definições"
+  },
+  "adblockIsPaused": {
+    "message": "Bloqueio de anúncios em pausa em todos os sites"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Bloqueio de anúncios em pausa neste site"
+  },
+  "adblockIsOff": {
+    "message": "Bloqueio de anúncios desativado"
+  },
+  "addSite": {
+    "message": "Adicionar site"
+  },
+  "adsBlocked": {
+    "message": "Anúncios bloqueados: "
+  },
+  "allowAdsOnSite": {
+    "message": "Permitir anúncios neste site"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Permitir sempre anúncios nos seguintes sites"
+  },
+  "balancedBlocking": {
+    "message": "Bloqueio equilibrado"
+  },
+  "balancedBlockingName": {
+    "message": "Equilibrado"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Bloquear anúncios neste site"
+  },
+  "blockingOptions": {
+    "message": "Opções de bloqueio"
+  },
+  "btnAdd": {
+    "message": "Adicionar"
+  },
+  "cancel": {
+    "message": "Cancelar"
+  },
+  "edit": {
+    "message": "Editar"
+  },
+  "essentialBlocking": {
+    "message": "Bloqueio essencial"
+  },
+  "essentialBlockingName": {
+    "message": "Essencial"
+  },
+  "extShortDesc": {
+    "message": "Finalmente, um bloqueador eficiente com pouca utilização de CPU e memória."
+  },
+  "generalSettings": {
+    "message": "Definições gerais"
+  },
+  "indexDescription": {
+    "message": "Bloquear anúncios para uma navegação mais rápida e segura"
+  },
+  "keep_essential": {
+    "message": "Manter essencial"
+  },
+  "keep_balanced": {
+    "message": "Manter equilibrado"
+  },
+  "learnMore": {
+    "message": "Saber mais"
+  },
+  "noAdsToBlock": {
+    "message": "Não há anúncios para bloquear nesta página"
+  },
+  "pauseAdBlock": {
+    "message": "Pausar Bloqueio de anúncios"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Pausar Bloqueio de anúncios em todos os sites"
+  },
+  "pauseOnAllSites": {
+    "message": "Pausar em todos os sites"
+  },
+  "pauseOnThisSite": {
+    "message": "Pausar neste site"
+  },
+  "poweredByUblock": {
+    "message": "Powered by <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Remover"
+  },
+  "save": {
+    "message": "Guardar"
+  },
+  "setStrict": {
+    "message": "Definir rigoroso"
+  },
+  "setStrictDescription_avast": {
+    "message": "Alguns anúncios não invasivos ajudam-nos a financiar o Avast Secure Browser. Não interrompem a navegação e ajudam a manter o browser gratuito. Apoie-nos permitindo esses anúncios."
+  },
+  "setStrictDescription_avg": {
+    "message": "Alguns anúncios não invasivos ajudam-nos a financiar o AVG Secure Browser. Não interrompem a navegação e ajudam a manter o browser gratuito. Apoie-nos permitindo esses anúncios."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Alguns anúncios não invasivos ajudam-nos a financiar o CCleaner Browser. Não interrompem a navegação e ajudam a manter o browser gratuito. Apoie-nos permitindo esses anúncios."
+  },
+  "setStrictTitle": {
+    "message": "Definir Bloqueio de anúncios rigoroso"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Bloquear anúncios prejudiciais que violam\n os padrões da indústria relativos a anúncios acessíveis. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Saiba mais</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Recomendado</b> - Bloquear a maioria dos anúncios para uma experiência de navegação mais rápida e limpa."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Bloquear praticamente todos os anúncios para uma experiência de navegação mais rápida e limpa. <b>Pode causar falhas em alguns sites.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Anúncios pop-up e banners"
+  },
+  "settingsCardDisruptive": {
+    "message": "Outros anúncios prejudiciais"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Alguns anúncios de redes sociais"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% dos outros anúncios"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Mostrar o número de anúncios bloqueados no ícone"
+  },
+  "site": {
+    "message": "Site"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Os sites com anúncios permitidos aparecem aqui"
+  },
+  "strictBlocking": {
+    "message": "Bloqueio rigoroso"
+  },
+  "strictBlockingName": {
+    "message": "Rigoroso"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Retomar"
+  },
+  "turnAdblockOn": {
+    "message": "Ativar"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Permitiu anúncios neste site "
+  },
+  "adsAreAllowed": {
+    "message": "Os anúncios são permitidos neste site"
+  },
+  "openSettings": {
+    "message": "Abrir definições"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Reativar Bloqueio de anúncios em todos os sites"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Saber mais sobre Bloqueio de anúncios"
+  },
+  "pauseAdsOnSite": {
+    "message": "Pausar anúncios neste site"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Pausar anúncios em todos os sites"
+  },
+  "turnOn": {
+    "message": "Ativar Bloqueio de anúncios"
+  },
+  "turnOff": {
+    "message": "Desativar Bloqueio de anúncios"
+  },
+  "setEssentialMode": {
+    "message": "Definir modo Essencial"
+  },
+  "setBalancedMode": {
+    "message": "Definir modo Equilibrado"
+  },
+  "setStrictMode": {
+    "message": "Definir modo Rigoroso"
+  },
+  "showAmountAds": {
+    "message": "Mostrar o número de anúncios bloqueados"
+  },
+  "hideAmountAds": {
+    "message": "Ocultar o número de anúncios bloqueados"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Adicionar “site” para permitir anúncios"
+  },
+  "learnMoreAAS": {
+    "message": "Saber mais sobre Padrões de Anúncios Aceitáveis"
+  },
+  "learnMoreUblock": {
+    "message": "Saber mais sobre uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Guardar site na lista branca"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Cancelar operação de adicionar site"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Editar site da lista branca"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Cancelar operação de editar site"
+  },
+  "removeFromWhitelist": {
+    "message": "Remover site da lista branca"
+  },
+  "editFromWhitelist": {
+    "message": "Editar site da lista branca"
+  },
+  "stayOn_balanced": {
+    "message": "Permanecer em modo equilibrado"
+  },
+  "stayOn_essential": {
+    "message": "Permanecer em modo essencial"
+  },
+  "cancelSetStrict": {
+    "message": "Cancelar operação de definir modo Rigoroso"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Modificar site na lista branca"
+  },
+  "whitelistModalDescription": {
+    "message": "Em que site pretende permitir anúncios?"
+  }
+}

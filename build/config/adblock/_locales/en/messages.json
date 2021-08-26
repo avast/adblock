@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Adblock"
+  },
+  "adBlockSettings": {
+    "message": "Adblock - Settings"
+  },
+  "adblockIsPaused": {
+    "message": "Adblock is paused on all sites"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Adblock is paused on this site"
+  },
+  "adblockIsOff": {
+    "message": "Adblock is turned off"
+  },
+  "addSite": {
+    "message": "Add site"
+  },
+  "adsBlocked": {
+    "message": "Ads blocked: "
+  },
+  "allowAdsOnSite": {
+    "message": "Allow ads on this site"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Always allow ads on the following sites"
+  },
+  "balancedBlocking": {
+    "message": "Balanced blocking"
+  },
+  "balancedBlockingName": {
+    "message": "Balanced"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Block ads on this site"
+  },
+  "blockingOptions": {
+    "message": "Blocking options"
+  },
+  "btnAdd": {
+    "message": "Add"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "edit": {
+    "message": "Edit"
+  },
+  "essentialBlocking": {
+    "message": "Essential blocking"
+  },
+  "essentialBlockingName": {
+    "message": "Essential"
+  },
+  "extShortDesc": {
+    "message": "Finally, an efficient blocker. Easy on CPU and memory."
+  },
+  "generalSettings": {
+    "message": "General settings"
+  },
+  "indexDescription": {
+    "message": "Block ads for faster & safer browsing"
+  },
+  "keep_essential": {
+    "message": "Keep essential"
+  },
+  "keep_balanced": {
+    "message": "Keep balanced"
+  },
+  "learnMore": {
+    "message": "Learn more"
+  },
+  "noAdsToBlock": {
+    "message": "No ads to block on this page"
+  },
+  "pauseAdBlock": {
+    "message": "Pause Adblock"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Pause Adblock on all sites"
+  },
+  "pauseOnAllSites": {
+    "message": "Pause on all sites"
+  },
+  "pauseOnThisSite": {
+    "message": "Pause on this site"
+  },
+  "poweredByUblock": {
+    "message": "Powered by <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "setStrict": {
+    "message": "Set strict"
+  },
+  "setStrictDescription_avast": {
+    "message": "A very few non-invasive ads help us fund Avast Secure Browser. They don’t interrupt your browsing and help keep your browser free. Please show us some love by allowing these ads."
+  },
+  "setStrictDescription_avg": {
+    "message": "A very few non-invasive ads help us fund AVG Secure Browser. They don’t interrupt your browsing and help keep your browser free. Please show us some love by allowing these ads."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "A very few non-invasive ads help us fund CCleaner Browser. They don’t interrupt your browsing and help keep your browser free. Please show us some love by allowing these ads."
+  },
+  "setStrictTitle": {
+    "message": "Set Adblock to strict"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Block disruptive ads that violate\n the industry standards for user friendly ads. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Learn more</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Recommended</b> - Block most ads for a faster, cleaner browsing experience."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Block nearly all ads for a faster, cleaner browsing experience. <b>This may break some sites.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Pop-up ads and banners"
+  },
+  "settingsCardDisruptive": {
+    "message": "Other disruptive ads"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Some social media ads"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% of other ads"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Show the number of blocked ads on the icon"
+  },
+  "site": {
+    "message": "Site"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Sites you've allowed ads on will appear here"
+  },
+  "strictBlocking": {
+    "message": "Strict blocking"
+  },
+  "strictBlockingName": {
+    "message": "Strict"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Unpause"
+  },
+  "turnAdblockOn": {
+    "message": "Turn on"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "You’ve allowed ads on this site "
+  },
+  "adsAreAllowed": {
+    "message": "Ads are allowed on this site"
+  },
+  "openSettings": {
+    "message": "Open settings"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Unpause Adblock on all sites"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Learn more about Adblock"
+  },
+  "pauseAdsOnSite": {
+    "message": "Pause ads on this site"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Pause ads on all sites"
+  },
+  "turnOn": {
+    "message": "Turn Adblock on"
+  },
+  "turnOff": {
+    "message": "Turn Adblock off"
+  },
+  "setEssentialMode": {
+    "message": "Set Essential mode"
+  },
+  "setBalancedMode": {
+    "message": "Set Balanced mode"
+  },
+  "setStrictMode": {
+    "message": "Set Strict mode"
+  },
+  "showAmountAds": {
+    "message": "Show the amount of ads blocked"
+  },
+  "hideAmountAds": {
+    "message": "Hide the amount of ads blocked"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Add \"website\" to allow ads"
+  },
+  "learnMoreAAS": {
+    "message": "Learn more about Acceptable Ads Standard"
+  },
+  "learnMoreUblock": {
+    "message": "Learn more about uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Save site into whitelist"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Cancel add site operation"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Edit site from whitelist"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Cancel edit site operation"
+  },
+  "removeFromWhitelist": {
+    "message": "Remove site from the whitelist"
+  },
+  "editFromWhitelist": {
+    "message": "Edit site from the whitelist"
+  },
+  "stayOn_balanced": {
+    "message": "Stay on balanced mode"
+  },
+  "stayOn_essential": {
+    "message": "Stay on essential mode"
+  },
+  "cancelSetStrict": {
+    "message": "Cancel set Strict mode operation"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Modify whitelisted site"
+  },
+  "whitelistModalDescription": {
+    "message": "What site do you want to allow ads on?"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Reklamų blokavimas"
+  },
+  "adBlockSettings": {
+    "message": "Reklamų blokavimas - Nustatymai"
+  },
+  "adblockIsPaused": {
+    "message": "Reklamos blokavimas sustabdytas visose svetainėse"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Reklamos blokavimas šioje svetainėje sustabdytas"
+  },
+  "adblockIsOff": {
+    "message": "Reklamos blokavimas išjungtas"
+  },
+  "addSite": {
+    "message": "Pridėti svetainę"
+  },
+  "adsBlocked": {
+    "message": "Užblokuota reklamų: "
+  },
+  "allowAdsOnSite": {
+    "message": "Leisti reklamą šioje svetainėje"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Visuomet leisti reklamas šiose svetainėse"
+  },
+  "balancedBlocking": {
+    "message": "Subalansuotas blokavimas"
+  },
+  "balancedBlockingName": {
+    "message": "Subalansuotas"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Blokuoti reklamą šioje svetainėje"
+  },
+  "blockingOptions": {
+    "message": "Blokavimo parinktys"
+  },
+  "btnAdd": {
+    "message": "Pridėti"
+  },
+  "cancel": {
+    "message": "Atšaukti"
+  },
+  "edit": {
+    "message": "Redaguoti"
+  },
+  "essentialBlocking": {
+    "message": "Būtinasis blokavimas"
+  },
+  "essentialBlockingName": {
+    "message": "Būtinasis"
+  },
+  "extShortDesc": {
+    "message": "Pagaliau – efektyvi blokavimo programa. Neeikvoja daug procesoriaus ir atminties išteklių."
+  },
+  "generalSettings": {
+    "message": "Bendrosios nuostatos"
+  },
+  "indexDescription": {
+    "message": "Blokuokite reklamą ir sparčiau bei saugiau naršysite"
+  },
+  "keep_essential": {
+    "message": "Išlaikyti būtinąjį"
+  },
+  "keep_balanced": {
+    "message": "Išlaikyti subalansuotą"
+  },
+  "learnMore": {
+    "message": "Sužinoti daugiau"
+  },
+  "noAdsToBlock": {
+    "message": "Šiame puslapyje nėra blokuotinų reklamų"
+  },
+  "pauseAdBlock": {
+    "message": "Sustabdyti reklamų blokavimą"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Sustabdyti reklamų blokavimą visose svetainėse"
+  },
+  "pauseOnAllSites": {
+    "message": "Sustabdyti visose svetainėse"
+  },
+  "pauseOnThisSite": {
+    "message": "Sustabdyti šioje svetainėje"
+  },
+  "poweredByUblock": {
+    "message": "Sistemą tvarko <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Pašalinti"
+  },
+  "save": {
+    "message": "Įrašyti"
+  },
+  "setStrict": {
+    "message": "Nustatyti griežtą"
+  },
+  "setStrictDescription_avast": {
+    "message": "Kelios neinvazinės reklamos padeda mums finansuoti „Avast Secure Browser“. Jos netrukdo jūsų naršymui ir padeda išlaikyti naršyklę nemokama. Šiek tiek padėkite mums ir leiskite rodyti šias reklamas."
+  },
+  "setStrictDescription_avg": {
+    "message": "Kelios neinvazinės reklamos padeda mums finansuoti „AVG Secure Browser“. Jos netrukdo jūsų naršymui ir padeda išlaikyti naršyklę nemokama. Šiek tiek padėkite mums ir leiskite rodyti šias reklamas."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Kelios neinvazinės reklamos padeda mums finansuoti „CCleaner Browser“. Jos netrukdo jūsų naršymui ir padeda išlaikyti naršyklę nemokama. Šiek tiek padėkite mums ir leiskite rodyti šias reklamas."
+  },
+  "setStrictTitle": {
+    "message": "Nustatyti griežtą reklamų blokavimą"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Blokuoti trukdančias reklamas, kurios pažeidžia\n naudotojui draugiškų reklamų standartus. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Sužinokite daugiau</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Rekomenduojama</b> - blokuoti daugelį reklamų, kad naršymas būtų greitesnis ir švaresnis."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Blokuoti beveik visas reklamas, kad naršymas būtų greitesnis ir švaresnis. <b>Tai gali paveikti kai kurias svetaines.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Reklamos ir kaičiosios reklamos iššokančiuosiuose languose"
+  },
+  "settingsCardDisruptive": {
+    "message": "Kitos trikdančios reklamos"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Kai kurios socialinės žiniasklaidos reklamos"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% kitų reklamų"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Rodyti blokuotų reklamų skaičių piktogramoje"
+  },
+  "site": {
+    "message": "Interneto svetainė"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Čia bus rodomos svetainės, kuriose leidote reklamos rodymą"
+  },
+  "strictBlocking": {
+    "message": "Griežtas blokavimas"
+  },
+  "strictBlockingName": {
+    "message": "Griežtas"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Pratęsti"
+  },
+  "turnAdblockOn": {
+    "message": "Įjungti"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Jūs leidote reklamas šioje svetainėje "
+  },
+  "adsAreAllowed": {
+    "message": "Šioje interneto svetainėje reklama leidžiama"
+  },
+  "openSettings": {
+    "message": "Atidaryti nustatymus"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Atšaukti reklamų blokavimą visose svetainėse stabdymą"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Sužinokite daugiau apie „AdBlock“"
+  },
+  "pauseAdsOnSite": {
+    "message": "Sustabdyti reklamas šioje svetainėje"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Sustabdyti reklamas visose svetainėse"
+  },
+  "turnOn": {
+    "message": "Įjungti „Adblock“"
+  },
+  "turnOff": {
+    "message": "Išjungti „Adblock“"
+  },
+  "setEssentialMode": {
+    "message": "Nustatyti Būtinųjų reklamų režimą"
+  },
+  "setBalancedMode": {
+    "message": "Nustatyti Subalansuotą režimą"
+  },
+  "setStrictMode": {
+    "message": "Nustatyti Griežtąjį režimą"
+  },
+  "showAmountAds": {
+    "message": "Rodyti užblokuotų reklamų kiekį"
+  },
+  "hideAmountAds": {
+    "message": "Slėpti užblokuotų reklamų kiekį"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Pridėti svetainę, kad leistumėte rodyti reklamas"
+  },
+  "learnMoreAAS": {
+    "message": "Sužinoti daugiau apie priimtinų reklamų standartus"
+  },
+  "learnMoreUblock": {
+    "message": "Sužinokite daugiau apie „uBlock“"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Išsaugoti svetainę leistinų svetainių sąraše"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Atšaukti svetainės pridėjimo veiksmą"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Redaguoti svetainę leistinųjų sąraše"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Atšaukti svetainės redagavimo veiksmą"
+  },
+  "removeFromWhitelist": {
+    "message": "Pašalinti svetainę iš leistinųjų sąrašo"
+  },
+  "editFromWhitelist": {
+    "message": "Redaguoti svetainę leistinųjų sąraše"
+  },
+  "stayOn_balanced": {
+    "message": "Likti subalansuotame režime"
+  },
+  "stayOn_essential": {
+    "message": "Likti būtinųjų reklamų režime"
+  },
+  "cancelSetStrict": {
+    "message": "Atšaukti griežtojo režimo nustatymo veiksmą"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Keisti leistinųjų sąraše esančią svetainę"
+  },
+  "whitelistModalDescription": {
+    "message": "Kokioje svetainėje norite leisti reklamas?"
+  }
+}

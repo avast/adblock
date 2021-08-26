@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "アドブロック"
+  },
+  "adBlockSettings": {
+    "message": "アドブロック - 設定"
+  },
+  "adblockIsPaused": {
+    "message": "アドブロックはすべてのサイトで停止されています"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "アドブロックはこのサイトで停止されています"
+  },
+  "adblockIsOff": {
+    "message": "アドブロックはオフになっています"
+  },
+  "addSite": {
+    "message": "サイトを追加"
+  },
+  "adsBlocked": {
+    "message": "ブロックされた広告： "
+  },
+  "allowAdsOnSite": {
+    "message": "このサイトで広告を許可"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "以下のサイトでは常に広告を許可します"
+  },
+  "balancedBlocking": {
+    "message": "バランス ブロッキング"
+  },
+  "balancedBlockingName": {
+    "message": "バランス"
+  },
+  "blockAdsOnThisSite": {
+    "message": "このサイトで広告をブロック"
+  },
+  "blockingOptions": {
+    "message": "ブロックのオプション"
+  },
+  "btnAdd": {
+    "message": "追加"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "edit": {
+    "message": "編集"
+  },
+  "essentialBlocking": {
+    "message": "最小限のブロッキング"
+  },
+  "essentialBlockingName": {
+    "message": "最小限"
+  },
+  "extShortDesc": {
+    "message": "効率的なブロッカーがついに登場しました。CPU やメモリをほとんど消費しません。"
+  },
+  "generalSettings": {
+    "message": "全般設定"
+  },
+  "indexDescription": {
+    "message": "広告をブロックして高速、安全にウェブ閲覧"
+  },
+  "keep_essential": {
+    "message": "最小限で継続"
+  },
+  "keep_balanced": {
+    "message": "バランスで継続"
+  },
+  "learnMore": {
+    "message": "詳細を見る"
+  },
+  "noAdsToBlock": {
+    "message": "このページにブロックする広告はありません"
+  },
+  "pauseAdBlock": {
+    "message": "アドブロックを一時停止"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "すべてのサイトでアドブロックを一時停止"
+  },
+  "pauseOnAllSites": {
+    "message": "すべてのサイトで一時停止"
+  },
+  "pauseOnThisSite": {
+    "message": "このサイトで一時停止"
+  },
+  "poweredByUblock": {
+    "message": "Powered by <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "削除"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "setStrict": {
+    "message": "厳格に設定"
+  },
+  "setStrictDescription_avast": {
+    "message": "アバスト セキュア ブラウザの運営費用を賄う非侵略的な広告です。これらの広告は閲覧を妨害せず、お客様がブラウザーを無料で使用し続けるうえで役立っています。これらの広告を許可することで、アバストを応援していただければ幸いです。"
+  },
+  "setStrictDescription_avg": {
+    "message": "AVG セキュア ブラウザの運営費用を賄う非侵略的な広告です。これらの広告は閲覧を妨害せず、お客様がブラウザーを無料で使用し続けるうえで役立っています。これらの広告を許可することで、AVG を応援していただければ幸いです。"
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "CCleaner ブラウザを支援する非侵略的な広告です。これらの広告は閲覧を妨害せず、お客様がブラウザーを無料で使用し続けるうえで役立っています。これらの広告を許可することで、CCleaner を応援していただければ幸いです。"
+  },
+  "setStrictTitle": {
+    "message": "アドブロックを厳格に設定"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "親しみやすい広告の業界基準に違反する、問題のある広告をブロックします。 <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>詳細</a></u>。"
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>おすすめ</b> - ほとんどの広告をブロックするため、クリーンな状態ですばやくウェブ閲覧できます。"
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "ほぼすべての広告をブロックするため、クリーンな状態ですばやくウェブ閲覧できます。<b>一部のサイトはレイアウトが崩れる場合があります。</b>"
+  },
+  "settingsCardPopups": {
+    "message": "ポップアップ広告とバナー"
+  },
+  "settingsCardDisruptive": {
+    "message": "その他の問題のある広告"
+  },
+  "settingsCardSocialMedia": {
+    "message": "一部のソーシャル メディア広告"
+  },
+  "settingsCardOtherAds": {
+    "message": "その他の 99% の広告"
+  },
+  "settingsShowNumberBadge": {
+    "message": "ブロックされた広告数をアイコンに表示する"
+  },
+  "site": {
+    "message": "サイト"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "広告を許可したサイトがここに表示されます"
+  },
+  "strictBlocking": {
+    "message": "厳格なブロック"
+  },
+  "strictBlockingName": {
+    "message": "厳格"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "一時停止を取り消す"
+  },
+  "turnAdblockOn": {
+    "message": "オンにする"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "このサイトで広告を許可しました "
+  },
+  "adsAreAllowed": {
+    "message": "このサイトでは広告が許可されています"
+  },
+  "openSettings": {
+    "message": "設定を開く"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "すべてのサイトでアドブロックの一時停止を解除"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "アドブロックの詳細を見る"
+  },
+  "pauseAdsOnSite": {
+    "message": "このサイトで広告を一時停止"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "すべてのサイトで広告を一時停止"
+  },
+  "turnOn": {
+    "message": "アドブロックをオンにする"
+  },
+  "turnOff": {
+    "message": "アドブロックをオフにする"
+  },
+  "setEssentialMode": {
+    "message": "最小限モードを設定"
+  },
+  "setBalancedMode": {
+    "message": "バランス モードを設定"
+  },
+  "setStrictMode": {
+    "message": "厳密モードを設定"
+  },
+  "showAmountAds": {
+    "message": "ブロックされた広告の量を表示"
+  },
+  "hideAmountAds": {
+    "message": "ブロックされた広告の量を非表示"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "広告を許可する「ウェブサイト」を追加"
+  },
+  "learnMoreAAS": {
+    "message": "許容される広告の基準の詳細を見る"
+  },
+  "learnMoreUblock": {
+    "message": "uBlock の詳細を見る"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "サイトをホワイトリストに保存"
+  },
+  "cancelAddSiteOperation": {
+    "message": "サイトの追加操作をキャンセル"
+  },
+  "editSiteFromWhitelist": {
+    "message": "ホワイトリストのサイトを編集"
+  },
+  "cancelEditSiteOperation": {
+    "message": "サイトの編集操作をキャンセル"
+  },
+  "removeFromWhitelist": {
+    "message": "ホワイトリストからサイトを削除"
+  },
+  "editFromWhitelist": {
+    "message": "ホワイトリストのサイトを編集"
+  },
+  "stayOn_balanced": {
+    "message": "バランス モードを維持"
+  },
+  "stayOn_essential": {
+    "message": "最小限モードを維持"
+  },
+  "cancelSetStrict": {
+    "message": "厳密モードの設定操作をキャンセル"
+  },
+  "modifyWhitelistedSite": {
+    "message": "ホワイトリストに登録したサイトを変更"
+  },
+  "whitelistModalDescription": {
+    "message": "どのサイトに広告を許可しますか？"
+  }
+}

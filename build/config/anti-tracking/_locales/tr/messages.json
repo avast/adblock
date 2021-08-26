@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "Gizliliğinizi ihlal eden web izleyicilerini engeller."
+	},
+	"dashboardName": {
+		"message": "#title# - Yönetim Paneli"
+	},
+	"settingsPageName": {
+		"message": "Ayarlar"
+	},
+	"3pPageName": {
+		"message": "Üçüncü taraf filtreleri"
+	},
+	"rulesPageName": {
+		"message": "Kurallarım"
+	},
+	"whitelistPageName": {
+		"message": "İzin verilenler listesi"
+	},
+	"statsPageName": {
+		"message": "#title# - Kaydedici"
+	},
+	"aboutPageName": {
+		"message": "Hakkında"
+	},
+	"advancedSettingsPageName": {
+		"message": "Gelişmiş ayarlar"
+	},
+	"pickerCreate": {
+		"message": "Oluştur"
+	},
+	"pickerPick": {
+		"message": "Seç"
+	},
+	"pickerQuit": {
+		"message": "Çık"
+	},
+	"pickerPreview": {
+		"message": "Önizle"
+	},
+	"pickerNetFilters": {
+		"message": "Ağ filtreleri"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Kozmetik filtreleri"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Tıklayın, Ctrl tuşuna basıp tıklayın"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Ögeyi engelle"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Engellenen ögelerin yer tutucularını gizle"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Engellenen istek sayısını simgede göster"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Araç ipuçlarını devre dışı bırak"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Uygun olduğunda bağlam menüsünden yararlan"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Renk körleri için uygun hâle getir"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Bulut depolama desteğini etkinleştir"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Gelişmiş kullanıcıyım (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>okumanız gereken bilgiler</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "gelişmiş ayarlar"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Önceden getirmeyi devre dışı bırak (engellenmiş ağ isteklerine yönelik bağlantıları önlemek için)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Köprü bağlantısı denetimini devre dışı bırak"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "WebRTC'nin yerel IP adreslerini sızdırmasını engelle"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Varsayılan davranış"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Bu varsayılan davranışlar her site için ayrı ayrı geçersiz kılınabilir"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Kozmetik filtrelemeyi devre dışı bırak"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Uzak yazı tiplerini engelle"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "CSP raporlarını engelle"
+	},
+	"settingsStorageUsed": {
+		"message": "Kullanılan depolama alanı: {{value}} bayt"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Son geri yükleme:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Son yedekleme:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "Şuradan {{netFilterCount}} ağ filtresi ＋ {{cosmeticFilterCount}} kozmetik filtresi:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "Kullanılan: {{used}} / {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Filtre listelerini otomatik güncelle"
+	},
+	"3pUpdateNow": {
+		"message": "Şimdi güncelle"
+	},
+	"3pPurgeAll": {
+		"message": "Tüm önbellekleri sil"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Kozmetik filtrelerini ayrıştır ve uygula"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Bu seçenek <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus uyumlu &ldquo;öge gizleme&rdquo; filtrelerini ayrıştırır ve uygular</a>. Bu filtreler temelde kozmetiktir, web sayfasında görsel rahatsızlık veren ve istek tabanlı filtreleme motoru ile engellenemeyen ögeleri gizlemek için kullanılır.</p><p>Bu özelliği etkinleştirmek #title# bellek kullanımını artırır.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Genel kozmetik filtrelerini yok say"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Genel kozmetik filtreleri tüm web sitelerine uygulanabilen kozmetik filtreleridir.\n<p>#title# tarafından verimli bir şekilde yönetilse de, özellikle büyük ve uzun ömürlü web sitelerinde genel kozmetik filtreleri fark edilir bellek ve işlemci yüküne neden olabilir.\n<p>Bu seçeneği etkinleştirdiğinizde, kozmetik filtrelerini yönetmeden dolayı web sitelerine eklenen bellek ve işlemci yükünün ortadan kalkmasını, ayrıca #title# tarafından kullanılan bellek miktarının da azalmasını sağlarsınız.\n<p>Daha az güçlü cihazlarda bu seçeneğin etkinleştirilmesi önerilir."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Engellenen ana makinelerin listesi"
+	},
+	"3pApplyChanges": {
+		"message": "Değişiklikleri uygula"
+	},
+	"3pGroupAds": {
+		"message": "Reklamlar"
+	},
+	"3pGroupPrivacy": {
+		"message": "Gizlilik"
+	},
+	"3pGroupMalware": {
+		"message": "Kötü amaçlı yazılımlı etki alanları"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Sorunlar"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Çok amaçlı"
+	},
+	"3pGroupRegions": {
+		"message": "Bölgeler, diller"
+	},
+	"3pGroupCustom": {
+		"message": "Özel"
+	},
+	"3pExternalListsHint": {
+		"message": "Her satır için bir URL. &lsquo;!&rsquo; ile başlayan satırlar yok sayılacaktır. Geçersiz URL'ler sessizce yok sayılacaktır."
+	},
+	"3pExternalListObsolete": {
+		"message": "Güncel değil."
+	},
+	"3pLastUpdate": {
+		"message": "Son güncelleme: {{ago}}.\nGüncellemeye zorlamak için tıklayın."
+	},
+	"3pUpdating": {
+		"message": "Güncelleniyor..."
+	},
+	"3pNetworkError": {
+		"message": "Ağ hatası nedeniyle kaynak güncellenemedi."
+	},
+	"1pFormatHint": {
+		"message": "Her satır için bir filtre. Filtre, sade ana makine adından veya Adblock Plus uyumlu filtreden oluşabilir. &lsquo;!&rsquo; ile başlayan satırlar yok sayılacaktır."
+	},
+	"1pImport": {
+		"message": "İçeri aktar ve ekle"
+	},
+	"1pExport": {
+		"message": "Dışarı aktar"
+	},
+	"1pApplyChanges": {
+		"message": "Değişiklikleri uygula"
+	},
+	"rulesPermanentHeader": {
+		"message": "Kalıcı kurallar"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Geçici kurallar"
+	},
+	"rulesRevert": {
+		"message": "Geri döndür"
+	},
+	"rulesCommit": {
+		"message": "Uygula"
+	},
+	"rulesEdit": {
+		"message": "Düzenle"
+	},
+	"rulesEditSave": {
+		"message": "Kaydet"
+	},
+	"rulesEditDiscard": {
+		"message": "Sil"
+	},
+	"rulesImport": {
+		"message": "Dosyadan içeri aktar..."
+	},
+	"rulesExport": {
+		"message": "Dosyaya dışarı aktar"
+	},
+	"rulesHint": {
+		"message": "Dinamik filtreleme kurallarınızın listesi."
+	},
+	"rulesFormatHint": {
+		"message": "Kural söz dizimi: <code>kaynak hedef tür eylem</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>tam dokümantasyon</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "İzin verilenler listesi, hangi web sayfalarında #title# engellemesi yapılacağını belirtir. Her satır için bir girdi. Geçersiz talimatlar yok sayılır ve kodu devre dışı bırakılır."
+	},
+	"whitelistImport": {
+		"message": "İçeri aktar ve ekle"
+	},
+	"whitelistExport": {
+		"message": "Dışarı aktar"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Değişiklikleri uygula"
+	},
+	"logRequestsHeaderType": {
+		"message": "Tür"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Etki alanı"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Filtre"
+	},
+	"logAll": {
+		"message": "Tümü"
+	},
+	"logBehindTheScene": {
+		"message": "Arka planda"
+	},
+	"logFilterPrompt": {
+		"message": "kayıt girdilerini filtrele"
+	},
+	"logMaxEntriesTip": {
+		"message": "Maksimum kayıt girdisi sayısı"
+	},
+	"aboutChangelog": {
+		"message": "Kaydı değiştir"
+	},
+	"aboutWiki": {
+		"message": "Viki"
+	},
+	"aboutSupport": {
+		"message": "Destek"
+	},
+	"aboutCode": {
+		"message": "Kaynak kodu (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Katkıda bulunanlar"
+	},
+	"aboutBackupDataButton": {
+		"message": "Dosyaya yedekle"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Dosyadan geri yükle..."
+	},
+	"aboutResetDataButton": {
+		"message": "Varsayılan ayarlara sıfırla..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "{{time}} itibarıyla yedeklenen veriler kullanılarak tüm ayarlarınız geçersiz kılınacaktır ve #title# yeniden başlatılacaktır.\n\nYedeklenmiş veriler kullanılarak mevcut tüm ayarlarınız geçersiz kılınsın mı?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Veriler okunamıyor veya geçersiz"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Tüm ayarlarınız kaldırılacak ve #title# yeniden başlatılacak.\n\n#title#, fabrika ayarlarına sıfırlansın mı?"
+	},
+	"errorCantConnectTo": {
+		"message": "Ağ hatası: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: Aşağıdaki URL, özel filtre listenize eklensin mi?\n\nBaşlık: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "bir dakika önce"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} dakika önce"
+	},
+	"elapsedOneHourAgo": {
+		"message": "bir saat önce"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} saat önce"
+	},
+	"elapsedOneDayAgo": {
+		"message": "bir gün önce"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} gün önce"
+	},
+	"showDashboardButton": {
+		"message": "Yönetim Paneli'ni göster"
+	},
+	"showNetworkLogButton": {
+		"message": "Kaydedici'yi göster"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "kapalı"
+	},
+	"docblockedPrompt1": {
+		"message": "#title#, aşağıdaki sayfanın yüklenmesini engelledi:"
+	},
+	"docblockedPrompt2": {
+		"message": "Aşağıdaki filtre nedeniyle"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "parametre olmadan"
+	},
+	"docblockedFoundIn": {
+		"message": "Bulunduğu konum:"
+	},
+	"docblockedBack": {
+		"message": "Geri"
+	},
+	"docblockedClose": {
+		"message": "Bu pencereyi kapat"
+	},
+	"docblockedProceed": {
+		"message": "{{hostname}} için katı engellemeyi devre dışı bırak"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Geçici olarak"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Kalıcı olarak"
+	},
+	"cloudPush": {
+		"message": "Bulut depolama alanına dışarı aktar"
+	},
+	"cloudPull": {
+		"message": "Bulut depolama alanından içeri aktar"
+	},
+	"cloudPullAndMerge": {
+		"message": "Bulut depolama alanından içeri aktar ve mevcut ayarlarla birleştir"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Bu cihazın adı:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Uyarı! Bu gelişmiş ayarları değiştirmenin riski size aittir."
+	},
+	"genericSubmit": {
+		"message": "Gönder"
+	},
+	"genericApplyChanges": {
+		"message": "Değişiklikleri uygula"
+	},
+	"genericRevert": {
+		"message": "Geri döndür"
+	},
+	"genericBytes": {
+		"message": "bayt"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Geçici olarak büyük ortam ögelerine izin ver"
+	},
+	"dummy": {
+		"message": "Bu girdi son olmalıdır"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Daha fazla bilgi"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Bu sitedeki izleyiciler engellendi"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Bu sitedeki izleyicilere izin verildi"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Bu sitede koruma etkinleştirilemedi"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Daha fazla seçenek"
+	},
+	"popupExtraLessOptions": {
+		"message": "Daha az seçenek"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "İzin verilen tüm sitelerin listesini gör"
+	},
+	"popupAdvancedSettings": {
+		"message": "Gelişmiş ayarlar"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Bu sayfada engellenmiş izleyici sayısı:"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Toplam engellenmiş izleyici sayısı:"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "İzin verilen sitelerin listesi"
+	},
+	"extraSlider0": {
+		"message": "Reklamları engelleme"
+	},
+	"extraSlider50": {
+		"message": "Orta düzeyde reklam engelleme"
+	},
+	"extraSlider100": {
+		"message": "Maksimum düzeyde reklam engelleme"
+	},
+	"extraIndexDescription": {
+		"message": "Daha hızlı ve güvenli gezinme için izleyicileri engelleyin"
+	},
+	"extraGeneralSettings": {
+		"message": "Genel ayarlar"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "#title# kapsamında gösterilen bilgileri düzenleyin"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Üçüncü taraflara ait izleyici ve gizlilik filtreleri"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Özel filtrelerinizi yönetin"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Dinamik filtreleme kurallarınızın listesi"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "İzleyicilere izin verilen sitelerin listesi"
+	},
+	"extraIndexHeader": {
+		"message": "#title# Gelişmiş Ayarlar"
+	},
+	"extraIndexFooter": {
+		"message": "uBlock Origin altyapısını kullanmaktadır."
+	},
+	"extraShowMore": {
+		"message": "Daha fazla göster"
+	},
+	"extraBtnImport": {
+		"message": "içeri aktar"
+	},
+	"extraBtnExport": {
+		"message": "dışarı aktar"
+	},
+	"extraBtnAdd": {
+		"message": "ekle"
+	},
+	"extraBtnCancel": {
+		"message": "iptal"
+	},
+	"extraBtnEdit": {
+		"message": "Düzenle"
+	},
+	"extraBtnRemove": {
+		"message": "Kaldır"
+	},
+	"extraBtnUpdateAll": {
+		"message": "tümünü güncelle"
+	},
+	"extraLabelFilter": {
+		"message": "Filtre"
+	},
+	"extraMyCustomFilter": {
+		"message": "Özel filtrelerim"
+	},
+	"extraManageFilters": {
+		"message": "Filtreleri yönet"
+	},
+	"extraAdsFilters": {
+		"message": "Reklam filtreleri"
+	},
+	"extraEditFilter": {
+		"message": "Filtre düzenle"
+	},
+	"extraAddFilter": {
+		"message": "Filtre ekle"
+	},
+	"extraLearnMore": {
+		"message": "Daha fazla bilgi edinin"
+	},
+	"extraRuleSyntax": {
+		"message": "Kural söz dizimi"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "kaynak hedef tür eylem."
+	},
+	"extraRuleDefinition": {
+		"message": "Kural tanımı"
+	},
+	"extraRule": {
+		"message": "Kural"
+	},
+	"extraEditRule": {
+		"message": "Geçici kuralı düzenle"
+	},
+	"extraAddRrule": {
+		"message": "Geçici kural ekle"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Gelişmiş kullanıcı ayarları"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Şundan daha büyük olan ortam ögelerini engelle:"
+	},
+	"extraSetting": {
+		"message": "Ayar"
+	},
+	"extraEditSetting": {
+		"message": "Ayarı düzenle"
+	},
+	"extraAddSetting": {
+		"message": "Ayar ekle"
+	},
+	"extraSite": {
+		"message": "Site"
+	},
+	"extraAllowOnSites": {
+		"message": "Bu sitelerde izleyicilere izin ver"
+	},
+	"extraEditSite": {
+		"message": "Siteyi düzenle"
+	},
+	"extraAddSite": {
+		"message": "Site ekle"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Varsayılan davranış"
+	},
+	"extraPrivacy": {
+		"message": "Gizlilik"
+	},
+	"3pGroupDefault": {
+		"message": "Ağ ve kozmetik filtreler"
+	},
+	"1pPageName": {
+		"message": " Filtrelerim"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Bu oturum için güvenlik etkinleştirilemedi"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Henüz hiçbir site eklenmedi"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Araya giren sekme yeniden yönlendirmelerini engellemeyi etkinleştir"
+	},
+	"shortcutsPageName": {
+		"message": "Kısayollar"
+	},
+	"popupTipDashboard": {
+		"message": "Yönetim konsolunu aç"
+	},
+	"popupTipZapper": {
+		"message": "Hızlı öge kaldırma moduna gir"
+	},
+	"popupTipPicker": {
+		"message": "Öge seçme moduna gir"
+	},
+	"popupTipLog": {
+		"message": "Günlükçüyü aç"
+	},
+	"popupTipNoPopups": {
+		"message": "Bu site için tüm açılır pencereleri engelleme ayarını değiştir"
+	},
+	"popupTipNoPopups1": {
+		"message": "Bu sitedeki tüm açılır pencereleri engellemek için tıklayın"
+	},
+	"popupTipNoPopups2": {
+		"message": "Bu sitedeki tüm açılır pencerelerin engellenmesini kaldırmak için tıklayın"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Bu site için büyük medya ögelerini engelleme ayarını değiştir"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Bu sitede büyük medya ögelerini engellemek için tıklayın"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Bu sitede büyük medya ögelerinin engellenmesini kaldırmak için tıklayın"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Bu site için kozmetik filtreleme ayarını değiştir"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Bu sitede kozmetik filtrelemeyi devre dışı bırakmak için tıklayın"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Bu sitede kozmetik filtrelemeyi etkinleştirmek için tıklayın"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Bu site için uzak yazı tiplerini engelleme ayarını değiştir"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Bu sitede uzak yazı tiplerini engellemek için tıklayın"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Bu sitede uzak yazı tiplerinin engellenmesini kaldırmak için tıklayın"
+	},
+	"popupTipGlobalRules": {
+		"message": "Genel kurallar: Bu sütun tüm sitelerde geçerli kurallar içindir."
+	},
+	"popupTipLocalRules": {
+		"message": "Yerel kurallar: Bu sütun yalnızca mevcut sitede geçerli kurallar içindir.\nYerel kurallar genel kuralları geçersiz kılar."
+	},
+	"popupTipSaveRules": {
+		"message": "Değişikliklerinizi kalıcı yapmak için tıklayın."
+	},
+	"popupTipRevertRules": {
+		"message": "Değişikliklerinizi geri almak için tıklayın."
+	},
+	"popupAnyRulePrompt": {
+		"message": "tümü"
+	},
+	"popupImageRulePrompt": {
+		"message": "görüntüler"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "Üçüncü taraf"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "Üçüncü taraf css'i/görüntüleri"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "satır içi betikler"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "Birinci taraf betikleri"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "Üçüncü taraf betikleri"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "Üçüncü taraf çerçeveleri"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "bağlı etki alanları"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} / {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "{{input:number}} kB boyutundan daha büyük medya ögelerini engelle"
+	},
+	"3pImport": {
+		"message": "İçeri aktar..."
+	},
+	"loggerCurrentTab": {
+		"message": "Geçerli sekme"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Bağlam:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Tür:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Dinamik URL filtreleme"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Statik filtreleme"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "Bir özel durum filtresi {{importance}} {{br}} URL adresi {{url}} ile eşleşen {{br}} ve {{origin}} kaynaklı olan {{br}} {{type}} ağ isteklerini {{action}}."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "engelle"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "izin ver"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "tür ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "herhangi bir tür"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "kaynak ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "herhangi bir kaynak"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "olan durumlar haricinde"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "olsa bile"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Şurada <code>{{filter}}</code> statik filtresi bulunuyor:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Şu anda etkin olan hiçbir filtre listesinde <code>{{filter}}</code> statik filtresi bulunamadı"
+	},
+	"aboutIssues": {
+		"message": "Sorun izleyici"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Bir kısayol yazın"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? Varlık görüntüleyici"
+	},
+	"popupTipNoScripting1": {
+		"message": "Bu sitede JavaScript'i devre dışı bırakmak için tıklayın"
+	},
+	"popupTipNoScripting2": {
+		"message": "Bu sitede JavaScript'in engellenmesini kaldırmak için tıklayın"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "JavaScript'i devre dışı bırak"
+	},
+	"aboutDependencies": {
+		"message": "Haricî bağımlılıklar (GPLv3 uyumlu):"
+	},
+	"loggerReloadTip": {
+		"message": "Sekme içeriklerini yeniden yükle"
+	},
+	"loggerDomInspectorTip": {
+		"message": "DOM denetleyicisi ayarını değiştir"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Açılır pencere paneli ayarını değiştir"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin wiki: Günlükçü"
+	},
+	"loggerClearTip": {
+		"message": "Günlükçüyü temizle"
+	},
+	"loggerPauseTip": {
+		"message": "Günlükçüyü duraklat (gelen tüm verileri siler)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Günlükçüyü devam ettir"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Günlükçü filtrelemesi ayarını değiştir"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Günlükçü filtreleme seçenekleri"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Değil"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "önemli"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "engellenen"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "izin verilen"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "Birinci taraf"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "Üçüncü taraf"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Ayrıntılar"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Filtre"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Filtre listesi"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Kural"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Bağlam"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Kök bağlamı"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Taraf"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Tür"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Aşağıdaki üç koşulu karşılamayan günlükçü girdileri otomatik olarak silinir:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Son {{input}} dakikadaki girdileri muhafaza et"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Sekme başına en fazla {{input}} sayfa yükü muhafaza et"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Sekme başına en fazla {{input}} girdiyi muhafaza et"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Dikey olarak genişletilmiş modda girdi başına {{input}} satır kullan"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Sütunları gizle:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} Saat"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} Filtre/kural"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} Bağlam"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} Taraf"
+	},
+	"loggerExportFormatList": {
+		"message": "Liste"
+	},
+	"loggerExportFormatTable": {
+		"message": "Tablo"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Düz Metin"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Kilitli kaydırma ayarını değiştir"
+	},
+	"genericCopyToClipboard": {
+		"message": "Panoya kopyala"
+	}
+}

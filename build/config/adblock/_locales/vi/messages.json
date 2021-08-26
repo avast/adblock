@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Chặn quảng cáo"
+  },
+  "adBlockSettings": {
+    "message": "Chặn quảng cáo – Cài đặt"
+  },
+  "adblockIsPaused": {
+    "message": "Đã tạm dừng Chặn quảng cáo trên tất cả trang web"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Đã tạm dừng Chặn quảng cáo trên trang web này"
+  },
+  "adblockIsOff": {
+    "message": "Chặn quảng cáo đang tắt"
+  },
+  "addSite": {
+    "message": "Thêm trang web"
+  },
+  "adsBlocked": {
+    "message": "Quảng cáo đã chặn: "
+  },
+  "allowAdsOnSite": {
+    "message": "Cho phép quảng cáo trên trang web này"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Cho phép quảng cáo trên các trang web sau"
+  },
+  "balancedBlocking": {
+    "message": "Chặn theo chế độ cân bằng"
+  },
+  "balancedBlockingName": {
+    "message": "Cân bằng"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Chặn quảng cáo trên trang này"
+  },
+  "blockingOptions": {
+    "message": "Tùy chọn chặn"
+  },
+  "btnAdd": {
+    "message": "Thêm"
+  },
+  "cancel": {
+    "message": "Hủy"
+  },
+  "edit": {
+    "message": "Chỉnh sửa"
+  },
+  "essentialBlocking": {
+    "message": "Chặn theo chế độ cần thiết"
+  },
+  "essentialBlockingName": {
+    "message": "Cần thiết"
+  },
+  "extShortDesc": {
+    "message": "Cuối cùng đã có trình chặn hiệu quả. Không chiếm nhiều tài nguyên CPU và bộ nhớ."
+  },
+  "generalSettings": {
+    "message": "Cài đặt chung"
+  },
+  "indexDescription": {
+    "message": "Chặn quảng cáo để duyệt nhanh và an toàn hơn"
+  },
+  "keep_essential": {
+    "message": "Tiếp tục chế độ Cần thiết"
+  },
+  "keep_balanced": {
+    "message": "Tiếp tục chế độ Cân bằng"
+  },
+  "learnMore": {
+    "message": "Tìm hiểu thêm"
+  },
+  "noAdsToBlock": {
+    "message": "Không có quảng cáo để chặn trên trang này"
+  },
+  "pauseAdBlock": {
+    "message": "Tạm dừng Chặn quảng cáo"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Tạm dừng Chặn quảng cáo trên tất cả trang web"
+  },
+  "pauseOnAllSites": {
+    "message": "Tạm dừng trên tất cả trang web"
+  },
+  "pauseOnThisSite": {
+    "message": "Tạm dừng trên trang web này"
+  },
+  "poweredByUblock": {
+    "message": "Sử dụng công nghệ của <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Xóa"
+  },
+  "save": {
+    "message": "Lưu"
+  },
+  "setStrict": {
+    "message": "Đặt chế độ nghiêm ngặt"
+  },
+  "setStrictDescription_avast": {
+    "message": "Có một vài quảng cáo không xâm lấn giúp chúng tôi duy trì hoạt động của Avast Secure Browser. Những quảng cáo này không gây gián đoạn phiên duyệt web của bạn và giúp trình duyệt này luôn miễn phí. Hãy ủng hộ chúng tôi bằng cách cho phép những quảng cáo này nhé."
+  },
+  "setStrictDescription_avg": {
+    "message": "Có một vài quảng cáo không xâm lấn giúp chúng tôi duy trì hoạt động của AVG Secure Browser. Những quảng cáo này không gây gián đoạn phiên duyệt web của bạn và giúp trình duyệt này luôn miễn phí. Hãy ủng hộ chúng tôi bằng cách cho phép những quảng cáo này nhé."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Có một vài quảng cáo không xâm lấn giúp chúng tôi duy trì hoạt động của CCleaner Browser. Những quảng cáo này không gây gián đoạn phiên duyệt web của bạn và giúp trình duyệt này luôn miễn phí. Hãy ủng hộ chúng tôi bằng cách cho phép những quảng cáo này nhé."
+  },
+  "setStrictTitle": {
+    "message": "Đặt Chặn quảng cáo ở chế độ nghiêm ngặt"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Chặn các quảng cáo gây rối vi phạm\n tiêu chuẩn ngành về quảng cáo thân thiện với người dùng. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Tìm hiểu thêm</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Khuyên dùng</b> - Chặn hầu hết quảng cáo để có trải nghiệm duyệt web nhanh hơn, sạch hơn."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Chặn gần như mọi quảng cáo để có trải nghiệm duyệt web nhanh hơn, sạch hơn. <b>Tùy chọn này có thể thay đổi một số trang web.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Quảng cáo và biểu ngữ bật lên"
+  },
+  "settingsCardDisruptive": {
+    "message": "Quảng cáo gây phiền toái khác"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Một số quảng cáo trên mạng xã hội"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% các quảng cáo khác"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Hiển thị số lượng quảng cáo đã chặn trên biểu tượng"
+  },
+  "site": {
+    "message": "Trang web"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Các trang web bạn đã cho phép hiển thị quảng cáo sẽ xuất hiện ở đây"
+  },
+  "strictBlocking": {
+    "message": "Chặn theo chế độ nghiêm ngặt"
+  },
+  "strictBlockingName": {
+    "message": "Nghiêm ngặt"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Tiếp tục"
+  },
+  "turnAdblockOn": {
+    "message": "Bật"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Bạn đã cho phép quảng cáo trên trang web này "
+  },
+  "adsAreAllowed": {
+    "message": "Trang này cho phép quảng cáo"
+  },
+  "openSettings": {
+    "message": "Mở phần Cài đặt"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Bỏ tạm dừng Chặn quảng cáo trên tất cả trang web"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Tìm hiểu thêm về Chặn quảng cáo"
+  },
+  "pauseAdsOnSite": {
+    "message": "Tạm dừng quảng cáo trên trang web này"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Tạm dừng quảng cáo trên tất cả trang web"
+  },
+  "turnOn": {
+    "message": "Bật Chặn quảng cáo"
+  },
+  "turnOff": {
+    "message": "Tắt Chặn quảng cáo"
+  },
+  "setEssentialMode": {
+    "message": "Đặt thành chế độ Cần thiết"
+  },
+  "setBalancedMode": {
+    "message": "Đặt thành chế độ Cân bằng"
+  },
+  "setStrictMode": {
+    "message": "Đặt thành chế độ Nghiêm ngặt"
+  },
+  "showAmountAds": {
+    "message": "Hiện số lượng quảng cáo đã chặn"
+  },
+  "hideAmountAds": {
+    "message": "Ẩn số lượng quảng cáo đã chặn"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Thêm \"trang web\" để cho phép quảng cáo"
+  },
+  "learnMoreAAS": {
+    "message": "Tìm hiểu thêm về Tiêu chuẩn cho quảng cáo được chấp nhận"
+  },
+  "learnMoreUblock": {
+    "message": "Tìm hiểu thêm về uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Lưu trang web vào danh sách cho phép"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Hủy thao tác thêm trang web"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Chỉnh sửa trang web trong danh sách cho phép"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Hủy thao tác chỉnh sửa trang web"
+  },
+  "removeFromWhitelist": {
+    "message": "Xóa trang web khỏi danh sách cho phép"
+  },
+  "editFromWhitelist": {
+    "message": "Chỉnh sửa trang web trong danh sách cho phép"
+  },
+  "stayOn_balanced": {
+    "message": "Duy trì chế độ Cân bằng"
+  },
+  "stayOn_essential": {
+    "message": "Duy trì chế độ Cần thiết"
+  },
+  "cancelSetStrict": {
+    "message": "Hủy thao tác đặt thành chế độ Nghiêm ngặt"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Chỉnh sửa trang web có trong danh sách cho phép"
+  },
+  "whitelistModalDescription": {
+    "message": "Bạn muốn cho phép trang web nào hiện quảng cáo?"
+  }
+}

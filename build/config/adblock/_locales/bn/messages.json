@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "অ্যাড ব্লক"
+  },
+  "adBlockSettings": {
+    "message": "অ্যাড ব্লক - সেটিংস"
+  },
+  "adblockIsPaused": {
+    "message": "অ্যাড ব্লক সমস্ত সাইট সাময়িক বন্ধ করা হয়েছে"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "অ্যাড ব্লক এই সাইটে সাময়িক বন্ধ করা হয়েছে"
+  },
+  "adblockIsOff": {
+    "message": "অ্যাড ব্লক বন্ধ করে রাখা হয়েছে"
+  },
+  "addSite": {
+    "message": "সাইট যোগ করুন"
+  },
+  "adsBlocked": {
+    "message": "বিজ্ঞাপন ব্লক করা হয়েছে: "
+  },
+  "allowAdsOnSite": {
+    "message": "এই সাইটে বিজ্ঞাপনের অনুমতি দিন"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "সর্বদা নিম্নলিখিত সাইটগুলোতে বিজ্ঞাপনের অনুমতি দিন"
+  },
+  "balancedBlocking": {
+    "message": "ভারসাম্য বজায় রেখে ব্লক করা হচ্ছে"
+  },
+  "balancedBlockingName": {
+    "message": "ভারসাম্য বজায় রাখা হয়েছে"
+  },
+  "blockAdsOnThisSite": {
+    "message": "এই সাইটে বিজ্ঞাপনগুলো ব্লক করুন"
+  },
+  "blockingOptions": {
+    "message": "ব্লক করার বিকল্পগুলো"
+  },
+  "btnAdd": {
+    "message": "যুক্ত করুন"
+  },
+  "cancel": {
+    "message": "বাতিল করুন"
+  },
+  "edit": {
+    "message": "সম্পাদনা করুন"
+  },
+  "essentialBlocking": {
+    "message": "প্রয়োজনীয় ব্লক"
+  },
+  "essentialBlockingName": {
+    "message": "প্রয়োজনীয়"
+  },
+  "extShortDesc": {
+    "message": "অবশেষে, এক সুদক্ষ ব্লকার। CPU এবং মেমরিতে চাপ ফেলে না।"
+  },
+  "generalSettings": {
+    "message": "জেনারেল সেটিংস"
+  },
+  "indexDescription": {
+    "message": "দ্রুত ও নিরাপদে ব্রাউজ করার জন্য বিজ্ঞাপন ব্লক করুন"
+  },
+  "keep_essential": {
+    "message": "প্রয়োজনীয়গুলো রাখুন"
+  },
+  "keep_balanced": {
+    "message": "ভারসাম্য বজায় রাখুন"
+  },
+  "learnMore": {
+    "message": "আরও জানুন"
+  },
+  "noAdsToBlock": {
+    "message": "এই পৃষ্ঠায় ব্লক করার জন্য কোন বিজ্ঞাপন নেই"
+  },
+  "pauseAdBlock": {
+    "message": "অ্যাড ব্লক সাময়িক বন্ধ করুন"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "সমস্ত সাইটে অ্যাড ব্লক সাময়িক বন্ধ করুন"
+  },
+  "pauseOnAllSites": {
+    "message": "সমস্ত সাইটে সাময়িক বন্ধ করুন"
+  },
+  "pauseOnThisSite": {
+    "message": "এই সাইটে সাময়িক বন্ধ করুন"
+  },
+  "poweredByUblock": {
+    "message": "<a style='color: inherit;' target='_blank' href='__SET_HREF__'><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u> দ্বারা পরিচালিত"
+  },
+  "remove": {
+    "message": "অপসারণ করুন"
+  },
+  "save": {
+    "message": "সংরক্ষণ করুন"
+  },
+  "setStrict": {
+    "message": "কঠোরভাবে সেট করুন"
+  },
+  "setStrictDescription_avast": {
+    "message": "খুব অল্প আক্রমণাত্মক বিজ্ঞাপন আমাদের Secure Browser-কে আর্থিক সহায়তা করে। তারা আপনার ব্রাউজিংয়ে বাধা দেয় না এবং আপনার ব্রাউজারকে মুক্ত রাখতে সহায়তা করে। এই বিজ্ঞাপনগুলোর জন্য অনুমতি দিয়ে আমাদের কিছু ভালবাসা প্রদর্শন করুন।"
+  },
+  "setStrictDescription_avg": {
+    "message": "খুব অল্প আক্রমণাত্মক বিজ্ঞাপনগুলি আমাদের Secure Browser-কে আর্থিক সাহায্য করে। তারা আপনার ব্রাউজিংয়ে বাধা দেয় না এবং আপনার ব্রাউজারকে মুক্ত রাখতে সহায়তা করে। এই বিজ্ঞাপনগুলোর জন্য অনুমতি দিয়ে আমাদের কিছু ভালবাসা প্রদর্শন করুন।"
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "খুব অল্প আক্রমণাত্মক বিজ্ঞাপনগুলি আমাদের CCleaner Browser-কে আর্থিক সাহায্য করে। তারা আপনার ব্রাউজিংয়ে বাধা দেয় না এবং আপনার ব্রাউজারকে মুক্ত রাখতে সহায়তা করে। এই বিজ্ঞাপনগুলোর জন্য অনুমতি দিয়ে আমাদের কিছু ভালবাসা প্রদর্শন করুন।"
+  },
+  "setStrictTitle": {
+    "message": "অ্যাড ব্লক-কে কঠোরভাবে সেট করুন"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "ব্যবহারকারীর জন্য উপযুক্ত বিজ্ঞাপনের ক্ষেত্রে যেগুলো ইন্ডাস্ট্রী স্ট্যান্ডার্ড লঙ্ঘন করে আমরা সেই বিঘ্নিত বিজ্ঞাপনগুলো ব্লক করি। <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>আরও জানুন</a></u>।"
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>প্রস্তাবিত</b>-একটি দ্রুত, সাফ ব্রাউজিং অভিজ্ঞতার জন্য বেশিরভাগ বিজ্ঞাপনকে ব্লক করুন।"
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "একটি দ্রুত, ক্লিনার ব্রাউজিং অভিজ্ঞতার জন্য প্রায় সমস্ত বিজ্ঞাপনকে ব্লক করুন।<b>এগুলো কিছু সাইটকে ভেঙ্গে ফেলতে পারে।</b>"
+  },
+  "settingsCardPopups": {
+    "message": "পপ-আপ বিজ্ঞাপন এবং ব্যানার"
+  },
+  "settingsCardDisruptive": {
+    "message": "অন্যান্য বিঘ্নিত বিজ্ঞাপন"
+  },
+  "settingsCardSocialMedia": {
+    "message": "কিছু সোশাল মিডিয়ার বিজ্ঞাপন"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% অন্যান্য বিজ্ঞাপন"
+  },
+  "settingsShowNumberBadge": {
+    "message": "আইকনটিতে ব্লক করে রাখা বিজ্ঞাপনগুলোর সংখ্যা দেখান"
+  },
+  "site": {
+    "message": "সাইট"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "আপনি যে সাইটগুলোতে বিজ্ঞাপন দিয়েছেন তা এখানে প্রদর্শিত হবে"
+  },
+  "strictBlocking": {
+    "message": "কঠোরভাবে ব্লক করা"
+  },
+  "strictBlockingName": {
+    "message": "কঠোর"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "সাময়িক বন্ধ করে রাখে বাতিল করুন"
+  },
+  "turnAdblockOn": {
+    "message": "চালু করুন"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "আপনি এই সাইটে বিজ্ঞাপনের জন্য অনুমোদিত করেছেন "
+  },
+  "adsAreAllowed": {
+    "message": "এই সাইটে বিজ্ঞাপনের অনুমোদন দেওয়া আছে"
+  },
+  "openSettings": {
+    "message": "সেটিংস খুলুন"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "সমস্ত সাইটে অ্যাড ব্লক-এ বিরতি দেবেন না"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "অ্যাড ব্লক সম্বন্ধে আরও জানুন"
+  },
+  "pauseAdsOnSite": {
+    "message": "এই সাইটে বিজ্ঞাপনে বিরতি দিন"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "সমস্ত সাইটে বিজ্ঞাপনে বিরতি দিন"
+  },
+  "turnOn": {
+    "message": "অ্যাড ব্লক চালু করুন"
+  },
+  "turnOff": {
+    "message": "অ্যাড ব্লক বন্ধ করুন"
+  },
+  "setEssentialMode": {
+    "message": "প্রয়োজনীয় মোড সেট করুন"
+  },
+  "setBalancedMode": {
+    "message": "ব্যালেন্সড মোড সেট করুন"
+  },
+  "setStrictMode": {
+    "message": "স্ট্রিক্ট মোড সেট করুন"
+  },
+  "showAmountAds": {
+    "message": "অ্যাড ব্লকের পরিমাণ দেখান"
+  },
+  "hideAmountAds": {
+    "message": "অ্যাড ব্লকের পরিমাণ লুকান"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "বিজ্ঞাপনে অনুমতি দিতে \"ওয়েবসাইট\" যোগ করুন"
+  },
+  "learnMoreAAS": {
+    "message": "গ্রহণযোগ্য বিজ্ঞাপনের স্ট্যান্ডার্ড সম্বন্ধে আরও জানুন"
+  },
+  "learnMoreUblock": {
+    "message": "uBlock সম্বন্ধে আরও জানুন"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "হোয়াইটলিস্টে সাইট সেভ করুন"
+  },
+  "cancelAddSiteOperation": {
+    "message": "সাইটের কাজকর্ম যোগ করা বাতিল করুন"
+  },
+  "editSiteFromWhitelist": {
+    "message": "হোয়াইটলিস্ট থেকে সাইট এডিট করুন"
+  },
+  "cancelEditSiteOperation": {
+    "message": "সাইটের কাজকর্ম এডিট করা বাতিল করুন"
+  },
+  "removeFromWhitelist": {
+    "message": "হোয়াইটলিস্ট থেকে সাইট হটান"
+  },
+  "editFromWhitelist": {
+    "message": "হোয়াইটলিস্ট থেকে সাইট এডিট করুন"
+  },
+  "stayOn_balanced": {
+    "message": "ব্যালান্সড মোডে থাকুন"
+  },
+  "stayOn_essential": {
+    "message": "জরুরী মোডে থাকুন"
+  },
+  "cancelSetStrict": {
+    "message": "স্ট্রিক্ট মোডের কাজকর্ম সেট করা বাতিল করুন"
+  },
+  "modifyWhitelistedSite": {
+    "message": "হোয়াইট লিস্টেড সাইট পরিবর্তন করুন"
+  },
+  "whitelistModalDescription": {
+    "message": "আপনি কোন সাইটে বিজ্ঞাপন চালানোর অনুমতি দিতে চান?"
+  }
+}

@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "침입 웹 트래커를 차단합니다."
+	},
+	"dashboardName": {
+		"message": "#title# — 대시보드"
+	},
+	"settingsPageName": {
+		"message": "설정"
+	},
+	"3pPageName": {
+		"message": "타사 필터"
+	},
+	"rulesPageName": {
+		"message": "내 규칙"
+	},
+	"whitelistPageName": {
+		"message": "화이트리스트"
+	},
+	"statsPageName": {
+		"message": "#title# — 로거"
+	},
+	"aboutPageName": {
+		"message": "정보"
+	},
+	"advancedSettingsPageName": {
+		"message": "고급 설정"
+	},
+	"pickerCreate": {
+		"message": "만들기"
+	},
+	"pickerPick": {
+		"message": "선택"
+	},
+	"pickerQuit": {
+		"message": "끝내기"
+	},
+	"pickerPreview": {
+		"message": "미리보기"
+	},
+	"pickerNetFilters": {
+		"message": "네트워크 필터"
+	},
+	"pickerCosmeticFilters": {
+		"message": "코스메틱 필터"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "클릭, Ctrl-클릭"
+	},
+	"pickerContextMenuEntry": {
+		"message": "블록 요소"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "블록 요소의 자리 표시자 숨기기"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "아이콘에 차단된 요청 수 표시"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "도구 설명 사용 안 함"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "상황에 맞는 메뉴 이용"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "색맹 친화적"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "클라우드 스토리지 지원 사용"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "고급 사용자(<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>필독</a>)입니다"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "고급 설정"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "프리페치 사용 안 함(차단된 네트워크 요청에 대한 연결 방지용)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "하이퍼링크 감사 사용 안 함"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "WebRTC에서 로컬 IP 주소가 유출되지 않도록 방지"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "기본 동작"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "이 기본 동작은 사이트별로 다시 정의할 수 있습니다"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "코스메틱 필터링 사용 안 함"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "원격 글꼴 차단"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "CSP 보고서 차단"
+	},
+	"settingsStorageUsed": {
+		"message": "스토리지 사용량: {{value}}바이트"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "마지막 복원:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "마지막 백업:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} 네트워크 필터 ＋ {{cosmeticFilterCount}} 코스메틱 필터:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{total}} 중 {{used}} 사용됨"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "자동 업데이트 필터 목록"
+	},
+	"3pUpdateNow": {
+		"message": "지금 업데이트"
+	},
+	"3pPurgeAll": {
+		"message": "모든 캐시 제거"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "코스메틱 필터 구문 분석 및 적용"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>이 옵션을 사용하면 <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus 호환&ldquo;요소 숨기기&rdquo;필터</a>를 구문 분석 및 적용할 수 있습니다. 이 필터는 기본적으로 코스메틱 필터이며 웹 페이지에서 시각적으로 보기 좋지 않은 요소를 숨기는 데 사용됩니다. 이 필터는 망 요청 기반 필터링 엔진으로 차단할 수 없습니다.</p><p> 이 기능을 사용하면 #title#의 메모리 사용 공간을 늘릴 수 있습니다.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "일반 코스메틱 필터 무시"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>일반 코스메틱 필터는 모든 웹 사이트에 적용할 수 있는 코스메틱 필터입니다.<p>일반 코스메틱 필터는 #title#에 의해 효율적으로 처리되지만 특히 크고 수명이 긴 일부 웹 페이지에서 측정 가능한 메모리와 CPU 오버헤드를 계속 유발할 수 있습니다.<p>이 옵션을 사용하면 일반 코스메틱 필터를 처리한 결과로 웹 페이지에 추가된 메모리 및 CPU 오버헤드를 제거할 수 있을 뿐만 아니라 #title# 자체의 메모리 사용 공간을 줄일 수 있습니다.<p>덜 강력한 디바이스에서 이 옵션을 사용하는 것이 좋습니다."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "차단된 호스트 목록"
+	},
+	"3pApplyChanges": {
+		"message": "변경 내용 적용"
+	},
+	"3pGroupAds": {
+		"message": "광고"
+	},
+	"3pGroupPrivacy": {
+		"message": "개인정보"
+	},
+	"3pGroupMalware": {
+		"message": "맬웨어 도메인"
+	},
+	"3pGroupAnnoyances": {
+		"message": "귀찮은 문제"
+	},
+	"3pGroupMultipurpose": {
+		"message": "다목적"
+	},
+	"3pGroupRegions": {
+		"message": "지역, 언어"
+	},
+	"3pGroupCustom": {
+		"message": "사용자 지정"
+	},
+	"3pExternalListsHint": {
+		"message": "줄당 하나의 URL입니다. lsquo;!&rsquo;가 앞에 있는 줄은 무시됩니다. 잘못된 URL은 자동으로 무시됩니다."
+	},
+	"3pExternalListObsolete": {
+		"message": "오래된 버전."
+	},
+	"3pLastUpdate": {
+		"message": "마지막 업데이트 날짜: {{ago}}.\n업데이트를 수행하려면 클릭하십시오."
+	},
+	"3pUpdating": {
+		"message": "업데이트 중..."
+	},
+	"3pNetworkError": {
+		"message": "네트워크 오류로 인해 리소스가 업데이트되지 않았습니다."
+	},
+	"1pFormatHint": {
+		"message": "줄당 하나의 필터입니다. 필터는 일반 호스트 이름이거나 Adblock Plus 호환 필터일 수 있습니다. &lsquo;!&rsquo;가 앞에 있는 줄은 무시됩니다."
+	},
+	"1pImport": {
+		"message": "가져오기 및 추가"
+	},
+	"1pExport": {
+		"message": "내보내기"
+	},
+	"1pApplyChanges": {
+		"message": "변경 내용 적용"
+	},
+	"rulesPermanentHeader": {
+		"message": "영구 규칙"
+	},
+	"rulesTemporaryHeader": {
+		"message": "임시 규칙"
+	},
+	"rulesRevert": {
+		"message": "되돌리기"
+	},
+	"rulesCommit": {
+		"message": "커밋"
+	},
+	"rulesEdit": {
+		"message": "편집"
+	},
+	"rulesEditSave": {
+		"message": "저장"
+	},
+	"rulesEditDiscard": {
+		"message": "삭제"
+	},
+	"rulesImport": {
+		"message": "파일에서 가져오기..."
+	},
+	"rulesExport": {
+		"message": "파일로 내보내기"
+	},
+	"rulesHint": {
+		"message": "동적 필터링 규칙 목록."
+	},
+	"rulesFormatHint": {
+		"message": "규칙 구문: <code>원본 대상 유형 작업</code>(<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>전체 설명서</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "화이트리스트 지시문은 사용하지 않아야 하는 웹 페이지 #title#을(를) 지시합니다. 줄당 하나의 항목으로 작성됩니다. 잘못된 지시문은 자동으로 무시되고 주석 처리됩니다."
+	},
+	"whitelistImport": {
+		"message": "가져오기 및 추가"
+	},
+	"whitelistExport": {
+		"message": "내보내기"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "변경 내용 적용"
+	},
+	"logRequestsHeaderType": {
+		"message": "유형"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "도메인"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "필터"
+	},
+	"logAll": {
+		"message": "모두"
+	},
+	"logBehindTheScene": {
+		"message": "백그라운드"
+	},
+	"logFilterPrompt": {
+		"message": "로그 항목 필터"
+	},
+	"logMaxEntriesTip": {
+		"message": "최대 로그 항목 수"
+	},
+	"aboutChangelog": {
+		"message": "변경 로그"
+	},
+	"aboutWiki": {
+		"message": "위키"
+	},
+	"aboutSupport": {
+		"message": "지원"
+	},
+	"aboutCode": {
+		"message": "소스 코드(GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "참여자"
+	},
+	"aboutBackupDataButton": {
+		"message": "파일로 백업"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "파일에서 복원..."
+	},
+	"aboutResetDataButton": {
+		"message": "기본 설정으로 재설정..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "모든 설정은 {{time}}에 백업된 데이터를 사용하여 덮어쓰기되며 #title#은(는) 다시 시작됩니다.\n\n백업된 데이터를 사용하여 기존 설정을 모두 덮어쓰시겠습니까?"
+	},
+	"aboutRestoreDataError": {
+		"message": "데이터를 읽을 수 없거나 잘못됨"
+	},
+	"aboutResetDataConfirm": {
+		"message": "모든 설정이 제거되고 #title#은(는) 다시 시작됩니다."
+	},
+	"errorCantConnectTo": {
+		"message": "네트워크 오류: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: 다음 URL을 사용자 지정 필터 목록에 추가하시겠습니까?\n\n제목: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "1분 전"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}}분 전"
+	},
+	"elapsedOneHourAgo": {
+		"message": "1시간 전"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}}시간 전"
+	},
+	"elapsedOneDayAgo": {
+		"message": "하루 전"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}}일 전"
+	},
+	"showDashboardButton": {
+		"message": "대시보드 표시"
+	},
+	"showNetworkLogButton": {
+		"message": "로거 표시"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "꺼짐"
+	},
+	"docblockedPrompt1": {
+		"message": "#title#에서 다음 페이지를 로드하지 못했습니다."
+	},
+	"docblockedPrompt2": {
+		"message": "다음 필터로 인함"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "매개 변수 없음"
+	},
+	"docblockedFoundIn": {
+		"message": "찾은 위치:"
+	},
+	"docblockedBack": {
+		"message": "돌아가기"
+	},
+	"docblockedClose": {
+		"message": "이 창 닫기"
+	},
+	"docblockedProceed": {
+		"message": "{{hostname}}에 대한 고급 차단 사용 안 함"
+	},
+	"docblockedDisableTemporary": {
+		"message": "임시로"
+	},
+	"docblockedDisablePermanent": {
+		"message": "영구적으로"
+	},
+	"cloudPush": {
+		"message": "클라우드 스토리지로 내보내기"
+	},
+	"cloudPull": {
+		"message": "클라우드 스토리지에서 가져오기"
+	},
+	"cloudPullAndMerge": {
+		"message": "클라우드 스토리지에서 가져오기 및 현재 설정과 병합"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "이 디바이스 이름:"
+	},
+	"advancedSettingsWarning": {
+		"message": "경고! 이 고급 설정의 변경에 따른 모든 책임은 사용자에게 있습니다."
+	},
+	"genericSubmit": {
+		"message": "제출"
+	},
+	"genericApplyChanges": {
+		"message": "변경 내용 적용"
+	},
+	"genericRevert": {
+		"message": "되돌리기"
+	},
+	"genericBytes": {
+		"message": "바이트"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "큰 미디어 요소 임시로 허용"
+	},
+	"dummy": {
+		"message": "이 항목은 마지막 항목이어야 함"
+	},
+	"popupExtraMoreInformation": {
+		"message": "자세한 정보"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "이 사이트에서 트래커가 차단됨"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "이 사이트에서 트래커가 허용됨"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "이 사이트에 대한 보호 사용할 수 없음"
+	},
+	"popupExtraMoreOptions": {
+		"message": "더 자세한 옵션"
+	},
+	"popupExtraLessOptions": {
+		"message": "기본 옵션"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "허용된 모든 사이트 목록 보기"
+	},
+	"popupAdvancedSettings": {
+		"message": "고급 설정"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "이 페이지에서 차단된 트래커"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "총 차단된 트래커 수"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "허용된 사이트 목록"
+	},
+	"extraSlider0": {
+		"message": "광고 차단 안 함"
+	},
+	"extraSlider50": {
+		"message": "보통 광고 차단"
+	},
+	"extraSlider100": {
+		"message": "최대 광고 차단"
+	},
+	"extraIndexDescription": {
+		"message": "더 빠르고 안전한 탐색을 위해 트래커 차단"
+	},
+	"extraGeneralSettings": {
+		"message": "일반 설정"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "정보 #title# 표시 내용 관리"
+	},
+	"extra3pPageNameDesc": {
+		"message": "트래커 및 비공개 타사 필터"
+	},
+	"extra1pPageNameDesc": {
+		"message": "사용자 지정 필터 관리"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "동적 필터링 규칙 목록"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "트래커가 허용된 사이트 목록"
+	},
+	"extraIndexHeader": {
+		"message": "#title# 고급 설정"
+	},
+	"extraIndexFooter": {
+		"message": "uBlock Origin 제공"
+	},
+	"extraShowMore": {
+		"message": "자세히 표시"
+	},
+	"extraBtnImport": {
+		"message": "가져오기"
+	},
+	"extraBtnExport": {
+		"message": "내보내기"
+	},
+	"extraBtnAdd": {
+		"message": "추가"
+	},
+	"extraBtnCancel": {
+		"message": "취소"
+	},
+	"extraBtnEdit": {
+		"message": "편집"
+	},
+	"extraBtnRemove": {
+		"message": "제거"
+	},
+	"extraBtnUpdateAll": {
+		"message": "모두 업데이트"
+	},
+	"extraLabelFilter": {
+		"message": "필터"
+	},
+	"extraMyCustomFilter": {
+		"message": "내 사용자 지정 필터"
+	},
+	"extraManageFilters": {
+		"message": "필터 관리"
+	},
+	"extraAdsFilters": {
+		"message": "광고 필터"
+	},
+	"extraEditFilter": {
+		"message": "필터 편집"
+	},
+	"extraAddFilter": {
+		"message": "필터 추가"
+	},
+	"extraLearnMore": {
+		"message": "자세히 알아보기"
+	},
+	"extraRuleSyntax": {
+		"message": "규칙 구문"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "원본 대상 유형 작업."
+	},
+	"extraRuleDefinition": {
+		"message": "규칙 정의"
+	},
+	"extraRule": {
+		"message": "규칙"
+	},
+	"extraEditRule": {
+		"message": "임시 규칙 편집"
+	},
+	"extraAddRrule": {
+		"message": "임시 규칙 추가"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "고급 사용자 설정"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "더 큰 미디어 요소 차단"
+	},
+	"extraSetting": {
+		"message": "설정"
+	},
+	"extraEditSetting": {
+		"message": "설정 편집"
+	},
+	"extraAddSetting": {
+		"message": "설정 추가"
+	},
+	"extraSite": {
+		"message": "사이트"
+	},
+	"extraAllowOnSites": {
+		"message": "이 사이트에서 트래커 허용"
+	},
+	"extraEditSite": {
+		"message": "사이트 편집"
+	},
+	"extraAddSite": {
+		"message": "사이트 추가"
+	},
+	"extraDefaultBehaviour": {
+		"message": "기본 동작"
+	},
+	"extraPrivacy": {
+		"message": "개인정보"
+	},
+	"3pGroupDefault": {
+		"message": "네트워크 및 코스메틱 필터"
+	},
+	"1pPageName": {
+		"message": " 내 필터"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "이 세션에 대한 보호를 사용할 수 없음"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "추가된 사이트 아직 없음"
+	},
+	"extraInterstitialBlocking": {
+		"message": "삽입 광고 차단 사용"
+	},
+	"shortcutsPageName": {
+		"message": "바로 가기"
+	},
+	"popupTipDashboard": {
+		"message": "대시보드 열기"
+	},
+	"popupTipZapper": {
+		"message": "요소 퇴치 모드로 전환"
+	},
+	"popupTipPicker": {
+		"message": "요소 선택 모드로 전환"
+	},
+	"popupTipLog": {
+		"message": "로거 열기"
+	},
+	"popupTipNoPopups": {
+		"message": "이 사이트의 모든 팝업 차단을 전환"
+	},
+	"popupTipNoPopups1": {
+		"message": "이 사이트에서 모든 팝업을 차단하려면 클릭하십시오"
+	},
+	"popupTipNoPopups2": {
+		"message": "이 사이트에서 모든 팝업 차단을 해제하려면 클릭하십시오"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "이 사이트의 대용량 미디어 요소 차단을 전환"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "이 사이트에서 대용량 미디어 요소를 차단하려면 클릭하십시오"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "이 사이트에서 대용량 미디어 요소 차단을 해제하려면 클릭하십시오"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "이 사이트의 코스메틱 필터를 전환"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "이 사이트에서 코스메틱 필터를 사용하지 않으려면 클릭하십시오"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "이 사이트에서 코스메틱 필터를 사용하려면 클릭하십시오"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "이 사이트에서 외부 글꼴 차단을 전환"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "이 사이트에서 외부 글꼴을 차단하려면 클릭하십시오"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "이 사이트에서 외부 글꼴 차단을 해제하려면 클릭하십시오"
+	},
+	"popupTipGlobalRules": {
+		"message": "전역 규칙: 모든 사이트에 적용할 규칙을 위한 열입니다."
+	},
+	"popupTipLocalRules": {
+		"message": "로컬 규칙: 현재 사이트에만 적용되는 규칙을 위한 열입니다.\n로컬 규칙은 전역 규칙보다 우선합니다."
+	},
+	"popupTipSaveRules": {
+		"message": "영구적으로 변경하려면 클릭하십시오."
+	},
+	"popupTipRevertRules": {
+		"message": "변경 내용을 되돌리려면 클릭하십시오."
+	},
+	"popupAnyRulePrompt": {
+		"message": "모두"
+	},
+	"popupImageRulePrompt": {
+		"message": "이미지"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "타사"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "타사 css/이미지"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "인라인 스크립트"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "자사 스크립트"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "타사 스크립트"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "타사 프레임"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "도메인 연결됨"
+	},
+	"popupHitDomainCount": {
+		"message": "{{total}} 중 {{count}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "{{input:number}} KB보다 큰 미디어 요소 차단"
+	},
+	"3pImport": {
+		"message": "가져오기..."
+	},
+	"loggerCurrentTab": {
+		"message": "현재 탭"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "문맥:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "유형:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "동적 URL 필터링"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "정적 필터링"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "다음과 같은 경우 {{type}}의 네트워크 요청을 {{action}}. {{br}} 주소가 {{url}}과 일치하고 {{br}} 출처가 {{origin}}이며, {{br}} {{importance}} 일치하는 예외 필터가 있음."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "차단"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "허용"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "유형: ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "모든 유형"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "출처: ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "모든 출처"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "다음을 제외:"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "예외:"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "정적 필터 <code>{{filter}}</code>가 다음에서 발견됨:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "정적 필터 <code>{{filter}}</code>가 현재 사용 중인 필터 목록에서 발견되지 않음"
+	},
+	"aboutIssues": {
+		"message": "문제 추적기"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "바로 가기 입력"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? 자산 뷰어"
+	},
+	"popupTipNoScripting1": {
+		"message": "이 사이트에서 JavaScript를 사용하지 않으려면 클릭하십시오"
+	},
+	"popupTipNoScripting2": {
+		"message": "이 사이트에서 JavaScript 비활성화를 해제하려면 클릭하십시오"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "JavaScript 사용 안 함"
+	},
+	"aboutDependencies": {
+		"message": "외부 종속성(GPLv3 호환):"
+	},
+	"loggerReloadTip": {
+		"message": "탭 내용을 다시 로드"
+	},
+	"loggerDomInspectorTip": {
+		"message": "DOM 검사기를 전환"
+	},
+	"loggerPopupPanelTip": {
+		"message": "팝업 패널을 전환"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin wiki: 로거"
+	},
+	"loggerClearTip": {
+		"message": "로거 지우기"
+	},
+	"loggerPauseTip": {
+		"message": "로거 일시 중지(모든 수신 데이터 삭제)"
+	},
+	"loggerUnpauseTip": {
+		"message": "로거 다시 시작"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "로거 필터링 전환"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "로거 필터링 옵션"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "없음"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "중요함"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "차단됨"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "허용됨"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "자사"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "타사"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "세부 정보"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "필터"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "필터 목록"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "규칙"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "문맥"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "핵심 문맥"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "집합"
+	},
+	"loggerEntryDetailsType": {
+		"message": "유형"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "아래 세 가지 조건을 모두 충족하지 못하는 로거 항목을 자동으로 삭제:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "{{input}}분 전까지 입력된 항목을 보관"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "탭당 최대 {{input}} 페이지 로드 보관"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "탭당 최대 {{input}} 항목 보관"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "수직 확장 모드에서 항목당 {{input}}줄 사용"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "열 숨기기:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} 시간"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} 필터/규칙"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} 문맥"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} 집합"
+	},
+	"loggerExportFormatList": {
+		"message": "목록"
+	},
+	"loggerExportFormatTable": {
+		"message": "테이블"
+	},
+	"loggerExportEncodePlain": {
+		"message": "일반"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "표시"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "스크롤 잠김 전환"
+	},
+	"genericCopyToClipboard": {
+		"message": "클립보드로 복사"
+	}
+}

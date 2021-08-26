@@ -1,0 +1,863 @@
+{
+	"extShortDesc": {
+		"message": "Блакіруе надакучлівыя сродкі адсочвання."
+	},
+	"dashboardName": {
+		"message": "#title# – панэль кіравання"
+	},
+	"settingsPageName": {
+		"message": "Налады"
+	},
+	"3pPageName": {
+		"message": "Староннія фільтры"
+	},
+	"rulesPageName": {
+		"message": "Мае правілы"
+	},
+	"whitelistPageName": {
+		"message": "Белы спіс"
+	},
+	"statsPageName": {
+		"message": "#title# – журнал"
+	},
+	"aboutPageName": {
+		"message": "Аб праграме"
+	},
+	"advancedSettingsPageName": {
+		"message": "Дадатковыя налады"
+	},
+	"pickerCreate": {
+		"message": "Стварыць"
+	},
+	"pickerPick": {
+		"message": "Выбраць"
+	},
+	"pickerQuit": {
+		"message": "Выйсці"
+	},
+	"pickerPreview": {
+		"message": "Перадпрагляд"
+	},
+	"pickerNetFilters": {
+		"message": "Сеткавыя фільтры"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Касметычныя фільтры"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Пстрычка, Ctrl + пстрычка"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Заблакіраваць элемент"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Схаваць змесціва заблакіраваных элементаў"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Паказаць колькасць заблакіраваных запытаў на значку"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Адключыць падказкі"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Па магчымасці выкарыстоўваць кантэкстнае меню"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Колеравая схема для дальтонікаў"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Уключыць падтрымку воблачнага сховішча"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Я дасведчаны карыстальнік (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>required reading</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "дадатковыя налады"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Адключыць папярэднюю загрузку, каб прадухіляць падключэнні для заблакіраваных сеткавых запытаў"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Адключыць праверку гіперспасылак"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "Прадухіліць уцечку лакальнага IP-адраса праз WebRTC"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Паводзіны па змаўчанні"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Гэтыя паводзіны можна вызначыць для кожнага сайта асобна"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Адключыць касметычныя фільтры"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Блакіраваць староннія шрыфты"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "Блакіраваць справаздачы CSP"
+	},
+	"settingsStorageUsed": {
+		"message": "Выкарыстана сховішча: {{value}} Б"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Апошняе аднаўленне:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Апошняе рэзервовае капіраванне:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "Сеткавыя фільтры {{netFilterCount}} ＋ касметычныя фільтры {{cosmeticFilterCount}} з:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "Выкарыстана {{used}} з {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Абнаўленне спісаў фільтраў"
+	},
+	"3pUpdateNow": {
+		"message": "Абнавіць"
+	},
+	"3pPurgeAll": {
+		"message": "Ачысціць увесь кэш"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Выканаць сінтаксічны аналіз і прымяняць касметычныя фільтры"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Гэты параметр уключае сінтаксічны аналіз і выкарыстанне <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">фільтраў «скрывання элементаў», сумяшчальных з Adblock Plus</a>. Гэта касметычныя фільтры, якія даюць магчымасць схаваць непатрэбныя элементы старонкі, якія не можа заблакіраваць механізм фільтрацыі сеткавых запытаў.</p><p>Выкарыстанне гэтага параметра павялічвае аб’ём памяці, якую выкарыстоўвае #title#.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Ігнараваць агульныя касметычныя фільтры"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Агульныя касметычныя фільтры прызначаны для выкарыстання на ўсіх сайтах.<p>Хаця #title# і выкарыстоўвае іх максімальна эфектыўна, такія фільтры ўсё роўна могуць спажываць значны аб’ём аператыўнай памяці і нагружаць працэсар на некаторых старонках, асабліва на вялікіх і тых, якія існуюць доўгі час.<p>Уключэнне гэтага параметра паніжае выкарыстанне памяці вэб-старонкамі і пазбаўляе працэсар ад апрацоўкі агульных касметычных фільтраў, а таксама паніжае аб’ём памяці, які спажывае #title#.<p>Рэкамендуецца ўключыць гэты параметр на не вельмі магутных прыладах."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Спіс заблакіраваных хостаў"
+	},
+	"3pApplyChanges": {
+		"message": "Прымяніць змяненні"
+	},
+	"3pGroupAds": {
+		"message": "Рэклама"
+	},
+	"3pGroupPrivacy": {
+		"message": "Прыватнасць"
+	},
+	"3pGroupMalware": {
+		"message": "Дамены шкоднасных праграм"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Раздражняльнікі"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Шматмэтавы"
+	},
+	"3pGroupRegions": {
+		"message": "Рэгіёны, мовы"
+	},
+	"3pGroupCustom": {
+		"message": "Карыстальніцкі"
+	},
+	"3pExternalListsHint": {
+		"message": "Адзін URL-адрас на радок. Радкі, якія пачынаюцца з сімвала «!», будуць праігнараваны. Несапраўдныя URL-адрасы будуць праігнараваны без папярэджання."
+	},
+	"3pExternalListObsolete": {
+		"message": "Састарэла."
+	},
+	"3pLastUpdate": {
+		"message": "Апошняе абнаўленне: {{ago}}.\nНацісніце, каб выканаць прымусовае абнаўленне."
+	},
+	"3pUpdating": {
+		"message": "Абнаўленне..."
+	},
+	"3pNetworkError": {
+		"message": "Не атрымалася абнавіць крыніцу з-за памылкі сеткі."
+	},
+	"1pFormatHint": {
+		"message": "Адзін фільтр на радок. Фільтрам можа быць звычайнае імя хоста або фільтр, сумяшчальны з Adblock Plus. Радкі, якія пачынаюцца з «!», будуць праігнараваны."
+	},
+	"1pImport": {
+		"message": "Імпартаваць і дадаць"
+	},
+	"1pExport": {
+		"message": "Экспартаваць"
+	},
+	"1pApplyChanges": {
+		"message": "Прымяніць змяненні"
+	},
+	"rulesPermanentHeader": {
+		"message": "Пастаянныя правілы"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Часовыя правілы"
+	},
+	"rulesRevert": {
+		"message": "Адмяніць змяненні"
+	},
+	"rulesCommit": {
+		"message": "Пацвердзіць"
+	},
+	"rulesEdit": {
+		"message": "Рэдагаваць"
+	},
+	"rulesEditSave": {
+		"message": "Захаваць"
+	},
+	"rulesEditDiscard": {
+		"message": "Скасаваць"
+	},
+	"rulesImport": {
+		"message": "Імпартаваць з файла..."
+	},
+	"rulesExport": {
+		"message": "Экспартаваць у файл"
+	},
+	"rulesHint": {
+		"message": "Спіс дынамічных правіл фільтрацыі."
+	},
+	"rulesFormatHint": {
+		"message": "Сінтаксіс правіл: <code>крыніца прызначэнне тып дзеянне</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>поўная дакументацыя</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "Белы спіс паказвае, на якіх вэб-старонках трэба адключыць #title#. Адзін запіс на радок. Несапраўдныя запісы будуць без папярэджання праігнараваны і пракаменціраваны."
+	},
+	"whitelistImport": {
+		"message": "Імпартаваць і дадаць"
+	},
+	"whitelistExport": {
+		"message": "Экспартаваць"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Прымяніць змяненні"
+	},
+	"logRequestsHeaderType": {
+		"message": "Тып"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Дамен"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL-адрас"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Фільтр"
+	},
+	"logAll": {
+		"message": "Усе"
+	},
+	"logBehindTheScene": {
+		"message": "Схаванае"
+	},
+	"logFilterPrompt": {
+		"message": "фільтр запісаў журнала"
+	},
+	"logMaxEntriesTip": {
+		"message": "Максімальная колькасць запісаў журнала"
+	},
+	"aboutChangelog": {
+		"message": "Журнал змяненняў"
+	},
+	"aboutWiki": {
+		"message": "Вікі"
+	},
+	"aboutSupport": {
+		"message": "Падтрымка"
+	},
+	"aboutCode": {
+		"message": "Зыходны код (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Аўтары"
+	},
+	"aboutBackupDataButton": {
+		"message": "Захаваць рэзервовую копію ў файл"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Аднавіць з файла..."
+	},
+	"aboutResetDataButton": {
+		"message": "Скінуць да налад па змаўчанні..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Налады будуць перазапісаны данымі з рэзервовай копіі ад {{time}}, а #title# перазапусціцца.\n\nПеразапісаць усе існыя параметры данымі з резервовай копіі?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Немагчыма прачытаць даныя, або яны несапраўдныя"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Усе вашы налады будуць выдалены, а #title# перазапусціцца.\n\nАднавіць налады #title# па змаўчанні?"
+	},
+	"errorCantConnectTo": {
+		"message": "Памылка сеткі: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: дадаць наступны URL-адрас у ваш спіс фільтраў?\n\nНазва: «{{title}}»\nURL-адрас: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "хвіліну таму"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} хв таму"
+	},
+	"elapsedOneHourAgo": {
+		"message": "гадзіну таму"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} гадз таму"
+	},
+	"elapsedOneDayAgo": {
+		"message": "суткі таму"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} сут таму"
+	},
+	"showDashboardButton": {
+		"message": "Паказаць панэль кіравання"
+	},
+	"showNetworkLogButton": {
+		"message": "Паказаць журнал"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "адкл."
+	},
+	"docblockedPrompt1": {
+		"message": "Пашырэнне #title# прадухіліла загрузку наступнай старонкі:"
+	},
+	"docblockedPrompt2": {
+		"message": "З-за наступнага фільтра"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "без параметраў"
+	},
+	"docblockedFoundIn": {
+		"message": "Месца выяўлення:"
+	},
+	"docblockedBack": {
+		"message": "Вярнуцца"
+	},
+	"docblockedClose": {
+		"message": "Закрыць гэта акно"
+	},
+	"docblockedProceed": {
+		"message": "Адключыць строгую блакіроўку {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Часова"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Назаўсёды"
+	},
+	"cloudPush": {
+		"message": "Экспартаваць у воблачнае сховішча"
+	},
+	"cloudPull": {
+		"message": "Імпартаваць з воблачнага сховішча"
+	},
+	"cloudPullAndMerge": {
+		"message": "Імпартаваць з воблачнага сховішча і аб’яднаць з бягучымі наладамі"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Імя гэтай прылады:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Увага! Вы змяняеце пашыраныя налады на ўласную рызыку."
+	},
+	"genericSubmit": {
+		"message": "Адправіць"
+	},
+	"genericApplyChanges": {
+		"message": "Прымяніць змяненні"
+	},
+	"genericRevert": {
+		"message": "Адмяніць змяненні"
+	},
+	"genericBytes": {
+		"message": "Б"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Часова дазволіць адлюстраванне вялікіх элементаў мультымедыя"
+	},
+	"dummy": {
+		"message": "Гэты запіс павінен быць апошнім"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Падрабязней"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Сродкі адсочвання на гэтым сайце заблакіраваны"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Сродкі адсочвання на гэтым сайце дазволены"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Немагчыма ўключыць абарону на гэтым сайце"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Больш параметраў"
+	},
+	"popupExtraLessOptions": {
+		"message": "Менш параметраў"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Паказаць спіс усіх дазволеных сайтаў"
+	},
+	"popupAdvancedSettings": {
+		"message": "Дадатковыя налады"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Заблакіраваных сродкаў адсочвання на гэтай старонцы"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Усяго заблакіраваных сродкаў адсочвання"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Спіс дазволеных сайтаў"
+	},
+	"extraSlider0": {
+		"message": "Без блакіроўкі рэкламы"
+	},
+	"extraSlider50": {
+		"message": "Умераная блакіроўка рэкламы"
+	},
+	"extraSlider100": {
+		"message": "Поўная блакіроўка рэкламы"
+	},
+	"extraIndexTitle": {
+		"message": "#title#"
+	},
+	"extraIndexDescription": {
+		"message": "Блакіроўка сродкаў адсочвання для хуткага і бяспечнага прагляду сайтаў"
+	},
+	"extraGeneralSettings": {
+		"message": "Агульныя налады"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Кіраванне інфармацыяй, якая адлюстроўваецца пашырэннем #title#"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Староннія фільтры сродкаў адсочвання і прыватнасці"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Кіраванне карыстальніцкімі фільтрамі"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Спіс дынамічных правіл фільтрацыі"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Спіс сайтаў з дазволенымі сродкамі адсочвання"
+	},
+	"extraIndexHeader": {
+		"message": "Дадатковыя налады пашырэння #title#"
+	},
+	"extraIndexFooter": {
+		"message": "На аснове тэхналогіі uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Паказаць больш"
+	},
+	"extraBtnImport": {
+		"message": "імпартаваць"
+	},
+	"extraBtnExport": {
+		"message": "экспартаваць"
+	},
+	"extraBtnAdd": {
+		"message": "дадаць"
+	},
+	"extraBtnCancel": {
+		"message": "адмяніць"
+	},
+	"extraBtnEdit": {
+		"message": "Рэдагаваць"
+	},
+	"extraBtnRemove": {
+		"message": "Выдаліць"
+	},
+	"extraBtnUpdateAll": {
+		"message": "абнавіць усё"
+	},
+	"extraLabelFilter": {
+		"message": "Фільтр"
+	},
+	"extraMyCustomFilter": {
+		"message": "Карыстальніцкія фільтры"
+	},
+	"extraManageFilters": {
+		"message": "Кіраванне фільтрамі"
+	},
+	"extraAdsFilters": {
+		"message": "Фільтры рэкламы"
+	},
+	"extraEditFilter": {
+		"message": "Рэдагаваць фільтр"
+	},
+	"extraAddFilter": {
+		"message": "Дадаць фільтр"
+	},
+	"extraLearnMore": {
+		"message": "Даведацца больш"
+	},
+	"extraRuleSyntax": {
+		"message": "Сінтаксіс правіл"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "крыніца пункт прызначэння тып дзеянне."
+	},
+	"extraRuleDefinition": {
+		"message": "Вызначэнне правіла"
+	},
+	"extraRule": {
+		"message": "Правіла"
+	},
+	"extraEditRule": {
+		"message": "Рэдагаваць часовае правіла"
+	},
+	"extraAddRrule": {
+		"message": "Дадаць часовае правіла"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Дадатковыя карыстальніцкія налады"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Блакіраваць элементы мультымедыя памерам больш за"
+	},
+	"extraSetting": {
+		"message": "Налада"
+	},
+	"extraEditSetting": {
+		"message": "Рэдагаваць наладу"
+	},
+	"extraAddSetting": {
+		"message": "Дадаць наладу"
+	},
+	"extraSite": {
+		"message": "Сайт"
+	},
+	"extraAllowOnSites": {
+		"message": "Дазволіць сродкі адсочвання на гэтых сайтах"
+	},
+	"extraEditSite": {
+		"message": "Рэдагаваць сайт"
+	},
+	"extraAddSite": {
+		"message": "Дадаць сайт"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Паводзіны па змаўчанні"
+	},
+	"extraPrivacy": {
+		"message": "Прыватнасць"
+	},
+	"3pGroupDefault": {
+		"message": "Сеткавыя фільтры і фільтры адлюстравання"
+	},
+	"1pPageName": {
+		"message": " My filters"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Немагчыма ўключыць абарону для гэтага сеанса"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Няма дададзеных сайтаў"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Уключыць блакіроўку рэкламных уставак"
+	},
+	"shortcutsPageName": {
+		"message": "Ярлыкі"
+	},
+	"popupTipDashboard": {
+		"message": "Адкрыць панэль кіравання"
+	},
+	"popupTipZapper": {
+		"message": "Уключыць рэжым схавання элементаў"
+	},
+	"popupTipPicker": {
+		"message": "Уключыць рэжым выбару элементаў"
+	},
+	"popupTipLog": {
+		"message": "Адкрыць журнал"
+	},
+	"popupTipNoPopups": {
+		"message": "Уключыць блакіроўку ўсіх усплывальных вокнаў для гэтага сайта"
+	},
+	"popupTipNoPopups1": {
+		"message": "Націсніце, каб заблакіраваць усе ўсплывальныя вокны на гэтым сайце"
+	},
+	"popupTipNoPopups2": {
+		"message": "Націсніце, каб спыніць блакіроўку ўсплывальных вокнаў на гэтым сайце"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Уключыць блакіроўку буйных элементаў мультымедыя на гэтым сайце"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Націсніце, каб заблакіраваць буйныя элементы мультымедыя на гэтым сайце"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Націсніце, каб спыніць блакіроўку буйных элементаў мультымедыя на гэтым сайце"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Уключыць касметычныя фільтры для гэтага сайта"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Націсніце, каб адключыць касметычныя фільтры на гэтым сайце"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Націсніце, каб уключыць касметычныя фільтры на гэтым сайце"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Уключыць блакіроўку выдаленых шрыфтоў на гэтым сайце"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Націсніце, каб заблакіраваць выдаленыя шрыфты на гэтым сайце"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Націсніце, каб спыніць блакіроўку выдаленых шрыфтоў на гэтым сайце"
+	},
+	"popupTipGlobalRules": {
+		"message": "Глабальныя правілы: правілы ў гэтым слупку прымяняюцца да ўсіх сайтаў."
+	},
+	"popupTipLocalRules": {
+		"message": "Лакальныя правілы: правілы ў гэтым слупку прымяняюцца толькі да бягучага сайта.\nЛакальныя правілы маюць большы прыярытэт, чым глабальныя."
+	},
+	"popupTipSaveRules": {
+		"message": "Націсніце, каб зрабіць змяненні пастаяннымі."
+	},
+	"popupTipRevertRules": {
+		"message": "Націсніце, каб скасаваць змяненні."
+	},
+	"popupAnyRulePrompt": {
+		"message": "усе"
+	},
+	"popupImageRulePrompt": {
+		"message": "відарысы"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "старонняе"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "Староннія css/відарысы"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "убудаваныя сцэнарыі"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "Уласныя сцэнарыі"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "Староннія сцэнарыі"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "Староннія фрэймы"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "падключаныя дамены"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} з {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Блакіраваць элементы мультымедыя, памер якіх перавышае {{input:number}} кбайт"
+	},
+	"3pImport": {
+		"message": "Імпарт..."
+	},
+	"loggerCurrentTab": {
+		"message": "Бягучая ўкладка"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Кантэкст:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Тып:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Дынамічная фільтрацыя URL-адрасоў"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Статычная фільтрацыя"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} запыты сеткі тыпу «{{type}}», {{br}}калі URL-адрас супадае з адрасам {{url}}, {{br}}а крыніца — {{origin}},{{br}}{{importance}} ёсць адпаведны фільтр выключэння."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Заблакіраваць"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Дазволіць"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "тып ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "любы тып"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "з ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "любая крыніца"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "выключыць, калі"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "нават калі"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Статычны фільтр <code>{{filter}}</code> знойдзены ў:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Статычны фільтр <code>{{filter}}</code> не атрымліваецца знайсці ні ў адным з уключаных у дадзены момант спісаў фільтраў"
+	},
+	"aboutIssues": {
+		"message": "Адсочванне праблем"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Укажыце ярлык"
+	},
+	"assetViewerPageName": {
+		"message": "Прагляд рэсурсаў uBlock? ?"
+	},
+	"popupTipNoScripting1": {
+		"message": "Націсніце, каб адключыць JavaScript на гэтым сайце"
+	},
+	"popupTipNoScripting2": {
+		"message": "Націсніце, каб больш не адключаць JavaScript на гэтым сайце"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "Адключыць JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "Знешнія залежнасці (сумяшчальна з GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "Перазагрузіць змесціва ўкладкі"
+	},
+	"loggerDomInspectorTip": {
+		"message": "Уключэнне інспектара DOM"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Уключэнне усплывальнай панэлі"
+	},
+	"loggerInfoTip": {
+		"message": "Вікі uBlock Origin: журнал"
+	},
+	"loggerClearTip": {
+		"message": "Ачысціць журнал"
+	},
+	"loggerPauseTip": {
+		"message": "Прыпыніць вядзенне журнала (адхіляць усе ўваходныя даныя)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Узнавіць вядзенне журнала"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Уключыць фільтрацыю пры вядзенні журнала"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Параметры фільтрацыі пры вядзенні журнала"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Не"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "з падзеямі"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "заблакіравана"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "дазволена"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "уласнае"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "старонняе"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Падрабязнасці"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Фільтр"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Спіс фільтраў"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Правіла"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Кантэкст"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Карнявы кантэкст"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Прыналежнасць"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Тып"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL-адрас"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Запісы журнала, якія не адпавядаюць тром ніжэйпрыведзеным умовам, будуць аўтаматычна адхіляцца:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Захоўваць запісы за апошнія {{input}} хв"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Максімальная колькасць загрузак старонкі на ўкладку: {{input}}"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Максімальная колькасць запісаў на ўкладку: {{input}}"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Колькасць радкоў на запіс у вертыкальна разгорнутым рэжыме: {{input}}"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Схаваць слупкі:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} Час"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} Фільтр/правіла"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} Кантэкст"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} Прыналежнасць"
+	},
+	"loggerExportFormatList": {
+		"message": "Спіс"
+	},
+	"loggerExportFormatTable": {
+		"message": "Табліца"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Звычайны тэкст"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Разметка"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Блакіроўка прагорткі"
+	},
+	"genericCopyToClipboard": {
+		"message": "Капіраваць у буфер абмену"
+	}
+}

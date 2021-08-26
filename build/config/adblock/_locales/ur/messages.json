@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "ایڈ بلاک"
+  },
+  "adBlockSettings": {
+    "message": "ایڈ بلاک - سیٹنگز"
+  },
+  "adblockIsPaused": {
+    "message": "ایڈ بلاک کو تمام سائٹوں کے لئے روک دیا گیا ہے"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "ایڈ بلاک کو اس سائٹ پر روک دیا گیا ہے"
+  },
+  "adblockIsOff": {
+    "message": "ایڈ بلاک کو بند کر دیا گیا ہے"
+  },
+  "addSite": {
+    "message": "سائٹ شامل کریں"
+  },
+  "adsBlocked": {
+    "message": "اشتہارات مسدود شدہ:"
+  },
+  "allowAdsOnSite": {
+    "message": "اس سائٹ پر اشتہارات کی اجازت دیں"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "مندرجہ ذیل سائٹوں پر ہمیشہ اشتہارات کی اجازت دیں"
+  },
+  "balancedBlocking": {
+    "message": "متوازن مسدود کاری"
+  },
+  "balancedBlockingName": {
+    "message": "متوازن"
+  },
+  "blockAdsOnThisSite": {
+    "message": "اس سائٹ پر اشتہارات کو مسدود کریں"
+  },
+  "blockingOptions": {
+    "message": "مسدود کاری کے اختیارات"
+  },
+  "btnAdd": {
+    "message": "شامل کریں"
+  },
+  "cancel": {
+    "message": "منسوخ کریں"
+  },
+  "edit": {
+    "message": "ترمیم کریں"
+  },
+  "essentialBlocking": {
+    "message": "لازمی مسدود کاری"
+  },
+  "essentialBlockingName": {
+    "message": "لازمی"
+  },
+  "extShortDesc": {
+    "message": "بالآخر ایک مؤثر بلاکر۔ CPU اور میموری پر آسان۔"
+  },
+  "generalSettings": {
+    "message": "عام سیٹنگز"
+  },
+  "indexDescription": {
+    "message": "تیز اور محفوظ براؤزنگ کے لئے اشتہارات مسدود کریں"
+  },
+  "keep_essential": {
+    "message": "ضروری رہنا"
+  },
+  "keep_balanced": {
+    "message": "متوازن رہنا"
+  },
+  "learnMore": {
+    "message": "مزید معلومات حاصل کریں"
+  },
+  "noAdsToBlock": {
+    "message": "اس صفحہ پر مسدود کرنے کے لئے کوئی اشتہارات نہیں ہیں"
+  },
+  "pauseAdBlock": {
+    "message": "ایڈ بلاک کو روکیں"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "تمام سائٹوں پر ایڈ بلاک کو روکیں"
+  },
+  "pauseOnAllSites": {
+    "message": "تمام سائٹوں پر روکیں"
+  },
+  "pauseOnThisSite": {
+    "message": "اس سائٹ پر روکیں"
+  },
+  "poweredByUblock": {
+    "message": "<u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u> کے ذریعہ قوت یافتہ"
+  },
+  "remove": {
+    "message": "ہٹائیں"
+  },
+  "save": {
+    "message": "محفوظ کریں"
+  },
+  "setStrict": {
+    "message": "سختی سیٹ کریں"
+  },
+  "setStrictDescription_avast": {
+    "message": "بہت کم غیر-ناگوار اشتہارات Avast Secure Browser کو مالیات فراہم کرنے میں ہماری مدد کرتے ہیں۔ وہ آپ کی براؤزنگ میں دخل اندازی نہیں کرتے ہیں اور آپ کے براؤزر کو آزاد رکھنے میں مدد کرتے ہیں۔ براہ کرم ان اشتہارات کو اجازت دے کر ہمیں تھوڑی محبت کا اظہار کریں۔"
+  },
+  "setStrictDescription_avg": {
+    "message": "بہت کم غیر-ناگوار اشتہارات Avast Secure Browser کو مالیات فراہم کرنے میں ہماری مدد کرتے ہیں۔ وہ آپ کی براؤزنگ میں دخل اندازی نہیں کرتے ہیں اور آپ کے براؤزر کو آزاد رکھنے میں مدد کرتے ہیں۔ براہ کرم ان اشتہارات کو اجازت دے کر ہمیں تھوڑی محبت کا اظہار کریں۔"
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "بہت کم غیر-ناگوار اشتہارات CCleaner Browser کو مالیات فراہم کرنے میں ہماری مدد کرتے ہیں۔ وہ آپ کی براؤزنگ میں دخل اندازی نہیں کرتے ہیں اور آپ کے براؤزر کو آزاد رکھنے میں مدد کرتے ہیں۔ براہ کرم ان اشتہارات کو اجازت دے کر ہمیں تھوڑی محبت کا اظہار کریں۔"
+  },
+  "setStrictTitle": {
+    "message": "ایڈ بلاک کو سختی میں سیٹ کریں"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "صارف دوستانہ اشتہارات کے لئے صنعتی معیارات کی خلاف ورزی کرنے والے خلل انگیز اشتہارات کو بلاک کریں۔ <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>مزید جانیں</a></u>۔"
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>تجویز کردہ</b> - براؤزنگ کے ایک تیز، صاف تجربہ کے لئے زیادہ تر اشتہارات کو مسدود کریں۔"
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "براؤزنگ کے ایک تیز، صاف تجربہ کے لئے تقریباً تمام اشتہارات کو مسدود کریں۔<b>اس سے کچھ سائٹیں ٹوٹ سکتی ہیں۔</b>"
+  },
+  "settingsCardPopups": {
+    "message": "پاپ-اپ اشتہارات اور بینرز"
+  },
+  "settingsCardDisruptive": {
+    "message": "دیگر خلل انگیز اشتہارات"
+  },
+  "settingsCardSocialMedia": {
+    "message": "کچھ سوشل میڈیا کے اشتہارات"
+  },
+  "settingsCardOtherAds": {
+    "message": "دیگر %99 اشتہارات"
+  },
+  "settingsShowNumberBadge": {
+    "message": "آئیکن پر مسدود کردہ درخواستوں کی تعداد دکھائیں"
+  },
+  "site": {
+    "message": "سائٹ"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "جن سائٹوں پر آپ نے اشتہاروں کی اجازت دی وہ یہاں ظاہر ہوں گی"
+  },
+  "strictBlocking": {
+    "message": "سختی سے مسدود کاری"
+  },
+  "strictBlockingName": {
+    "message": "سخت"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "بے وقفہ"
+  },
+  "turnAdblockOn": {
+    "message": "آن کریں"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "آپ نے اس سائٹ پر اشتہاروں کی اجازت دی ہے"
+  },
+  "adsAreAllowed": {
+    "message": "اس سائٹ پر اشتہارات کی اجازت ہے"
+  },
+  "openSettings": {
+    "message": "سیٹنگز کھولیں"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "تمام سائٹوں پر ایڈ بلاک کے روک کو کالعدم کریں"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "ایڈ بلاک کے بارے میں مزید معلوم کریں"
+  },
+  "pauseAdsOnSite": {
+    "message": "اس سائٹ پر اشتہارات روکیں"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "تمام سائٹوں پر اشتہارات روکیں"
+  },
+  "turnOn": {
+    "message": "ایڈ بلاک آن کریں"
+  },
+  "turnOff": {
+    "message": "ایڈ بلاک آف کریں"
+  },
+  "setEssentialMode": {
+    "message": "لازمی موڈ سیٹ کریں"
+  },
+  "setBalancedMode": {
+    "message": "متوازن موڈ سیٹ کریں"
+  },
+  "setStrictMode": {
+    "message": "سخت موڈ سیٹ کریں"
+  },
+  "showAmountAds": {
+    "message": "بلاک شدہ اشتہارات کی مقدار کو دکھائیں"
+  },
+  "hideAmountAds": {
+    "message": "بلاک شدہ اشتہارات کی مقدار کو چھپائیں"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "اشتہارات کی اجازت دینے کے لئے \"ویب سائٹ\" جوڑیں"
+  },
+  "learnMoreAAS": {
+    "message": "قابل قبول اشتہارات معیار کے بارے میں مزیدد معلوم کریں"
+  },
+  "learnMoreUblock": {
+    "message": "uBlock کے بارے میں مزید معلوم کریں"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "وائٹ لسٹ میں سائٹ کو محفوظ کریں"
+  },
+  "cancelAddSiteOperation": {
+    "message": "سائٹ آپریشن جوڑیں منسوخ کریں"
+  },
+  "editSiteFromWhitelist": {
+    "message": "وائٹ لسٹ سے سائٹ ترمیم کریں"
+  },
+  "cancelEditSiteOperation": {
+    "message": "سائٹ آپریشن میں ترمیم کریں منسوخ کریں"
+  },
+  "removeFromWhitelist": {
+    "message": "وائٹ لسٹ سے سائٹ نکالیں"
+  },
+  "editFromWhitelist": {
+    "message": "وائٹ لسٹ سے سائٹ ترمیم کریں"
+  },
+  "stayOn_balanced": {
+    "message": "متوازن موڈ میں رہیں"
+  },
+  "stayOn_essential": {
+    "message": "لازمی موڈ میں رہیں"
+  },
+  "cancelSetStrict": {
+    "message": "سخت موڈ آپریشن سیٹ کریں منسوخ کریں"
+  },
+  "modifyWhitelistedSite": {
+    "message": "وائٹ لسٹ کی سائٹ میں تبدیلی کریں"
+  },
+  "whitelistModalDescription": {
+    "message": "کس سائٹ پر آپ اشتہارات کی اجازت چاہتے ہیں؟"
+  }
+}

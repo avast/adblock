@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "Blokkeert opdringerige webtrackers."
+	},
+	"dashboardName": {
+		"message": "#title# – dashboard"
+	},
+	"settingsPageName": {
+		"message": "Instellingen"
+	},
+	"3pPageName": {
+		"message": "Filters van derden"
+	},
+	"rulesPageName": {
+		"message": "Mijn regels"
+	},
+	"whitelistPageName": {
+		"message": "Witte lijst"
+	},
+	"statsPageName": {
+		"message": "#title# – logboekregistratie"
+	},
+	"aboutPageName": {
+		"message": "Over"
+	},
+	"advancedSettingsPageName": {
+		"message": "Geavanceerde instellingen"
+	},
+	"pickerCreate": {
+		"message": "Maken"
+	},
+	"pickerPick": {
+		"message": "Kiezen"
+	},
+	"pickerQuit": {
+		"message": "Afsluiten"
+	},
+	"pickerPreview": {
+		"message": "Voorbeeld"
+	},
+	"pickerNetFilters": {
+		"message": "Netwerkfilters"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Cosmetische filters"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Klikken, Ctrl+klikken"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Element blokkeren"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Tijdelijke aanduidingen van geblokkeerde elementen verbergen"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Het aantal geblokkeerde verzoeken weergeven op het pictogram"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Knopinfo uitschakelen"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Zo mogelijk gebruikmaken van contextmenu"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Kleurenblindvriendelijk"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Ondersteuning voor cloudopslag inschakelen"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Ik ben een gevorderde gebruiker (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>verplicht leesvoer</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "geavanceerde instellingen"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Vooraf ophalen uitschakelen (om verzoeken voor verbinding met geblokkeerde netwerken te voorkomen)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Hyperlinkcontrole uitschakelen"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "Voorkomen dat WebRTC lokale IP-adressen uitlekt"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Standaardgedrag"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Deze standaardgedragingen kunnen per site worden genegeerd"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Cosmetisch filteren uitschakelen"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Externe lettertypen blokkeren"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "CSP-rapporten blokkeren"
+	},
+	"settingsStorageUsed": {
+		"message": "Gebruikte opslag: {{value}} bytes"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Laatste terugzetbewerking:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Laatste reservekopie:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} netwerkfilters ＋ {{cosmeticFilterCount}} cosmetische filters van:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} gebruikt van {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Filterlijsten voor automatische updates"
+	},
+	"3pUpdateNow": {
+		"message": "Nu bijwerken"
+	},
+	"3pPurgeAll": {
+		"message": "Alle caches leegmaken"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Cosmetische filters parseren en afdwingen"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Deze optie maakt het parseren en afdwingen van <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus-compatibele filters voor het &ldquo;verbergen van elementen&rdquo;</a> mogelijk. Die filters zijn in feite cosmetisch: ze zijn bedoeld om elementen te verbergen op een webpagina die visueel storend worden beschouwd en die niet kunnen worden geblokkeerd door de op aanvragen gebaseerde filterengine.</p><p>Als u deze functie inschakelt, wordt het geheugen extra belast door #title#.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Cosmetische filters negeren"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Algemene cosmetische filters zijn cosmetische filters die zijn bedoeld om te worden toegepast op alle websites.<p>Hoewel ze op een efficiënte manier worden verwerkt door #title#, kunnen cosmetische filters toch bijdragen aan meetbare extra geheugen- en processorbelasting op sommige webpagina's, vooral op grote en oude.<p>Als u deze optie inschakelt, wordt de extra belasting op het geheugen en de processor als gevolg van het verwerken van algemene cosmetische filters beperkt op webpagina's, en ook de belasting op het geheugen door #title# zelf neemt af.<p>Het is raadzaam deze optie in te schakelen op minder snelle computers."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Lijst met geblokkeerde hosts"
+	},
+	"3pApplyChanges": {
+		"message": "Wijzigingen toepassen"
+	},
+	"3pGroupAds": {
+		"message": "Advertenties"
+	},
+	"3pGroupPrivacy": {
+		"message": "Privacy"
+	},
+	"3pGroupMalware": {
+		"message": "Malwaredomeinen"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Ergernissen"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Multifunctioneel"
+	},
+	"3pGroupRegions": {
+		"message": "Regio's, talen"
+	},
+	"3pGroupCustom": {
+		"message": "Aangepast"
+	},
+	"3pExternalListsHint": {
+		"message": "Eén URL per regel. Regels met als voorvoegsel &lsquo;!&rsquo; worden genegeerd. Ongeldige URL's worden op de achtergrond genegeerd."
+	},
+	"3pExternalListObsolete": {
+		"message": "Verouderd."
+	},
+	"3pLastUpdate": {
+		"message": "Laatste update: {{ago}}.\nKlik om een update te forceren."
+	},
+	"3pUpdating": {
+		"message": "Bijwerken..."
+	},
+	"3pNetworkError": {
+		"message": "Een netwerkfout verhindert dat de bron wordt bijgewerkt."
+	},
+	"1pFormatHint": {
+		"message": "Eén filter per regel. Een filter kan een gewone hostnaam of een Adblock Plus-compatibel filter zijn. Regels met als voorvoegsel &lsquo;!&rsquo; worden genegeerd."
+	},
+	"1pImport": {
+		"message": "Importeren en toevoegen"
+	},
+	"1pExport": {
+		"message": "Exporteren"
+	},
+	"1pApplyChanges": {
+		"message": "Wijzigingen toepassen"
+	},
+	"rulesPermanentHeader": {
+		"message": "Permanente regels"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Tijdelijke regels"
+	},
+	"rulesRevert": {
+		"message": "Terugkeren"
+	},
+	"rulesCommit": {
+		"message": "Doorvoeren"
+	},
+	"rulesEdit": {
+		"message": "Bewerken"
+	},
+	"rulesEditSave": {
+		"message": "Opslaan"
+	},
+	"rulesEditDiscard": {
+		"message": "Verwijderen"
+	},
+	"rulesImport": {
+		"message": "Importeren uit bestand..."
+	},
+	"rulesExport": {
+		"message": "Exporteren naar bestand"
+	},
+	"rulesHint": {
+		"message": "Uw lijst met dynamische filterregels."
+	},
+	"rulesFormatHint": {
+		"message": "Syntaxis van regel: <code>type bron/doel-actie</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>volledige documentatie</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "In de richtlijnen voor witte lijsten staat op welke pagina's #title# moet worden uitgeschakeld. Ongeldige richtlijnen worden op de achtergrond genegeerd en uitgecommentarieerd."
+	},
+	"whitelistImport": {
+		"message": "Importeren en toevoegen"
+	},
+	"whitelistExport": {
+		"message": "Exporteren"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Wijzigingen toepassen"
+	},
+	"logRequestsHeaderType": {
+		"message": "Type"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Domein"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Filter"
+	},
+	"logAll": {
+		"message": "Alle"
+	},
+	"logBehindTheScene": {
+		"message": "Achter de schermen"
+	},
+	"logFilterPrompt": {
+		"message": "logboekvermeldingen filteren"
+	},
+	"logMaxEntriesTip": {
+		"message": "Maximum aantal logboekvermeldingen"
+	},
+	"aboutChangelog": {
+		"message": "Logboek wijzigen"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "Ondersteuning"
+	},
+	"aboutCode": {
+		"message": "Broncode (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Bijdragers"
+	},
+	"aboutBackupDataButton": {
+		"message": "Reservekopie naar bestand"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Terugzetten uit bestand..."
+	},
+	"aboutResetDataButton": {
+		"message": "Standaardinstellingen herstellen..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Al uw instellingen worden overschreven met gegevens waarvan op {{time}} een reservekopie is gemaakt en #title# wordt opnieuw gestart.\n\nAlle bestaande instellingen overschrijven met gegevens uit de reservekopie?"
+	},
+	"aboutRestoreDataError": {
+		"message": "De gegevens zijn onleesbaar of ongeldig"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Al uw instellingen worden verwijderd en #title# wordt opnieuw gestart.\n\nWilt u de standaardinstellingen van #title# herstellen?"
+	},
+	"errorCantConnectTo": {
+		"message": "Netwerkfout: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: de volgende URL toevoegen aan uw aangepaste lijsten met filters?\n\nTitel: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "een minuut geleden"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} minuten geleden"
+	},
+	"elapsedOneHourAgo": {
+		"message": "een uur geleden"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} uur geleden"
+	},
+	"elapsedOneDayAgo": {
+		"message": "een dag geleden"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} dagen geleden"
+	},
+	"showDashboardButton": {
+		"message": "Dashboard weergeven"
+	},
+	"showNetworkLogButton": {
+		"message": "Logboekregistratie weergeven"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "uit"
+	},
+	"docblockedPrompt1": {
+		"message": "#title# heeft voorkomen dat de volgende pagina is geladen:"
+	},
+	"docblockedPrompt2": {
+		"message": "Vanwege het volgende filter"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "zonder parameters"
+	},
+	"docblockedFoundIn": {
+		"message": "Gevonden in:"
+	},
+	"docblockedBack": {
+		"message": "Terug"
+	},
+	"docblockedClose": {
+		"message": "Dit venster sluiten"
+	},
+	"docblockedProceed": {
+		"message": "Streng blokkeren uitschakelen voor {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Tijdelijk"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Permanent"
+	},
+	"cloudPush": {
+		"message": "Exporteren naar cloudopslag"
+	},
+	"cloudPull": {
+		"message": "Importeren vanuit cloudopslag"
+	},
+	"cloudPullAndMerge": {
+		"message": "Importeren vanuit cloudopslag en samenvoegen met huidige instellingen"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Naam van dit apparaat:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Waarschuwing! Als u deze geavanceerde instellingen wijzigt, is dat op eigen risico."
+	},
+	"genericSubmit": {
+		"message": "Verzenden"
+	},
+	"genericApplyChanges": {
+		"message": "Wijzigingen toepassen"
+	},
+	"genericRevert": {
+		"message": "Terugkeren"
+	},
+	"genericBytes": {
+		"message": "bytes"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Tijdelijk grote media-elementen toestaan"
+	},
+	"dummy": {
+		"message": "Deze vermelding moet de laatste zijn"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Meer informatie"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Trackers op deze website worden geblokkeerd"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Trackers op deze website worden toegestaan"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Op deze site kan de bescherming niet worden ingeschakeld"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Meer opties"
+	},
+	"popupExtraLessOptions": {
+		"message": "Minder opties"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "De lijst met alle toegestane websites weergeven"
+	},
+	"popupAdvancedSettings": {
+		"message": "Geavanceerde instellingen"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Geblokkeerde trackers op deze pagina"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Totaal geblokkeerde trackers"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Lijst met toegestane sites"
+	},
+	"extraSlider0": {
+		"message": "Advertenties niet blokkeren"
+	},
+	"extraSlider50": {
+		"message": "Gemiddelde blokkering van advertenties"
+	},
+	"extraSlider100": {
+		"message": "Maximale blokkering van advertenties"
+	},
+	"extraIndexDescription": {
+		"message": "Blokkeer trackers om sneller en veiliger te browsen"
+	},
+	"extraGeneralSettings": {
+		"message": "Algemene instellingen"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Bepaal welke gegevens worden weergegeven in #title#"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Trackers en privacyfilters van derden"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Uw aangepaste filters beheren"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Lijst met uw dynamische filterregels"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Lijst met sites waarop trackers zijn toegestaan"
+	},
+	"extraIndexHeader": {
+		"message": "#title# Geavanceerde instellingen"
+	},
+	"extraIndexFooter": {
+		"message": "Mogelijk gemaakt met uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Meer weergeven"
+	},
+	"extraBtnImport": {
+		"message": "importeren"
+	},
+	"extraBtnExport": {
+		"message": "exporteren"
+	},
+	"extraBtnAdd": {
+		"message": "toevoegen"
+	},
+	"extraBtnCancel": {
+		"message": "annuleren"
+	},
+	"extraBtnEdit": {
+		"message": "Bewerken"
+	},
+	"extraBtnRemove": {
+		"message": "Verwijderen"
+	},
+	"extraBtnUpdateAll": {
+		"message": "alles bijwerken"
+	},
+	"extraLabelFilter": {
+		"message": "Filter"
+	},
+	"extraMyCustomFilter": {
+		"message": "Mijn aangepaste filters"
+	},
+	"extraManageFilters": {
+		"message": "Filters beheren"
+	},
+	"extraAdsFilters": {
+		"message": "Advertentiefilters"
+	},
+	"extraEditFilter": {
+		"message": "Filter bewerken"
+	},
+	"extraAddFilter": {
+		"message": "Filter toevoegen"
+	},
+	"extraLearnMore": {
+		"message": "Meer informatie"
+	},
+	"extraRuleSyntax": {
+		"message": "Regelsyntaxis"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "bron bestemming type actie."
+	},
+	"extraRuleDefinition": {
+		"message": "Regeldefinitie"
+	},
+	"extraRule": {
+		"message": "Regel"
+	},
+	"extraEditRule": {
+		"message": "Tijdelijke regel bewerken"
+	},
+	"extraAddRrule": {
+		"message": "Tijdelijke regel toevoegen"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Geavanceerde gebruikersinstellingen"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Media-elementen blokkeren die groter zijn dan"
+	},
+	"extraSetting": {
+		"message": "Instelling"
+	},
+	"extraEditSetting": {
+		"message": "Instelling bewerken"
+	},
+	"extraAddSetting": {
+		"message": "Instelling toevoegen"
+	},
+	"extraSite": {
+		"message": "Site"
+	},
+	"extraAllowOnSites": {
+		"message": "Trackers op deze sites toestaan"
+	},
+	"extraEditSite": {
+		"message": "Site bewerken"
+	},
+	"extraAddSite": {
+		"message": "Site toevoegen"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Standaardgedrag"
+	},
+	"extraPrivacy": {
+		"message": "Privacy"
+	},
+	"3pGroupDefault": {
+		"message": "Netwerk- en cosmetische filters"
+	},
+	"1pPageName": {
+		"message": " Mijn filters"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Voor deze sessie kan geen bescherming worden ingeschakeld"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Nog geen sites toegevoegd"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Interstitials blokkeren inschakelen"
+	},
+	"shortcutsPageName": {
+		"message": "Snelkoppelingen"
+	},
+	"popupTipDashboard": {
+		"message": "Het dashboard openen"
+	},
+	"popupTipZapper": {
+		"message": "Modus Element verwijderen"
+	},
+	"popupTipPicker": {
+		"message": "Modus Element kiezen"
+	},
+	"popupTipLog": {
+		"message": "Logboekregistratie openen"
+	},
+	"popupTipNoPopups": {
+		"message": "Blokkering van alle pop-upberichten voor deze website in-/uitschakelen"
+	},
+	"popupTipNoPopups1": {
+		"message": "Klik hier om alle pop-upberichten op deze website te blokkeren"
+	},
+	"popupTipNoPopups2": {
+		"message": "Klik hier om de blokkering van alle pop-upberichten op deze website op te heffen"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Blokkering van alle grote media-elementen voor deze website in-/uitschakelen"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Klik hier om alle grote media-elementen op deze website te blokkeren"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Klik hier om de blokkering van alle grote media-elementen op deze website op te heffen"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Cosmetische filters voor deze website in-/uitschakelen"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Klik hier om cosmetische filters op deze website uit te schakelen"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Klik hier om cosmetische filters op deze website in te schakelen"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Blokkering van externe lettertypen voor deze website in-/uitschakelen"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Klik hier om externe lettertypen op deze website te blokkeren"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Klik hier om de blokkering van externe lettertypen op deze website op te heffen"
+	},
+	"popupTipGlobalRules": {
+		"message": "Algemene regels: in deze kolom staan regels die van toepassing zijn op alle websites."
+	},
+	"popupTipLocalRules": {
+		"message": "Lokale regels: in deze kolom staan regels die alleen van toepassing zijn op de huidige website. Lokale regels hebben voorrang op algemene regels."
+	},
+	"popupTipSaveRules": {
+		"message": "Klik hier om de wijzigingen definitief te maken."
+	},
+	"popupTipRevertRules": {
+		"message": "Klik hier om de wijzigingen terug te draaien."
+	},
+	"popupAnyRulePrompt": {
+		"message": "alle"
+	},
+	"popupImageRulePrompt": {
+		"message": "afbeeldingen"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "van derden"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "css/afbeeldingen van derden"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "inlinescripts"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "eigen scripts"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "scripts van derden"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "frames van derden"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "gekoppelde domeinen"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} van {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Media-elementen blokkeren die groter zijn dan {{input:number}} kB"
+	},
+	"3pImport": {
+		"message": "Importeren..."
+	},
+	"loggerCurrentTab": {
+		"message": "Huidig tabblad"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Context:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Type:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Dynamisch URL-filter"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Statisch filter"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} netwerkverzoeken van {{type}} {{br}}waarvan het URL-adres overeenkomt met {{url}} {{br}}en afkomstig is van {{origin}},{{br}}{{importance}} er een overeenkomstig uitzonderingsfilter is."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Blokkeren"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Toestaan"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "type ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "elk type"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "van ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "van overal"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "behalve wanneer"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "zelfs als"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Statisch filter <code>{{filter}}</code> gevonden in:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Statisch filter <code>{{filter}}</code> is niet gevonden in een van de ingeschakelde filterlijsten"
+	},
+	"aboutIssues": {
+		"message": "Problemen traceren"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Typ een snelkoppeling"
+	},
+	"assetViewerPageName": {
+		"message": "Middelen bekijken voor uBlock? ?"
+	},
+	"popupTipNoScripting1": {
+		"message": "Klik hier om JavaScript op deze website uit te schakelen"
+	},
+	"popupTipNoScripting2": {
+		"message": "Klik hier om de uitschakeling van JavaScript op deze website op te heffen"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "JavaScript uitschakelen"
+	},
+	"aboutDependencies": {
+		"message": "Externe afhankelijkheden (GPLv3-compatibel):"
+	},
+	"loggerReloadTip": {
+		"message": "Tabbladinhoud opnieuw laden"
+	},
+	"loggerDomInspectorTip": {
+		"message": "DOM-controle in-/uitschakelen"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Pop-upvenster in-/uitschakelen"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin-wiki: logboekregistratie"
+	},
+	"loggerClearTip": {
+		"message": "Logboekregistratie wissen"
+	},
+	"loggerPauseTip": {
+		"message": "Logboekregistratie onderbreken (alle inkomende gegevens negeren)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Logboekregistratie hervatten"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Filters logboekregistratie in-/uitschakelen"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Filteropties logboekregistratie"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Niet"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "met gebeurtenissen"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "geblokkeerd"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "toegestaan"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "van derden"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "van derden"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Details"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Filter"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Filterlijst"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Regel"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Context"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Basiscontext"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Partij"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Type"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Vermeldingen in de logboekregistratie die niet voldoen aan alle drie de onderstaande voorwaarden, worden automatisch genegeerd:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Vermeldingen van de laatste {{input}} minuten bewaren"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Maximaal {{input}} page loads per tabblad bewaren"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Maximaal {{input}} vermeldingen per tabblad bewaren"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "{{input}} regels per vermelding gebruiken in verticaal uitgevouwen modus"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Kolommen verbergen:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} Tijd"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} Filter/regel"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} Context"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} Partij"
+	},
+	"loggerExportFormatList": {
+		"message": "Overzicht"
+	},
+	"loggerExportFormatTable": {
+		"message": "Tabel"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Gewoon"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Vergrendeld schuiven in-/uitschakelen"
+	},
+	"genericCopyToClipboard": {
+		"message": "Naar klembord kopiëren"
+	}
+}

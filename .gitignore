@@ -1,0 +1,17 @@
+.idea/*
+.DS_Store
+
+build/node_modules/*
+
+diff/*
+bin/*
+*-webpack/*
+
+!bin/.gitkeep
+
+*.cmd
+*.local
+*.dockerignore
+
+docker-compose.yml
+docker-compose.yaml

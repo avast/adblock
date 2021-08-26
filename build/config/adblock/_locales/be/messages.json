@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Блакіроўшчык рэкламы"
+  },
+  "adBlockSettings": {
+    "message": "Блакіроўшчык рэкламы – Налады"
+  },
+  "adblockIsPaused": {
+    "message": "Блакіроўшчык рэкламы прыпынены на ўсіх сайтах"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Блакіроўшчык рэкламы прыпынены на гэтым сайце"
+  },
+  "adblockIsOff": {
+    "message": "Блакіроўшчык рэкламы выключаны"
+  },
+  "addSite": {
+    "message": "Дадаць сайт"
+  },
+  "adsBlocked": {
+    "message": "Рэклама заблакіравана: "
+  },
+  "allowAdsOnSite": {
+    "message": "Дазволіць рэкламу на гэтым сайце"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Заўсёды дазваляць рэкламу на наступных сайтах"
+  },
+  "balancedBlocking": {
+    "message": "Збалансаваная блакіроўка"
+  },
+  "balancedBlockingName": {
+    "message": "Збалансаваная"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Блакіраваць рэкламу на гэтым сайце"
+  },
+  "blockingOptions": {
+    "message": "Варыянты блакіроўкі"
+  },
+  "btnAdd": {
+    "message": "Дадаць"
+  },
+  "cancel": {
+    "message": "Адмяніць"
+  },
+  "edit": {
+    "message": "Рэдагаваць"
+  },
+  "essentialBlocking": {
+    "message": "Базавая блакіроўка"
+  },
+  "essentialBlockingName": {
+    "message": "Базавая"
+  },
+  "extShortDesc": {
+    "message": "Доўгачаканы эфектыўны блакіроўшчык з мінімальнай нагрузкай на працэсар і памяць."
+  },
+  "generalSettings": {
+    "message": "Агульныя налады"
+  },
+  "indexDescription": {
+    "message": "Блакіроўка рэкламы для хуткага і бяспечнага прагляду сайтаў"
+  },
+  "keep_essential": {
+    "message": "Пакінуць базавай"
+  },
+  "keep_balanced": {
+    "message": "Пакінуць збалансаванай"
+  },
+  "learnMore": {
+    "message": "Даведацца больш"
+  },
+  "noAdsToBlock": {
+    "message": "На гэтай старонцы няма рэкламы для блакіроўкі"
+  },
+  "pauseAdBlock": {
+    "message": "Прыпыніць Блакіроўшчык рэкламы"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Прыпыніць Блакіроўшчык рэкламы на ўсіх сайтах"
+  },
+  "pauseOnAllSites": {
+    "message": "Прыпыніць на ўсіх сайтах"
+  },
+  "pauseOnThisSite": {
+    "message": "Прыпыніць на гэтым сайце"
+  },
+  "poweredByUblock": {
+    "message": "На платформе <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Выдаліць"
+  },
+  "save": {
+    "message": "Захаваць"
+  },
+  "setStrict": {
+    "message": "Устанавіць строгі рэжым"
+  },
+  "setStrictDescription_avast": {
+    "message": "Невялікая колькасць ненадакучлівай рэкламы дапамагае нам фінансаваць Avast Secure Browser. Яна не перашкаджае вам падчас прагляду старонак і дазваляе карыстацца браўзерам бясплатна. Будзем вельмі ўдзячныя, калі вы дазволіце адлюстраванне гэтай рэкламы."
+  },
+  "setStrictDescription_avg": {
+    "message": "Невялікая колькасць ненадакучлівай рэкламы дапамагае нам фінансаваць AVG Secure Browser. Яна не перашкаджае вам падчас прагляду старонак і дазваляе карыстацца браўзерам бясплатна. Будзем вельмі ўдзячныя, калі вы дазволіце адлюстраванне гэтай рэкламы."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Невялікая колькасць ненадакучлівай рэкламы дапамагае нам фінансаваць CCleaner Browser. Яна не перашкаджае вам падчас прагляду старонак і дазваляе карыстацца браўзерам бясплатна. Будзем вельмі ўдзячныя, калі вы дазволіце адлюстраванне гэтай рэкламы."
+  },
+  "setStrictTitle": {
+    "message": "Устанавіць строгі рэжым блакіроўкі рэкламы"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Блакіроўка надакучлівай рэкламы, якая парушае\n галіновыя стандарты зручнасці для карыстальніка. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Падрабязней</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Рэкамендуецца</b>. Блакіроўка большасці рэкламных аб’яў для больш хуткага прагляду старонак без лішніх элементаў."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Блакіроўка амаль усёй рэкламы для больш хуткага прагляду старонак без лішніх элементаў. <b>Гэта можа перашкаджаць працы некаторых сайтаў.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Усплывальная рэклама і банеры"
+  },
+  "settingsCardDisruptive": {
+    "message": "Іншая рэклама, якая перашкаджае прагляду"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Пэўная рэклама з сацыяльных сетак"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% іншай рэкламы"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Паказаць колькасць заблакіраваных рэкламных аб’яў на значку"
+  },
+  "site": {
+    "message": "Сайт"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Сайты, на якіх вы дазволілі паказваць рэкламу, будуць адлюстроўвацца тут"
+  },
+  "strictBlocking": {
+    "message": "Строгая блакіроўка"
+  },
+  "strictBlockingName": {
+    "message": "Строгая"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Узнавіць"
+  },
+  "turnAdblockOn": {
+    "message": "Уключыць"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Вы дазволілі паказваць рэкламу на гэтым сайце "
+  },
+  "adsAreAllowed": {
+    "message": "Рэклама на гэтым сайце дазволена"
+  },
+  "openSettings": {
+    "message": "Адкрыць налады"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Узнавіць працу Блакіроўшчыка рэкламы на ўсіх сайтах"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Падрабязней пра Блакіроўшчыка рэкламы"
+  },
+  "pauseAdsOnSite": {
+    "message": "Прыпыніць рэкламу на гэтым сайце"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Прыпыніць рэкламу на ўсіх сайтах"
+  },
+  "turnOn": {
+    "message": "Уключыць Блакіроўшчык рэкламы"
+  },
+  "turnOff": {
+    "message": "Выключыць Блакіроўшчык рэкламы"
+  },
+  "setEssentialMode": {
+    "message": "Устанавіць базавы рэжым"
+  },
+  "setBalancedMode": {
+    "message": "Устанавіць збалансаваны рэжым"
+  },
+  "setStrictMode": {
+    "message": "Устанавіць строгі рэжым"
+  },
+  "showAmountAds": {
+    "message": "Паказаць колькасць заблакіраванай рэкламы"
+  },
+  "hideAmountAds": {
+    "message": "Схаваць колькасць заблакіраванай рэкламы"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Дадаць сайт, каб дазволіць рэкламу"
+  },
+  "learnMoreAAS": {
+    "message": "Падрабязней пра стандарты прымальнай рэкламы"
+  },
+  "learnMoreUblock": {
+    "message": "Падрабязней пра uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Захаваць сайт у белым спісе"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Адмяніць дзеянне па дадаванні сайта"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Рэдагаваць сайт з белага спіса"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Адмяніць дзеянне па рэдагаванні сайта"
+  },
+  "removeFromWhitelist": {
+    "message": "Выдаліць сайт з белага спіса"
+  },
+  "editFromWhitelist": {
+    "message": "Рэдагаваць сайт з белага спіса"
+  },
+  "stayOn_balanced": {
+    "message": "Пакінуць збалансаваны рэжым"
+  },
+  "stayOn_essential": {
+    "message": "Пакінуць базавы рэжым"
+  },
+  "cancelSetStrict": {
+    "message": "Адмяніць усталёўку строгага рэжыму"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Змяніць сайт з белага спіса"
+  },
+  "whitelistModalDescription": {
+    "message": "На якім сайце дазволіць рэкламу?"
+  }
+}

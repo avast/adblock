@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Adblock"
+  },
+  "adBlockSettings": {
+    "message": "Adblock – Inställningar"
+  },
+  "adblockIsPaused": {
+    "message": "Adblock har pausats för alla webbplatser"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Adblock har pausats för den här webbplatsen"
+  },
+  "adblockIsOff": {
+    "message": "Adblock har inaktiverats"
+  },
+  "addSite": {
+    "message": "Lägg till webbplats"
+  },
+  "adsBlocked": {
+    "message": "Reklam har blockerats: "
+  },
+  "allowAdsOnSite": {
+    "message": "Tillåt reklam på den här webbplatsen"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Tillåt alltid reklam på följande webbplatser"
+  },
+  "balancedBlocking": {
+    "message": "Balanserad blockeras"
+  },
+  "balancedBlockingName": {
+    "message": "Balanserad"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Blockera reklam på den här webbplatsen"
+  },
+  "blockingOptions": {
+    "message": "Blockeringsalternativ"
+  },
+  "btnAdd": {
+    "message": "Lägg till"
+  },
+  "cancel": {
+    "message": "Avbryt"
+  },
+  "edit": {
+    "message": "Redigera"
+  },
+  "essentialBlocking": {
+    "message": "Grundläggande blockering"
+  },
+  "essentialBlockingName": {
+    "message": "Grundläggande"
+  },
+  "extShortDesc": {
+    "message": "Äntligen en effektiv blockerare. Enkelt i CPU och minne."
+  },
+  "generalSettings": {
+    "message": "Allmänna inställningar"
+  },
+  "indexDescription": {
+    "message": "Blockera reklam och få snabbare och säkrare surf"
+  },
+  "keep_essential": {
+    "message": "Behåll grundläggande"
+  },
+  "keep_balanced": {
+    "message": "Behåll balanserad"
+  },
+  "learnMore": {
+    "message": "Läs mer"
+  },
+  "noAdsToBlock": {
+    "message": "Ingen reklam att blockera på den här sidan"
+  },
+  "pauseAdBlock": {
+    "message": "Pausa Adblock"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Pausa Adblock på alla webbplatser"
+  },
+  "pauseOnAllSites": {
+    "message": "Pausa på alla webbplatser"
+  },
+  "pauseOnThisSite": {
+    "message": "Pausa på den här webbplatsen"
+  },
+  "poweredByUblock": {
+    "message": "Med <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Ta bort"
+  },
+  "save": {
+    "message": "Spara"
+  },
+  "setStrict": {
+    "message": "Ange strikt"
+  },
+  "setStrictDescription_avast": {
+    "message": "Några få ej invasiva annonser hjälper oss att finansiera Avast Secure Browser. De avbryter inte din surf och håller din webbläsare fri. Vänligen låt oss tillåta dessa annonser."
+  },
+  "setStrictDescription_avg": {
+    "message": "Några få ej invasiva annonser hjälper oss att finansiera AVG Secure Browser. De avbryter inte din surf och håller din webbläsare fri. Vänligen låt oss tillåta dessa annonser."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Några få ej invasiva annonser hjälper oss att finansiera CCleaner Browser. De avbryter inte din surf och håller din webbläsare fri. Vänligen låt oss tillåta dessa annonser."
+  },
+  "setStrictTitle": {
+    "message": "Ange Adblock till strikt"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Blockera störande reklam som strider mot\nbranschstandarderna för användarvänlig reklam. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Läs mer</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Rekommenderas</b> – Blockera den mesta reklamen och få en snabbare, renare surfupplevelse."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Blockera nästan all reklam och få en snabbare, renare surfupplevelse. <b>Det kan förstöra några webbplatser.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Popuppreklam och annonsrutor"
+  },
+  "settingsCardDisruptive": {
+    "message": "Annan störande reklam"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Viss reklam i sociala medier"
+  },
+  "settingsCardOtherAds": {
+    "message": "99 % av annan reklam"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Visa antalet blockerade annonser på ikonen"
+  },
+  "site": {
+    "message": "Webbplats"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Webbplatser som du tillåtit reklam på visas här"
+  },
+  "strictBlocking": {
+    "message": "Strikt blockering"
+  },
+  "strictBlockingName": {
+    "message": "Strikt"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Sluta pausa"
+  },
+  "turnAdblockOn": {
+    "message": "Slå på"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Du har tillåtit reklam på den här webbplatsen "
+  },
+  "adsAreAllowed": {
+    "message": "Annonser blockeras inte på webbplatsen"
+  },
+  "openSettings": {
+    "message": "Öppna inställningar"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Sluta pausa Adblock på alla webbplatser"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Läs mer om Adblock"
+  },
+  "pauseAdsOnSite": {
+    "message": "Pausa reklam på den här webbplatsen"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Pausa reklam på alla webbplatser"
+  },
+  "turnOn": {
+    "message": "Aktivera Adblock"
+  },
+  "turnOff": {
+    "message": "Inaktivera Adblock"
+  },
+  "setEssentialMode": {
+    "message": "Ange grundläggande läge"
+  },
+  "setBalancedMode": {
+    "message": "Ange balanserat läge"
+  },
+  "setStrictMode": {
+    "message": "Ange strikt läge"
+  },
+  "showAmountAds": {
+    "message": "Visa antal blockerade annonser"
+  },
+  "hideAmountAds": {
+    "message": "Dölj antal blockerade annonser"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Lägg till webbplats för att tillåta reklam"
+  },
+  "learnMoreAAS": {
+    "message": "Läs mer om standard för reklamvillkor"
+  },
+  "learnMoreUblock": {
+    "message": "Läs mer om uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Spara i vitlista"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Avbryt att lägga till webbplats"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Redigera webbplats från vitlista"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Avbryt att redigera webbplats"
+  },
+  "removeFromWhitelist": {
+    "message": "Ta bort webbplats från vitlistan"
+  },
+  "editFromWhitelist": {
+    "message": "Redigera webbplats från vitlistan"
+  },
+  "stayOn_balanced": {
+    "message": "Stanna kvar i balanserat läge"
+  },
+  "stayOn_essential": {
+    "message": "Stanna kvar i grundläggande läge"
+  },
+  "cancelSetStrict": {
+    "message": "Avbryt strikt läge"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Ändra vitlistad webbplats"
+  },
+  "whitelistModalDescription": {
+    "message": "Vilken webbplats vill du tillåta reklam på?"
+  }
+}

@@ -1,0 +1,863 @@
+{
+	"extShortDesc": {
+		"message": "Blockerar påträngande webbspårare."
+	},
+	"dashboardName": {
+		"message": "#title# — Instrumentpanel"
+	},
+	"settingsPageName": {
+		"message": "Inställningar"
+	},
+	"3pPageName": {
+		"message": "Tredjepartsfilter"
+	},
+	"rulesPageName": {
+		"message": "Mina regler"
+	},
+	"whitelistPageName": {
+		"message": "Vitlista"
+	},
+	"statsPageName": {
+		"message": "#title# — Loggare"
+	},
+	"aboutPageName": {
+		"message": "Om"
+	},
+	"advancedSettingsPageName": {
+		"message": "Avancerade inställningar"
+	},
+	"pickerCreate": {
+		"message": "Skapa"
+	},
+	"pickerPick": {
+		"message": "Välj"
+	},
+	"pickerQuit": {
+		"message": "Avsluta"
+	},
+	"pickerPreview": {
+		"message": "Förhandsgranska"
+	},
+	"pickerNetFilters": {
+		"message": "Nätverksfilter"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Kosmetiska filter"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Klicka, Ctrl-klicka"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Blockera delelement"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Dölj platshållare för blockerade element"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Visa antal blockerade förfrågningar på ikonen"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Inaktivera knappbeskrivningar"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Användsnabbmeny där det är lämpligt"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Färgblindsvänlig"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Aktivera molnlagringsstöd"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Jag är en avancerad användare (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>måste läsas</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "avancerade inställningar"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Inaktivera förhämtning (för att förhindra anslutning för blockerade nätverksbegäranden)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Inaktivera hyperlänksgranskning"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "Förhindra att WebRTC läcker lokala IP-adresser"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Standardbeteende"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Dessa standardbeteenden kan åsidosättas för varje webbplats"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Inaktivera kosmetisk filtrering"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Blockera fjärrteckensnitt"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "Blockera CSP-rapporter"
+	},
+	"settingsStorageUsed": {
+		"message": "Använd lagring: {{value}} byte"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Senaste återställning:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Senaste säkerhetskopiering:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} nätverksfilter ＋ {{cosmeticFilterCount}} kosmetiska filter från:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} används av totalt {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Uppdatera filterlistor automatiskt"
+	},
+	"3pUpdateNow": {
+		"message": "Uppdatera nu"
+	},
+	"3pPurgeAll": {
+		"message": "Rensa all cachelagring"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Analysera och tillämpa kosmetiska filter"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Med det här alternativet analyseras och tillämpas <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus-kompatibla filter &ldquo;som döljer element&rdquo;</a>. Dessa filter är framför allt kosmetiska och används för att dölja element på webbsidor som bedöms vara oönskade och som inte kan blockeras av den nätbegärandebaserade filtreringsmotorn.</p><p>Om du aktiverar funktionen ökar minnesanvändningen för #title#.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Ignorera allmänna kosmetiska filter"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Allmänna kosmetiska filter är de kosmetiska filter som ska användas på alla webbplatser.<p>Även om de hanteras effektivt av #title# kan allmänna kosmetiska filter fortfarande bidra till mätbart ökad minnes- och processoranvändning på vissa webbplatser, särskilt stora och långlivade sådana.<p>Om du aktiverar det här alternativet elimineras den ökade minnes- och processoranvändningen på webbplatserna som orsakats av hanteringen av allmänna kosmetiska filter och minnesanvändningen för själva #title# minskar.<p>Vi rekommenderar att du aktiverar det här alternativet på mindre kraftfulla enheter."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Lista över blockerade värdar"
+	},
+	"3pApplyChanges": {
+		"message": "Verkställ ändringar"
+	},
+	"3pGroupAds": {
+		"message": "Reklam"
+	},
+	"3pGroupPrivacy": {
+		"message": "Sekretess"
+	},
+	"3pGroupMalware": {
+		"message": "Domäner för skadlig kod"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Störande objekt"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Flera funktioner"
+	},
+	"3pGroupRegions": {
+		"message": "Regioner, språk"
+	},
+	"3pGroupCustom": {
+		"message": "Anpassad"
+	},
+	"3pExternalListsHint": {
+		"message": "En URL per rad. Rader som har prefixet &lsquo;!&rsquo; ignoreras. Ogiltiga URL:er ignoreras tyst."
+	},
+	"3pExternalListObsolete": {
+		"message": "Föråldrat."
+	},
+	"3pLastUpdate": {
+		"message": "Senast uppdaterad: {{ago}}.\nKlicka om du vill framtvinga en uppdatering."
+	},
+	"3pUpdating": {
+		"message": "Uppdaterar..."
+	},
+	"3pNetworkError": {
+		"message": "Ett nätverksfel förhindrade resursen från att uppdateras."
+	},
+	"1pFormatHint": {
+		"message": "Ett filter per rad. Ett filter kan vara ett vanligt värdnamn eller ett Adblock Plus-kompatibelt filter. Rader med prefixet &lsquo;!&rsquo; ignoreras."
+	},
+	"1pImport": {
+		"message": "Importera och lägg till"
+	},
+	"1pExport": {
+		"message": "Exportera"
+	},
+	"1pApplyChanges": {
+		"message": "Verkställ ändringar"
+	},
+	"rulesPermanentHeader": {
+		"message": "Permanenta regler"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Temporära regler"
+	},
+	"rulesRevert": {
+		"message": "Återgå"
+	},
+	"rulesCommit": {
+		"message": "Genomför"
+	},
+	"rulesEdit": {
+		"message": "Redigera"
+	},
+	"rulesEditSave": {
+		"message": "Spara"
+	},
+	"rulesEditDiscard": {
+		"message": "Ignorera"
+	},
+	"rulesImport": {
+		"message": "Importera från fil..."
+	},
+	"rulesExport": {
+		"message": "Exportera till fil"
+	},
+	"rulesHint": {
+		"message": "Lista över dynamiska filtreringsregler."
+	},
+	"rulesFormatHint": {
+		"message": "Regelsyntax: <code>käll-/destinationstypåtgärd</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>fullständig dokumentation</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "Vitlistedirektiven dikterar på vilka webbsidor #titel# ska inaktiveras. En post per rad. Ogiltiga direktiv kommer tyst att ignoreras och kommenteras."
+	},
+	"whitelistImport": {
+		"message": "Importera och lägg till"
+	},
+	"whitelistExport": {
+		"message": "Exportera"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Verkställ ändringar"
+	},
+	"logRequestsHeaderType": {
+		"message": "Typ"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Domän"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Filter"
+	},
+	"logAll": {
+		"message": "Alla"
+	},
+	"logBehindTheScene": {
+		"message": "I bakgrunden"
+	},
+	"logFilterPrompt": {
+		"message": "filterloggposter"
+	},
+	"logMaxEntriesTip": {
+		"message": "Max antal loggposter"
+	},
+	"aboutChangelog": {
+		"message": "Ändra logg"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "Support"
+	},
+	"aboutCode": {
+		"message": "Källkod (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Deltagare"
+	},
+	"aboutBackupDataButton": {
+		"message": "Säkerhetskopiera till fil"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Återställ från fil..."
+	},
+	"aboutResetDataButton": {
+		"message": "Återställ till standardinställningar..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Alla dina inställningar skrivs över med data som säkerhetskopierades klockan {{time}} och #title# startas om.\n\nVill du skriva över alla befintliga inställningar med säkerhetskopierade data?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Det gick inte att läsa data eller så är de ogiltiga"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Alla dina inställningar tas bort och #title# startas om.\n\nVill du återställa #title# till fabriksinställningarna?"
+	},
+	"errorCantConnectTo": {
+		"message": "Nätverksfel: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: Vill du lägga till följande URL i listan över anpassade filter?\n\nRubrik: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "en minut sedan"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} minuter sedan"
+	},
+	"elapsedOneHourAgo": {
+		"message": "en timme sedan"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} timmar sedan"
+	},
+	"elapsedOneDayAgo": {
+		"message": "en dag sedan"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} dagar sedan"
+	},
+	"showDashboardButton": {
+		"message": "Visa instrumentpanel"
+	},
+	"showNetworkLogButton": {
+		"message": "Visa loggare"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "inaktiverad"
+	},
+	"docblockedPrompt1": {
+		"message": "#title# har förhindrat följande sida från att laddas:"
+	},
+	"docblockedPrompt2": {
+		"message": "På grund av följande filter"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "utan parametrar"
+	},
+	"docblockedFoundIn": {
+		"message": "Hittades i:"
+	},
+	"docblockedBack": {
+		"message": "Gå tillbaka"
+	},
+	"docblockedClose": {
+		"message": "Stäng fönstret"
+	},
+	"docblockedProceed": {
+		"message": "Inaktivera strikt blockering för {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Temporärt"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Permanent"
+	},
+	"cloudPush": {
+		"message": "Exportera till molnlagring"
+	},
+	"cloudPull": {
+		"message": "Importera från molnlagring"
+	},
+	"cloudPullAndMerge": {
+		"message": "Importera från molnlagring och slå samman med aktuella inställningar"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Denna enhets namn:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Varning! Du ändrar dessa avancerade inställningar på egen risk."
+	},
+	"genericSubmit": {
+		"message": "Skicka"
+	},
+	"genericApplyChanges": {
+		"message": "Verkställ ändringar"
+	},
+	"genericRevert": {
+		"message": "Återgå"
+	},
+	"genericBytes": {
+		"message": "byte"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Tillåt stora mediaelement temporärt"
+	},
+	"dummy": {
+		"message": "Denna post måste vara den sista"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Mer information"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Spårare blockeras på webbplatsen"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Spårare är tillåtna på webbplatsen"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Det går inte att aktivera skyddet på webbplatsen"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Fler alternativ"
+	},
+	"popupExtraLessOptions": {
+		"message": "Färre alternativ"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Visa listan över tillåtna webbplatser"
+	},
+	"popupAdvancedSettings": {
+		"message": "Avancerade inställningar"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Blockerade spårare på den här sidan"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Blockerade spårare totalt"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Lista över tillåtna webbplatser"
+	},
+	"extraSlider0": {
+		"message": "Blockera inte annonser"
+	},
+	"extraSlider50": {
+		"message": "Måttlig annonsblockering"
+	},
+	"extraSlider100": {
+		"message": "Maximal annonsblockering"
+	},
+	"extraIndexTitle": {
+		"message": "#title#"
+	},
+	"extraIndexDescription": {
+		"message": "Blockera spårare för snabbare och säkrare surfning"
+	},
+	"extraGeneralSettings": {
+		"message": "Allmänna inställningar"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Hantera vilken information som ska visas i #title#"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Tredjepartsfilter för sekretess och spårare"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Hantera anpassade filter"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Lista över dynamiska filtreringsregler"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Lista över webbplatser där spårare är tillåtna"
+	},
+	"extraIndexHeader": {
+		"message": "#title# Avancerade inställningar"
+	},
+	"extraIndexFooter": {
+		"message": "Med uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Visa mer"
+	},
+	"extraBtnImport": {
+		"message": "importera"
+	},
+	"extraBtnExport": {
+		"message": "exportera"
+	},
+	"extraBtnAdd": {
+		"message": "lägg till"
+	},
+	"extraBtnCancel": {
+		"message": "avbryt"
+	},
+	"extraBtnEdit": {
+		"message": "Redigera"
+	},
+	"extraBtnRemove": {
+		"message": "Ta bort"
+	},
+	"extraBtnUpdateAll": {
+		"message": "uppdatera alla"
+	},
+	"extraLabelFilter": {
+		"message": "Filter"
+	},
+	"extraMyCustomFilter": {
+		"message": "Mina egna filter"
+	},
+	"extraManageFilters": {
+		"message": "Hantera filter"
+	},
+	"extraAdsFilters": {
+		"message": "Annonsfilter"
+	},
+	"extraEditFilter": {
+		"message": "Redigera filter"
+	},
+	"extraAddFilter": {
+		"message": "Lägg till filter"
+	},
+	"extraLearnMore": {
+		"message": "Läs mer"
+	},
+	"extraRuleSyntax": {
+		"message": "Regelsyntax"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "käll-/destinationstypåtgärd."
+	},
+	"extraRuleDefinition": {
+		"message": "Regeldefinition"
+	},
+	"extraRule": {
+		"message": "Regel"
+	},
+	"extraEditRule": {
+		"message": "Redigera temporär regel"
+	},
+	"extraAddRrule": {
+		"message": "Lägg till temporär regel"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Avancerade användarinställningar"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Blockera medieelement som är större än"
+	},
+	"extraSetting": {
+		"message": "Inställning"
+	},
+	"extraEditSetting": {
+		"message": "Redigera inställning"
+	},
+	"extraAddSetting": {
+		"message": "Lägg till inställning"
+	},
+	"extraSite": {
+		"message": "Webbplats"
+	},
+	"extraAllowOnSites": {
+		"message": "Tillåt spårare på dessa webbplatser"
+	},
+	"extraEditSite": {
+		"message": "Redigera webbplats"
+	},
+	"extraAddSite": {
+		"message": "Lägg till webbplats"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Standardbeteende"
+	},
+	"extraPrivacy": {
+		"message": "Sekretess"
+	},
+	"3pGroupDefault": {
+		"message": "Nätverk och kosmetiska filter"
+	},
+	"1pPageName": {
+		"message": " Mina filter"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Det går inte att aktivera skydd för den här sessionen"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Inga webbplatser har lagts till än"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Aktivera blockering av insticksannonser"
+	},
+	"shortcutsPageName": {
+		"message": "Genvägar"
+	},
+	"popupTipDashboard": {
+		"message": "Öppna instrumentpanelen"
+	},
+	"popupTipZapper": {
+		"message": "Gå i elementzapparläge"
+	},
+	"popupTipPicker": {
+		"message": "Gå i elementväljarläge"
+	},
+	"popupTipLog": {
+		"message": "Öppna loggaren"
+	},
+	"popupTipNoPopups": {
+		"message": "Växla blockering av alla popupmeddelanden för den här webbplatsen"
+	},
+	"popupTipNoPopups1": {
+		"message": "Klicka om du vill blockera alla popupmeddelanden på den här webbplatsen"
+	},
+	"popupTipNoPopups2": {
+		"message": "Klicka om du inte längre vill blockera popupmeddelanden på den här webbplatsen"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Växla blockering av stora medieelement för den här webbplatsen"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Klicka om du vill blockera stora medieelement på den här webbplatsen"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Klicka om du inte länge vill blockera stora medieelement på den här webbplatsen"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Växla kosmetisk filtrering för den här webbplatsen"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Klicka om du vill inaktivera kosmetisk filtrering på den här webbplatsen"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Klicka om du vill aktivera kosmetisk filtrering på den här webbplatsen"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Växla blockering av fjärrteckensnitt för den här webbplatsen"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Klicka om du vill blockera fjärrteckensnitt på den här webbplatsen"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Klicka om du inte länge vill blockera fjärrteckensnitt på den här webbplatsen"
+	},
+	"popupTipGlobalRules": {
+		"message": "Globala regler: Den här kolumnen används för regler som används på alla webbplatser."
+	},
+	"popupTipLocalRules": {
+		"message": "Lokala regler: Den här kolumnen används för regler som endast används på den aktuella webbplatsen. Lokala regler åsidosätter globala regler."
+	},
+	"popupTipSaveRules": {
+		"message": "Klicka här om du vill göra permanenta ändringar."
+	},
+	"popupTipRevertRules": {
+		"message": "Klicka här om du vill återställa dina ändringar."
+	},
+	"popupAnyRulePrompt": {
+		"message": "alla"
+	},
+	"popupImageRulePrompt": {
+		"message": "bilder"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "tredje part"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "tredje parts css/bilder"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "infogat skript"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "förstapartsskript"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "tredjepartsskript"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "tredje parts bildrutor"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "anslutna domäner"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} av {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Blockera medieelement som är större än {{input:number}} kB"
+	},
+	"3pImport": {
+		"message": "Importera ..."
+	},
+	"loggerCurrentTab": {
+		"message": "Aktuell flik"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Kontext:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Typ:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Dynamisk URL-filtrering"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Statisk filtrering"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} nätverksförfrågningar av {{type}} {{br}}vars URL-adress matchar {{url}} {{br}}och som ursprungligen kommer {{origin}},{{br}}{{importance}} det finns ett undantagsfilter som matchar."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Blockera"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Tillåt"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "typen ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "alla typer"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "från ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "från var som helst"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "utom när"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "även om"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Det statiska filtret <code>{{filter}}</code> hittades i:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Det statiska filtret <code>{{filter}}</code> kunde inte hittas i någon av de för närvarande aktiverade filterlistorna"
+	},
+	"aboutIssues": {
+		"message": "Felspårare"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Ange en genväg"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ?-tillgångsvisning"
+	},
+	"popupTipNoScripting1": {
+		"message": "Klicka här om du vill inaktivera JavaScript på den här webbplatsen"
+	},
+	"popupTipNoScripting2": {
+		"message": "Klicka här om du inte längre vill inaktivera JavaScript på den här webbplatsen"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "Inaktivera JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "Externa beroenden (GPLv3-kompatibel):"
+	},
+	"loggerReloadTip": {
+		"message": "Läs in flikinnehåll igen"
+	},
+	"loggerDomInspectorTip": {
+		"message": "Växla DOM-kollen"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Växla panelen för popupmeddelanden"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin-wiki: Loggaren"
+	},
+	"loggerClearTip": {
+		"message": "Rensa loggare"
+	},
+	"loggerPauseTip": {
+		"message": "Pausa loggare (kasta bort alla inkommande data)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Sluta pausa loggare"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Växla loggarfiltrering"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Loggarfiltreringsalternativ"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Ej"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "händelserik"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "blockerad"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "tillåten"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "första part"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "tredje part"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Information"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Filter"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Filterlista"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Regel"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Kontext"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Rotkontext"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Part"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Typ"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Loggarposter som inte uppfyller alla tre villkor nedan kastas automatiskt bort:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Behåll poster från de senaste {{input}} minuterna"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Behåll maximalt {{input}} sidinläsningar per flik"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Behåll maximalt {{input}} poster per flik"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Använd {{input}} rader per post i vertikalt utökat läge"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Dölj kolumner:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} Tid"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} Filter/regel"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} Kontext"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} Part"
+	},
+	"loggerExportFormatList": {
+		"message": "Lista"
+	},
+	"loggerExportFormatTable": {
+		"message": "Tabell"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Enkel"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Växla låst rullning"
+	},
+	"genericCopyToClipboard": {
+		"message": "Kopiera till Urklipp"
+	}
+}

@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "阻止侵入性的网页跟踪软件。"
+	},
+	"dashboardName": {
+		"message": "#title# — 仪表板"
+	},
+	"settingsPageName": {
+		"message": "设置"
+	},
+	"3pPageName": {
+		"message": "第三方过滤器"
+	},
+	"rulesPageName": {
+		"message": "我的规则"
+	},
+	"whitelistPageName": {
+		"message": "白名单"
+	},
+	"statsPageName": {
+		"message": "#title# — 记录器"
+	},
+	"aboutPageName": {
+		"message": "关于"
+	},
+	"advancedSettingsPageName": {
+		"message": "高级设置"
+	},
+	"pickerCreate": {
+		"message": "创建"
+	},
+	"pickerPick": {
+		"message": "选择"
+	},
+	"pickerQuit": {
+		"message": "退出"
+	},
+	"pickerPreview": {
+		"message": "预览"
+	},
+	"pickerNetFilters": {
+		"message": "网络过滤器"
+	},
+	"pickerCosmeticFilters": {
+		"message": "美颜过滤器"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "单击，Ctrl+单击"
+	},
+	"pickerContextMenuEntry": {
+		"message": "拦截元素"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "隐藏拦截元素的占位符"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "在图标上显示拦截请求的数量"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "禁用工具提示"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "在必要时使用上下文菜单"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "色盲友好"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "启用云存储支持"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "我是高级用户（<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>必读</a>）"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "高级设置"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "禁用预先提取（防止已拦截网站请求的连接）"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "禁用超链接审核"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "防止 WebRTC 泄露本地 IP 地址"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "默认行为"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "可逐个站点覆盖这些默认行为"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "禁用化妆品过滤"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "拦截远程字体"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "拦截 CSP 报告"
+	},
+	"settingsStorageUsed": {
+		"message": "使用的存储：{{value}} 字节"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "上次还原："
+	},
+	"settingsLastBackupPrompt": {
+		"message": "上次备份："
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} 个网络过滤器 ＋{{cosmeticFilterCount}} 个化妆品过滤器来自："
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "已使用 {{used}}，总计 {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "自动更新过滤器清单"
+	},
+	"3pUpdateNow": {
+		"message": "立即更新"
+	},
+	"3pPurgeAll": {
+		"message": "清除所有缓存"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "解析并执行化妆品过滤器"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>该选项允许解析和执行 <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus 兼容元素隐藏过滤器</a>。这些过滤器主要属于美颜过滤器，用于隐藏网页中被视为不美观的元素，而这无法基于请求的纯过滤引擎拦截。</p><p>启用这项功能会增加 #title# 的内存占用率。</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "忽视通用美颜过滤器"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>通用美颜过滤器是可用于所有网站的美颜过滤器。<p>虽然可被 #title# 有效使用，但是通用美颜过滤器仍会在一些网页上占用较大的内存和 CPU，特别是那些大型的长期使用的过滤器。<p>启用该选项，可减少网页因使用通用美颜过滤器而占用的内存和 CPU，还可以减少 #title# 本身的内存占用率。<p>建议在性能不太高的设备上启用这个选项。"
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "阻止的主机清单"
+	},
+	"3pApplyChanges": {
+		"message": "应用更改"
+	},
+	"3pGroupAds": {
+		"message": "广告"
+	},
+	"3pGroupPrivacy": {
+		"message": "隐私"
+	},
+	"3pGroupMalware": {
+		"message": "恶意软件网域"
+	},
+	"3pGroupAnnoyances": {
+		"message": "令人讨厌的事物"
+	},
+	"3pGroupMultipurpose": {
+		"message": "多功能"
+	},
+	"3pGroupRegions": {
+		"message": "区域、语言"
+	},
+	"3pGroupCustom": {
+		"message": "自定义"
+	},
+	"3pExternalListsHint": {
+		"message": "每行一个 URL。前缀为 &lsquo;!&rsquo; 的行将被忽略。无效 URL 将被静默忽略。"
+	},
+	"3pExternalListObsolete": {
+		"message": "过期。"
+	},
+	"3pLastUpdate": {
+		"message": "最后更新日期：{{ago}}。\n点击以强制更新。"
+	},
+	"3pUpdating": {
+		"message": "正在更新..."
+	},
+	"3pNetworkError": {
+		"message": "网络错误导致资源无法更新。"
+	},
+	"1pFormatHint": {
+		"message": "每行一个过滤器。过滤器可仅为主机名，或 Adblock Plus 兼容过滤器。前缀为 &lsquo;!&rsquo; 的行将被忽略。"
+	},
+	"1pImport": {
+		"message": "导入和挂起"
+	},
+	"1pExport": {
+		"message": "导出"
+	},
+	"1pApplyChanges": {
+		"message": "应用更改"
+	},
+	"rulesPermanentHeader": {
+		"message": "永久规则"
+	},
+	"rulesTemporaryHeader": {
+		"message": "临时规则"
+	},
+	"rulesRevert": {
+		"message": "还原"
+	},
+	"rulesCommit": {
+		"message": "提交"
+	},
+	"rulesEdit": {
+		"message": "编辑"
+	},
+	"rulesEditSave": {
+		"message": "保存"
+	},
+	"rulesEditDiscard": {
+		"message": "放弃"
+	},
+	"rulesImport": {
+		"message": "从文件导入..."
+	},
+	"rulesExport": {
+		"message": "导出到文件"
+	},
+	"rulesHint": {
+		"message": "您的动态过滤规则列表。"
+	},
+	"rulesFormatHint": {
+		"message": "规则语法：<code>源目的地类型操作</code>（<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>完整文档</a>）。"
+	},
+	"whitelistPrompt": {
+		"message": "白名单指令表示哪些网页应禁用 #title#。每行一条。无效指令将被自动忽视，并加上注释。"
+	},
+	"whitelistImport": {
+		"message": "导入和挂起"
+	},
+	"whitelistExport": {
+		"message": "导出"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "应用更改"
+	},
+	"logRequestsHeaderType": {
+		"message": "类型"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "网域"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "过滤器"
+	},
+	"logAll": {
+		"message": "所有"
+	},
+	"logBehindTheScene": {
+		"message": "幕后"
+	},
+	"logFilterPrompt": {
+		"message": "过滤日志项"
+	},
+	"logMaxEntriesTip": {
+		"message": "日志条目的最大数量"
+	},
+	"aboutChangelog": {
+		"message": "更改日志"
+	},
+	"aboutWiki": {
+		"message": "维基百科"
+	},
+	"aboutSupport": {
+		"message": "支持"
+	},
+	"aboutCode": {
+		"message": "源代码 (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "贡献者"
+	},
+	"aboutBackupDataButton": {
+		"message": "备份到文件"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "从文件还原..."
+	},
+	"aboutResetDataButton": {
+		"message": "重置为默认设置..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "使用{{time}}上备份的数据，您的所有设置都将被覆盖，且 #title# 将重启。"
+	},
+	"aboutRestoreDataError": {
+		"message": "数据无法读取或无效"
+	},
+	"aboutResetDataConfirm": {
+		"message": "您的所有设置都将被删除，#title# 将重启。"
+	},
+	"errorCantConnectTo": {
+		"message": "网络错误：{{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#：将以下 URL 添加至您的定制过滤器列表？\n\n标题：\"{{title}}\"\nURL：{{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "一分钟前"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} 分钟前"
+	},
+	"elapsedOneHourAgo": {
+		"message": "一小时前"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} 小时前"
+	},
+	"elapsedOneDayAgo": {
+		"message": "一天前"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} 天前"
+	},
+	"showDashboardButton": {
+		"message": "显示仪表板"
+	},
+	"showNetworkLogButton": {
+		"message": "显示记录器"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "关闭"
+	},
+	"docblockedPrompt1": {
+		"message": "#title # 阻止了后续页面的加载："
+	},
+	"docblockedPrompt2": {
+		"message": "因为以下过滤器"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "不带参数"
+	},
+	"docblockedFoundIn": {
+		"message": "发现的位置："
+	},
+	"docblockedBack": {
+		"message": "返回"
+	},
+	"docblockedClose": {
+		"message": "关闭此窗口"
+	},
+	"docblockedProceed": {
+		"message": "禁用对 {{hostname}} 的严格锁定"
+	},
+	"docblockedDisableTemporary": {
+		"message": "暂时"
+	},
+	"docblockedDisablePermanent": {
+		"message": "永久"
+	},
+	"cloudPush": {
+		"message": "导出至云存储"
+	},
+	"cloudPull": {
+		"message": "从云存储导入"
+	},
+	"cloudPullAndMerge": {
+		"message": "从云存储导入并与当前设置合并"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "该设备名称:"
+	},
+	"advancedSettingsWarning": {
+		"message": "警告！更改这些高级设置需自行承担风险。"
+	},
+	"genericSubmit": {
+		"message": "提交"
+	},
+	"genericApplyChanges": {
+		"message": "应用更改"
+	},
+	"genericRevert": {
+		"message": "还原"
+	},
+	"genericBytes": {
+		"message": "字节"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "暂时允许大型媒体元素"
+	},
+	"dummy": {
+		"message": "此条目必须是最后一个"
+	},
+	"popupExtraMoreInformation": {
+		"message": "更多信息"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "在该站点的阻止的跟踪软件"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "在该站点允许的跟踪软件"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "无法启用对该站点的保护"
+	},
+	"popupExtraMoreOptions": {
+		"message": "更多选项"
+	},
+	"popupExtraLessOptions": {
+		"message": "更少选项"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "查看所有允许站点的列表"
+	},
+	"popupAdvancedSettings": {
+		"message": "高级设置"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "在此页面阻止的跟踪软件"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "阻止的跟踪软件总数"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "允许站点列表"
+	},
+	"extraSlider0": {
+		"message": "不要阻止广告"
+	},
+	"extraSlider50": {
+		"message": "适度广告拦截"
+	},
+	"extraSlider100": {
+		"message": "最大化广告拦截"
+	},
+	"extraIndexDescription": {
+		"message": "阻止跟踪软件，更快更安全地浏览"
+	},
+	"extraGeneralSettings": {
+		"message": "常规设置"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "管理 #title# 显示的内容"
+	},
+	"extra3pPageNameDesc": {
+		"message": "第三方跟踪软件和隐私过滤器"
+	},
+	"extra1pPageNameDesc": {
+		"message": "管理您的自定义过滤器"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "您的动态过滤规则列表"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "允许跟踪软件的站点列表"
+	},
+	"extraIndexHeader": {
+		"message": "#title# 高级设置"
+	},
+	"extraIndexFooter": {
+		"message": "由 uBlock Origin 提供支持。"
+	},
+	"extraShowMore": {
+		"message": "显示更多"
+	},
+	"extraBtnImport": {
+		"message": "导入"
+	},
+	"extraBtnExport": {
+		"message": "导出"
+	},
+	"extraBtnAdd": {
+		"message": "添加"
+	},
+	"extraBtnCancel": {
+		"message": "取消"
+	},
+	"extraBtnEdit": {
+		"message": "编辑"
+	},
+	"extraBtnRemove": {
+		"message": "移除"
+	},
+	"extraBtnUpdateAll": {
+		"message": "全部更新"
+	},
+	"extraLabelFilter": {
+		"message": "过滤器"
+	},
+	"extraMyCustomFilter": {
+		"message": "我的自定义过滤器"
+	},
+	"extraManageFilters": {
+		"message": "管理过滤器"
+	},
+	"extraAdsFilters": {
+		"message": "广告过滤器"
+	},
+	"extraEditFilter": {
+		"message": "编辑过滤器"
+	},
+	"extraAddFilter": {
+		"message": "添加过滤器"
+	},
+	"extraLearnMore": {
+		"message": "了解更多"
+	},
+	"extraRuleSyntax": {
+		"message": "规则语法"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "源目的地类型操作。"
+	},
+	"extraRuleDefinition": {
+		"message": "规则定义"
+	},
+	"extraRule": {
+		"message": "规则"
+	},
+	"extraEditRule": {
+		"message": "编辑临时规则"
+	},
+	"extraAddRrule": {
+		"message": "添加临时规则"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "高级用户设置"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "阻止大于此值的媒体组件："
+	},
+	"extraSetting": {
+		"message": "设置"
+	},
+	"extraEditSetting": {
+		"message": "编辑设置"
+	},
+	"extraAddSetting": {
+		"message": "添加设置"
+	},
+	"extraSite": {
+		"message": "站点"
+	},
+	"extraAllowOnSites": {
+		"message": "在这些站点允许跟踪软件"
+	},
+	"extraEditSite": {
+		"message": "编辑站点"
+	},
+	"extraAddSite": {
+		"message": "添加站点"
+	},
+	"extraDefaultBehaviour": {
+		"message": "默认行为"
+	},
+	"extraPrivacy": {
+		"message": "隐私"
+	},
+	"3pGroupDefault": {
+		"message": "网络和化妆品过滤器"
+	},
+	"1pPageName": {
+		"message": " 我的过滤器"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "无法启用对该会话的保护"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "尚未添加网站"
+	},
+	"extraInterstitialBlocking": {
+		"message": "启用插页式广告拦截功能"
+	},
+	"shortcutsPageName": {
+		"message": "快捷方式"
+	},
+	"popupTipDashboard": {
+		"message": "打开仪表盘"
+	},
+	"popupTipZapper": {
+		"message": "进入元素移除模式"
+	},
+	"popupTipPicker": {
+		"message": "进入元素选择模式"
+	},
+	"popupTipLog": {
+		"message": "打开记录器"
+	},
+	"popupTipNoPopups": {
+		"message": "切换“阻止此站点的所有弹出窗口”选项"
+	},
+	"popupTipNoPopups1": {
+		"message": "单击，阻止此站点的所有弹出窗口"
+	},
+	"popupTipNoPopups2": {
+		"message": "单击，不再阻止此站点的所有弹出窗口"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "切换“阻止此站点的多媒体元素”选项"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "单击以阻止此站点的多媒体元素"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "单击以不再阻止此站点的多媒体元素"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "切换“此站点的装饰过滤”选项"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "单击以禁用此站点的装饰过滤"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "单击以启用此站点的装饰过滤"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "切换“阻止此站点的远程字体”选项"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "单击以阻止此站点的远程字体"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "单击以不再阻止此站点的远程字体"
+	},
+	"popupTipGlobalRules": {
+		"message": "通用规则：此列为适用于所有站点的规则。"
+	},
+	"popupTipLocalRules": {
+		"message": "本地规则：此列为仅适用于当前站点的规则。本地规则优先于通用规则。"
+	},
+	"popupTipSaveRules": {
+		"message": "单击以永久保存您的更改。"
+	},
+	"popupTipRevertRules": {
+		"message": "单击以恢复您的更改"
+	},
+	"popupAnyRulePrompt": {
+		"message": "全部"
+	},
+	"popupImageRulePrompt": {
+		"message": "图片"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "第三方"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "第三方 css/图片"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "内联脚本"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "第一方脚本"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "第三方脚本"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "第三方框架"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "域连接成功"
+	},
+	"popupHitDomainCount": {
+		"message": " {{count}}，总计 {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "阻止大于 {{input:number}} kB 的多媒体元素"
+	},
+	"3pImport": {
+		"message": "导入..."
+	},
+	"loggerCurrentTab": {
+		"message": "当前标签"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "上下文："
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "类型："
+	},
+	"loggerURLFilteringHeader": {
+		"message": "动态 URL 过滤"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "静态过滤"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{type}} {{br}} 的 {{action}} 网络请求，其中的 URL 网址与 {{url}} {{br}} 匹配，且来自{{origin}}，{{br}} {{importance}} 有一个匹配的异常过滤器。"
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "阻止"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "允许"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "类型？{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "任何类型"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "源自？{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "源自任何来源"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "除非"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "即使"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "静态过滤器 <code>{{filter}}</code> 位于："
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "任何目前启用的过滤器列表中均未发现静态过滤器 <code>{{filter}}</code>"
+	},
+	"aboutIssues": {
+		"message": "问题跟踪器"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "输入快捷方式"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ?  资产查看器"
+	},
+	"popupTipNoScripting1": {
+		"message": "单击以禁用此站点的 JavaScript"
+	},
+	"popupTipNoScripting2": {
+		"message": "单击以不再禁用此站点的 JavaScript"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "禁用 JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "外部依赖（GPLv3 兼容）"
+	},
+	"loggerReloadTip": {
+		"message": "重新加载标签内容"
+	},
+	"loggerDomInspectorTip": {
+		"message": "切换 DOM 查看器"
+	},
+	"loggerPopupPanelTip": {
+		"message": "切换弹出面板"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin 维基：记录器"
+	},
+	"loggerClearTip": {
+		"message": "清除记录器"
+	},
+	"loggerPauseTip": {
+		"message": "暂停记录器（丢弃所有传入数据）"
+	},
+	"loggerUnpauseTip": {
+		"message": "恢复记录器"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "切换记录器过滤"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "记录器过滤选项"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "不"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "重要"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "已阻止"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "已允许"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "第一方"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "第三方"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "详细信息"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "过滤器"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "过滤器列表"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "规则"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "上下文："
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "根上下文"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "该方性质"
+	},
+	"loggerEntryDetailsType": {
+		"message": "类型"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "不满足以下所有三个条件的记录器条目将被自动丢弃："
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "保存最后 {{input}} 分钟的条目"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "每个标签最多保存 {{input}} 页面加载"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "每个标签最多保存 {{input}} 条目"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "在垂直扩展模式下，每个条目使用 {{input}} 行"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "隐藏列："
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} 时间"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} 过滤器/规则"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} 上下文"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} 该方性质"
+	},
+	"loggerExportFormatList": {
+		"message": "列表"
+	},
+	"loggerExportFormatTable": {
+		"message": "表"
+	},
+	"loggerExportEncodePlain": {
+		"message": "无格式"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "切换“滚动锁定”选项"
+	},
+	"genericCopyToClipboard": {
+		"message": "复制到剪贴板"
+	}
+}

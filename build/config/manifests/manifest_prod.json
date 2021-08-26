@@ -1,0 +1,88 @@
+{
+  "author": "Safer Technologies LLC & uBlock Origin contributors",
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "img/browsericons/icon_16.png",
+      "32": "img/browsericons/icon_32.png"
+    },
+    "default_popup": "extra/app.html",
+    "default_title": "uBlock Origin"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "/js/vapi.js",
+        "/js/vapi-client.js",
+        "/js/contentscript.js"
+      ],
+      "match_about_blank": true,
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "all_frames": false,
+      "js": [
+        "/js/scriptlets/subscriber.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": "default-src 'self'; font-src *; script-src 'self' 'unsafe-eval'; connect-src *; style-src * 'unsafe-inline' 'self' blob:; img-src * data:; object-src 'self'",
+  "default_locale": "en",
+  "description": "__MSG_extShortDesc__",
+  "icons": {
+    "16": "img/icon_16.png",
+    "32": "img/icon_32.png",
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
+  },
+  "incognito": "split",
+  "manifest_version": 2,
+  "minimum_chrome_version": "55.0",
+  "name": "uBlock Origin",
+  "permissions": [
+    "contextMenus",
+    "privacy",
+    "storage",
+    "tabs",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "short_name": "uBlock\u2080",
+  "storage": {
+    "managed_schema": "managed_storage.json"
+  },
+  "version": "2.0.0",
+  "web_accessible_resources": [
+    "/web_accessible_resources/*"
+  ],
+  "options_page": "extra/options.html",
+  "dataKeys": [
+    "AdBlockData"
+  ],
+  "externally_connectable": {
+    "ids": [
+      "*"
+    ],
+    "matches": [
+      "*://*.avastbrowser.com/*",
+      "*://*.avgbrowser.com/*",
+      "*://*.ccleanerbrowser.com/*",
+      "*://*.avast.com/*"
+    ]
+  }
+}

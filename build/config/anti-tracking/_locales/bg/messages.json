@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "Блокира нежеланите уеб системи за проследяване."
+	},
+	"dashboardName": {
+		"message": "#title# — Табло"
+	},
+	"settingsPageName": {
+		"message": "Настройки"
+	},
+	"3pPageName": {
+		"message": "Филтри от трети страни"
+	},
+	"rulesPageName": {
+		"message": "Моите правила"
+	},
+	"whitelistPageName": {
+		"message": "Разрешени"
+	},
+	"statsPageName": {
+		"message": "#title# — Логер"
+	},
+	"aboutPageName": {
+		"message": "Информация"
+	},
+	"advancedSettingsPageName": {
+		"message": "Разширени настройки"
+	},
+	"pickerCreate": {
+		"message": "Създаване"
+	},
+	"pickerPick": {
+		"message": "Избиране"
+	},
+	"pickerQuit": {
+		"message": "Изход"
+	},
+	"pickerPreview": {
+		"message": "Визуализация"
+	},
+	"pickerNetFilters": {
+		"message": "Мрежови филтри"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Козметични филтри"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Щракване, Ctrl-щракване"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Блокирай елемента"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Скрий заместителите на блокирани елементи"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Покажи броя блокирани заявки на иконата"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Дезактивиране на съветите"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Използвайте контекстното меню, когато трябва"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "За далтонисти"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Активиране поддръжката на облачно съхранение"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Аз съм опитен потребител (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>задължително четиво</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "разширени настройки"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Дезактивирай предварителното извличане (за предотвратяване връзката за блокирани мрежови заявки)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Дезактивирай одитирането на хипервръзки"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "Не позволявай WebRTC да пропуска локални IP адреси"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Поведение по подразбиране"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Тези поведения по подразбиране могат да се заместят за отделните сайтове"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Дезактивиране на козметичните филтри"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Блокиране на дистанционни шрифтове"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "Блокиране на CSP отчети"
+	},
+	"settingsStorageUsed": {
+		"message": "Използвано място: {{value}} байта"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Последно възстановяване:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Последно архивиране:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} мрежови филтри ＋ {{cosmeticFilterCount}} козметични филтри от:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} използвани от {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Актуализирай автоматично филтърните списъци"
+	},
+	"3pUpdateNow": {
+		"message": "Актуализирай сега"
+	},
+	"3pPurgeAll": {
+		"message": "Изчисти всички кешове"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Анализирай и приложи козметичните филтри"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Тази опция позволява анализирането и прилагането на <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus-съвместими &ldquo;скриващи елементи&rdquo; филтри</a>. Тези филтри по естество са козметични и имат за цел да скриват елементите в уеб страници, които се считат за визуално ненужни и които не могат да бъдат блокирани от филтриращата система на база мрежови заявки.</p><p>Активирането на тази функция увеличава използваната от #title# памет.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Игнориране на общите козметични филтри"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Общите козметични филтри са предназначени да се прилагат за всички уеб сайтове.<p>Въпреки че #title# ги използва по ефикасен начин, тези филтри въпреки това заемат значителен обем памет и процесорна мощ при някои уеб страници, особено за обемните и стари такива.<p>Активирането на тази опция ще елиминира допълнителното използване на паметта и процесора за уеб страниците в резултат от работата с генерични козметични филтри, като също така ще намали ползваната памет от самата #title#.<p>Препоръчва се да активирате тази опция на по-слаби устройства."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Списък на блокирани хостове"
+	},
+	"3pApplyChanges": {
+		"message": "Приложи промените"
+	},
+	"3pGroupAds": {
+		"message": "Реклами"
+	},
+	"3pGroupPrivacy": {
+		"message": "Поверителност"
+	},
+	"3pGroupMalware": {
+		"message": "Домейни със злонамерен софтуер"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Дразнители"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Различни цели"
+	},
+	"3pGroupRegions": {
+		"message": "Региони, езици"
+	},
+	"3pGroupCustom": {
+		"message": "Персонални"
+	},
+	"3pExternalListsHint": {
+		"message": "По един URL адрес на ред. Редовете с префикси &lsquo;!&rsquo; ще бъдат игнорирани. Невалидните URL адреси ще бъдат игнорирани без предупреждение."
+	},
+	"3pExternalListObsolete": {
+		"message": "Остаряло."
+	},
+	"3pLastUpdate": {
+		"message": "Последно актуализиране: {{ago}}.\nЩракнете за прилагане на актуализиране."
+	},
+	"3pUpdating": {
+		"message": "Актуализиране..."
+	},
+	"3pNetworkError": {
+		"message": "Ресурсът не можа да се актуализира поради мрежова грешка."
+	},
+	"1pFormatHint": {
+		"message": "По един филтър на ред. Филтърът може да бъде чисто име на хост или Adblock Plus-съвместим филтър. Редовете с префикс &lsquo;!&rsquo; ще бъдат игнорирани."
+	},
+	"1pImport": {
+		"message": "Импортиране и добавяне"
+	},
+	"1pExport": {
+		"message": "Експортиране"
+	},
+	"1pApplyChanges": {
+		"message": "Приложи промените"
+	},
+	"rulesPermanentHeader": {
+		"message": "Постоянни правила"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Временни правила"
+	},
+	"rulesRevert": {
+		"message": "Връщане"
+	},
+	"rulesCommit": {
+		"message": "Прилагане"
+	},
+	"rulesEdit": {
+		"message": "Редактиране"
+	},
+	"rulesEditSave": {
+		"message": "Запазване"
+	},
+	"rulesEditDiscard": {
+		"message": "Анулиране"
+	},
+	"rulesImport": {
+		"message": "Импортиране от файл..."
+	},
+	"rulesExport": {
+		"message": "Експортиране като файл"
+	},
+	"rulesHint": {
+		"message": "Списък с динамичните правила за филтриране."
+	},
+	"rulesFormatHint": {
+		"message": "Синтаксис за правило: <code>тип действие изходна дестинация</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>пълна документация</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "Директивите за разрешение посочват за кои уеб страници #title# трябва да бъде дезактивирана. По един запис на ред. Невалидните директиви ще бъдат игнорирани и изключени."
+	},
+	"whitelistImport": {
+		"message": "Импортиране и добавяне"
+	},
+	"whitelistExport": {
+		"message": "Експортиране"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Приложи промените"
+	},
+	"logRequestsHeaderType": {
+		"message": "Тип"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Домейн"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Филтър"
+	},
+	"logAll": {
+		"message": "Всички"
+	},
+	"logBehindTheScene": {
+		"message": "Зад кулисите"
+	},
+	"logFilterPrompt": {
+		"message": "записи в регистъра за филтри"
+	},
+	"logMaxEntriesTip": {
+		"message": "Максимален брой записи в регистър"
+	},
+	"aboutChangelog": {
+		"message": "Промяна на регистър"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "Поддръжка"
+	},
+	"aboutCode": {
+		"message": "Изходен код (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Сътрудници"
+	},
+	"aboutBackupDataButton": {
+		"message": "Архивиране на файл"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Възстановяване от файл..."
+	},
+	"aboutResetDataButton": {
+		"message": "Нулиране до настройките по подразбиране..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Всичките ви настройки ще бъдат презаписани с данни, архивирани на {{time}}, като #title# ще се рестартира.\n\nПрезаписване на всички съществуващи настройки с архивирани данни?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Данните не можа да бъде прочетени или са невалидни"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Всичките ви настройки ще бъдат премахнати и #title# ще се рестартира.\n\nНулиране на #title# до фабричните настройки?"
+	},
+	"errorCantConnectTo": {
+		"message": "Мрежова грешка: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: Искате ли да добавите следния URL адрес към персоналните си списъци с филтри?\n\nЗаглавие: „{{title}}“\nURL адрес: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "преди минута"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "преди {{value}} минути"
+	},
+	"elapsedOneHourAgo": {
+		"message": "преди час"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "преди {{value}} часа"
+	},
+	"elapsedOneDayAgo": {
+		"message": "преди ден"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "преди {{value}} дена"
+	},
+	"showDashboardButton": {
+		"message": "Покажи таблото"
+	},
+	"showNetworkLogButton": {
+		"message": "Покажи логера"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "изкл."
+	},
+	"docblockedPrompt1": {
+		"message": "#title# предотврати зареждането на следната страница:"
+	},
+	"docblockedPrompt2": {
+		"message": "Поради следния филтър"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "без параметри"
+	},
+	"docblockedFoundIn": {
+		"message": "Намерено в:"
+	},
+	"docblockedBack": {
+		"message": "Назад"
+	},
+	"docblockedClose": {
+		"message": "Затваряне на прозореца"
+	},
+	"docblockedProceed": {
+		"message": "Дезактивиране на строгото блокиране за {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Временно"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Постоянно"
+	},
+	"cloudPush": {
+		"message": "Експортиране за облачно съхранение"
+	},
+	"cloudPull": {
+		"message": "Импортиране от облачно съхранение"
+	},
+	"cloudPullAndMerge": {
+		"message": "Импортиране от облачно съхранение и сливане с текущите настройки"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Име на устройството:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Предупреждение! Променяте разширените настройки на свой собствен риск."
+	},
+	"genericSubmit": {
+		"message": "Изпрати"
+	},
+	"genericApplyChanges": {
+		"message": "Приложи промените"
+	},
+	"genericRevert": {
+		"message": "Връщане"
+	},
+	"genericBytes": {
+		"message": "байта"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Временно позволи големите мултимедийни елементи"
+	},
+	"dummy": {
+		"message": "Този запис трябва да бъде последният"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Повече информация"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Системите за проследяване са блокирани в този сайт"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Системите за проследяване са позволени в този сайт"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Защитата на този сайт не може да бъде активирана"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Още опции"
+	},
+	"popupExtraLessOptions": {
+		"message": "По-малко опции"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Вижте списъка с всички разрешени сайтове"
+	},
+	"popupAdvancedSettings": {
+		"message": "Разширени настройки"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Блокирани системи за проследяване на тази страница"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Общо блокирани системи за проследяване"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Списък с позволени сайтове"
+	},
+	"extraSlider0": {
+		"message": "Не блокирай рекламите"
+	},
+	"extraSlider50": {
+		"message": "Умерено блокиране на реклами"
+	},
+	"extraSlider100": {
+		"message": "Максимално блокиране на реклами"
+	},
+	"extraIndexDescription": {
+		"message": "Блокиране на системите за проследяване за по-бързо и по-безопасно сърфиране"
+	},
+	"extraGeneralSettings": {
+		"message": "Общи настройки"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Управление на каква информация да показва #title #"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Филтри от трети страни за системи за проследяване и поверителност"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Управление на персонализирани филтри"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Списък с динамичните правила за филтриране"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Списък на сайтовете, в които са позволени системите за проследяване"
+	},
+	"extraIndexHeader": {
+		"message": "Разширени настройки за #title#"
+	},
+	"extraIndexFooter": {
+		"message": "Поддържано от uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Показване на повече"
+	},
+	"extraBtnImport": {
+		"message": "импортиране"
+	},
+	"extraBtnExport": {
+		"message": "експортиране"
+	},
+	"extraBtnAdd": {
+		"message": "добавяне"
+	},
+	"extraBtnCancel": {
+		"message": "отказ"
+	},
+	"extraBtnEdit": {
+		"message": "Редактиране"
+	},
+	"extraBtnRemove": {
+		"message": "Премахване"
+	},
+	"extraBtnUpdateAll": {
+		"message": "обнови всичко"
+	},
+	"extraLabelFilter": {
+		"message": "Филтър"
+	},
+	"extraMyCustomFilter": {
+		"message": "Моите персонализирани филтри"
+	},
+	"extraManageFilters": {
+		"message": "Управление на филтрите"
+	},
+	"extraAdsFilters": {
+		"message": "Филтри за реклами"
+	},
+	"extraEditFilter": {
+		"message": "Редактиране на филтър"
+	},
+	"extraAddFilter": {
+		"message": "Добавяне на филтър"
+	},
+	"extraLearnMore": {
+		"message": "Научете повече"
+	},
+	"extraRuleSyntax": {
+		"message": "Синтаксис на правило"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "тип действие изходна дестинация."
+	},
+	"extraRuleDefinition": {
+		"message": "Дефиниция за правило"
+	},
+	"extraRule": {
+		"message": "Правило"
+	},
+	"extraEditRule": {
+		"message": "Редактиране на временно правило"
+	},
+	"extraAddRrule": {
+		"message": "Добавяне на временно правило"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Разширени потребителски настройки"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Блокиране на мултимедийни елементи с размер над"
+	},
+	"extraSetting": {
+		"message": "Настройка"
+	},
+	"extraEditSetting": {
+		"message": "Редактиране на настройка"
+	},
+	"extraAddSetting": {
+		"message": "Добавяне на настройка"
+	},
+	"extraSite": {
+		"message": "Сайт"
+	},
+	"extraAllowOnSites": {
+		"message": "Позволяване на системи за проследяване в тези сайтове"
+	},
+	"extraEditSite": {
+		"message": "Редактиране на сайт"
+	},
+	"extraAddSite": {
+		"message": "Добавяне на сайт"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Поведение по подразбиране"
+	},
+	"extraPrivacy": {
+		"message": "Поверителност"
+	},
+	"3pGroupDefault": {
+		"message": "Мрежови и козметични филтри"
+	},
+	"1pPageName": {
+		"message": " Моите филтри"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Защитата за тази сесия не може да се активира"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Още няма добавени сайтове"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Активиране на блокирането на междинни реклами"
+	},
+	"shortcutsPageName": {
+		"message": "Преки пътища"
+	},
+	"popupTipDashboard": {
+		"message": "Отваряне на таблото"
+	},
+	"popupTipZapper": {
+		"message": "Влизане в режим за временно премахване на елементи"
+	},
+	"popupTipPicker": {
+		"message": "Влизане в режим за постоянно отстраняване на елементи"
+	},
+	"popupTipLog": {
+		"message": "Отваряне на програмата за регистрация"
+	},
+	"popupTipNoPopups": {
+		"message": "Превключване на блокирането на всички изскачащи прозорци за този сайт"
+	},
+	"popupTipNoPopups1": {
+		"message": "Щракнете, за да блокирате всички изскачащи прозорци в този сайт"
+	},
+	"popupTipNoPopups2": {
+		"message": "Щракнете, за да премахнете блокирането на всички изскачащи прозорци в този сайт"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Превключване на блокирането на големи мултимедийни елементи за този сайт"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Щракнете, за да блокирате големи мултимедийни елементи в този сайт"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Щракнете, за да премахнете блокирането на големи мултимедийни файлове в този сайт"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Превключване на козметичните филтри за този сайт"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Щракнете, за да деактивирате козметичните филтри в този сайт"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Щракнете, за да активирате козметичните филтри в този сайт"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Превключване на блокирането на дистанционни шрифтове за този сайт"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Щракнете, за да блокирате дистанционните шрифтове в този сайт"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Щракнете, за да премахнете блокирането на дистанционните шрифтове в този сайт"
+	},
+	"popupTipGlobalRules": {
+		"message": "Глобални правила: тази колона е за правила, които се прилагат за всички сайтове."
+	},
+	"popupTipLocalRules": {
+		"message": "Локални правила: тази колона е за правила, които се прилагат само за текущия сайт. Локалните правила заместват глобалните."
+	},
+	"popupTipSaveRules": {
+		"message": "Щракнете, за да запазите промените си за постоянно."
+	},
+	"popupTipRevertRules": {
+		"message": "Щракнете, за да отмените промените си."
+	},
+	"popupAnyRulePrompt": {
+		"message": "всички"
+	},
+	"popupImageRulePrompt": {
+		"message": "изображения"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "трета страна"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "css/изображения от трети страни"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "вградени скриптове"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "собствени скриптове"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "скриптове от трети страни"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "група данни от трети страни"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "свързани домейни"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} от {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Блокиране на мултимедийни елементи, по-големи от {{input:number}} kB"
+	},
+	"3pImport": {
+		"message": "Импортиране..."
+	},
+	"loggerCurrentTab": {
+		"message": "Текущ раздел"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Контекст:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Тип:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Динамично филтриране на URL адреси"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Статично филтриране"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} на мрежови заявки от {{type}}, {{br}}чийто URL адрес съвпада с {{url}} {{br}}и произхожда {{origin}},{{br}}{{importance}} има съвпадащ филтър за изключения."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Блокиране"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Позволяване"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "тип ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "всякакъв тип"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "от ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "от където и да е"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "освен когато"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "дори ако"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Статичен филтър <code>{{filter}}</code>, открит в/ъв:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Статичен филтър <code>{{filter}}</code> не бе открит в който и да било от текущо активираните списъци с филтри"
+	},
+	"aboutIssues": {
+		"message": "Инструмент за проследяване на проблеми"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Въведете пряк път"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? Преглед на ресурси"
+	},
+	"popupTipNoScripting1": {
+		"message": "Щракнете, за да деактивирате JavaScript в този сайт"
+	},
+	"popupTipNoScripting2": {
+		"message": "Щракнете, за да активирате JavaScript в този сайт"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "Деактивиране на JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "Външни зависимости (съвместимост с GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "Презареждане на съдържанието на раздела"
+	},
+	"loggerDomInspectorTip": {
+		"message": "Превключване на DOM инспектора"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Превключване на изскачащия панел"
+	},
+	"loggerInfoTip": {
+		"message": "Wiki страница за uBlock Origin: Програмата за регистрация"
+	},
+	"loggerClearTip": {
+		"message": "Изчистване на програмата за регистрация"
+	},
+	"loggerPauseTip": {
+		"message": "Поставяне на програмата за регистрация на пауза (отхвърляне на всички входящи данни)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Възобновяване на работата на програмата за регистрация"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Превключване на филтрирането за програмата за регистрация"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Опции за филтриране за програмата за регистрация"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Няма"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "събития"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "блокирани"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "позволени"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "собствени"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "от трети страни"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Подробности"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Филтър"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Списък с филтри"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Правило"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Контекст"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Основен контекст"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Страна"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Тип"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL адрес"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Записите в програмата за регистрация, които не отговарят и на трите условия по-долу, ще бъдат автоматично отхвърлени:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Съхраняване на записи от последните {{input}} минути"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Съхраняване на максимум {{input}} зареждания на страницата на раздел"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Съхраняване на максимум {{input}} записа на раздел"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Използване на {{input}} реда на запис във вертикално разширен режим"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Скриване на колони:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} време"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} филтър/правило"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} контекст"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} страна"
+	},
+	"loggerExportFormatList": {
+		"message": "Списък"
+	},
+	"loggerExportFormatTable": {
+		"message": "Таблица"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Обикновен текст"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Превключване на заключването на превъртането"
+	},
+	"genericCopyToClipboard": {
+		"message": "Копиране в клипборда"
+	}
+}

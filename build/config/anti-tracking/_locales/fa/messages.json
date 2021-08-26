@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "ردیاب‌های وب مزاحم را مسدود می‌کند."
+	},
+	"dashboardName": {
+		"message": "#title# — داشبورد"
+	},
+	"settingsPageName": {
+		"message": "تنظیمات"
+	},
+	"3pPageName": {
+		"message": "فیلترهای شخص ثالث"
+	},
+	"rulesPageName": {
+		"message": "قوانین من"
+	},
+	"whitelistPageName": {
+		"message": "لیست سپید"
+	},
+	"statsPageName": {
+		"message": "#title# — ثبت‌کننده"
+	},
+	"aboutPageName": {
+		"message": "درباره"
+	},
+	"advancedSettingsPageName": {
+		"message": "تنظیمات پیشرفته"
+	},
+	"pickerCreate": {
+		"message": "ایجاد کردن"
+	},
+	"pickerPick": {
+		"message": "انتخاب کردن"
+	},
+	"pickerQuit": {
+		"message": "ترک کردن"
+	},
+	"pickerPreview": {
+		"message": "پیش‌نمایش"
+	},
+	"pickerNetFilters": {
+		"message": "فیلترهای شبکه"
+	},
+	"pickerCosmeticFilters": {
+		"message": "فیلترهای نمایشی"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "کلیک، راست-کلیک"
+	},
+	"pickerContextMenuEntry": {
+		"message": "مسدود کردن عنصر"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "پنهان کردن جانگهدارنده‌های عناصر مسدودشده"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "نمایش تعداد درخواست‌های مسدودشده بر روی آیکن"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "غیرفعال کردن نکته‌ابزارها"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "در جاهای مناسب از منوی زمینه استفاده کنید"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "مناسب برای کاربر کوررنگ"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "فعال کردن پشتیبانی ذخیره‌سازی ابری"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "من یک کاربر پیشرفته (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>required reading</a>) هستم"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "تنظیمات پیشرفته"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "غیرفعال کردن واکشی اولیه (برای جلوگیری از اتصال برای درخواست‌های شبکه مسدودشده)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "غیرفعال کردن بازرسی فراپیوند"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "جلوگیری از انتشار آدرس‌های IP از WebRTC به بیرون"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "عملکرد پیش‌فرض"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "این عملکردهای پیش‌فرض را می‌توان بر اساس سایت جایگزین کرد"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "غیرفعال کردن فیلترگذاری سفارشی"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "مسدود کردن قلم‌های راه دور"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "مسدود کردن گزارشات CSP"
+	},
+	"settingsStorageUsed": {
+		"message": "حافظه استفاده‌شده: {{value}} بایت"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "آخرین بازیابی:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "آخرین پشتیبان‌گیری:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} فیلتر شبکه ＋ {{cosmeticFilterCount}} فیلتر نمایشی از:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} از {{total}} استفاده شد"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "لیست‌های فیلتر بروزرسانی خودکار"
+	},
+	"3pUpdateNow": {
+		"message": "اکنون بروزرسانی شود"
+	},
+	"3pPurgeAll": {
+		"message": "پاک کردن همه حافظه‌های نهان"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "تجزیه و اجرای فیلترهای سفارشی"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>این گزینه تجزیه و اجرای <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">فیلترهای پنهان کردن عنصر &ldquo;elementسازگار با Adblock Plus&rdquo; را فعال می‌سازد</a>. این فیلترها ذاتاَ نمایشی هستند و برای پنهان کردن عناصر در صفحه وب که مزاحمت بصری ایجاد می‌کنند استفاده می‌شوند و توسط موتور فیلترگذاری حسب تقاضای شبکه قابل مسدود شدن نمی‌باشند.</p><p>با فعال‌سازی این گزینه، رد حافظه #title# افزایش خواهد یافت.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "صرفنظر کردن فیلترهای نمایشی عمومی"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>فیلترهای نمایشی عمومی آن دسته از فیلترهای نمایشی هستند که به همه وب‌سایت‌ها اعمال می‌گردند.<p>هرچند فیلترهای نمایشی عمومی توسط #title#به شیوه کارآمدی بکار گرفته می‌شوند، با این حال، مقدار قابل توجهی از حافظه و توان CPU را در برخی صفحات وب به خود اختصاص می‌دهند که بویژه در رابطه با موارد بزرگ و باسابقه اهمیت می‌یابد.<p>با فعال‌سازی این گزینه، بار اضافی تحمیل شده به حافظه و CPU بواسطه اعمال فیلترهای نمایشی عمومی بر صفحات وب کاهش می‌یابد و اثر #title# نیز بر حافظه کمتر خواهد شد.<p>توصیه می‌شود این گزینه را در دستگاه‌های با قدرت کمتر فعال نمایید."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "لیست‌های میزبان‌های مسدودشده"
+	},
+	"3pApplyChanges": {
+		"message": "اعمال تغییرات"
+	},
+	"3pGroupAds": {
+		"message": "تبلیغات"
+	},
+	"3pGroupPrivacy": {
+		"message": "حریم خصوصی"
+	},
+	"3pGroupMalware": {
+		"message": "دامنه‌های بدافزار"
+	},
+	"3pGroupAnnoyances": {
+		"message": "مزاحمت‌ها"
+	},
+	"3pGroupMultipurpose": {
+		"message": "چندمنظوره"
+	},
+	"3pGroupRegions": {
+		"message": "مناطق، زبان‌ها"
+	},
+	"3pGroupCustom": {
+		"message": "سفارشی"
+	},
+	"3pExternalListsHint": {
+		"message": "یک URL در هر خط. خطوطی که در ابتدای آنها &lsquo;!&rsquo; آورده شده است باید صرفنظر شوند. URLهای نامعتبر بدون هیچ اعلانی صرفنظر خواهند شد."
+	},
+	"3pExternalListObsolete": {
+		"message": "قدیمی است."
+	},
+	"3pLastUpdate": {
+		"message": "آخرین بروزرسانی: {{ago}}.\nبرای آغاز بروزرسانی کلیک کنید."
+	},
+	"3pUpdating": {
+		"message": "در حال بروزرسانی..."
+	},
+	"3pNetworkError": {
+		"message": "یک خطای شبکه از بروزرسانی منابع جلوگیری کرد."
+	},
+	"1pFormatHint": {
+		"message": "یک فیلتر در هر خط. هر فیلتر می‌تواند صرفاً یک نام میزبان یا یک فیلتر سازگار با Adblock Plus باشد. خطوطی که در ابتدای آنها &lsquo;!&rsquo; آورده شده است، صرفنظر خواهند شد."
+	},
+	"1pImport": {
+		"message": "وارد کردن و ضمیمه کردن"
+	},
+	"1pExport": {
+		"message": "استخراج کردن"
+	},
+	"1pApplyChanges": {
+		"message": "اعمال تغییرات"
+	},
+	"rulesPermanentHeader": {
+		"message": "قوانین دائمی"
+	},
+	"rulesTemporaryHeader": {
+		"message": "قوانین موقتی"
+	},
+	"rulesRevert": {
+		"message": "برگرداندن"
+	},
+	"rulesCommit": {
+		"message": "بکارگیری"
+	},
+	"rulesEdit": {
+		"message": "ویرایش"
+	},
+	"rulesEditSave": {
+		"message": "ذخیره"
+	},
+	"rulesEditDiscard": {
+		"message": "رها کردن"
+	},
+	"rulesImport": {
+		"message": "وارد کردن از فایل..."
+	},
+	"rulesExport": {
+		"message": "استخراج فایل"
+	},
+	"rulesHint": {
+		"message": "لیست قوانین فیلترگذاری پویای شما."
+	},
+	"rulesFormatHint": {
+		"message": "ساختار قانون: <code>اقدام نوع مقصد منبع</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>full documentation</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "دستورات لیست سپید مشخص می‌کنند لازم است #title# در کدام صفحات وب غیرفعال باشد. یک ورودی در هر خط. دستورات نامعتبر بدون اعلان صرفنظر خواهند شد و درباره آنها نظراتی درج خواهند شد."
+	},
+	"whitelistImport": {
+		"message": "وارد کردن و ضمیمه کردن"
+	},
+	"whitelistExport": {
+		"message": "استخراج کردن"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "اعمال تغییرات"
+	},
+	"logRequestsHeaderType": {
+		"message": "نوع"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "دامنه"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "فیلتر"
+	},
+	"logAll": {
+		"message": "همه"
+	},
+	"logBehindTheScene": {
+		"message": "پشت صحنه"
+	},
+	"logFilterPrompt": {
+		"message": "فیلتر کردن ورودی‌های رخدادنامه"
+	},
+	"logMaxEntriesTip": {
+		"message": "حداکثر تعداد ورودی‌های رخدادنامه"
+	},
+	"aboutChangelog": {
+		"message": "تغییر رخدادنامه"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "پشتیبانی"
+	},
+	"aboutCode": {
+		"message": "کد منبع (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "شرکت‌کننده‌ها"
+	},
+	"aboutBackupDataButton": {
+		"message": "پشتیبان‌گیری در فایل"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "بازیابی کردن از فایل..."
+	},
+	"aboutResetDataButton": {
+		"message": "بازنشانی به تنظیمات پیش‌فرض..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "همه تنظیمات شما با استفاده از داده‌های پشتیبان‌گیری شده در {{time}} جایگزین خواهند شد و #title# بسته و مجدداً راه‌اندازی خواهد شد.\n\nهمه تنظیمات فعلی با داده‌های پشتیبانی جایگزین شوند؟"
+	},
+	"aboutRestoreDataError": {
+		"message": "داده‌ها قابل خواندن نیستند یا نامعتیر هستند"
+	},
+	"aboutResetDataConfirm": {
+		"message": "همه تنظیمات شما حذف خواهند شد و #title# مجدداً راه‌اندازی خواهد شد.\n\n #title# به تنظیمات کارخانه بازنشانی شود؟"
+	},
+	"errorCantConnectTo": {
+		"message": "خطای شبکه: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: آیا URL زیر به لیست‌های فیلتر سفارشی شما اضافه شود؟\n\nعنوان: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "یک دقیقه قبل"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} دقیقه قبل"
+	},
+	"elapsedOneHourAgo": {
+		"message": "یک ساعت قبل"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} ساعت قبل"
+	},
+	"elapsedOneDayAgo": {
+		"message": "یک روز قبل"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} روز قبل"
+	},
+	"showDashboardButton": {
+		"message": "نمایش داشبورد"
+	},
+	"showNetworkLogButton": {
+		"message": "نمایش ثبت‌کننده"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "غیرفعال"
+	},
+	"docblockedPrompt1": {
+		"message": "#title# از بارگیری صفحه زیر جلوگیری کرد:"
+	},
+	"docblockedPrompt2": {
+		"message": "به دلیل خطای زیر"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "بدون پارامترها"
+	},
+	"docblockedFoundIn": {
+		"message": "یافت شد در:"
+	},
+	"docblockedBack": {
+		"message": "بازگشت"
+	},
+	"docblockedClose": {
+		"message": "این پنجره را ببندید"
+	},
+	"docblockedProceed": {
+		"message": "غیرفعال کردن انسداد سختگیرانه برای {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "موقتی"
+	},
+	"docblockedDisablePermanent": {
+		"message": "دائمی"
+	},
+	"cloudPush": {
+		"message": "استخراج کردن به حافظه ابری"
+	},
+	"cloudPull": {
+		"message": "وارد کردن از حافظه ابری"
+	},
+	"cloudPullAndMerge": {
+		"message": "وارد کردن از حافظه ابری و ادغام با تنظیمات فعلی"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "نام این دستگاه:"
+	},
+	"advancedSettingsWarning": {
+		"message": "هشدار! این تنظیمات پیشرفته را با مسئولیت خود تغییر دهید."
+	},
+	"genericSubmit": {
+		"message": "ارسال"
+	},
+	"genericApplyChanges": {
+		"message": "اعمال تغییرات"
+	},
+	"genericRevert": {
+		"message": "برگرداندن"
+	},
+	"genericBytes": {
+		"message": "بایت"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "اجازه دادن موقتی عناصر صوتی تصویری بزرگ"
+	},
+	"dummy": {
+		"message": "این ورودی باید حداقل یک مورد باشد"
+	},
+	"popupExtraMoreInformation": {
+		"message": "اطلاعات بیشتر"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "ردیاب‌ها در این سایت مسدود هستند"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "ردیاب‌ها در این سایت مجاز هستند"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "فعال‌سازی این سایت فعال نمی‌شود"
+	},
+	"popupExtraMoreOptions": {
+		"message": "گزینه‌های بیشتر"
+	},
+	"popupExtraLessOptions": {
+		"message": "گزینه‌های کمتر"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "مشاهده لیست همه سایت‌های مجاز"
+	},
+	"popupAdvancedSettings": {
+		"message": "تنظیمات پیشرفته"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "ردیاب‌های مسدود شده در این صفحه"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "ردیاب‌های مسدود شده در مجموع"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "لیست سایت‌های مجاز"
+	},
+	"extraSlider0": {
+		"message": "تبلیغات مسدود نشوند"
+	},
+	"extraSlider50": {
+		"message": "مسدودسازی متوسط تبلیغات"
+	},
+	"extraSlider100": {
+		"message": "حداکثر مسدودسازی تبلیغات"
+	},
+	"extraIndexDescription": {
+		"message": "مسدود کردن ردیاب‌ها برای افزایش سرعت و امنیت گشت‌وگذار"
+	},
+	"extraGeneralSettings": {
+		"message": "تنظیمات کلی"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "مدیریت اطلاعات نمایشی در #title#"
+	},
+	"extra3pPageNameDesc": {
+		"message": "ردیاب‌ها و فیلترهای شخص ثالث حریم خصوصی"
+	},
+	"extra1pPageNameDesc": {
+		"message": "مدیریت فیلترهای سفارشی"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "لیست قوانین فیلتر کردن دینامیک شما"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "لیست سایت‌هایی که ردیاب‌ها مجاز می‌باشند"
+	},
+	"extraIndexHeader": {
+		"message": "تنظیمات پیشرفته #title#"
+	},
+	"extraIndexFooter": {
+		"message": "تحت پشتیبانی uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "نمایش موارد بیشتر"
+	},
+	"extraBtnImport": {
+		"message": "وارد کردن"
+	},
+	"extraBtnExport": {
+		"message": "استخراج کردن"
+	},
+	"extraBtnAdd": {
+		"message": "افزودن"
+	},
+	"extraBtnCancel": {
+		"message": "لغو"
+	},
+	"extraBtnEdit": {
+		"message": "ویرایش"
+	},
+	"extraBtnRemove": {
+		"message": "حذف"
+	},
+	"extraBtnUpdateAll": {
+		"message": "بروزرسانی همه"
+	},
+	"extraLabelFilter": {
+		"message": "فیلتر"
+	},
+	"extraMyCustomFilter": {
+		"message": "فیلترهای سفارشی من"
+	},
+	"extraManageFilters": {
+		"message": "مدیریت فیلترها"
+	},
+	"extraAdsFilters": {
+		"message": "فیلترهای تبلیغات"
+	},
+	"extraEditFilter": {
+		"message": "ویرایش فیلتر"
+	},
+	"extraAddFilter": {
+		"message": "افزودن فیلتر"
+	},
+	"extraLearnMore": {
+		"message": "اطلاعات بیشتر"
+	},
+	"extraRuleSyntax": {
+		"message": "ساختار قانون"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "عمل نوع مقصد منبع."
+	},
+	"extraRuleDefinition": {
+		"message": "تعریف قانون"
+	},
+	"extraRule": {
+		"message": "قانون"
+	},
+	"extraEditRule": {
+		"message": "ویرایش قانون موقتی"
+	},
+	"extraAddRrule": {
+		"message": "افزودن قانون موقتی"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "تنظیمات کاربری پیشرفته"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "مسدود کردن عناصر صوتی تصویری بزرگتر از"
+	},
+	"extraSetting": {
+		"message": "تنظیمات"
+	},
+	"extraEditSetting": {
+		"message": "ویرایش تنظیمات"
+	},
+	"extraAddSetting": {
+		"message": "افزودن تنظیمات"
+	},
+	"extraSite": {
+		"message": "سایت"
+	},
+	"extraAllowOnSites": {
+		"message": "اجازه دادن ردیاب‌ها در این سایت‌ها"
+	},
+	"extraEditSite": {
+		"message": "ویرایش سایت"
+	},
+	"extraAddSite": {
+		"message": "افزودن سایت"
+	},
+	"extraDefaultBehaviour": {
+		"message": "رفتار پیش‌فرض"
+	},
+	"extraPrivacy": {
+		"message": "حریم خصوصی"
+	},
+	"3pGroupDefault": {
+		"message": "فیلترهای شبکه و دلخواه"
+	},
+	"1pPageName": {
+		"message": " فیلترهای من"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "محافظت این جلسه فعال نمی‌شود"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "هنوز هیچ سایتی اضافه نشده است"
+	},
+	"extraInterstitialBlocking": {
+		"message": "فعال‌سازی مسدود کردن تبلیغات زمینی"
+	},
+	"shortcutsPageName": {
+		"message": "میانبرها"
+	},
+	"popupTipDashboard": {
+		"message": "باز کردن داشبورد"
+	},
+	"popupTipZapper": {
+		"message": "ورود به حالت حذف اجزاء"
+	},
+	"popupTipPicker": {
+		"message": "ورود به حالت انتخاب اجزاء"
+	},
+	"popupTipLog": {
+		"message": "باز کردن کلیدنگار"
+	},
+	"popupTipNoPopups": {
+		"message": "فعال/غیرفعال کردن همه پیام‌های بالاآمدنی برای این سایت"
+	},
+	"popupTipNoPopups1": {
+		"message": "برای مسدود کردن همه پیام‌های بالاآمدنی در این سایت کلیک کنید"
+	},
+	"popupTipNoPopups2": {
+		"message": "برای اینکه همه پیام‌های بالاآمدنی دیگر در این سایت مسدود نشوند کلیک کنید"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "فعال/غیرفعال‌سازی مسدود کردن اجزاء رسانه بزرگ برای این سایت"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "برای مسدودسازی اجزاء رسانه بزرگ در این سایت کلیک کنید"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "برای عدم مسدودسازی اجزاء رسانه بزرگ در این سایت کلیک کنید"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "فعال/غیرفعال‌سازی فیلترگذاری نمایشی برای این سایت"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "برای غیرفعال کردن فیلترگذاری نمایشی در این سایت کلیک کنید"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "برای فعال کردن فیلترگذاری نمایشی در این سایت کلیک کنید"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "فعال/غیرفعال‌سازی مسدود کردن همه فونت‌های راه دور برای این سایت"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "برای مسدود کردن فونت‌های راه دور در این سایت کلیک کنید"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "برای عدم مسدود کردن فونت‌های راه دور در این سایت کلیک کنید"
+	},
+	"popupTipGlobalRules": {
+		"message": "قوانین کلی: این ستون برای قوانینی است که برای همه سایت‌ها اعمال می‌شوند."
+	},
+	"popupTipLocalRules": {
+		"message": "قوانین محلی: این ستون برای قوانینی است که تنها برای سایت فعلی اعمال می‌شوند.\nقوانین محلی بر قوانین کلی ارجحیت دارند."
+	},
+	"popupTipSaveRules": {
+		"message": "برای دائمی کردن تغییرات کلیک کنید."
+	},
+	"popupTipRevertRules": {
+		"message": "برای بازگرداندن تغییرات خود کلیک کنید."
+	},
+	"popupAnyRulePrompt": {
+		"message": "همه"
+	},
+	"popupImageRulePrompt": {
+		"message": "تصاویر"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "شخص ثالث"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "css/تصاویر شخص ثالث"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "اسکریپت‌های درون خط"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "اسکریپت‌های شخص اول"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "اسکریپت‌های شخص ثالث"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "فریم‌های شخص ثالث"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "دامنه‌های متصل"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} از {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "مسدود کردن اجزاء رسانه بزرگتر از {{input:number}} کیلوبایت"
+	},
+	"3pImport": {
+		"message": "وارد کردن..."
+	},
+	"loggerCurrentTab": {
+		"message": "زبانه فعلی"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "زمینه:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "نوع:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "فیلترگذاری URL دینامیک"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "فیلترگذاری استاتیک"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} درخواست‌های شبکه {{type}} {{br}}که آدرس URL با آنها مطابقت دارد {{url}} {{br}}و منشأ می‌گیرد {{origin}}،{{br}}{{importance}} یک فیلتر استثناء مطابقت کننده وجود دارد."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "مسدود کردن"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "اجازه دادن"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "نوع ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "هر نوع"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "از ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "از هر جا"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "به استثناء وقتی"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "حتی اگر"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "فیلتر استاتیک <code>{{filter}}</code> یافت شد در:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "فیلتر استاتیک <code>{{filter}}</code> در هیچ یک از لیست‌های فیلترگذاری فعال شده فعلی یافت نشد"
+	},
+	"aboutIssues": {
+		"message": "ردیاب مشکل"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "تایپ کردن یک میانبر"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock؟ ؟ نمایشگر دارایی‌ها"
+	},
+	"popupTipNoScripting1": {
+		"message": "برای غیرفعال کردن جاوا اسکریپت در این سایت کلیک کنید"
+	},
+	"popupTipNoScripting2": {
+		"message": "برای عدم غیرفعال کردن جاوا اسکریپت در این سایت کلیک کنید"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "غیرفعال کردن جاوا اسکریپت"
+	},
+	"aboutDependencies": {
+		"message": "وابسته‌های خارجی (سازگار با GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "بار کردن مجدد محتوای زبانه"
+	},
+	"loggerDomInspectorTip": {
+		"message": "فعال/غیرفعال‌سازی بازبینی‌کننده DOM"
+	},
+	"loggerPopupPanelTip": {
+		"message": "فعال/غیرفعال‌سازی پانل پیام بالاآمدنی"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin wiki: کلیدنگار"
+	},
+	"loggerClearTip": {
+		"message": "پاک کردن کلیدنگار"
+	},
+	"loggerPauseTip": {
+		"message": "مکث دادن کلیدنگار (صرفنظر کردن همه داده‌های ورودی)"
+	},
+	"loggerUnpauseTip": {
+		"message": "لغو مکث کردن کلیدنگار"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "فعال/غیرفعال‌سازی فیلترگذاری کلیدنگار"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "گزینه‌های فیلتر کردن کلیدنگار"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "نیست"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "پرحادثه"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "مسدود"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "مجاز"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "شخص اول"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "شخص ثالث"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "جزئیات"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "فیلتر"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "فهرست فیلتر"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "قانون"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "زمینه"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "زمینه ریشه"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "طرفیت"
+	},
+	"loggerEntryDetailsType": {
+		"message": "نوع"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "ورودی‌های کلیدنگار که همه سه شرط زیر به طور خودکار صرفنظر خواهند شد:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "حفظ کردن ورودی‌ها از {{input}} دقیقه آخر"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "نگه داشتن در حداکثر {{input}} بارگیری صفحه به ازای هر زبانه"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "نگه داشتن در حداکثر {{input}} ورودی به ازای هر زبانه"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "استفاده از {{input}} خط به ازای هر ورودی در حالت توسعه یافته عمودی"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "پنهان کردن ستون‌ها:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} بار"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} فیلتر/قانون"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} زمینه"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} طرفیت"
+	},
+	"loggerExportFormatList": {
+		"message": "فهرست"
+	},
+	"loggerExportFormatTable": {
+		"message": "جدول"
+	},
+	"loggerExportEncodePlain": {
+		"message": "ساده"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "علامت‌گذاری"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "فعال/غیرفعال‌سازی پیمایش قفل شده"
+	},
+	"genericCopyToClipboard": {
+		"message": "کپی به کلیپ‌بورد"
+	}
+}

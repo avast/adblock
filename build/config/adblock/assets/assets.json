@@ -1,0 +1,43 @@
+{
+  "assets.json": {
+    "content": "internal",
+    "updateAfter": 1,
+    "contentURL": [
+      "https://%host_prefix%ext-update.%brand%browser.com/adblock/assets/v2/assets.json",
+      "assets/assets.json"
+    ],
+    "off": false
+  },
+  "easylist": {
+    "content": "filters",
+    "group": "ads",
+    "title": "EasyList",
+    "contentURL": [
+      "assets/ads/easylist.txt",
+      "https://%host_prefix%%host%/adblock/assets/ads/easylist.txt"
+    ],
+    "supportURL": "https://forums.lanik.us/",
+    "off": false
+  },
+  "acceptable": {
+    "content": "filters",
+    "group": "ads",
+    "title": "Acceptable",
+    "contentURL": [
+      "https://easylist-downloads.adblockplus.org/exceptionrules.txt",
+      "assets/acceptable/exceptionrules.txt"
+    ],
+    "supportURL": "https://acceptableads.com/",
+    "off": true
+  },
+  "ublock-filters": {
+    "content": "filters",
+    "group": "default",
+    "title": "uBlock filters",
+    "contentURL": [
+      "https://%host_prefix%%host%/adblock/assets/ads/filters.txt",
+      "assets/ublock/filters.txt"
+    ],
+    "off": false
+  }
+}

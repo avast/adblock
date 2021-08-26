@@ -1,0 +1,860 @@
+{
+	"extShortDesc": {
+		"message": "Menyekat penjejak web yang mengganggu."
+	},
+	"dashboardName": {
+		"message": "#title# — Papan pemuka"
+	},
+	"settingsPageName": {
+		"message": "Tetapan"
+	},
+	"3pPageName": {
+		"message": "Penapis pihak ke-3"
+	},
+	"rulesPageName": {
+		"message": "Peraturan saya"
+	},
+	"whitelistPageName": {
+		"message": "Senarai putih"
+	},
+	"statsPageName": {
+		"message": "#title# — Pencatat"
+	},
+	"aboutPageName": {
+		"message": "Perihal"
+	},
+	"advancedSettingsPageName": {
+		"message": "Tetapan lanjutan"
+	},
+	"pickerCreate": {
+		"message": "Reka"
+	},
+	"pickerPick": {
+		"message": "Pilih"
+	},
+	"pickerQuit": {
+		"message": "Keluar"
+	},
+	"pickerPreview": {
+		"message": "Pratonton"
+	},
+	"pickerNetFilters": {
+		"message": "Penapis rangkaian"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Penapis kosmetik"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Klik, Ctrl-klik"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Sekat unsur"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Sembunyikan sandaran untuk unsur yang disekat"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Paparkan bilangan permintaan disekat dalam ikon"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Nyahdayakan petua alat"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Gunakan menu konteks pada yang sesuai"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Mesra untuk buta warna"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Dayakan sokongan simpanan awan"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Saya ialah pengguna lanjutan (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>dikehendaki membaca</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "tetapan lanjutan"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Nyadayakan pra-ambilan (untuk menghalang sebarang sambungan untuk permintaan rangkaian yang disekat)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Nyahdayakan pengauditan hiperpautan"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "Halang WebRTC daripad membocorkan alamat IP tempatan"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Tingkah laku lalai"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Kelakuan lalai ini boleh diganti berasaskan setiap laman"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Nyahdayakan penapisan kosmetik"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Sekat fon jauh"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "Sekat lapran CSP"
+	},
+	"settingsStorageUsed": {
+		"message": "Simpanan digunakan: {{value}} bait"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Pulih semula yang terakhir:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Sandaran yang terakhir:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} penapis rangkaian ＋ {{cosmeticFilterCount}} penapis rangkaian dari:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} daripada {{total}} telah digunakan"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Kemas kini automatik senarai penapis"
+	},
+	"3pUpdateNow": {
+		"message": "Kemas kini sekarang"
+	},
+	"3pPurgeAll": {
+		"message": "Singkir semua cache"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Hurai dan kukuhkan penapis kosmetik"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Pilihan ini membolehkan huraian dan pengukuhan <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">penapis Adblock Plus-serasi &ldquo;sembunyikan unsur&rdquo; </a>. Penapis ini diperlukan bagi nilai kosmetik, berfungsi untuk menyembunyikan unsur-unsur dalam laman web yang dianggap sebagai gangguan visual dan yang tidak dapat disekat oleh mesin penapisan berasaskan permintaan bersih.</p><p>Aktifkan ciri ini boleh meningkatkan jejak ingatan #title#.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Abaikan penapis kosmetik generik"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Penapis kosmetik generik adalah penapis kosmetik bertujuan untuk digunakandalam semua laman web.<p>Walaupun dikendalikan secara cekapnya oleh #title#, penapis kosmetik generik masih boleh menyumbangkan ingatan yang boleh diukur dan overhed CPU pada beberapa laman web, terutama untuk yang besar dan lama.<p>Aktifkan pilihan ini akan menghapuskan memori dan overhed CPU yang ditambahkan ke laman web sebagai hasil pengendalian penapis kosmetik generik dan juga mengurangkan jejak memori #title#.<p>Pengguna disyorkan untuk membolehkan pilihan ini pada peranti kurang berkuasa."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Senarai hos yang disekat"
+	},
+	"3pApplyChanges": {
+		"message": "Gunakan perubahan"
+	},
+	"3pGroupAds": {
+		"message": "Iklan"
+	},
+	"3pGroupPrivacy": {
+		"message": "Privasi"
+	},
+	"3pGroupMalware": {
+		"message": "Domain perisian hasab"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Gangguan"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Serbaguna"
+	},
+	"3pGroupRegions": {
+		"message": "Wilayah, bahasa"
+	},
+	"3pGroupCustom": {
+		"message": "Tersuai"
+	},
+	"3pExternalListsHint": {
+		"message": "Satu URL untuk setiap barisan. Barisan dengan awalan &lsquo;!&rsquo; akan diabaikan. URL tidak sah akan diabaikan secara senyap."
+	},
+	"3pExternalListObsolete": {
+		"message": "Lapuk."
+	},
+	"3pLastUpdate": {
+		"message": "Kemas kini terakhir: {{ago}}.\nKlik untuk lakukan kemas kini."
+	},
+	"3pUpdating": {
+		"message": "Mengemas kini..."
+	},
+	"3pNetworkError": {
+		"message": "Ralat rangkaian menghalang sumber daripada dikemas kini."
+	},
+	"1pFormatHint": {
+		"message": "Satu penapis setiap baris. Penapis boleh jadi nama hos biasa atau penapis Adblock Plus yang serasi. Barisan yang diawali dengan &lsquo;!&rsquo; akan diabaikan."
+	},
+	"1pImport": {
+		"message": "Import dan tambah"
+	},
+	"1pExport": {
+		"message": "Eksport"
+	},
+	"1pApplyChanges": {
+		"message": "Gunakan perubahan"
+	},
+	"rulesPermanentHeader": {
+		"message": "Peraturan kekal"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Peraturan sementara"
+	},
+	"rulesRevert": {
+		"message": "Kembalikan"
+	},
+	"rulesCommit": {
+		"message": "Laksanakan"
+	},
+	"rulesEdit": {
+		"message": "Edit"
+	},
+	"rulesEditSave": {
+		"message": "Simpan"
+	},
+	"rulesEditDiscard": {
+		"message": "Buang"
+	},
+	"rulesImport": {
+		"message": "Import daripada fail..."
+	},
+	"rulesExport": {
+		"message": "Eksport kepada fail"
+	},
+	"rulesHint": {
+		"message": "Senarai peraturan penapisan yang dinamik anda."
+	},
+	"rulesFormatHint": {
+		"message": "Peraturan sintaks: <code>jenis tindakan destinasi sumber</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>dokumen penuh</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "Arahan senarai putih menetapkan pada laman web yang #title# sepatutnya dinyahdayakan. Satu masukan untuk setiap baris. Arahan-arahan yang tidak sah akan diabaikan senyap dan diulas keluar."
+	},
+	"whitelistImport": {
+		"message": "Import dan tambah"
+	},
+	"whitelistExport": {
+		"message": "Eksport"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Gunakan perubahan"
+	},
+	"logRequestsHeaderType": {
+		"message": "Jenis"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Domain"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Penapis"
+	},
+	"logAll": {
+		"message": "Semua"
+	},
+	"logBehindTheScene": {
+		"message": "Di sebalik tabir"
+	},
+	"logFilterPrompt": {
+		"message": "masukan log penapis"
+	},
+	"logMaxEntriesTip": {
+		"message": "Jumlah maksimum masukan log"
+	},
+	"aboutChangelog": {
+		"message": "Perubahan log"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "Sokongan"
+	},
+	"aboutCode": {
+		"message": "Kod sumber (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Penyumbang"
+	},
+	"aboutBackupDataButton": {
+		"message": "Sandarkan fail"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Pulihkan semula daripada fail..."
+	},
+	"aboutResetDataButton": {
+		"message": "Tetapkan semula kepada tetapan lalai..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Semua tetapan anda akan ditulu ganti menggunakan data sandaran pada {{time}} dan #title# akan mula semula.\n\nTulis ganti semua tetapan sedia ada dengan data sandaran?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Data tidak boleh dibaca atau tidak sah"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Semua tetapan anda telah dialihkan dan #title# akan mula semula.\n\nTetap semula #title# kepada tetapan kilang?"
+	},
+	"errorCantConnectTo": {
+		"message": "Ralat rangkaian: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: Tambahkan URL berikut ke dalam senarai penapis tersuai anda?\n\nTajuk: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "seminit yang lalu"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "{{value}} beberapa minit yang lalu"
+	},
+	"elapsedOneHourAgo": {
+		"message": "sejam yang lalu"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "{{value}} beberapa jam yang lalu"
+	},
+	"elapsedOneDayAgo": {
+		"message": "sehari yang lalu"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "{{value}} beberapa hari yang lalu"
+	},
+	"showDashboardButton": {
+		"message": "Paparkan Papan pemuka"
+	},
+	"showNetworkLogButton": {
+		"message": "Paparkan Pencatat"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "tutup"
+	},
+	"docblockedPrompt1": {
+		"message": "#title# telah menghalang laman berikut daripada memuat:"
+	},
+	"docblockedPrompt2": {
+		"message": "Disebabkan oleh penapis berikut"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "tanpa parameter"
+	},
+	"docblockedFoundIn": {
+		"message": "Jumpa di dalam:"
+	},
+	"docblockedBack": {
+		"message": "Kembali"
+	},
+	"docblockedClose": {
+		"message": "Tutup tetingkap ini"
+	},
+	"docblockedProceed": {
+		"message": "Nyahdayakan sekatan ketat untuk {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Buat sementara waktu"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Selama-lamanya"
+	},
+	"cloudPush": {
+		"message": "Eksport ke penyimpanan awan"
+	},
+	"cloudPull": {
+		"message": "Import dari penyimpanan awan"
+	},
+	"cloudPullAndMerge": {
+		"message": "Import dari penyimpanan awan dan gabungkan dengan tetapan semasa"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Nama peranti ini:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Amaran! Ubah tetapan lanjutan ini di atas risiko anda sendiri."
+	},
+	"genericSubmit": {
+		"message": "Hantar"
+	},
+	"genericApplyChanges": {
+		"message": "Gunakan perubahan"
+	},
+	"genericRevert": {
+		"message": "Kembalikan"
+	},
+	"genericBytes": {
+		"message": "bait"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Benarkan unsur media besar buat sementara waktu"
+	},
+	"dummy": {
+		"message": "Kemasukan ini mestilah yang terakhir"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Maklumat lanjut"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Penjejak disekat pada tapak ini"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Penjejak dibenarkan pada tapak ini"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Perlindungan pada tapak ini tidak boleh didayakan"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Lagi pilihan"
+	},
+	"popupExtraLessOptions": {
+		"message": "Kurangkan pilihan"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Lihat senarai semua tapak yang dibenarkan"
+	},
+	"popupAdvancedSettings": {
+		"message": "Tetapan lanjutan"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Penjejak disekat pada laman ini"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Jumlah penjejak disekat"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Senarai tapak yang dibenarkan"
+	},
+	"extraSlider0": {
+		"message": "Jangan sekat iklan"
+	},
+	"extraSlider50": {
+		"message": "Sederhanakan sekatan Iklan"
+	},
+	"extraSlider100": {
+		"message": "Sekatan Iklan maksimum"
+	},
+	"extraIndexDescription": {
+		"message": "Sekat penjejak untuk pelayaran yang lebih pantas & selamat"
+	},
+	"extraGeneralSettings": {
+		"message": "Tetapan umum"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Urus maklumat yang #title# akan tunjukkan"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Penapis penjejak dan privasi pihak ke-3"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Urus penapis tersuai anda"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Senarai peraturan penapisan dinamik anda"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Senarai tapak yang membenarkan penjejak"
+	},
+	"extraIndexHeader": {
+		"message": "Tetapan Lanjutan #title#"
+	},
+	"extraIndexFooter": {
+		"message": "Dikuasakan oleh uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Tunjukkan lagi"
+	},
+	"extraBtnImport": {
+		"message": "import"
+	},
+	"extraBtnExport": {
+		"message": "eksport"
+	},
+	"extraBtnAdd": {
+		"message": "tambah"
+	},
+	"extraBtnCancel": {
+		"message": "batal"
+	},
+	"extraBtnEdit": {
+		"message": "Edit"
+	},
+	"extraBtnRemove": {
+		"message": "Alih keluar"
+	},
+	"extraBtnUpdateAll": {
+		"message": "kemas kini semua"
+	},
+	"extraLabelFilter": {
+		"message": "Penapis"
+	},
+	"extraMyCustomFilter": {
+		"message": "Penapis tersuai saya"
+	},
+	"extraManageFilters": {
+		"message": "Urus penapis"
+	},
+	"extraAdsFilters": {
+		"message": "Penapis iklan"
+	},
+	"extraEditFilter": {
+		"message": "Edit penapis"
+	},
+	"extraAddFilter": {
+		"message": "Tambah penapis"
+	},
+	"extraLearnMore": {
+		"message": "Ketahui lebih lanjut"
+	},
+	"extraRuleSyntax": {
+		"message": "Sintaks peraturan"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "tindakan jenis destinasi sumber."
+	},
+	"extraRuleDefinition": {
+		"message": "Definisi peraturan"
+	},
+	"extraRule": {
+		"message": "Peraturan"
+	},
+	"extraEditRule": {
+		"message": "Edit peraturan sementara"
+	},
+	"extraAddRrule": {
+		"message": "Tambah peraturan sementara"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Tetapan pengguna lanjutan"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Sekat elemen media yang lebih besar daripada"
+	},
+	"extraSetting": {
+		"message": "Tetapan"
+	},
+	"extraEditSetting": {
+		"message": "Edit tetapan"
+	},
+	"extraAddSetting": {
+		"message": "Tambah tetapan"
+	},
+	"extraSite": {
+		"message": "Tapak"
+	},
+	"extraAllowOnSites": {
+		"message": "Benarkan penjejak pada tapak ini"
+	},
+	"extraEditSite": {
+		"message": "Edit tapak"
+	},
+	"extraAddSite": {
+		"message": "Tambah tapak"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Tingkah laku lalai"
+	},
+	"extraPrivacy": {
+		"message": "Privasi"
+	},
+	"3pGroupDefault": {
+		"message": "Penapis rangkaian & kosmetik"
+	},
+	"1pPageName": {
+		"message": " Penapis saya"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Perlindungan pada sesi ini tidak boleh didayakan"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Tiada tapak yang ditambahkan lagi"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Dayakan sekatan ruang-antara"
+	},
+	"shortcutsPageName": {
+		"message": "Pintasan"
+	},
+	"popupTipDashboard": {
+		"message": "Buka papan pemuka"
+	},
+	"popupTipZapper": {
+		"message": "Masuk mod zapper elemen"
+	},
+	"popupTipPicker": {
+		"message": "Masuk mod pemilih elemen"
+	},
+	"popupTipLog": {
+		"message": "Buka pencatat"
+	},
+	"popupTipNoPopups": {
+		"message": "Togol sekatan untuk semua pop timbul pada laman ini"
+	},
+	"popupTipNoPopups1": {
+		"message": "Klik untuk sekat semua pop timbul pada laman ini"
+	},
+	"popupTipNoPopups2": {
+		"message": "Klik untuk tidak lagi menyekat semua pop timbul pada laman ini"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Togol sekatan elemen media besar untuk laman web ini"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Klik untuk sekat elemen media besar pada laman ini"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Klik untuk tidak lagi menyekat elemen media besar pada laman ini"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Togol penapisan kosmetik pada laman ini"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Klik untuk nyahdayakan penapisan kosmetik pada laman ini"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Klik untuk mendayakan penapisan kosmetik pada laman ini"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Togol untuk menyekat fon jauh pada laman ini"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Klik untuk menyekat fon jauh pada laman ini"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Klik untuk tidak lagi menyekat fon jauh pada laman ini"
+	},
+	"popupTipGlobalRules": {
+		"message": "Peraturan global: lajur ini untuk peraturan yang terpakai pada semua laman."
+	},
+	"popupTipLocalRules": {
+		"message": "Peraturan setempat: lajur ini untuk peraturan yang terpakai pada laman semasa sahaja.\nPeraturan setempat menggantikan peraturan global."
+	},
+	"popupTipSaveRules": {
+		"message": "Klik untuk menjadikan perubahan anda kekal."
+	},
+	"popupTipRevertRules": {
+		"message": "Klik untuk mengembalikan perubahan anda."
+	},
+	"popupAnyRulePrompt": {
+		"message": "semua"
+	},
+	"popupImageRulePrompt": {
+		"message": "imej"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "pihak ketiga"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "css/images pihak ketiga"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "skrip sebaris"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "skrip pihak pertama"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "skrip pihak ketiga"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "bingkai pihak ketiga"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "domain bersambung"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} daripada {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Sekat elemen media lebih besar daripada {{input:number}} kB"
+	},
+	"3pImport": {
+		"message": "Import..."
+	},
+	"loggerCurrentTab": {
+		"message": "Tab semasa"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Konteks:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Jenis:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Penapisan URL Dinamik"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Penapisan statik"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} permintaan rangkaian {{type}} {{br}}di mana alamat URL padan dengan {{url}} {{br}}dan berasal daripada {{origin}},{{br}}{{importance}} terdapat pengecualian penapis yang sepadan."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Sekat"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Benarkan"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "jenis ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "mana-mana jenis"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "daripada ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "dari mana-mana"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "kecuali apabila"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "walaupun"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Penapis statik <code>{{filter}}</code> dijumpai dalam:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Penapis statik <code>{{filter}}</code> tidak dapat dijumpai di mana-mana senarai penapis yang didayakan buat masa ini"
+	},
+	"aboutIssues": {
+		"message": "Penjejak isu"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Taipkan pintasan"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock? ? Lihat aset"
+	},
+	"popupTipNoScripting1": {
+		"message": "Klik untuk nyahdayakan JavaScript pada laman ini"
+	},
+	"popupTipNoScripting2": {
+		"message": "Klik untuk tidak lagi nyahdayakan JavaScript pada laman ini"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "Nyahdayakan JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "Kebergantungan luaran (serasi dengan GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "Muat semula kandungan tab"
+	},
+	"loggerDomInspectorTip": {
+		"message": "Togol pemeriksa DOM"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Togol panel pop timbul"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin wiki: Pencatat"
+	},
+	"loggerClearTip": {
+		"message": "Kosongkan pencatat"
+	},
+	"loggerPauseTip": {
+		"message": "Jedakan pencatat (singkirkan semua data masuk)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Nyahjeda pencatat"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Togol penapisan pencatat"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Opsyen penapisan pencatat"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Tidak"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "penting"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "disekat"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "dibenarkan"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "pihak pertama"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "pihak ketiga"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Butiran"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Penapis"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Senarai penapis"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Peraturan"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Konteks"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Asal konteks"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Pihak-pihak"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Jenis"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Masukan pencatat yang tidak memenuhi ketiga-tiga syarat di bawah akan dibuang secara automatik:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Simpan masukan dari {{input}} minit yang lepas"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Simpan muatan laman {{input}} paling banyak untuk setiap tab"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Simpan masukan {{input}} paling banyak untuk setiap tab"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Gunakan {{input}} garisan setiap masukan dalam mod berkembang menegak"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Sembunyikan lajur:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} Masa"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} Penapis/peraturan"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} Konteks"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} Pihak-pihak"
+	},
+	"loggerExportFormatList": {
+		"message": "Senarai"
+	},
+	"loggerExportFormatTable": {
+		"message": "Jadual"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Kosong"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Markdown"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Togol penguncian penatalan"
+	},
+	"genericCopyToClipboard": {
+		"message": "Salin ke papan klip"
+	}
+}

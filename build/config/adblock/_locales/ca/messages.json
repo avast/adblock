@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Bloquejador de publicitat"
+  },
+  "adBlockSettings": {
+    "message": "Bloquejador de publicitat: configuració"
+  },
+  "adblockIsPaused": {
+    "message": "S'ha posat el pausa el Bloquejador de publicitat en tots els llocs web"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "S'ha posat el pausa el Bloquejador de publicitat en aquest lloc web"
+  },
+  "adblockIsOff": {
+    "message": "S'ha desactivat el Bloquejador de publicitat"
+  },
+  "addSite": {
+    "message": "Afegeix un lloc web"
+  },
+  "adsBlocked": {
+    "message": "Anuncis bloquejats: "
+  },
+  "allowAdsOnSite": {
+    "message": "Permet els anuncis en aquest lloc web"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Permet sempre els anuncis als llocs web següents"
+  },
+  "balancedBlocking": {
+    "message": "Bloqueig equilibrat"
+  },
+  "balancedBlockingName": {
+    "message": "Equilibrat"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Bloqueja els anuncis en aquest lloc web"
+  },
+  "blockingOptions": {
+    "message": "Opcions de bloqueig"
+  },
+  "btnAdd": {
+    "message": "Afegeix"
+  },
+  "cancel": {
+    "message": "Cancel·la"
+  },
+  "edit": {
+    "message": "Edita"
+  },
+  "essentialBlocking": {
+    "message": "Bloqueig essencial"
+  },
+  "essentialBlockingName": {
+    "message": "Essencial"
+  },
+  "extShortDesc": {
+    "message": "A la fi un bloquejador eficient i lleuger per al processador i per a la memòria."
+  },
+  "generalSettings": {
+    "message": "Configuració general"
+  },
+  "indexDescription": {
+    "message": "Bloquegeu la publicitat per navegar de manera més ràpida i segura"
+  },
+  "keep_essential": {
+    "message": "Mantén essencial"
+  },
+  "keep_balanced": {
+    "message": "Mantén equilibrat"
+  },
+  "learnMore": {
+    "message": "Més informació"
+  },
+  "noAdsToBlock": {
+    "message": "Aquesta pàgina no conté cap anunci que s'hagi de bloquejar"
+  },
+  "pauseAdBlock": {
+    "message": "Posa en pausa el Bloquejador de publicitat"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Posa en pausa el Bloquejador de publicitat en tots els llocs web"
+  },
+  "pauseOnAllSites": {
+    "message": "Posa'l en pausa en tots els llocs web"
+  },
+  "pauseOnThisSite": {
+    "message": "Posa'l en pausa en aquest lloc web"
+  },
+  "poweredByUblock": {
+    "message": "Amb la tecnologia d'<u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Suprimeix"
+  },
+  "save": {
+    "message": "Desa"
+  },
+  "setStrict": {
+    "message": "Defineix com a estricte"
+  },
+  "setStrictDescription_avast": {
+    "message": "Un conjunt molt reduït d'anuncis no invasius ens ajuda a finançar l'Avast Secure Browser. No interrompen la navegació ni carreguen el navegador. En cas que us agradi l'aplicació, us demanem que els permeteu."
+  },
+  "setStrictDescription_avg": {
+    "message": "Un conjunt molt reduït d'anuncis no invasius ens ajuda a finançar l'AVG Secure Browser. No interrompen la navegació ni carreguen el navegador. En cas que us agradi l'aplicació, us demanem que els permeteu."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Un conjunt molt reduït d'anuncis no invasius ens ajuda a finançar el CCleaner Browser. No interrompen la navegació ni carreguen el navegador. En cas que us agradi l'aplicació, us demanem que els permeteu."
+  },
+  "setStrictTitle": {
+    "message": "Definiu el Bloquejador de publicitat en el nivell estricte"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Bloquegeu els anuncis molestos que infringeixin\n els estàndards del sector relatius als anuncis fàcils d'utilitzar. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Més informació</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Recomanació</b>: bloquegeu la majoria dels anuncis perquè la navegació sigui més ràpida i eficient."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Bloquegeu gairebé tots els anuncis perquè la navegació sigui més ràpida i eficient. <b>Amb aquesta acció, pot ser que no es mostrin correctament alguns llocs web.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Anuncis i bàners emergents"
+  },
+  "settingsCardDisruptive": {
+    "message": "Altres anuncis pertorbadors"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Alguns anuncis de mitjans socials"
+  },
+  "settingsCardOtherAds": {
+    "message": "99 % d'altres anuncis"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Mostra el número de anuncis bloquejats a l'icona"
+  },
+  "site": {
+    "message": "Lloc web"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Es mostraran aquí els llocs web en què hàgiu permès els anuncis"
+  },
+  "strictBlocking": {
+    "message": "Bloqueig estricte"
+  },
+  "strictBlockingName": {
+    "message": "Estricte"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Cancel·la la pausa"
+  },
+  "turnAdblockOn": {
+    "message": "Habilita"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Heu permès els anuncis en aquest lloc web "
+  },
+  "adsAreAllowed": {
+    "message": "La publicitat està permesa en aquest lloc"
+  },
+  "openSettings": {
+    "message": "Obre la configuració"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Cancel·la la pausa del Bloquejador de publicitat en tots els llocs"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Més informació sobre el Bloquejador de publicitat"
+  },
+  "pauseAdsOnSite": {
+    "message": "Posa en pausa els anuncis d'aquest lloc"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Posa en pausa els anuncis de tots els llocs"
+  },
+  "turnOn": {
+    "message": "Activa el Bloquejador de publicitat"
+  },
+  "turnOff": {
+    "message": "Desactiva el Bloquejador de publicitat"
+  },
+  "setEssentialMode": {
+    "message": "Configura el mode essencial"
+  },
+  "setBalancedMode": {
+    "message": "Configura el mode equilibrat"
+  },
+  "setStrictMode": {
+    "message": "Configura el mode estricte"
+  },
+  "showAmountAds": {
+    "message": "Mostra el nombre d'anuncis bloquejats"
+  },
+  "hideAmountAds": {
+    "message": "Amaga el nombre d'anuncis bloquejats"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Afegeix \"lloc web\" per permetre els anuncis"
+  },
+  "learnMoreAAS": {
+    "message": "Més informació sobre les Normes publicitàries acceptables"
+  },
+  "learnMoreUblock": {
+    "message": "Més informació sobre uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Desa el lloc a la llista blanca"
+  },
+  "cancelAddSiteOperation": {
+    "message": "No afegeixis el lloc"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Edita el lloc de la llista blanca"
+  },
+  "cancelEditSiteOperation": {
+    "message": "No editis el lloc"
+  },
+  "removeFromWhitelist": {
+    "message": "Suprimeix el lloc de la llista blanca"
+  },
+  "editFromWhitelist": {
+    "message": "Edita el lloc de la llista blanca"
+  },
+  "stayOn_balanced": {
+    "message": "Queda't al mode equilibrat"
+  },
+  "stayOn_essential": {
+    "message": "Queda't al mode essencial"
+  },
+  "cancelSetStrict": {
+    "message": "No configuris el mode estricte"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Modifica el lloc a la llista blanca"
+  },
+  "whitelistModalDescription": {
+    "message": "A quin lloc voleu permetre els anuncis?"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Reklameblokering"
+  },
+  "adBlockSettings": {
+    "message": "Reklameblokering – indstillinger"
+  },
+  "adblockIsPaused": {
+    "message": "Reklameblokering er på pause på alle websteder"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Reklameblokering er på pause på dette websted"
+  },
+  "adblockIsOff": {
+    "message": "Reklameblokering er deaktiveret"
+  },
+  "addSite": {
+    "message": "Tilføj websted"
+  },
+  "adsBlocked": {
+    "message": "Reklamer blokeret: "
+  },
+  "allowAdsOnSite": {
+    "message": "Tillad reklamer på dette websted"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Tillad altid reklamer på følgende websteder"
+  },
+  "balancedBlocking": {
+    "message": "Balanceret blokering"
+  },
+  "balancedBlockingName": {
+    "message": "Balanceret"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Bloker reklamer på dette websted"
+  },
+  "blockingOptions": {
+    "message": "Blokeringsindstillinger"
+  },
+  "btnAdd": {
+    "message": "Tilføj"
+  },
+  "cancel": {
+    "message": "Annuller"
+  },
+  "edit": {
+    "message": "Rediger"
+  },
+  "essentialBlocking": {
+    "message": "Essentiel blokering"
+  },
+  "essentialBlockingName": {
+    "message": "Essentiel"
+  },
+  "extShortDesc": {
+    "message": "Endelig en effektiv blokering. Bruger hverken meget CPU eller hukommelse."
+  },
+  "generalSettings": {
+    "message": "Generelle indstillinger"
+  },
+  "indexDescription": {
+    "message": "Bloker reklamer for at browse hurtigere og sikrere"
+  },
+  "keep_essential": {
+    "message": "Behold essentiel"
+  },
+  "keep_balanced": {
+    "message": "Behold balanceret"
+  },
+  "learnMore": {
+    "message": "Få mere at vide"
+  },
+  "noAdsToBlock": {
+    "message": "Ingen reklamer at blokere på denne side"
+  },
+  "pauseAdBlock": {
+    "message": "Pausér Reklameblokering"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Pausér Reklameblokering på alle websteder"
+  },
+  "pauseOnAllSites": {
+    "message": "Pausér på alle websteder"
+  },
+  "pauseOnThisSite": {
+    "message": "Pausér på dette websted"
+  },
+  "poweredByUblock": {
+    "message": "Powered by <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Fjern"
+  },
+  "save": {
+    "message": "Gem"
+  },
+  "setStrict": {
+    "message": "Indtil streng"
+  },
+  "setStrictDescription_avast": {
+    "message": "Nogle meget få ikke-indtrængende reklamer hjælper os med at finansiere Avast Secure Browser. De forstyrrer ikke din browsing og er med til at gøre browseren gratis. Støt os ved at tillade disse reklamer."
+  },
+  "setStrictDescription_avg": {
+    "message": "Nogle meget få ikke-indtrængende reklamer hjælper os med at finansiere AVG Secure Browser. De forstyrrer ikke din browsing og er med til at gøre browseren gratis. Støt os ved at tillade disse reklamer."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Nogle meget få ikke-indtrængende reklamer hjælper os med at finansiere CCleaner Browser. De forstyrrer ikke din browsing og er med til at gøre browseren gratis. Støt os ved at tillade disse reklamer."
+  },
+  "setStrictTitle": {
+    "message": "Indstil Reklameblokering til streng"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Blokér forstyrrende apps, der overtræder\n branchestandarderne for brugervenlige reklamer. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Få mere at vide</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Anbefalet</b> – bloker de fleste reklamer for at få en hurtigere og renere browsing."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Bloker næsten alle reklamer for at få en hurtigere og renere browsing. <b>Dette kan ødelægge nogle websteder.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Pop-up-reklamer og bannere"
+  },
+  "settingsCardDisruptive": {
+    "message": "Andre forstyrrende reklamer"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Nogle reklamer på sociale medier"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% af andre reklamer"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Vis antallet af blokerede reklamer på ikonet"
+  },
+  "site": {
+    "message": "Websted"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Websteder, du har tilladt reklamer på, vises her"
+  },
+  "strictBlocking": {
+    "message": "Streng blokering"
+  },
+  "strictBlockingName": {
+    "message": "Streng"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Fjern pause"
+  },
+  "turnAdblockOn": {
+    "message": "Slå til"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Du har tilladt reklamer på dette websted "
+  },
+  "adsAreAllowed": {
+    "message": "Reklamer tillades på dette websted"
+  },
+  "openSettings": {
+    "message": "Åbn indstillinger"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Aktivér Reklameblokering på alle websteder"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Få mere at vide om Reklameblokering"
+  },
+  "pauseAdsOnSite": {
+    "message": "Deaktiver reklamer på dette websted"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Deaktiver reklamer på alle websteder"
+  },
+  "turnOn": {
+    "message": "Slå Reklameblokering til"
+  },
+  "turnOff": {
+    "message": "Slå Reklameblokering fra"
+  },
+  "setEssentialMode": {
+    "message": "Indstil Essentiel tilstand"
+  },
+  "setBalancedMode": {
+    "message": "Indstil Balanceret tilstand"
+  },
+  "setStrictMode": {
+    "message": "Indstil Streng tilstand"
+  },
+  "showAmountAds": {
+    "message": "Vis antallet af blokerede reklamer"
+  },
+  "hideAmountAds": {
+    "message": "Skjul antallet af blokerede reklamer"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Tilføj \"websted\" for at tillade reklamer"
+  },
+  "learnMoreAAS": {
+    "message": "Få mere at vide om standarder for acceptable reklamer"
+  },
+  "learnMoreUblock": {
+    "message": "Få mere at vide om uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Gem websted på tilladelsesliste"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Annuller webstedstilføjelse"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Rediger websted fra tilladelsesliste"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Annuller webstedsredigering"
+  },
+  "removeFromWhitelist": {
+    "message": "Fjern websted fra tilladelseslisten"
+  },
+  "editFromWhitelist": {
+    "message": "Rediger websted fra tilladelseslisten"
+  },
+  "stayOn_balanced": {
+    "message": "Bliv i balanceret tilstand"
+  },
+  "stayOn_essential": {
+    "message": "Bliv i essentiel tilstand"
+  },
+  "cancelSetStrict": {
+    "message": "Annuller indstilling af Streng tilstand"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Rediger tilladt websted"
+  },
+  "whitelistModalDescription": {
+    "message": "Hvilket websted vil du tillade reklamer på?"
+  }
+}

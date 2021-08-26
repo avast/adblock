@@ -1,0 +1,863 @@
+{
+	"extShortDesc": {
+		"message": "حظر متعقبي الويب المتطفلين."
+	},
+	"dashboardName": {
+		"message": "#title# - لوحة المعلومات"
+	},
+	"settingsPageName": {
+		"message": "الإعدادات"
+	},
+	"3pPageName": {
+		"message": "عوامل تصفية الأطراف الثالثة"
+	},
+	"rulesPageName": {
+		"message": "قواعدي"
+	},
+	"whitelistPageName": {
+		"message": "القائمة البيضاء"
+	},
+	"statsPageName": {
+		"message": "#title# - المسجل"
+	},
+	"aboutPageName": {
+		"message": "حول"
+	},
+	"advancedSettingsPageName": {
+		"message": "إعدادات متقدمة"
+	},
+	"pickerCreate": {
+		"message": "إنشاء"
+	},
+	"pickerPick": {
+		"message": "انتقاء"
+	},
+	"pickerQuit": {
+		"message": "إنهاء"
+	},
+	"pickerPreview": {
+		"message": "معاينة"
+	},
+	"pickerNetFilters": {
+		"message": "عوامل تصفية الشبكة"
+	},
+	"pickerCosmeticFilters": {
+		"message": "عوامل تصفية تحسينية"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "انقر فوق، Ctrl-click"
+	},
+	"pickerContextMenuEntry": {
+		"message": "حجب عنصر"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "إخفاء العناصر النائبة للعناصر المحظورة"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "إظهار عدد الطلبات المحظورة في الأيقونة"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "تعطيل تلميحات الأدوات"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "استخدام قائمة السياق حسب الاقتضاء"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "مناسب للمصابين بعمى الألوان"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "تمكين دعم التخزين السحابي"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "أنا مستخدم مُتقدم (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>القراءة مطلوبة</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "إعدادات متقدمة"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "تعطيل التحميل المسبق (لمنع أي اتصال لطلبات الشبكة المحظورة)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "تعطيل تدقيق الارتباط التشعبي"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "منع تسرب عناوين IP المحلية عبر WebRTC"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "السلوك الافتراضي"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "يُمكن استبدال السلوكيات الافتراضية هذه حسب كل موقع"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "تعطيل التصفية التحسينية"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "حظر الخطوط الخارجية"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "حظر تقارير CSP"
+	},
+	"settingsStorageUsed": {
+		"message": "التخزين المستخدم: {{value}} بايت"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "آخر استعادة:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "آخر عملية نسخ احتياطي:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "{{netFilterCount}} من عوامل تصفية الشبكة + {{cosmeticFilterCount}} من عوامل التصفية التحسينية من:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "{{used}} مستخدمة من أصل {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "قوائم عامل تصفية التحديث التلقائي"
+	},
+	"3pUpdateNow": {
+		"message": "تحديث الآن"
+	},
+	"3pPurgeAll": {
+		"message": "مسح جميع ذاكرات التخزين المؤقت"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "تحليل عوامل التصفية التحسينية وتطبيقها"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>يسمح هذا الخيار بتحليل<a href=\"https://adblockplus.org/en/faq_internal#elemhide\">عوامل تصفية&ldquo;إخفاء العناصر&rdquo;الأكثر توافقًا مع مانع الإعلانات</a> وتطبيقها. تُعد عوامل التصفية هذه عوامل تحسينية بصورة أساسية، وهي تعمل على إخفاء العناصر في صفحة الويب التي تُشكل مصدرًا للإزعاج البصري، والتي لا يُمكن حظرها باستخدام محرك التصفية القائمة على طلب التصفية.</p><p>يؤدي تمكين هذه الميزة إلى زيادة مساحة الذاكرة #title#.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "تجاهل عوامل التصفية التحسينية العامة"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>تُعد عوامل التصفية التحسينية العامة هي تلك العوامل التحسينية التي تهدف إلى تطبيقها على جميع مواقع الويب.<p>ومن خلال التعامل معها بفاعلية بواسطة #title#، فقد تظل عوامل التصفية التحسينية العامة مساهمة في الذاكرة القابلة للقياس ووحدة المعالجة المركزية في بعض صفحات الويب، وخصوصًا بالنسبة لعوامل التصفية الكبيرة وطويلة الأجل.<p>وسيؤدي تمكين هذا الخيار إلى التخلص من سعة الذاكرة ووحدة المعالجة المركزية المضافة إلى صفحات الويب كنتيجة للتعامل مع عوامل التصفية التحسينية العامة، بالإضافة إلى تقليل مساحة الذاكرة الخاصة بـ #title# نفسه.<p>ومن المستحسن تمكين هذا الخيار على أجهزة أقل قوة."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "قوائم المضيفين المحظورين"
+	},
+	"3pApplyChanges": {
+		"message": "تطبيق التغييرات"
+	},
+	"3pGroupAds": {
+		"message": "إعلان"
+	},
+	"3pGroupPrivacy": {
+		"message": "الخصوصية"
+	},
+	"3pGroupMalware": {
+		"message": "مجالات البرمجيات الخبيثة"
+	},
+	"3pGroupAnnoyances": {
+		"message": "عناصر مزعجة"
+	},
+	"3pGroupMultipurpose": {
+		"message": "متعددة الأغراض"
+	},
+	"3pGroupRegions": {
+		"message": "المناطق، واللغات"
+	},
+	"3pGroupCustom": {
+		"message": "تخصيص"
+	},
+	"3pExternalListsHint": {
+		"message": "عنوان URL واحد في كل سطر. سيتم تجاهل الخطوط المسبوقة بـ &lsquo;!&rsquo;. سيتم تجاهل عناوين URL غير الصالحة في صمت."
+	},
+	"3pExternalListObsolete": {
+		"message": "غير محدث."
+	},
+	"3pLastUpdate": {
+		"message": "آخر تحديث: {{ago}}.\nانقر فوق تنفيذ التحديث."
+	},
+	"3pUpdating": {
+		"message": "جارٍ التحديث..."
+	},
+	"3pNetworkError": {
+		"message": "لقد تسبب أحد أخطاء الشبكة في منع تحديث المورد."
+	},
+	"1pFormatHint": {
+		"message": "عامل تصفية واحد لكل سطر. يُمكن أن يكون عامل التصفية اسم مضيف عاديًّا، أو عامل تصفية أكثر توافقًا مع مانع الإعلانات. سيتم تجاهل الخطوط المسبوقة بـ &lsquo;!&rsquo;."
+	},
+	"1pImport": {
+		"message": "استيراد وإلحاق"
+	},
+	"1pExport": {
+		"message": "تصدير"
+	},
+	"1pApplyChanges": {
+		"message": "تطبيق التغييرات"
+	},
+	"rulesPermanentHeader": {
+		"message": "قواعد دائمة"
+	},
+	"rulesTemporaryHeader": {
+		"message": "قواعد مؤقتة"
+	},
+	"rulesRevert": {
+		"message": "العودة"
+	},
+	"rulesCommit": {
+		"message": "تأكيد"
+	},
+	"rulesEdit": {
+		"message": "تحرير"
+	},
+	"rulesEditSave": {
+		"message": "حفظ"
+	},
+	"rulesEditDiscard": {
+		"message": "تجاهل"
+	},
+	"rulesImport": {
+		"message": "استيراد من ملف..."
+	},
+	"rulesExport": {
+		"message": "التصدير إلى ملف"
+	},
+	"rulesHint": {
+		"message": "قائمة بقواعد التصفية الديناميكية لديك."
+	},
+	"rulesFormatHint": {
+		"message": "بناء جملة القاعدة: <code>إجراء نوع وجهة المصدر</code>(<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>الوثائق الكاملة</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "تحدد تعليمات القائمة البيضاء أي صفحات العناوين #title# يجب تعطيلها. إدخال واحد لكل سطر. وسيتم تجاهل التعليمات غير الصالحة واسبتعادها."
+	},
+	"whitelistImport": {
+		"message": "استيراد وإلحاق"
+	},
+	"whitelistExport": {
+		"message": "تصدير"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "تطبيق التغييرات"
+	},
+	"logRequestsHeaderType": {
+		"message": "النوع"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "المجال"
+	},
+	"logRequestsHeaderURL": {
+		"message": "عنوان URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "عامل التصفية"
+	},
+	"logAll": {
+		"message": "الكل"
+	},
+	"logBehindTheScene": {
+		"message": "خلف المشهد"
+	},
+	"logFilterPrompt": {
+		"message": "إدخالات سجل التصفية"
+	},
+	"logMaxEntriesTip": {
+		"message": "الحد الأقصى لعدد إدخالات السجل"
+	},
+	"aboutChangelog": {
+		"message": "تغيير السجل"
+	},
+	"aboutWiki": {
+		"message": "Wiki"
+	},
+	"aboutSupport": {
+		"message": "الدعم"
+	},
+	"aboutCode": {
+		"message": "كود المصدر (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "المساهمون"
+	},
+	"aboutBackupDataButton": {
+		"message": "نسخ احتياطي لملف"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "استعادة من ملف..."
+	},
+	"aboutResetDataButton": {
+		"message": "إعادة التعيين إلى إعدادات الوضع الافتراضي..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "سيتم استبدال جميع إعداداتك باستخدام البيانات التي تم نسخها احتياطيًا في {{time}}، وستتم إعادة تشغيل #title#.\n\nهل ترغب في استبدال جميع الإعدادات الموجودة باستخدام البيانات المنسوخة احتياطيًا؟"
+	},
+	"aboutRestoreDataError": {
+		"message": "تعذرت قراءة البيانات أو أن البيانات غير صالحة"
+	},
+	"aboutResetDataConfirm": {
+		"message": "ستتم إزالة جميع الإعدادات، وستتم إعادة تشغيل #title#.\n\nهل ترغب في إعادة تعيين #title# إلى إعدادات المصنع؟"
+	},
+	"errorCantConnectTo": {
+		"message": "خطأ في الشبكة: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: هل ترغب في إضافة عنوان URL التالي إلى قائمة عوامل التصفية المخصصة لديك؟\n\nالعنوان: \"{{title}}\"\nعنوان URL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "منذ دقيقة"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "قبل {{value}} من الدقائق"
+	},
+	"elapsedOneHourAgo": {
+		"message": "منذ ساعة"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "قبل {{value}} من الساعات"
+	},
+	"elapsedOneDayAgo": {
+		"message": "منذ يوم"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "قبل {{value}} من الأيام"
+	},
+	"showDashboardButton": {
+		"message": "إظهار لوحة المعلومات"
+	},
+	"showNetworkLogButton": {
+		"message": "إظهار المسجل"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "إيقاف"
+	},
+	"docblockedPrompt1": {
+		"message": "لقد منع #title# الصفحة التالية من التحميل:"
+	},
+	"docblockedPrompt2": {
+		"message": "بسبب عامل التصفية التالي"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "دون مُعلمات"
+	},
+	"docblockedFoundIn": {
+		"message": "وجد في:"
+	},
+	"docblockedBack": {
+		"message": "العودة"
+	},
+	"docblockedClose": {
+		"message": "إغلاق هذه النافذة"
+	},
+	"docblockedProceed": {
+		"message": "تعطيل الحظر الشديد لـ {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "مؤقتًا"
+	},
+	"docblockedDisablePermanent": {
+		"message": "نهائي"
+	},
+	"cloudPush": {
+		"message": "تصدير إلى التخزين السحابي"
+	},
+	"cloudPull": {
+		"message": "استيراد من التخزين السحابي"
+	},
+	"cloudPullAndMerge": {
+		"message": "استيراد من التخزين السحابي والدمج مع الإعدادات الحالية"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "اسم هذا الجهاز:"
+	},
+	"advancedSettingsWarning": {
+		"message": "تحذير! تغيير الإعدادات المتقدمة هذه يقع على عاتقك."
+	},
+	"genericSubmit": {
+		"message": "إرسال"
+	},
+	"genericApplyChanges": {
+		"message": "تطبيق التغييرات"
+	},
+	"genericRevert": {
+		"message": "العودة"
+	},
+	"genericBytes": {
+		"message": "وحدات البايت"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "السماح مؤقتًا بعناصر الوسائط الكبيرة"
+	},
+	"dummy": {
+		"message": "يجب أن يكون هذا الإدخال الأخير"
+	},
+	"popupExtraMoreInformation": {
+		"message": "المزيد من المعلومات"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "يتم حظر المتعقبين من دخول هذا الموقع"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "يُسمح بدخول المتعقبين لهذا الموقع"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "يتعذر تمكين الحماية على هذا الموقع"
+	},
+	"popupExtraMoreOptions": {
+		"message": "المزيد من الخيارات"
+	},
+	"popupExtraLessOptions": {
+		"message": "خيارات أقل"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "الاطلاع على قائمة بجميع المواقع المسموح بها"
+	},
+	"popupAdvancedSettings": {
+		"message": "إعدادات متقدمة"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "المتعقبون المحظورون من دخول هذه الصفحة"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "إجمالي المتعقبين المحظورين"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "قائمة المواقع المسموح بها"
+	},
+	"extraSlider0": {
+		"message": "لا تحظر الإعلانات"
+	},
+	"extraSlider50": {
+		"message": "حظر الإعلانات بدرجة متوسطة"
+	},
+	"extraSlider100": {
+		"message": "الحد الأقصى لحظر الإعلانات"
+	},
+	"extraIndexTitle": {
+		"message": "#title#"
+	},
+	"extraIndexDescription": {
+		"message": "استمتع بحظر المتعقبين لاستعراض أسرع وأكثر أمانًا"
+	},
+	"extraGeneralSettings": {
+		"message": "الإعدادات العامة"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "تعمل على إدارة ما تظهره معلومات #title#"
+	},
+	"extra3pPageNameDesc": {
+		"message": "عوامل التصفية الخارجية للمتعقبين والخصوصية"
+	},
+	"extra1pPageNameDesc": {
+		"message": "إدارة عوامل التصفية المخصصة لديك"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "قائمة بقواعد التصفية الديناميكية لديك"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "قائمة بالمواقع التي تسمح بدخول المتعقبين"
+	},
+	"extraIndexHeader": {
+		"message": "إعدادات #title# المتقدمة"
+	},
+	"extraIndexFooter": {
+		"message": "مدعوم من uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "إظهار المزيد"
+	},
+	"extraBtnImport": {
+		"message": "استيراد"
+	},
+	"extraBtnExport": {
+		"message": "تصدير"
+	},
+	"extraBtnAdd": {
+		"message": "إضافة"
+	},
+	"extraBtnCancel": {
+		"message": "إلغاء"
+	},
+	"extraBtnEdit": {
+		"message": "تحرير"
+	},
+	"extraBtnRemove": {
+		"message": "إزالة"
+	},
+	"extraBtnUpdateAll": {
+		"message": "تحديث الكل"
+	},
+	"extraLabelFilter": {
+		"message": "عامل التصفية"
+	},
+	"extraMyCustomFilter": {
+		"message": "عوامل التصفية المخصصة لديّ"
+	},
+	"extraManageFilters": {
+		"message": "إدارة عوامل التصفية"
+	},
+	"extraAdsFilters": {
+		"message": "عوامل تصفية الإعلانات"
+	},
+	"extraEditFilter": {
+		"message": "تحرير عامل التصفية"
+	},
+	"extraAddFilter": {
+		"message": "إضافة عامل تصفية"
+	},
+	"extraLearnMore": {
+		"message": "التعرف على المزيد"
+	},
+	"extraRuleSyntax": {
+		"message": "بناء جملة القاعدة"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "إجراء نوع وجهة المصدر."
+	},
+	"extraRuleDefinition": {
+		"message": "تعريف القاعدة"
+	},
+	"extraRule": {
+		"message": "القاعدة"
+	},
+	"extraEditRule": {
+		"message": "تحرير قاعدة مؤقتة"
+	},
+	"extraAddRrule": {
+		"message": "إضافة قاعدة مؤقتة"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "إعدادات المستخدم المتقدمة"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "حظر عناصر الوسائط التي تزيد عن"
+	},
+	"extraSetting": {
+		"message": "إعداد"
+	},
+	"extraEditSetting": {
+		"message": "تحرير إعداد"
+	},
+	"extraAddSetting": {
+		"message": "إضافة إعداد"
+	},
+	"extraSite": {
+		"message": "موقع"
+	},
+	"extraAllowOnSites": {
+		"message": "السماح للمتعقبين بدخول هذا الموقع"
+	},
+	"extraEditSite": {
+		"message": "تحرير موقع"
+	},
+	"extraAddSite": {
+		"message": "إضافة موقع"
+	},
+	"extraDefaultBehaviour": {
+		"message": "السلوك الافتراضي"
+	},
+	"extraPrivacy": {
+		"message": "الخصوصية"
+	},
+	"3pGroupDefault": {
+		"message": "عوامل التصفية التحسينية والشبكة"
+	},
+	"1pPageName": {
+		"message": "عوامل التصفية"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "يتعذر تمكين الحماية لهذه الجلسة"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "لم تتم إضافة مواقع بعد"
+	},
+	"extraInterstitialBlocking": {
+		"message": "تمكين الحجب البيني"
+	},
+	"shortcutsPageName": {
+		"message": "اختصارات"
+	},
+	"popupTipDashboard": {
+		"message": "فتح لوحة المعلومات"
+	},
+	"popupTipZapper": {
+		"message": "الدخول في وضع أداة إزالة العناصر"
+	},
+	"popupTipPicker": {
+		"message": "الدخول في وضع منتقي العناصر"
+	},
+	"popupTipLog": {
+		"message": "فتح مسجل البيانات"
+	},
+	"popupTipNoPopups": {
+		"message": "تبديل حظر جميع النوافذ المنبثقة لهذا الموقع"
+	},
+	"popupTipNoPopups1": {
+		"message": "انقر لحظر جميع النوافذ المنبثقة في هذا الموقع"
+	},
+	"popupTipNoPopups2": {
+		"message": "انقر لإلغاء حظر جميع النوافذ المنبثقة في هذا الموقع"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "تبديل حظر عناصر الوسائط الكبيرة لهذا الموقع"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "انقر لحظر عناصر الوسائط الكبيرة في هذا الموقع"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "انقر لإلغاء حظر عناصر الوسائط الكبيرة في هذا الموقع"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "تبديل تصفية الأدوات التجميلية لهذا الموقع"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "انقر لتعطيل تصفية الأدوات التجميلية في هذا الموقع"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "انقر لتمكين تصفية الأدوات التجميلية في هذا الموقع"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "تبديل حظر الخطوط البعيدة لهذا الموقع"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "انقر لحظر الخطوط البعيدة في هذا الموقع"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "انقر لإلغاء حظر الخطوط البعيدة في هذا الموقع"
+	},
+	"popupTipGlobalRules": {
+		"message": "القواعد العامة: هذا العمود مخصص للقواعد التي تنطبق على جميع المواقع."
+	},
+	"popupTipLocalRules": {
+		"message": "القواعد المحلية: هذا العمود مخصص للقواعد التي تنطبق على الموقع الحالي فقط.\nكما تقوم القواعد المحلية بإبطال القواعد العامة."
+	},
+	"popupTipSaveRules": {
+		"message": "انقر لإجراء تغييراتك الدائمة."
+	},
+	"popupTipRevertRules": {
+		"message": "انقر للتراجع عن التغييرات."
+	},
+	"popupAnyRulePrompt": {
+		"message": "الكل"
+	},
+	"popupImageRulePrompt": {
+		"message": "الصور"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "الطرف الثالث"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "css الخاص بالطرف الثالث/الصور"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "البرامج النصية المضمنة"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "البرامج النصية للطرف الأول"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "البرامج النصية للطرف الثالث"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "إطارات الطرف الثالث"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "اتصلت المجالات"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} من أصل {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "حظر عناصر الوسائط الكُبرى من {{input:number}} كيلوبايت"
+	},
+	"3pImport": {
+		"message": "جارٍ الاستيراد..."
+	},
+	"loggerCurrentTab": {
+		"message": "علامة التبويب الحالية"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "السياق:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "النوع:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "تصفية URL الديناميكية"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "تصفية ثابتة"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "{{action}} طلبات الشبكة من {{type}} {{br}}التي يتطابق عنوان URL الخاص بها {{url}} {{br}}والتي تنشأ من {{origin}}،{{br}}{{importance}} هناك عامل تصفية لاستثناء مطابق."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "حظر"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "سماح"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "ما النوع ؟{{type}}؟"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "أي نوع"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "من ؟{{origin}}؟"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "من أي مكان"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "باستثناء عند"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "حتى لو"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "تم العثور على <code>{{filter}}</code> الخاص بعامل التصفية الثابت في:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "لم يتم العثور على <code>{{filter}}</code> الخاص بعامل التصفية الثابت في أيٍّ من قوائم عامل التصفية الحالية الممكن"
+	},
+	"aboutIssues": {
+		"message": "أداة تعقب المشكلات"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "اكتب اختصارًا"
+	},
+	"assetViewerPageName": {
+		"message": "uBlock؟ عارض الأصول"
+	},
+	"popupTipNoScripting1": {
+		"message": "انقر لتعطيل JavaScript في هذا الموقع"
+	},
+	"popupTipNoScripting2": {
+		"message": "انقر لإلغاء تعطيل JavaScript في هذا الموقع"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "تعطيل JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "التبعيات الخارجية (متوافق مع GPLv3):"
+	},
+	"loggerReloadTip": {
+		"message": "إعادة تحميل محتوى علامة التبويب"
+	},
+	"loggerDomInspectorTip": {
+		"message": "تبديل DOM inspector"
+	},
+	"loggerPopupPanelTip": {
+		"message": "تبديل لوحة النافذة المنبثقة"
+	},
+	"loggerInfoTip": {
+		"message": "uBlock Origin wiki: مسجل البيانات"
+	},
+	"loggerClearTip": {
+		"message": "مسح مسجل البيانات"
+	},
+	"loggerPauseTip": {
+		"message": "إيقاف مسجل البيانات مؤقتًا (تجاهل جميع البيانات الواردة)"
+	},
+	"loggerUnpauseTip": {
+		"message": "إلغاء إيقاف مسجل البيانات مؤقتًا"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "تبديل تصفية مسجل البيانات"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "خيارات تصفية مسجل البيانات"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "لا"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "حافل بالأحداث"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "المحظور"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "المسموح"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "الطرف الأول"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "الطرف الثالث"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "تفاصيل"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "عامل التصفية"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "قائمة عامل التصفية"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "القاعدة"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "السياق"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "سياق الجذر"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "ملحق"
+	},
+	"loggerEntryDetailsType": {
+		"message": "النوع"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "عنوان URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "سيتم تجاهل إدخالات مُسجل البيانات التي لا تستوفي الشروط الثلاثة أدناه تلقائيًا:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "احتفظ بالإدخالات التي تمت منذ آخر {{input}} من الدقائق"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "احتفظ بأكثر تحميلات صفحة {{input}} لكل صفحة"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "احتفظ بأكثر إدخالات {{input}} لكل صفحة"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "استخدم خطوط {{input}} لكل إدخال في الوضع الممدد أفقيًا"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "إخفاء الأعمدة:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "وقت {{input}}"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "قاعدة/عامل تصفية {{input}}"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "سياق {{input}}"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "ملحق {{input}}"
+	},
+	"loggerExportFormatList": {
+		"message": "قائمة"
+	},
+	"loggerExportFormatTable": {
+		"message": "جدول"
+	},
+	"loggerExportEncodePlain": {
+		"message": "عادي"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "خصم"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "تبديل التمرير المغلق"
+	},
+	"genericCopyToClipboard": {
+		"message": "نسخ إلى الحافظة"
+	}
+}

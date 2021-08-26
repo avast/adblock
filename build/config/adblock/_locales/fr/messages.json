@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Adblock"
+  },
+  "adBlockSettings": {
+    "message": "Adblock - Paramètres"
+  },
+  "adblockIsPaused": {
+    "message": "Adblock est désactivé sur tous les sites"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Adblock est désactivé sur ce site"
+  },
+  "adblockIsOff": {
+    "message": "Adblock est désactivé"
+  },
+  "addSite": {
+    "message": "Ajouter un site"
+  },
+  "adsBlocked": {
+    "message": "Pubs bloquées : "
+  },
+  "allowAdsOnSite": {
+    "message": "Autoriser les pubs sur ce site"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Toujours autoriser les pubs sur les sites suivants"
+  },
+  "balancedBlocking": {
+    "message": "Blocage modéré"
+  },
+  "balancedBlockingName": {
+    "message": "Modéré"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Bloquer les pubs sur ce site"
+  },
+  "blockingOptions": {
+    "message": "Options de blocage"
+  },
+  "btnAdd": {
+    "message": "Ajouter"
+  },
+  "cancel": {
+    "message": "Annuler"
+  },
+  "edit": {
+    "message": "Modifier"
+  },
+  "essentialBlocking": {
+    "message": "Blocage basique"
+  },
+  "essentialBlockingName": {
+    "message": "Basique"
+  },
+  "extShortDesc": {
+    "message": "Enfin un bloqueur efficace qui ménage le processeur et la mémoire vive de votre appareil."
+  },
+  "generalSettings": {
+    "message": "Paramètres généraux"
+  },
+  "indexDescription": {
+    "message": "Bloqueur de pubs pour une navigation plus rapide et plus sécurisée"
+  },
+  "keep_essential": {
+    "message": "Rester en mode basique"
+  },
+  "keep_balanced": {
+    "message": "Rester en mode modéré"
+  },
+  "learnMore": {
+    "message": "En savoir plus"
+  },
+  "noAdsToBlock": {
+    "message": "Aucune pub à bloquer sur cette page"
+  },
+  "pauseAdBlock": {
+    "message": "Désactiver Adblock"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Désactiver Adblock sur tous les sites"
+  },
+  "pauseOnAllSites": {
+    "message": "Désactiver sur tous les sites"
+  },
+  "pauseOnThisSite": {
+    "message": "Désactiver sur ce site"
+  },
+  "poweredByUblock": {
+    "message": "Optimisé par <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Supprimer"
+  },
+  "save": {
+    "message": "Enregistrer"
+  },
+  "setStrict": {
+    "message": "Passer en mode strict"
+  },
+  "setStrictDescription_avast": {
+    "message": "Quelques publicités non intrusives nous aident à financer Avast Secure Browser. Elles n'interrompent pas votre navigation et contribuent à la clarté de votre navigateur. Autoriser ces publicités serait une belle preuve d'affection !"
+  },
+  "setStrictDescription_avg": {
+    "message": "Quelques publicités non intrusives nous aident à financer AVG Secure Browser. Elles n'interrompent pas votre navigation et contribuent à la clarté de votre navigateur. Autoriser ces publicités serait une belle preuve d'affection !"
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Quelques publicités non intrusives nous aident à financer CCleaner Browser. Elles n'interrompent pas votre navigation et contribuent à la clarté de votre navigateur. Autoriser ces publicités serait une belle preuve d'affection !"
+  },
+  "setStrictTitle": {
+    "message": "Passer Adblock en mode strict"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Bloquer les annonces intempestives\n qui violent les normes de l'industrie, pour des annonces plus respectueuses. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>En savoir plus</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Recommandé</b> - Bloquer la plupart des pubs pour une navigation plus claire et plus rapide."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Bloquer presque toutes les pubs pour une navigation plus claire et plus rapide.<b>Cela peut empêcher la lecture de certains sites.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Fenêtres contextuelles (pop-up) et bannières"
+  },
+  "settingsCardDisruptive": {
+    "message": "Autres pubs perturbatrices"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Certaines pubs de réseaux sociaux"
+  },
+  "settingsCardOtherAds": {
+    "message": "99 % des autres pubs"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Afficher le nombre de pubs bloquées sur l'icône"
+  },
+  "site": {
+    "message": "Site"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Les sites sur lesquels vous avez autorisé l'affichage de pubs apparaîtront ici"
+  },
+  "strictBlocking": {
+    "message": "Blocage strict"
+  },
+  "strictBlockingName": {
+    "message": "Strict"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Réactiver"
+  },
+  "turnAdblockOn": {
+    "message": "Activer"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Vous avez autorisé les pubs sur ce site "
+  },
+  "adsAreAllowed": {
+    "message": "Les publicités sont autorisées sur ce site"
+  },
+  "openSettings": {
+    "message": "Ouvrir les paramètres"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Désactiver Adblock sur tous les sites"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "En savoir plus sur Adblock"
+  },
+  "pauseAdsOnSite": {
+    "message": "Suspendre les publicités sur ce site"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Désactiver les publicités sur tous les sites"
+  },
+  "turnOn": {
+    "message": "Activer Adblock"
+  },
+  "turnOff": {
+    "message": "Désactiver Adblock"
+  },
+  "setEssentialMode": {
+    "message": "Passer en mode Basique"
+  },
+  "setBalancedMode": {
+    "message": "Passer en mode Modéré"
+  },
+  "setStrictMode": {
+    "message": "Passer en mode Strict"
+  },
+  "showAmountAds": {
+    "message": "Afficher le nombre de publicités bloquées"
+  },
+  "hideAmountAds": {
+    "message": "Masquer le nombre de publicités bloquées"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Ajouter un site web pour autoriser des publicités"
+  },
+  "learnMoreAAS": {
+    "message": "En savoir plus sur les normes de publicités acceptables"
+  },
+  "learnMoreUblock": {
+    "message": "En savoir plus sur uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Mettre ce site sur liste blanche"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Annuler l'opération Ajouter le site"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Modifier le site de la liste blanche"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Annuler l'opération Modifier le site"
+  },
+  "removeFromWhitelist": {
+    "message": "Retirer le site de la liste blanche"
+  },
+  "editFromWhitelist": {
+    "message": "Modifier le site de la liste blanche"
+  },
+  "stayOn_balanced": {
+    "message": "Rester en mode Modéré"
+  },
+  "stayOn_essential": {
+    "message": "Rester en mode Basique"
+  },
+  "cancelSetStrict": {
+    "message": "Annuler l'opération Passer en mode strict"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Modifier le site en liste blanche"
+  },
+  "whitelistModalDescription": {
+    "message": "Sur quel site souhaitez-vous autoriser les publicités ?"
+  }
+}

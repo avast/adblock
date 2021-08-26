@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Блокировка рекламы"
+  },
+  "adBlockSettings": {
+    "message": "Настройки блокировки рекламы"
+  },
+  "adblockIsPaused": {
+    "message": "Блокировка рекламы приостановлена на всех сайтах"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Блокировка рекламы приостановлена на этом сайте"
+  },
+  "adblockIsOff": {
+    "message": "Блокировка рекламы отключена"
+  },
+  "addSite": {
+    "message": "Добавить сайт"
+  },
+  "adsBlocked": {
+    "message": "Заблокированная реклама: "
+  },
+  "allowAdsOnSite": {
+    "message": "Разрешить рекламу на этом сайте"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Всегда разрешать рекламу на следующих сайтах"
+  },
+  "balancedBlocking": {
+    "message": "Сбалансированная блокировка"
+  },
+  "balancedBlockingName": {
+    "message": "Сбалансированная"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Блокировать рекламу на этом сайте"
+  },
+  "blockingOptions": {
+    "message": "Варианты блокировки"
+  },
+  "btnAdd": {
+    "message": "Добавить"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "edit": {
+    "message": "Изменить"
+  },
+  "essentialBlocking": {
+    "message": "Базовая блокировка"
+  },
+  "essentialBlockingName": {
+    "message": "Базовая"
+  },
+  "extShortDesc": {
+    "message": "Долгожданный эффективный блокировщик с минимальной нагрузкой на процессор и память."
+  },
+  "generalSettings": {
+    "message": "Общие настройки"
+  },
+  "indexDescription": {
+    "message": "Блокировка рекламы для быстрого и безопасного просмотра сайтов"
+  },
+  "keep_essential": {
+    "message": "Оставить базовый"
+  },
+  "keep_balanced": {
+    "message": "Оставить сбалансированный"
+  },
+  "learnMore": {
+    "message": "Подробнее"
+  },
+  "noAdsToBlock": {
+    "message": "На этой странице нет рекламы для блокировки"
+  },
+  "pauseAdBlock": {
+    "message": "Приостановить блокировку рекламы"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Приостановить блокировку рекламы на всех сайтах"
+  },
+  "pauseOnAllSites": {
+    "message": "Приостановить на всех сайтах"
+  },
+  "pauseOnThisSite": {
+    "message": "Приостановить на этом сайте"
+  },
+  "poweredByUblock": {
+    "message": "На платформе <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Удалить"
+  },
+  "save": {
+    "message": "Сохранить"
+  },
+  "setStrict": {
+    "message": "Установить строгий режим"
+  },
+  "setStrictDescription_avast": {
+    "message": "Небольшое количество ненавязчивой рекламы помогает нам финансировать Avast Secure Browser. Она не мешает вам во время просмотра страниц и позволяет пользоваться браузером бесплатно. Будем очень благодарны, если вы разрешите отображение этой рекламы."
+  },
+  "setStrictDescription_avg": {
+    "message": "Небольшое количество ненавязчивой рекламы помогает нам финансировать AVG Secure Browser. Она не мешает вам во время просмотра страниц и позволяет пользоваться браузером бесплатно. Будем очень благодарны, если вы разрешите отображение этой рекламы."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Небольшое количество ненавязчивой рекламы помогает нам финансировать CCleaner Browser. Она не мешает вам во время просмотра страниц и позволяет пользоваться браузером бесплатно. Будем очень благодарны, если вы разрешите отображение этой рекламы."
+  },
+  "setStrictTitle": {
+    "message": "Установить строгий режим блокировки рекламы"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Блокировка рекламы, которая мешает работе и нарушает\n отраслевые стандарты удобства для пользователя. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Подробнее</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Рекомендуется</b>. Блокировка большинства рекламных объявлений для более быстрого просмотра страниц без лишних элементов."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Блокировка почти всей рекламы для более быстрого просмотра страниц без лишних элементов. <b>Это может помешать работе некоторых сайтов.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Всплывающая реклама и баннеры"
+  },
+  "settingsCardDisruptive": {
+    "message": "Другая реклама, мешающая просмотру"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Определенная реклама из социальных сетей"
+  },
+  "settingsCardOtherAds": {
+    "message": "99 % другой рекламы"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Показывать количество заблокированных рекламных объявлений на значке"
+  },
+  "site": {
+    "message": "Сайт"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Сайты, на которых вы разрешили показывать рекламу, будут отображаться здесь."
+  },
+  "strictBlocking": {
+    "message": "Строгая блокировка"
+  },
+  "strictBlockingName": {
+    "message": "Строгая"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Возобновить"
+  },
+  "turnAdblockOn": {
+    "message": "Включить"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Вы разрешили показывать рекламу на этом сайте "
+  },
+  "adsAreAllowed": {
+    "message": "Реклама на этом сайте разрешена"
+  },
+  "openSettings": {
+    "message": "Открыть настройки"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Возобновить блокировку рекламы на всех сайтах"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Подробнее о функции блокировки рекламы"
+  },
+  "pauseAdsOnSite": {
+    "message": "Приостановить рекламу на этом сайте"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Приостановить рекламу на всех сайтах"
+  },
+  "turnOn": {
+    "message": "Включить функцию блокировки рекламы"
+  },
+  "turnOff": {
+    "message": "Выключить функцию блокировки рекламы"
+  },
+  "setEssentialMode": {
+    "message": "Установить базовый режим"
+  },
+  "setBalancedMode": {
+    "message": "Установить сбалансированный режим"
+  },
+  "setStrictMode": {
+    "message": "Установить строгий режим"
+  },
+  "showAmountAds": {
+    "message": "Показать количество заблокированной рекламы"
+  },
+  "hideAmountAds": {
+    "message": "Скрыть количество заблокированной рекламы"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Добавить сайт, чтобы разрешить рекламу"
+  },
+  "learnMoreAAS": {
+    "message": "Подробнее о стандартах приемлемой рекламы"
+  },
+  "learnMoreUblock": {
+    "message": "Подробнее о uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Сохранить сайт в белом списке"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Отменить действие по добавлению сайта"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Редактировать сайт из белого списка"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Отменить действие по редактированию сайта"
+  },
+  "removeFromWhitelist": {
+    "message": "Удалить сайт из белого списка"
+  },
+  "editFromWhitelist": {
+    "message": "Редактировать сайт из белого списка"
+  },
+  "stayOn_balanced": {
+    "message": "Оставить сбалансированный режим"
+  },
+  "stayOn_essential": {
+    "message": "Оставить базовый режим"
+  },
+  "cancelSetStrict": {
+    "message": "Отменить установку строгого режима"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Изменить сайт из белого списка"
+  },
+  "whitelistModalDescription": {
+    "message": "На каком сайте разрешить рекламу?"
+  }
+}

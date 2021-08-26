@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "广告拦截"
+  },
+  "adBlockSettings": {
+    "message": "广告拦截 - 设置"
+  },
+  "adblockIsPaused": {
+    "message": "所有站点上广告拦截已暂停"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "此站点上广告拦截已暂停"
+  },
+  "adblockIsOff": {
+    "message": "广告拦截已关闭"
+  },
+  "addSite": {
+    "message": "添加站点"
+  },
+  "adsBlocked": {
+    "message": "已拦截广告： "
+  },
+  "allowAdsOnSite": {
+    "message": "允许此站点的广告"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "始终允许以下站点上的广告"
+  },
+  "balancedBlocking": {
+    "message": "均衡拦截"
+  },
+  "balancedBlockingName": {
+    "message": "均衡"
+  },
+  "blockAdsOnThisSite": {
+    "message": "拦截此站点的广告"
+  },
+  "blockingOptions": {
+    "message": "拦截选项"
+  },
+  "btnAdd": {
+    "message": "添加"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "edit": {
+    "message": "编辑"
+  },
+  "essentialBlocking": {
+    "message": "基本拦截"
+  },
+  "essentialBlockingName": {
+    "message": "基本"
+  },
+  "extShortDesc": {
+    "message": "终于，找到了一个有效的拦截器。不会占用太大 CPU 和内存。"
+  },
+  "generalSettings": {
+    "message": "常规设置"
+  },
+  "indexDescription": {
+    "message": "阻止广告，更快更安全地浏览"
+  },
+  "keep_essential": {
+    "message": "保持基本设置"
+  },
+  "keep_balanced": {
+    "message": "保持均衡设置"
+  },
+  "learnMore": {
+    "message": "了解更多"
+  },
+  "noAdsToBlock": {
+    "message": "此页面没有需要拦截的广告"
+  },
+  "pauseAdBlock": {
+    "message": "暂停广告拦截"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "在所有站点上暂停广告拦截"
+  },
+  "pauseOnAllSites": {
+    "message": "在所有站点上暂停"
+  },
+  "pauseOnThisSite": {
+    "message": "在此站点上暂停"
+  },
+  "poweredByUblock": {
+    "message": "由 <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u> 支持。"
+  },
+  "remove": {
+    "message": "移除"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "setStrict": {
+    "message": "设置严格"
+  },
+  "setStrictDescription_avast": {
+    "message": "极少的非侵入性广告可以帮助我们为 Avast Secure Browser 筹集资金。它们不会干扰您的浏览，并有助于您免费使用浏览器。请允许这些广告，以表示您对我们的喜爱。"
+  },
+  "setStrictDescription_avg": {
+    "message": "极少的非侵入性广告可以帮助我们为 AVG Secure Browser 筹集资金。它们不会干扰您的浏览，并有助于您免费使用浏览器。请允许这些广告，以表示您对我们的喜爱。"
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "极少的非侵入性广告可以帮助我们为 CCleaner Browser 筹集资金。它们不会干扰您的浏览，并有助于您免费使用浏览器。请允许这些广告，以表示您对我们的喜爱。"
+  },
+  "setStrictTitle": {
+    "message": "设置广告拦截为严格"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "阻止违反了用户友好广告行业标准的干扰性广告。<u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>了解更多</a></u>。"
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>建议</b>  - 阻止大部分广告，享受更快更干净的浏览体验。"
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "阻止几乎所有广告，享受更快更干净的浏览体验。<b>这样会破坏部分站点。</b>"
+  },
+  "settingsCardPopups": {
+    "message": "弹出广告和横幅"
+  },
+  "settingsCardDisruptive": {
+    "message": "其他干扰性广告"
+  },
+  "settingsCardSocialMedia": {
+    "message": "一些社交媒体广告"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% 其他广告"
+  },
+  "settingsShowNumberBadge": {
+    "message": "在图标上显示已阻止的广告数量"
+  },
+  "site": {
+    "message": "站点"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "允许广告的站点将出现在此处"
+  },
+  "strictBlocking": {
+    "message": "严格拦截"
+  },
+  "strictBlockingName": {
+    "message": "严格"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "取消暂停"
+  },
+  "turnAdblockOn": {
+    "message": "打开"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "您已允许此站点的广告"
+  },
+  "adsAreAllowed": {
+    "message": "该站点的广告已被允许"
+  },
+  "openSettings": {
+    "message": "打开设置"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "在所有站点上取消暂停广告拦截"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "了解关于广告拦截的更多信息"
+  },
+  "pauseAdsOnSite": {
+    "message": "在该站点暂停广告"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "在所有站点暂停广告"
+  },
+  "turnOn": {
+    "message": "打开广告拦截"
+  },
+  "turnOff": {
+    "message": "关闭广告拦截"
+  },
+  "setEssentialMode": {
+    "message": "设置基本模式"
+  },
+  "setBalancedMode": {
+    "message": "设置均衡模式"
+  },
+  "setStrictMode": {
+    "message": "设置严格模式"
+  },
+  "showAmountAds": {
+    "message": "显示拦截的广告数量"
+  },
+  "hideAmountAds": {
+    "message": "隐藏拦截的广告数量"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "添加“网站”以便允许广告"
+  },
+  "learnMoreAAS": {
+    "message": "了解有关可接受广告标准的更多信息"
+  },
+  "learnMoreUblock": {
+    "message": "了解有关 uBlock 的更多信息"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "将站点保存到白名单中"
+  },
+  "cancelAddSiteOperation": {
+    "message": "取消添加站点操作"
+  },
+  "editSiteFromWhitelist": {
+    "message": "编辑白名单中的站点"
+  },
+  "cancelEditSiteOperation": {
+    "message": "取消编辑站点操作"
+  },
+  "removeFromWhitelist": {
+    "message": "从白名单中删除站点"
+  },
+  "editFromWhitelist": {
+    "message": "编辑白名单中的站点"
+  },
+  "stayOn_balanced": {
+    "message": "保持均衡模式"
+  },
+  "stayOn_essential": {
+    "message": "保持基本模式"
+  },
+  "cancelSetStrict": {
+    "message": "取消设置严格模式操作"
+  },
+  "modifyWhitelistedSite": {
+    "message": "修改列入白名单的站点"
+  },
+  "whitelistModalDescription": {
+    "message": "您希望在哪个站点允许广告？"
+  }
+}

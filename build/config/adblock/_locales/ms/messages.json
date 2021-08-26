@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Sekatan Iklan"
+  },
+  "adBlockSettings": {
+    "message": "Sekatan Iklan – Tetapan"
+  },
+  "adblockIsPaused": {
+    "message": "Sekatan Iklan dihentikan seketika pada semua tapak"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Sekatan Iklan dihentikan seketika pada tapak ini"
+  },
+  "adblockIsOff": {
+    "message": "Sekatan Iklan dimatikan"
+  },
+  "addSite": {
+    "message": "Tambah tapak"
+  },
+  "adsBlocked": {
+    "message": "Iklan disekat: "
+  },
+  "allowAdsOnSite": {
+    "message": "Benarkan iklan pada tapak ini"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Sentiasa benarkan iklan pada tapak berikut"
+  },
+  "balancedBlocking": {
+    "message": "Sekatan seimbang"
+  },
+  "balancedBlockingName": {
+    "message": "Seimbang"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Sekat iklan pada tapak ini"
+  },
+  "blockingOptions": {
+    "message": "Pilihan sekatan"
+  },
+  "btnAdd": {
+    "message": "Tambah"
+  },
+  "cancel": {
+    "message": "Batal"
+  },
+  "edit": {
+    "message": "Edit"
+  },
+  "essentialBlocking": {
+    "message": "Sekatan penting"
+  },
+  "essentialBlockingName": {
+    "message": "Penting"
+  },
+  "extShortDesc": {
+    "message": "Akhirnya, penyekat yang cekap. Tidak membebankan CPU dan memori."
+  },
+  "generalSettings": {
+    "message": "Tetapan umum"
+  },
+  "indexDescription": {
+    "message": "Sekat iklan untuk pelayaran yang lebih pantas & selamat"
+  },
+  "keep_essential": {
+    "message": "Kekalkan penting"
+  },
+  "keep_balanced": {
+    "message": "Kekalkan seimbang"
+  },
+  "learnMore": {
+    "message": "Ketahui lebih lanjut"
+  },
+  "noAdsToBlock": {
+    "message": "Tiada iklan untuk disekat pada halaman ini"
+  },
+  "pauseAdBlock": {
+    "message": "Hentikan seketika Sekatan Iklan"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Hentikan seketika Sekatan Iklan pada semua tapak"
+  },
+  "pauseOnAllSites": {
+    "message": "Hentikan seketika pada semua tapak"
+  },
+  "pauseOnThisSite": {
+    "message": "Hentikan seketika pada tapak ini"
+  },
+  "poweredByUblock": {
+    "message": "Dikuasakan oleh <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Alih keluar"
+  },
+  "save": {
+    "message": "Simpan"
+  },
+  "setStrict": {
+    "message": "Tetapkan ketegasan"
+  },
+  "setStrictDescription_avast": {
+    "message": "Beberapa iklan yang tidak mengganggu membantu kami membiayai Avast Secure Browser. Iklan ini tidak mengganggu pelayaran anda dan membantu memastikan pelayar anda percuma. Berikan sedikit kasih sayang kepada kami dengan membenarkan iklan ini."
+  },
+  "setStrictDescription_avg": {
+    "message": "Beberapa iklan yang tidak mengganggu membantu kami membiayai AVG Secure Browser. Iklan ini tidak mengganggu pelayaran anda dan membantu memastikan pelayar anda percuma. Berikan sedikit kasih sayang kepada kami dengan membenarkan iklan ini."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Beberapa iklan yang tidak mengganggu membantu kami membiayai CCleaner Browser. Iklan ini tidak mengganggu pelayaran anda dan membantu memastikan pelayar anda percuma. Berikan sedikit kasih sayang kepada kami dengan membenarkan iklan ini."
+  },
+  "setStrictTitle": {
+    "message": "Tetapkan Sekatan Iklan kepada tegas"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Sekat iklan yang mengganggu yang melanggar\n standard industri untuk iklan mesra pengguna. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Ketahui lebih lanjut</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Disyorkan</b> – Sekat kebanyakan iklan untuk mendapatkan pengalaman pelayaran yang lebih pantas dan bersih."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Sekat hampir kesemua iklan untuk mendapatkan pengalaman pelayaran yang lebih pantas dan bersih. <b>Ini mungkin akan merosakkan sesetengah tapak.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Iklan timbul dan sepanduk"
+  },
+  "settingsCardDisruptive": {
+    "message": "Iklan mengganggu yang lain"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Sesetengah iklan media sosial"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% iklan lain"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Paparkan bilangan iklan yang disekat pada ikon"
+  },
+  "site": {
+    "message": "Tapak"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Tapak yang anda benarkan iklan akan dipaparkan di sini"
+  },
+  "strictBlocking": {
+    "message": "Sekatan tegas"
+  },
+  "strictBlockingName": {
+    "message": "Tegas"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Jalankan semula"
+  },
+  "turnAdblockOn": {
+    "message": "Hidupkan"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Anda telah membenarkan iklan pada tapak ini "
+  },
+  "adsAreAllowed": {
+    "message": "Iklan dibenarkan pada tapak ini"
+  },
+  "openSettings": {
+    "message": "Buka tetapan"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Sambung semula Sekatan Iklan pada semua tapak"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Ketahui lebih lanjut tentang Sekatan Iklan"
+  },
+  "pauseAdsOnSite": {
+    "message": "Jeda iklan pada tapak ini"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Jeda iklan pada semua tapak"
+  },
+  "turnOn": {
+    "message": "Hidupkan Sekatan Iklan"
+  },
+  "turnOff": {
+    "message": "Matikan Sekatan Iklan"
+  },
+  "setEssentialMode": {
+    "message": "Tetapkan mod Penting"
+  },
+  "setBalancedMode": {
+    "message": "Tetapkan mod Seimbang"
+  },
+  "setStrictMode": {
+    "message": "Tetapkan mod Tegas"
+  },
+  "showAmountAds": {
+    "message": "Tunjukkan jumlah iklan yang disekat"
+  },
+  "hideAmountAds": {
+    "message": "Sembunyikan jumlah iklan yang disekat"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Tambahkan \"tapak web\" untuk membenarkan iklan"
+  },
+  "learnMoreAAS": {
+    "message": "Ketahui lebih lanjut tentang Standard Iklan Boleh Diterima"
+  },
+  "learnMoreUblock": {
+    "message": "Ketahui lebih lanjut tentang uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Simpan tapak ke dalam senarai putih"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Batalkan operasi tambah tapak"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Edit tapak daripada senarai putih"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Batalkan operasi edit tapak"
+  },
+  "removeFromWhitelist": {
+    "message": "Alih keluar tapak daripada senarai putih"
+  },
+  "editFromWhitelist": {
+    "message": "Edit tapak daripada senarai putih"
+  },
+  "stayOn_balanced": {
+    "message": "Terus menggunakan mod seimbang"
+  },
+  "stayOn_essential": {
+    "message": "Terus menggunakan mod penting"
+  },
+  "cancelSetStrict": {
+    "message": "Batalkan set operasi mod Tegas"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Ubah suai tapak yang disenarai putih"
+  },
+  "whitelistModalDescription": {
+    "message": "Tapak manakah yang anda ingin benarkan iklan?"
+  }
+}

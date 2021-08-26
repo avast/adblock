@@ -1,0 +1,863 @@
+{
+	"extShortDesc": {
+		"message": "Blokiranje nametljivih web-pratilica."
+	},
+	"dashboardName": {
+		"message": "#title# – nadzorna ploča"
+	},
+	"settingsPageName": {
+		"message": "Postavke"
+	},
+	"3pPageName": {
+		"message": "Filtri drugih proizvođača"
+	},
+	"rulesPageName": {
+		"message": "Moja pravila"
+	},
+	"whitelistPageName": {
+		"message": "Popis dopuštenih stavki"
+	},
+	"statsPageName": {
+		"message": "#title# – zapisivač"
+	},
+	"aboutPageName": {
+		"message": "O programu"
+	},
+	"advancedSettingsPageName": {
+		"message": "Napredne postavke"
+	},
+	"pickerCreate": {
+		"message": "Stvori"
+	},
+	"pickerPick": {
+		"message": "Odaberi"
+	},
+	"pickerQuit": {
+		"message": "Zatvori"
+	},
+	"pickerPreview": {
+		"message": "Pretpregled"
+	},
+	"pickerNetFilters": {
+		"message": "Mrežni filtri"
+	},
+	"pickerCosmeticFilters": {
+		"message": "Vizualni filtri"
+	},
+	"pickerCosmeticFiltersHint": {
+		"message": "Klik, Ctrl + klik"
+	},
+	"pickerContextMenuEntry": {
+		"message": "Blokiraj element"
+	},
+	"settingsCollapseBlockedPrompt": {
+		"message": "Sakrij rezervirana mjesta blokiranih elemenata"
+	},
+	"settingsIconBadgePrompt": {
+		"message": "Pokaži broj blokiranih zahtjeva na ikoni"
+	},
+	"settingsTooltipsPrompt": {
+		"message": "Onemogući opise elemenata"
+	},
+	"settingsContextMenuPrompt": {
+		"message": "Upotrijebi kontekstni izbornik po potrebi"
+	},
+	"settingsColorBlindPrompt": {
+		"message": "Optimizirano za osobe slijepe za boje"
+	},
+	"settingsCloudStorageEnabledPrompt": {
+		"message": "Omogući podršku za pohranu u oblaku"
+	},
+	"settingsAdvancedUserPrompt": {
+		"message": "Napredni sam korisnik (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>obavezne upute</a>)"
+	},
+	"settingsAdvancedUserSettings": {
+		"message": "napredne postavke"
+	},
+	"settingsPrefetchingDisabledPrompt": {
+		"message": "Onemogući pretpreuzimanje (radi sprječavanja povezivanja blokiranih mrežnih zahtjeva)"
+	},
+	"settingsHyperlinkAuditingDisabledPrompt": {
+		"message": "Onemogući nadzor hiperveza"
+	},
+	"settingsWebRTCIPAddressHiddenPrompt": {
+		"message": "Spriječi otkrivanje lokalne IP adrese putem WebRTC-a"
+	},
+	"settingPerSiteSwitchGroup": {
+		"message": "Zadano ponašanje"
+	},
+	"settingPerSiteSwitchGroupSynopsis": {
+		"message": "Ta se zadana ponašanja mogu nadjačati za pojedinačna web-mjesta"
+	},
+	"settingsNoCosmeticFilteringPrompt": {
+		"message": "Onemogući vizualne filtre"
+	},
+	"settingsNoRemoteFontsPrompt": {
+		"message": "Blokiraj udaljene fontove"
+	},
+	"settingsNoCSPReportsPrompt": {
+		"message": "Blokiraj CSP izvješća"
+	},
+	"settingsStorageUsed": {
+		"message": "Iskorišten prostor za pohranu: {{value}} B"
+	},
+	"settingsLastRestorePrompt": {
+		"message": "Zadnje vraćanje:"
+	},
+	"settingsLastBackupPrompt": {
+		"message": "Zadnje sigurnosno kopiranje:"
+	},
+	"3pListsOfBlockedHostsPrompt": {
+		"message": "Mrežni filtri (njih {{netFilterCount}}) i vizualni filtri (njih {{cosmeticFilterCount}}) iz:"
+	},
+	"3pListsOfBlockedHostsPerListStats": {
+		"message": "Iskorišteno: {{used}} od {{total}}"
+	},
+	"3pAutoUpdatePrompt1": {
+		"message": "Automatski ažuriraj popis filtara"
+	},
+	"3pUpdateNow": {
+		"message": "Ažuriraj odmah"
+	},
+	"3pPurgeAll": {
+		"message": "Očisti sve predmemorije"
+	},
+	"3pParseAllABPHideFiltersPrompt1": {
+		"message": "Raščlani i nametni vizualne filtre"
+	},
+	"3pParseAllABPHideFiltersInfo": {
+		"message": "<p>Ta opcija omogućuje raščlanjivanje i nametanje filtara kompatibilnih sa softverom <a href=\"https://adblockplus.org/en/faq_internal#elemhide\">Adblock Plus &ldquo;za skrivanje elemenata&rdquo;</a>. Riječ je o vizualnim filtrima koji sakrivaju elemente na web-stranici za koje se pretpostavlja da su vizualna smetnja korisniku, a koje ne može blokirati modul za filtriranje koji se temelji na mrežnom zahtjevu.</p><p>Ako omogućite tu opciju, softver #title# koristit će više memorije.</p>"
+	},
+	"3pIgnoreGenericCosmeticFilters": {
+		"message": "Ignoriraj generičke vizualne filtre"
+	},
+	"3pIgnoreGenericCosmeticFiltersInfo": {
+		"message": "<p>Generički vizualni filtri osmišljeni su za primjenu na svim web-mjestima.<p>Premda ih softver #title# koristi na učinkovit način, generički vizualni filtri mogu pridonijeti znatnoj potrošnji memorije i korištenju procesora na nekim web-stranicama, posebice na velikim i dugovječnim web-stranicama.<p>Kada omogućite tu opciju, eliminirat ćete potrošnju memorije i upotrebu procesora na web-mjestima uzrokovanu rukovanjem generičkim vizualnim filtrima te smanjiti potrošnju memorije softvera #title#.<p>Preporučuje se da tu opciju omogućite na manje snažnim uređajima."
+	},
+	"3pListsOfBlockedHostsHeader": {
+		"message": "Popis blokiranih glavnih računala"
+	},
+	"3pApplyChanges": {
+		"message": "Primijeni promjene"
+	},
+	"3pGroupAds": {
+		"message": "Oglasi"
+	},
+	"3pGroupPrivacy": {
+		"message": "Zaštita privatnosti"
+	},
+	"3pGroupMalware": {
+		"message": "Domene sa zlonamjernim softverom"
+	},
+	"3pGroupAnnoyances": {
+		"message": "Ometanja"
+	},
+	"3pGroupMultipurpose": {
+		"message": "Višezadaćnost"
+	},
+	"3pGroupRegions": {
+		"message": "Regije, jezici"
+	},
+	"3pGroupCustom": {
+		"message": "Prilagođeno"
+	},
+	"3pExternalListsHint": {
+		"message": "Jedan URL po retku. Zanemarit će se retci s prefiksom &lsquo;!&rsquo;. URL-ovi koji nisu valjani tiho će se ignorirati."
+	},
+	"3pExternalListObsolete": {
+		"message": "Zastarjelo."
+	},
+	"3pLastUpdate": {
+		"message": "Zadnje ažuriranje: {{ago}}.\nKliknite da biste proveli ažuriranje."
+	},
+	"3pUpdating": {
+		"message": "Ažuriranje..."
+	},
+	"3pNetworkError": {
+		"message": "Mrežna pogreška spriječila je ažuriranje resursa."
+	},
+	"1pFormatHint": {
+		"message": "Jedan filtar po retku. Filtar može biti običan naziv glavnog računala ili filtar kompatibilan sa softverom Adblock Plus. Zanemarit će se retci s prefiksom &lsquo;!&rsquo;."
+	},
+	"1pImport": {
+		"message": "Uvezi i dodaj"
+	},
+	"1pExport": {
+		"message": "Izvezi"
+	},
+	"1pApplyChanges": {
+		"message": "Primijeni promjene"
+	},
+	"rulesPermanentHeader": {
+		"message": "Trajna pravila"
+	},
+	"rulesTemporaryHeader": {
+		"message": "Privremena pravila"
+	},
+	"rulesRevert": {
+		"message": "Vrati"
+	},
+	"rulesCommit": {
+		"message": "Primijeni"
+	},
+	"rulesEdit": {
+		"message": "Uredi"
+	},
+	"rulesEditSave": {
+		"message": "Spremi"
+	},
+	"rulesEditDiscard": {
+		"message": "Zanemari"
+	},
+	"rulesImport": {
+		"message": "Uvoz iz datoteke..."
+	},
+	"rulesExport": {
+		"message": "Izvezi u datoteku"
+	},
+	"rulesHint": {
+		"message": "Popis pravila dinamičkog filtriranja."
+	},
+	"rulesFormatHint": {
+		"message": "Sintaksa pravila: <code>vrsta radnje na izvornom odredištu</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>potpuna dokumentacija</a>)."
+	},
+	"whitelistPrompt": {
+		"message": "Odredbe popisa dopuštenih stavki određuju koje će web-stranice softvera #title# biti onemogućene. Tiho će se zanemariti i komentirati direktive koje nisu valjane."
+	},
+	"whitelistImport": {
+		"message": "Uvezi i dodaj"
+	},
+	"whitelistExport": {
+		"message": "Izvezi"
+	},
+	"whitelistExportFilename": {
+		"message": "#title#-whitelist_{{datetime}}.txt"
+	},
+	"whitelistApply": {
+		"message": "Primijeni promjene"
+	},
+	"logRequestsHeaderType": {
+		"message": "Vrsta"
+	},
+	"logRequestsHeaderDomain": {
+		"message": "Domena"
+	},
+	"logRequestsHeaderURL": {
+		"message": "URL"
+	},
+	"logRequestsHeaderFilter": {
+		"message": "Filtar"
+	},
+	"logAll": {
+		"message": "Sve"
+	},
+	"logBehindTheScene": {
+		"message": "U pozadini"
+	},
+	"logFilterPrompt": {
+		"message": "filriranje unosa zapisnika"
+	},
+	"logMaxEntriesTip": {
+		"message": "Maksimalan broj unosa u zapisniku"
+	},
+	"aboutChangelog": {
+		"message": "Zapisnik promjena"
+	},
+	"aboutWiki": {
+		"message": "Wiki-stranica"
+	},
+	"aboutSupport": {
+		"message": "Podrška"
+	},
+	"aboutCode": {
+		"message": "Izvorni kod (GPLv3)"
+	},
+	"aboutContributors": {
+		"message": "Suradnici"
+	},
+	"aboutBackupDataButton": {
+		"message": "Sigurnosno kopiraj u datoteku"
+	},
+	"aboutBackupFilename": {
+		"message": "#title#-backup_{{datetime}}.txt"
+	},
+	"aboutRestoreDataButton": {
+		"message": "Vrati iz datoteke..."
+	},
+	"aboutResetDataButton": {
+		"message": "Vrati zadane postavke..."
+	},
+	"aboutRestoreDataConfirm": {
+		"message": "Sve će se vaše postavke prebrisati pomoću podataka sigurnosno kopiranih {{time}}, a softver #title# ponovno će se pokrenuti.\n\nŽelite li prebrisati sve postojeće postavke pomoću sigurnosno kopiranih podataka?"
+	},
+	"aboutRestoreDataError": {
+		"message": "Podaci se ne mogu pročitati ili nisu valjani"
+	},
+	"aboutResetDataConfirm": {
+		"message": "Sve će se postavke ukloniti, a softver #title# ponovno će se pokrenuti.\n\nŽelite li softver #title# vratiti na tvorničke postavke?"
+	},
+	"errorCantConnectTo": {
+		"message": "Mrežna pogreška: {{msg}}"
+	},
+	"subscriberConfirm": {
+		"message": "#title#: želite li na popise prilagođenih filtara dodati sljedeći URL?\n\nNaslov: \"{{title}}\"\nURL: {{url}}"
+	},
+	"elapsedOneMinuteAgo": {
+		"message": "prije 1 min"
+	},
+	"elapsedManyMinutesAgo": {
+		"message": "prije {{value}} min"
+	},
+	"elapsedOneHourAgo": {
+		"message": "prije 1 h"
+	},
+	"elapsedManyHoursAgo": {
+		"message": "prije {{value}} h"
+	},
+	"elapsedOneDayAgo": {
+		"message": "prije 1 dan"
+	},
+	"elapsedManyDaysAgo": {
+		"message": "prije sljedećeg broja dana: {{value}}"
+	},
+	"showDashboardButton": {
+		"message": "Pokaži nadzornu ploču"
+	},
+	"showNetworkLogButton": {
+		"message": "Pokaži zapisivač"
+	},
+	"fennecMenuItemBlockingOff": {
+		"message": "isključeno"
+	},
+	"docblockedPrompt1": {
+		"message": "Softver #title# spriječio je učitavanje sljedeće stranice:"
+	},
+	"docblockedPrompt2": {
+		"message": "Zbog sljedećeg filtra"
+	},
+	"docblockedNoParamsPrompt": {
+		"message": "bez parametara"
+	},
+	"docblockedFoundIn": {
+		"message": "Pronađeno u:"
+	},
+	"docblockedBack": {
+		"message": "Natrag"
+	},
+	"docblockedClose": {
+		"message": "Zatvori taj prozor"
+	},
+	"docblockedProceed": {
+		"message": "Onemogući strogo blokiranje za glavno računalo {{hostname}}"
+	},
+	"docblockedDisableTemporary": {
+		"message": "Privremeno"
+	},
+	"docblockedDisablePermanent": {
+		"message": "Trajno"
+	},
+	"cloudPush": {
+		"message": "Izvezi u pohranu u oblaku"
+	},
+	"cloudPull": {
+		"message": "Uvezi iz pohrane u oblaku"
+	},
+	"cloudPullAndMerge": {
+		"message": "Uvezi iz pohrane na oblaku i spoji s trenutnim postavkama"
+	},
+	"cloudDeviceNamePrompt": {
+		"message": "Naziv ovog uređaja:"
+	},
+	"advancedSettingsWarning": {
+		"message": "Upozorenje! Te napredne postavke mijenjate na vlastiti rizik."
+	},
+	"genericSubmit": {
+		"message": "Pošalji"
+	},
+	"genericApplyChanges": {
+		"message": "Primijeni promjene"
+	},
+	"genericRevert": {
+		"message": "Vrati"
+	},
+	"genericBytes": {
+		"message": "B"
+	},
+	"contextMenuTemporarilyAllowLargeMediaElements": {
+		"message": "Privremeno dopusti velike medijske elemente"
+	},
+	"dummy": {
+		"message": "Taj unos mora biti posljednji"
+	},
+	"popupExtraMoreInformation": {
+		"message": "Dodatne informacije"
+	},
+	"popupExtraAdsBlockedOnSites": {
+		"message": "Na ovom su web-mjestu pratilice blokirane"
+	},
+	"popupExtraAdsAllowedOnSites": {
+		"message": "Na ovom su web-mjestu pratilice dopuštene"
+	},
+	"popupExtraProtectionCanNotEnabled": {
+		"message": "Na ovom web-mjestu nije moguće omogućiti zaštitu"
+	},
+	"popupExtraMoreOptions": {
+		"message": "Više mogućnosti"
+	},
+	"popupExtraLessOptions": {
+		"message": "Manje mogućnosti"
+	},
+	"popupExtraSeeListAllowedSites": {
+		"message": "Pogledajte popis svih dopuštenih web-mjesta"
+	},
+	"popupAdvancedSettings": {
+		"message": "Napredne postavke"
+	},
+	"popupExtraAdsBlockedOnPage": {
+		"message": "Na ovoj su stranici pratilice blokirane"
+	},
+	"popupExtraAdsBlockedTotal": {
+		"message": "Ukupno blokiranih pratilica"
+	},
+	"popupExtraListAllowedSites": {
+		"message": "Popis dopuštenih web-mjesta"
+	},
+	"extraSlider0": {
+		"message": "Ne blokiraj oglase"
+	},
+	"extraSlider50": {
+		"message": "Umjereno blokiranje oglasa"
+	},
+	"extraSlider100": {
+		"message": "Maksimalno blokiranje oglasa"
+	},
+	"extraIndexTitle": {
+		"message": "#title#"
+	},
+	"extraIndexDescription": {
+		"message": "Blokirajte pratilice za brže i sigurnije pregledavanje"
+	},
+	"extraGeneralSettings": {
+		"message": "Općenite postavke"
+	},
+	"extraGeneralSettingsDesc": {
+		"message": "Upravljajte podacima koje će #title# prikazivati"
+	},
+	"extra3pPageNameDesc": {
+		"message": "Filtri za pratilice i zaštitu privatnosti drugih proizvođača"
+	},
+	"extra1pPageNameDesc": {
+		"message": "Upravljanje prilagođenim filtrima"
+	},
+	"extraRulesPageNameDesc": {
+		"message": "Popis pravila za dinamično filtriranje"
+	},
+	"extraWhitelistPageNameDesc": {
+		"message": "Popis web-mjesta na kojima su pratilice dopuštene"
+	},
+	"extraIndexHeader": {
+		"message": "Napredne postavke za #title#"
+	},
+	"extraIndexFooter": {
+		"message": "Pokreće: uBlock Origin."
+	},
+	"extraShowMore": {
+		"message": "Pokaži više"
+	},
+	"extraBtnImport": {
+		"message": "uvoz"
+	},
+	"extraBtnExport": {
+		"message": "izvoz"
+	},
+	"extraBtnAdd": {
+		"message": "dodaj"
+	},
+	"extraBtnCancel": {
+		"message": "odustani"
+	},
+	"extraBtnEdit": {
+		"message": "Uredi"
+	},
+	"extraBtnRemove": {
+		"message": "Ukloni"
+	},
+	"extraBtnUpdateAll": {
+		"message": "ažuriraj sve"
+	},
+	"extraLabelFilter": {
+		"message": "Filtar"
+	},
+	"extraMyCustomFilter": {
+		"message": "Moji prilagođeni filtri"
+	},
+	"extraManageFilters": {
+		"message": "Upravljanje filtrima"
+	},
+	"extraAdsFilters": {
+		"message": "Filtri za oglase"
+	},
+	"extraEditFilter": {
+		"message": "Uredi filtar"
+	},
+	"extraAddFilter": {
+		"message": "Dodaj filtar"
+	},
+	"extraLearnMore": {
+		"message": "Saznajte više"
+	},
+	"extraRuleSyntax": {
+		"message": "Sintaksa pravila"
+	},
+	"extraSourceDestinationTypeAction": {
+		"message": "izvor odredište vrsta radnja."
+	},
+	"extraRuleDefinition": {
+		"message": "Definicija pravila"
+	},
+	"extraRule": {
+		"message": "Pravilo"
+	},
+	"extraEditRule": {
+		"message": "Uredi privremeno pravilo"
+	},
+	"extraAddRrule": {
+		"message": "Dodaj privremeno pravilo"
+	},
+	"extraAdvancedUserSettings": {
+		"message": "Napredne korisničke postavke"
+	},
+	"extraBlockMediaElementsLargerThan": {
+		"message": "Blokiraj medijske elemente veće od"
+	},
+	"extraSetting": {
+		"message": "Postavka"
+	},
+	"extraEditSetting": {
+		"message": "Uredi postavku"
+	},
+	"extraAddSetting": {
+		"message": "Dodaj postavku"
+	},
+	"extraSite": {
+		"message": "Web-mjesto"
+	},
+	"extraAllowOnSites": {
+		"message": "Dopusti pratilice na tim web-mjestima"
+	},
+	"extraEditSite": {
+		"message": "Uredi web-mjesto"
+	},
+	"extraAddSite": {
+		"message": "Dodaj web-mjesto"
+	},
+	"extraDefaultBehaviour": {
+		"message": "Zadano ponašanje"
+	},
+	"extraPrivacy": {
+		"message": "Zaštita privatnosti"
+	},
+	"3pGroupDefault": {
+		"message": "Mrežni i vizualni filtri"
+	},
+	"1pPageName": {
+		"message": " Moji filtri"
+	},
+	"popupExtraProtectionDisabledForSession": {
+		"message": "Nije moguće omogućiti zaštitu za ovu sesiju"
+	},
+	"popupExtraNoSitesAddedYet": {
+		"message": "Još nije dodano nijedno web-mjesto"
+	},
+	"extraInterstitialBlocking": {
+		"message": "Omogući umetnuto blokiranje"
+	},
+	"shortcutsPageName": {
+		"message": "Prečaci"
+	},
+	"popupTipDashboard": {
+		"message": "Otvori nadzornu ploču"
+	},
+	"popupTipZapper": {
+		"message": "Unesite način za isključivanje elementa"
+	},
+	"popupTipPicker": {
+		"message": "Unesite način za odabir elementa"
+	},
+	"popupTipLog": {
+		"message": "Otvori zapisivač"
+	},
+	"popupTipNoPopups": {
+		"message": "Isključivanje i uključivanje blokiranja svih skočnih prozora za ovo web-mjesto"
+	},
+	"popupTipNoPopups1": {
+		"message": "Kliknite da biste blokirali sve skočne prozore na ovom web-mjestu"
+	},
+	"popupTipNoPopups2": {
+		"message": "Kliknite da biste prestali blokirati sve skočne prozore na ovom web-mjestu"
+	},
+	"popupTipNoLargeMedia": {
+		"message": "Isključivanje i uključivanje blokiranja velikih medijskih elemenata za ovo web-mjesto"
+	},
+	"popupTipNoLargeMedia1": {
+		"message": "Kliknite da biste blokirali velike medijske elemente na ovom web-mjestu"
+	},
+	"popupTipNoLargeMedia2": {
+		"message": "Kliknite da biste prestali blokirati velike medijske elemente na ovom web-mjestu"
+	},
+	"popupTipNoCosmeticFiltering": {
+		"message": "Isključivanje i uključivanje kozmetičkog filtriranja za ovo web-mjesto"
+	},
+	"popupTipNoCosmeticFiltering1": {
+		"message": "Kliknite da biste onemogućili kozmetičko filtriranje na ovom web-mjestu"
+	},
+	"popupTipNoCosmeticFiltering2": {
+		"message": "Kliknite da biste omogućili kozmetičko filtriranje na ovom web-mjestu"
+	},
+	"popupTipNoRemoteFonts": {
+		"message": "Isključivanje i uključivanje blokiranja udaljenih fontova za ovo web-mjesto"
+	},
+	"popupTipNoRemoteFonts1": {
+		"message": "Kliknite da biste blokirali udaljene fontove na ovom web-mjestu"
+	},
+	"popupTipNoRemoteFonts2": {
+		"message": "Kliknite da biste prestali blokirati udaljene fontove na ovom web-mjestu"
+	},
+	"popupTipGlobalRules": {
+		"message": "Globalna pravila: ovaj je stupac namijenjen za pravila koja se odnose na sva web-mjesta."
+	},
+	"popupTipLocalRules": {
+		"message": "Lokalna pravila: ovaj je stupac namijenjen za pravila koja se odnose samo na trenutno web-mjesto. Lokalna pravila nadjačavaju globalna pravila."
+	},
+	"popupTipSaveRules": {
+		"message": "Kliknite da bi promjene bile trajne."
+	},
+	"popupTipRevertRules": {
+		"message": "Kliknite da biste vratili promjene."
+	},
+	"popupAnyRulePrompt": {
+		"message": "sve"
+	},
+	"popupImageRulePrompt": {
+		"message": "slike"
+	},
+	"popup3pAnyRulePrompt": {
+		"message": "treća strana"
+	},
+	"popup3pPassiveRulePrompt": {
+		"message": "css/slike treće strane"
+	},
+	"popupInlineScriptRulePrompt": {
+		"message": "skripte na istoj razini"
+	},
+	"popup1pScriptRulePrompt": {
+		"message": "skripte prve strane"
+	},
+	"popup3pScriptRulePrompt": {
+		"message": "skripte treće strane"
+	},
+	"popup3pFrameRulePrompt": {
+		"message": "okviri treće strane"
+	},
+	"popupHitDomainCountPrompt": {
+		"message": "povezane domene"
+	},
+	"popupHitDomainCount": {
+		"message": "{{count}} od {{total}}"
+	},
+	"settingsNoLargeMediaPrompt": {
+		"message": "Blokiraj medijske elemente veće od {{input:number}} kB"
+	},
+	"3pImport": {
+		"message": "Uvoz..."
+	},
+	"loggerCurrentTab": {
+		"message": "Trenutna kartica"
+	},
+	"loggerURLFilteringContextLabel": {
+		"message": "Kontekst:"
+	},
+	"loggerURLFilteringTypeLabel": {
+		"message": "Vrsta:"
+	},
+	"loggerURLFilteringHeader": {
+		"message": "Dinamičko filtriranje URL-ova"
+	},
+	"loggerStaticFilteringHeader": {
+		"message": "Statičko filtriranje"
+	},
+	"loggerStaticFilteringSentence": {
+		"message": "Mrežni zahtjevi ({{action}}) vrste {{type}} {{br}}za koje se URL adresa podudara s adresom {{url}} {{br}}i dolazi s izvora {{origin}}, {{br}}uz {{importance}} imaju odgovarajući filtar iznimki."
+	},
+	"loggerStaticFilteringSentencePartBlock": {
+		"message": "Blokiraj"
+	},
+	"loggerStaticFilteringSentencePartAllow": {
+		"message": "Dopusti"
+	},
+	"loggerStaticFilteringSentencePartType": {
+		"message": "vrsta ?{{type}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyType": {
+		"message": "bilo koja vrsta"
+	},
+	"loggerStaticFilteringSentencePartOrigin": {
+		"message": "izvor ?{{origin}}?"
+	},
+	"loggerStaticFilteringSentencePartAnyOrigin": {
+		"message": "svi izvori"
+	},
+	"loggerStaticFilteringSentencePartNotImportant": {
+		"message": "osim kada"
+	},
+	"loggerStaticFilteringSentencePartImportant": {
+		"message": "čak i kada"
+	},
+	"loggerStaticFilteringFinderSentence1": {
+		"message": "Statički filtar <code>{{filter}}</code> pronađen na popisu:"
+	},
+	"loggerStaticFilteringFinderSentence2": {
+		"message": "Statički filtar <code>{{filter}}</code> nije mogao biti pronađen ni na jednom trenutno omogućenom popisu filtara"
+	},
+	"aboutIssues": {
+		"message": "Alat za praćenje problema"
+	},
+	"shortcutCapturePlaceholder": {
+		"message": "Upišite prečac"
+	},
+	"assetViewerPageName": {
+		"message": "Preglednik resursa uBlock? ?"
+	},
+	"popupTipNoScripting1": {
+		"message": "Kliknite da biste onemogućili JavaScript na ovom web-mjestu"
+	},
+	"popupTipNoScripting2": {
+		"message": "Kliknite da biste prestali s onemogućivanjem jezika JavaScript na ovom web-mjestu"
+	},
+	"settingsNoScriptingPrompt": {
+		"message": "Onemogući JavaScript"
+	},
+	"aboutDependencies": {
+		"message": "Vanjske ovisnosti (GPLv3-kompatibilnost):"
+	},
+	"loggerReloadTip": {
+		"message": "Ponovno učitaj sadržaj kartice"
+	},
+	"loggerDomInspectorTip": {
+		"message": "Isključivanje i uključivanje pregledavatelja DOM-a"
+	},
+	"loggerPopupPanelTip": {
+		"message": "Isključivanje i uključivanje skočne ploče"
+	},
+	"loggerInfoTip": {
+		"message": "Wiki podrijetla za uBlock: zapisivač"
+	},
+	"loggerClearTip": {
+		"message": "Očisti zapisivač"
+	},
+	"loggerPauseTip": {
+		"message": "Pauziraj zapisivač (odbaci sve dolazne podatke)"
+	},
+	"loggerUnpauseTip": {
+		"message": "Prekini pauziranje zapisivača"
+	},
+	"loggerRowFiltererButtonTip": {
+		"message": "Isključivanje i uključivanje filtriranja zapisivača"
+	},
+	"loggerRowFiltererBuiltinTip": {
+		"message": "Mogućnosti filtriranja zapisivača"
+	},
+	"loggerRowFiltererBuiltinNot": {
+		"message": "Ne"
+	},
+	"loggerRowFiltererBuiltinEventful": {
+		"message": "događanja"
+	},
+	"loggerRowFiltererBuiltinBlocked": {
+		"message": "blokirano"
+	},
+	"loggerRowFiltererBuiltinAllowed": {
+		"message": "omogućeno"
+	},
+	"loggerRowFiltererBuiltin1p": {
+		"message": "prva strana"
+	},
+	"loggerRowFiltererBuiltin3p": {
+		"message": "treća strana"
+	},
+	"loggerEntryDetailsHeader": {
+		"message": "Pojedinosti"
+	},
+	"loggerEntryDetailsFilter": {
+		"message": "Filtar"
+	},
+	"loggerEntryDetailsFilterList": {
+		"message": "Popis filtara"
+	},
+	"loggerEntryDetailsRule": {
+		"message": "Pravilo"
+	},
+	"loggerEntryDetailsContext": {
+		"message": "Kontekst"
+	},
+	"loggerEntryDetailsRootContext": {
+		"message": "Korijenski kontekst"
+	},
+	"loggerEntryDetailsPartyness": {
+		"message": "Strane"
+	},
+	"loggerEntryDetailsType": {
+		"message": "Vrsta"
+	},
+	"loggerEntryDetailsURL": {
+		"message": "URL"
+	},
+	"loggerSettingDiscardPrompt": {
+		"message": "Stavke zapisivača koje ne ispunjavaju sva tri uvjeta navedena u nastavku u potpunosti bit će automatski odbačene:"
+	},
+	"loggerSettingPerEntryMaxAge": {
+		"message": "Čuvanje stavki u zadnjih {{input}} min"
+	},
+	"loggerSettingPerTabMaxLoads": {
+		"message": "Čuvanje najviše sljedećeg broja stavki po kartici: {{input}}"
+	},
+	"loggerSettingPerTabMaxEntries": {
+		"message": "Čuvanje najviše sljedećeg broja stavki po kartici: {{input}}"
+	},
+	"loggerSettingPerEntryLineCount": {
+		"message": "Korištenje sljedećeg broja redaka po stavki u vertikalno proširenom načinu: {{input}}"
+	},
+	"loggerSettingHideColumnsPrompt": {
+		"message": "Sakrij stupce:"
+	},
+	"loggerSettingHideColumnTime": {
+		"message": "{{input}} vrijeme"
+	},
+	"loggerSettingHideColumnFilter": {
+		"message": "{{input}} filtar/pravilo"
+	},
+	"loggerSettingHideColumnContext": {
+		"message": "{{input}} kontekst"
+	},
+	"loggerSettingHideColumnPartyness": {
+		"message": "{{input}} strana"
+	},
+	"loggerExportFormatList": {
+		"message": "Popis"
+	},
+	"loggerExportFormatTable": {
+		"message": "Tablica"
+	},
+	"loggerExportEncodePlain": {
+		"message": "Obično"
+	},
+	"loggerExportEncodeMarkdown": {
+		"message": "Označavanje"
+	},
+	"genericMergeViewScrollLock": {
+		"message": "Isključivanje i uključivanje pregledavanja zaključanog"
+	},
+	"genericCopyToClipboard": {
+		"message": "Kopiraj u međuspremnik"
+	}
+}

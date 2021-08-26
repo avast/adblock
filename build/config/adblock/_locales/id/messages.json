@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Adblock"
+  },
+  "adBlockSettings": {
+    "message": "Adblock – Pengaturan"
+  },
+  "adblockIsPaused": {
+    "message": "Adblock dijeda untuk semua situs"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Adblock dijeda untuk situs ini"
+  },
+  "adblockIsOff": {
+    "message": "Adblock dinonaktifkan"
+  },
+  "addSite": {
+    "message": "Tambahkan situs"
+  },
+  "adsBlocked": {
+    "message": "Iklan diblokir: "
+  },
+  "allowAdsOnSite": {
+    "message": "Izinkan iklan di situs ini"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Selalu izinkan iklan di situs berikut"
+  },
+  "balancedBlocking": {
+    "message": "Pemblokiran seimbang"
+  },
+  "balancedBlockingName": {
+    "message": "Seimbang"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Blokir iklan di situs ini"
+  },
+  "blockingOptions": {
+    "message": "Opsi pemblokiran"
+  },
+  "btnAdd": {
+    "message": "Tambah"
+  },
+  "cancel": {
+    "message": "Batal"
+  },
+  "edit": {
+    "message": "Edit"
+  },
+  "essentialBlocking": {
+    "message": "Pemblokiran dasar"
+  },
+  "essentialBlockingName": {
+    "message": "Dasar"
+  },
+  "extShortDesc": {
+    "message": "Akhirnya, ada pemblokir yang efisien. Ramah CPU dan memori."
+  },
+  "generalSettings": {
+    "message": "Pengaturan umum"
+  },
+  "indexDescription": {
+    "message": "Blokir iklan agar browsing lebih cepat & aman"
+  },
+  "keep_essential": {
+    "message": "Tetap dasar"
+  },
+  "keep_balanced": {
+    "message": "Pertahankan Seimbang"
+  },
+  "learnMore": {
+    "message": "Pelajari lebih lanjut"
+  },
+  "noAdsToBlock": {
+    "message": "Tidak ada iklan yang harus diblokir di halaman ini"
+  },
+  "pauseAdBlock": {
+    "message": "Jeda Adblock"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Jeda Adblock untuk semua situs"
+  },
+  "pauseOnAllSites": {
+    "message": "Jeda untuk semua situs"
+  },
+  "pauseOnThisSite": {
+    "message": "Jeda untuk situs ini"
+  },
+  "poweredByUblock": {
+    "message": "Didukung oleh <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlokir</a></u>"
+  },
+  "remove": {
+    "message": "Hapus"
+  },
+  "save": {
+    "message": "Simpan"
+  },
+  "setStrict": {
+    "message": "Atur ke ketat"
+  },
+  "setStrictDescription_avast": {
+    "message": "Beberapa iklan tidak berbahaya membantu mendanai Avast Secure Browser. Iklan semacam ini tidak mengganggu aktivitas browsing dan melindungi browser. Dukung kami dengan tidak memblokir iklan ini."
+  },
+  "setStrictDescription_avg": {
+    "message": "Beberapa iklan tidak berbahaya membantu mendanai AVG Secure Browser. Iklan semacam ini tidak mengganggu aktivitas browsing dan melindungi browser. Dukung kami dengan tidak memblokir iklan ini."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Beberapa iklan tidak berbahaya membantu mendanai CCleaner Browser. Iklan semacam ini tidak mengganggu aktivitas browsing dan melindungi browser. Dukung kami dengan tidak memblokir iklan ini."
+  },
+  "setStrictTitle": {
+    "message": "Atur Adblock menjadi ketat"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Blokir iklan mengganggu yang melanggar\n standar industri untuk iklan ramah pengguna. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Selengkapnya</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Direkomendasikan</b> – Blokir sebagian besar iklan agar browsing lebih cepat dan lebih aman."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Blokir hampir semua iklan agar browsing lebih cepat dan lebih aman. <b>Opsi ini dapat merugikan sejumlah situs.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Iklan dan banner pop-up"
+  },
+  "settingsCardDisruptive": {
+    "message": "Iklan menggangu lain"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Beberapa iklan media sosial"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% iklan lain"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Tampilkan jumlah iklan diblokir di ikon"
+  },
+  "site": {
+    "message": "Situs"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Situs yang Anda izinkan menampilkan iklan akan muncul di sini"
+  },
+  "strictBlocking": {
+    "message": "Pemblokiran ketat"
+  },
+  "strictBlockingName": {
+    "message": "Ketat"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Berhenti menjeda"
+  },
+  "turnAdblockOn": {
+    "message": "Aktifkan"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Anda mengizinkan iklan di situs ini "
+  },
+  "adsAreAllowed": {
+    "message": "Iklan diizinkan di situs ini"
+  },
+  "openSettings": {
+    "message": "Buka pengaturan"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Berhenti menjeda Adblock untuk semua situs"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Pelajari lebih lanjut tentang Adblock"
+  },
+  "pauseAdsOnSite": {
+    "message": "Jeda iklan untuk situs ini"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Jeda iklan untuk semua situs"
+  },
+  "turnOn": {
+    "message": "Aktifkan Adblock"
+  },
+  "turnOff": {
+    "message": "Nonaktifkan Adblock"
+  },
+  "setEssentialMode": {
+    "message": "Atur ke mode Dasar"
+  },
+  "setBalancedMode": {
+    "message": "Atur ke mode Seimbang"
+  },
+  "setStrictMode": {
+    "message": "Atur ke mode Ketat"
+  },
+  "showAmountAds": {
+    "message": "Tampilkan jumlah iklan yang diblokir"
+  },
+  "hideAmountAds": {
+    "message": "Sembunyikan jumlah iklan yang diblokir"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Tambahkan \"situs web\" yang boleh menampilkan iklan"
+  },
+  "learnMoreAAS": {
+    "message": "Pelajari lebih lanjut tentang Standar Iklan yang Disetujui"
+  },
+  "learnMoreUblock": {
+    "message": "Pelajari lebih lanjut tentang uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Simpan situs ke dalam daftar putih"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Batalkan penambahan situs"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Edit situs dari daftar putih"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Batalkan pengeditan situs"
+  },
+  "removeFromWhitelist": {
+    "message": "Hapus situs dari daftar putih"
+  },
+  "editFromWhitelist": {
+    "message": "Edit situs dari daftar putih"
+  },
+  "stayOn_balanced": {
+    "message": "Tetap gunakan mode seimbang"
+  },
+  "stayOn_essential": {
+    "message": "Tetap gunakan mode dasar"
+  },
+  "cancelSetStrict": {
+    "message": "Batalkan pengaturan ke mode Ketat"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Ubah situs yang ada di daftar putih"
+  },
+  "whitelistModalDescription": {
+    "message": "Situs apa yang boleh menampilkan iklan?"
+  }
+}

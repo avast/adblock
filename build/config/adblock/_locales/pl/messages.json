@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Adblock"
+  },
+  "adBlockSettings": {
+    "message": "Adblock — ustawienia"
+  },
+  "adblockIsPaused": {
+    "message": "Adblock jest wstrzymany na wszystkich stronach"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Adblock jest wstrzymany na tej stronie"
+  },
+  "adblockIsOff": {
+    "message": "Adblock jest wyłączony"
+  },
+  "addSite": {
+    "message": "Dodaj stronę"
+  },
+  "adsBlocked": {
+    "message": "Zablokowane reklamy: "
+  },
+  "allowAdsOnSite": {
+    "message": "Zezwól na reklamy na tej stronie"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Zawsze zezwalaj na reklamy na następujących stronach"
+  },
+  "balancedBlocking": {
+    "message": "Zrównoważone blokowanie"
+  },
+  "balancedBlockingName": {
+    "message": "Zrównoważone"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Blokuj reklamy na tej stronie"
+  },
+  "blockingOptions": {
+    "message": "Opcje blokowania"
+  },
+  "btnAdd": {
+    "message": "Dodaj"
+  },
+  "cancel": {
+    "message": "Anuluj"
+  },
+  "edit": {
+    "message": "Edytuj"
+  },
+  "essentialBlocking": {
+    "message": "Podstawowe blokowanie"
+  },
+  "essentialBlockingName": {
+    "message": "Podstawowe"
+  },
+  "extShortDesc": {
+    "message": "Wydajna blokada, która nie obciąża procesora ani pamięci."
+  },
+  "generalSettings": {
+    "message": "Ustawienia ogólne"
+  },
+  "indexDescription": {
+    "message": "Blokuj reklamy, aby przeglądać szybciej i bezpieczniej"
+  },
+  "keep_essential": {
+    "message": "Kontynuuj podstawowe blokowanie"
+  },
+  "keep_balanced": {
+    "message": "Kontynuuj zrównoważone blokowanie"
+  },
+  "learnMore": {
+    "message": "Dowiedz się więcej"
+  },
+  "noAdsToBlock": {
+    "message": "Na tej stronie nie ma reklam do zablokowania"
+  },
+  "pauseAdBlock": {
+    "message": "Wstrzymaj Adblocka"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Wstrzymaj Adblocka na wszystkich stronach"
+  },
+  "pauseOnAllSites": {
+    "message": "Wstrzymaj na wszystkich stronach"
+  },
+  "pauseOnThisSite": {
+    "message": "Wstrzymaj na tej stronie"
+  },
+  "poweredByUblock": {
+    "message": "Technologia <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Usuń"
+  },
+  "save": {
+    "message": "Zapisz"
+  },
+  "setStrict": {
+    "message": "Ustaw tryb ścisły"
+  },
+  "setStrictDescription_avast": {
+    "message": "Kilka nieinwazyjnych reklam pomaga nam finansować Avast Secure Browser. Nie przeszkadzają one w przeglądaniu stron i umożliwiają bezpłatne korzystanie z przeglądarki. Wesprzyj nas, zezwalając na te reklamy."
+  },
+  "setStrictDescription_avg": {
+    "message": "Kilka nieinwazyjnych reklam pomaga nam finansować AVG Secure Browser. Nie przeszkadzają one w przeglądaniu stron i umożliwiają bezpłatne korzystanie z przeglądarki. Wesprzyj nas, zezwalając na te reklamy."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Kilka nieinwazyjnych reklam pomaga nam finansować CCleaner Browser. Nie przeszkadzają one w przeglądaniu stron i umożliwiają bezpłatne korzystanie z przeglądarki. Wesprzyj nas, zezwalając na te reklamy."
+  },
+  "setStrictTitle": {
+    "message": "Ustaw tryb ścisły Adblocka"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Blokuj uciążliwe reklamy, które naruszają\n branżowe standardy reklam przyjaznych dla użytkownika.<u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Dowiedz się więcej</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Zalecane</b>: blokuj większość reklam, aby przeglądać Internet szybciej i wygodniej."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Blokuj niemal wszystkie reklamy, aby przeglądać Internet szybciej i wygodniej. <b>Może to spowodować nieprawidłowe wyświetlanie niektórych stron.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Wyskakujące reklamy i banery"
+  },
+  "settingsCardDisruptive": {
+    "message": "Inne uciążliwe reklamy"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Niektóre reklamy w mediach społecznościowych"
+  },
+  "settingsCardOtherAds": {
+    "message": "99% pozostałych reklam"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Wyświetlaj liczbę zablokowanych reklam na ikonie"
+  },
+  "site": {
+    "message": "Strona"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Tutaj pojawią się strony, na których zezwolono na reklamy"
+  },
+  "strictBlocking": {
+    "message": "Ścisłe blokowanie"
+  },
+  "strictBlockingName": {
+    "message": "Ścisłe"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Wznów"
+  },
+  "turnAdblockOn": {
+    "message": "Włącz"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Zezwolono na reklamy na tej stronie "
+  },
+  "adsAreAllowed": {
+    "message": "Na tej stronie reklamy są dozwolone"
+  },
+  "openSettings": {
+    "message": "Otwórz ustawienia"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Wznów działanie Adblocka na wszystkich stronach"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Dowiedz się więcej o funkcji Adblock"
+  },
+  "pauseAdsOnSite": {
+    "message": "Wstrzymaj reklamy na tej stronie"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Wstrzymaj reklamy na wszystkich stronach"
+  },
+  "turnOn": {
+    "message": "Włącz funkcję Adblock"
+  },
+  "turnOff": {
+    "message": "Wyłącz funkcję Adblock"
+  },
+  "setEssentialMode": {
+    "message": "Ustaw tryb podstawowy"
+  },
+  "setBalancedMode": {
+    "message": "Ustaw tryb zrównoważony"
+  },
+  "setStrictMode": {
+    "message": "Ustaw tryb ścisły"
+  },
+  "showAmountAds": {
+    "message": "Pokaż ilość zablokowanych reklam"
+  },
+  "hideAmountAds": {
+    "message": "Ukryj ilość zablokowanych reklam"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Dodaj „stronę internetową”, aby zezwolić na reklamy"
+  },
+  "learnMoreAAS": {
+    "message": "Dowiedz się więcej o standardach dotyczących dopuszczalnych reklam"
+  },
+  "learnMoreUblock": {
+    "message": "Dowiedz się więcej o funkcji uBlock"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Zapisz stronę na białej liście"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Anuluj operację dodawania strony"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Edytuj stronę z białej listy"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Anuluj operację edytowania strony"
+  },
+  "removeFromWhitelist": {
+    "message": "Usuń stronę z białej listy"
+  },
+  "editFromWhitelist": {
+    "message": "Edytuj stronę z białej listy"
+  },
+  "stayOn_balanced": {
+    "message": "Pozostań w trybie zrównoważonym"
+  },
+  "stayOn_essential": {
+    "message": "Pozostań w trybie podstawowym"
+  },
+  "cancelSetStrict": {
+    "message": "Anuluj operację ustawiania trybu ścisłego"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Modyfikuj stronę dodaną do białej listy"
+  },
+  "whitelistModalDescription": {
+    "message": "Na której stronie chcesz zezwolić na reklamy?"
+  }
+}

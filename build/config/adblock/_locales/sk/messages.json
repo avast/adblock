@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Adblock"
+  },
+  "adBlockSettings": {
+    "message": "Adblock – nastavenia"
+  },
+  "adblockIsPaused": {
+    "message": "Adblock je na všetkých weboch pozastavený"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Adblock je na tomto webe pozastavený"
+  },
+  "adblockIsOff": {
+    "message": "Adblock je vypnutý"
+  },
+  "addSite": {
+    "message": "Pridať web"
+  },
+  "adsBlocked": {
+    "message": "Zablokované reklamy:"
+  },
+  "allowAdsOnSite": {
+    "message": "Povoliť reklamy na tomto webe"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "Vždy povoliť reklamy na nasledujúcich weboch"
+  },
+  "balancedBlocking": {
+    "message": "Vyvážené blokovanie"
+  },
+  "balancedBlockingName": {
+    "message": "Vyvážené"
+  },
+  "blockAdsOnThisSite": {
+    "message": "Blokovať reklamy na tomto webe"
+  },
+  "blockingOptions": {
+    "message": "Možnosti blokovania"
+  },
+  "btnAdd": {
+    "message": "Pridať"
+  },
+  "cancel": {
+    "message": "Zrušiť"
+  },
+  "edit": {
+    "message": "Upraviť"
+  },
+  "essentialBlocking": {
+    "message": "Základné blokovanie"
+  },
+  "essentialBlockingName": {
+    "message": "Základné"
+  },
+  "extShortDesc": {
+    "message": "Konečne účinný nástroj na blokovanie. Nezaťažuje procesor ani pamäť."
+  },
+  "generalSettings": {
+    "message": "Všeobecné nastavenia"
+  },
+  "indexDescription": {
+    "message": "Vďaka blokovaniu reklám môžete rýchlejšie a bezpečnejšie surfovať"
+  },
+  "keep_essential": {
+    "message": "Ponechať základné"
+  },
+  "keep_balanced": {
+    "message": "Ponechať vyvážené"
+  },
+  "learnMore": {
+    "message": "Viac informácií"
+  },
+  "noAdsToBlock": {
+    "message": "Na stránke nie sú žiadne reklamy na zablokovanie"
+  },
+  "pauseAdBlock": {
+    "message": "Pozastaviť Adblock"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "Pozastaviť Adblock na všetkých weboch"
+  },
+  "pauseOnAllSites": {
+    "message": "Pozastaviť na všetkých weboch"
+  },
+  "pauseOnThisSite": {
+    "message": "Pozastaviť na tomto webe"
+  },
+  "poweredByUblock": {
+    "message": "Používa technológiu <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u>"
+  },
+  "remove": {
+    "message": "Odobrať"
+  },
+  "save": {
+    "message": "Uložiť"
+  },
+  "setStrict": {
+    "message": "Nastaviť prísne blokovanie"
+  },
+  "setStrictDescription_avast": {
+    "message": "Vývoj aplikácie Avast Secure Browser financujeme neveľkým počtom nerušivých reklám. Tieto reklamy vás pri surfovaní na internete nijako nerušia a vďaka nim je náš prehliadač zdarma. Povoľte ich, prosím."
+  },
+  "setStrictDescription_avg": {
+    "message": "Vývoj aplikácie AVG Secure Browser financujeme neveľkým počtom nerušivých reklám. Tieto reklamy vás pri surfovaní na internete nijako nerušia a vďaka nim je náš prehliadač zdarma. Povoľte ich, prosím."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "Vývoj aplikácie CCleaner Browser financujeme neveľkým počtom nerušivých reklám. Tieto reklamy vás pri surfovaní na internete nijako nerušia a vďaka nim je náš prehliadač zdarma. Povoľte ich, prosím."
+  },
+  "setStrictTitle": {
+    "message": "Nastavenie prísneho blokovania reklám"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "Zablokujte rušivé reklamy, ktoré porušujú normy odvetvia týkajúce sa prijateľných reklám. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>Ďalšie informácie</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>Odporúčané</b> – zablokuje väčšinu reklám, aby ste mohli surfovať na internete rýchlejšie a bez rušenia."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "Zablokuje takmer všetky reklamy, aby ste mohli surfovať na internete rýchlejšie a bez rušenia. <b>Niektoré weby sa pre to nemusia zobrazovať správne.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "Vyskakovacie reklamy a bannery"
+  },
+  "settingsCardDisruptive": {
+    "message": "Iné rušivé reklamy"
+  },
+  "settingsCardSocialMedia": {
+    "message": "Niektoré reklamy na sociálnych sieťach"
+  },
+  "settingsCardOtherAds": {
+    "message": "99 % ostatných reklám"
+  },
+  "settingsShowNumberBadge": {
+    "message": "Zobraziť počet zablokovaných požiadaviek na ikone"
+  },
+  "site": {
+    "message": "Web"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "Tu budú weby, na ktorých ste povolili reklamy"
+  },
+  "strictBlocking": {
+    "message": "Prísne blokovanie"
+  },
+  "strictBlockingName": {
+    "message": "Prísne"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "Zrušiť pozastavenie"
+  },
+  "turnAdblockOn": {
+    "message": "Zapnúť"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "Na tomto webe ste povolili reklamy"
+  },
+  "adsAreAllowed": {
+    "message": "Na tomto webe sú reklamy povolené"
+  },
+  "openSettings": {
+    "message": "Otvoriť nastavenia"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "Zrušiť pozastavenie Adblocku na všetkých weboch"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Ďalšie informácie o Adblocku"
+  },
+  "pauseAdsOnSite": {
+    "message": "Pozastaviť reklamy na tomto webe"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "Pozastaviť reklamy na všetkých weboch"
+  },
+  "turnOn": {
+    "message": "Zapnúť Adblock"
+  },
+  "turnOff": {
+    "message": "Vypnúť Adblock"
+  },
+  "setEssentialMode": {
+    "message": "Nastaviť základný režim"
+  },
+  "setBalancedMode": {
+    "message": "Nastaviť vyvážený režim"
+  },
+  "setStrictMode": {
+    "message": "Nastaviť prísny režim"
+  },
+  "showAmountAds": {
+    "message": "Zobraziť počet zablokovaných reklám"
+  },
+  "hideAmountAds": {
+    "message": "Skryť počet zablokovaných reklám"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "Pridať web, na ktorom chcete povoliť reklamy"
+  },
+  "learnMoreAAS": {
+    "message": "Ďalšie informácie o norme prijateľných reklám"
+  },
+  "learnMoreUblock": {
+    "message": "Ďalšie informácie o uBlocku"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "Uložiť web do zoznamu povolených"
+  },
+  "cancelAddSiteOperation": {
+    "message": "Zrušiť pridávanie webu"
+  },
+  "editSiteFromWhitelist": {
+    "message": "Upraviť web v zozname povolených"
+  },
+  "cancelEditSiteOperation": {
+    "message": "Zrušiť úpravu webu"
+  },
+  "removeFromWhitelist": {
+    "message": "Odstrániť web zo zoznamu povolených"
+  },
+  "editFromWhitelist": {
+    "message": "Upraviť web v zozname povolených"
+  },
+  "stayOn_balanced": {
+    "message": "Zostať vo vyváženom režime"
+  },
+  "stayOn_essential": {
+    "message": "Zostať v základnom režime"
+  },
+  "cancelSetStrict": {
+    "message": "Zrušiť nastavovanie prísneho režimu"
+  },
+  "modifyWhitelistedSite": {
+    "message": "Upraviť web v zozname povolených"
+  },
+  "whitelistModalDescription": {
+    "message": "Na ktorom webe chcete povoliť reklamy?"
+  }
+}

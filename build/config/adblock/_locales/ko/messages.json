@@ -1,0 +1,239 @@
+{
+  "adBlock": {
+    "message": "Adblock"
+  },
+  "adBlockSettings": {
+    "message": "Adblock - 설정"
+  },
+  "adblockIsPaused": {
+    "message": "Adblock이 모든 사이트에서 일시 중지됨"
+  },
+  "adblockIsPausedOnSite": {
+    "message": "Adblock이 이 사이트에서 일시 중지됨"
+  },
+  "adblockIsOff": {
+    "message": "Adblock이 꺼짐"
+  },
+  "addSite": {
+    "message": "사이트 추가"
+  },
+  "adsBlocked": {
+    "message": "차단된 광고: "
+  },
+  "allowAdsOnSite": {
+    "message": "이 사이트에 광고 허용"
+  },
+  "alwaysAllowAdsOnSites": {
+    "message": "다음 사이트에서 항상 광고 허용"
+  },
+  "balancedBlocking": {
+    "message": "일반 차단"
+  },
+  "balancedBlockingName": {
+    "message": "일반 차단"
+  },
+  "blockAdsOnThisSite": {
+    "message": "이 사이트에서 광고 차단"
+  },
+  "blockingOptions": {
+    "message": "차단 옵션"
+  },
+  "btnAdd": {
+    "message": "추가"
+  },
+  "cancel": {
+    "message": "취소"
+  },
+  "edit": {
+    "message": "편집"
+  },
+  "essentialBlocking": {
+    "message": "최소 차단"
+  },
+  "essentialBlockingName": {
+    "message": "최소 차단"
+  },
+  "extShortDesc": {
+    "message": "효율적인 차단기로, CPU와 메모리를 적게 사용합니다."
+  },
+  "generalSettings": {
+    "message": "일반 설정"
+  },
+  "indexDescription": {
+    "message": "더 빠르고 안전한 검색을 위해 광고 차단"
+  },
+  "keep_essential": {
+    "message": "최소 차단 유지"
+  },
+  "keep_balanced": {
+    "message": "일반 차단 유지"
+  },
+  "learnMore": {
+    "message": "자세히 알아보기"
+  },
+  "noAdsToBlock": {
+    "message": "이 페이지에서 차단할 광고 없음"
+  },
+  "pauseAdBlock": {
+    "message": "Adblock 일시 중지"
+  },
+  "pauseAdBlockOnAllSites": {
+    "message": "모든 사이트에서 Adblock 일시 중지"
+  },
+  "pauseOnAllSites": {
+    "message": "모든 사이트에서 일시 중지"
+  },
+  "pauseOnThisSite": {
+    "message": "이 사이트에서 일시 중지"
+  },
+  "poweredByUblock": {
+    "message": "<u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>uBlock</a></u> 제공"
+  },
+  "remove": {
+    "message": "제거"
+  },
+  "save": {
+    "message": "저장"
+  },
+  "setStrict": {
+    "message": "엄격 차단 설정"
+  },
+  "setStrictDescription_avast": {
+    "message": "공격적이지 않은 몇 개의 광고는 Avast Secure Browser에 도움이 됩니다. 이러한 광고는 검색에 방해가 되지 않으며 이 브라우저를 무료로 사용할 수 있도록 도와줍니다. 해당 광고를 허용하여 제품을 지원해 주시기 바랍니다."
+  },
+  "setStrictDescription_avg": {
+    "message": "공격적이지 않은 몇 개의 광고는 AVG Secure Browser에 도움이 됩니다. 이러한 광고는 검색에 방해가 되지 않으며 이 브라우저를 무료로 사용할 수 있도록 도와줍니다. 해당 광고를 허용하여 제품을 지원해 주시기 바랍니다."
+  },
+  "setStrictDescription_ccleaner": {
+    "message": "공격적이지 않은 몇 개의 광고는 CCleaner Browser에 도움이 됩니다. 이러한 광고는 검색에 방해가 되지 않으며 이 브라우저를 무료로 사용할 수 있도록 도와줍니다. 해당 광고를 허용하여 제품을 지원해 주시기 바랍니다."
+  },
+  "setStrictTitle": {
+    "message": "Adblock을 엄격 차단으로 설정"
+  },
+  "settingsCardAcceptableAds": {
+    "message": "사용자 친화적 광고에 대한\n 업계 표준을 위반하고 방해가 되는 광고를 차단합니다. <u><a style='color: inherit;' target='_blank' href='__SET_HREF__'>자세히 알아보기</a></u>."
+  },
+  "settingsCardAcceptableAdsBlocks": {
+    "message": "<b>권장됨</b> - 더 빠르고 정리된 검색 환경을 위해 거의 모든 광고를 차단합니다."
+  },
+  "settingsCardAcceptableAdsBlocksNearly": {
+    "message": "더 빠르고 정리된 검색 환경을 위해 거의 모든 광고를 차단합니다.<b>이 기능을 사용하면 일부 사이트가 제대로 표시되지 않을 수 있습니다.</b>"
+  },
+  "settingsCardPopups": {
+    "message": "팝업 광고 및 배너"
+  },
+  "settingsCardDisruptive": {
+    "message": "기타 방해되는 광고"
+  },
+  "settingsCardSocialMedia": {
+    "message": "일부 소셜 미디어 광고"
+  },
+  "settingsCardOtherAds": {
+    "message": "다른 광고의 99%"
+  },
+  "settingsShowNumberBadge": {
+    "message": "차단된 광고 개수를 아이콘에 표시"
+  },
+  "site": {
+    "message": "사이트"
+  },
+  "sitesYouHaveAllowed": {
+    "message": "광고가 허용된 사이트가 여기에 나타납니다"
+  },
+  "strictBlocking": {
+    "message": "엄격 차단"
+  },
+  "strictBlockingName": {
+    "message": "엄격 차단"
+  },
+  "unpauseAdblockOnAllSites": {
+    "message": "일시 중지 취소"
+  },
+  "turnAdblockOn": {
+    "message": "켜기"
+  },
+  "youHaveAllowAdsOnThisSite": {
+    "message": "이 사이트에서 광고를 허용했습니다 "
+  },
+  "adsAreAllowed": {
+    "message": "이 사이트에서 광고가 허용됨"
+  },
+  "openSettings": {
+    "message": "설정 열기"
+  },
+  "unpauseAdBlockAllSites": {
+    "message": "모든 사이트에서 Adblock 일시 중지 취소"
+  },
+  "learnMoreAboutAdBLock": {
+    "message": "Adblock 자세히 알아보기"
+  },
+  "pauseAdsOnSite": {
+    "message": "이 사이트에서 광고 일시 중지"
+  },
+  "pauseAdsOnAllSites": {
+    "message": "모든 사이트에서 광고 일시 중지"
+  },
+  "turnOn": {
+    "message": "Adblock 켜기"
+  },
+  "turnOff": {
+    "message": "Adblock 끄기"
+  },
+  "setEssentialMode": {
+    "message": "기본 모드 설정"
+  },
+  "setBalancedMode": {
+    "message": "균형 모드 설정"
+  },
+  "setStrictMode": {
+    "message": "엄격 모드 설정"
+  },
+  "showAmountAds": {
+    "message": "차단된 광고의 양 표시"
+  },
+  "hideAmountAds": {
+    "message": "차단된 광고의 양 숨기기"
+  },
+  "addWebsiteToAllowAds": {
+    "message": "허용할 광고를 \"웹사이트\"에 추가"
+  },
+  "learnMoreAAS": {
+    "message": "허용 가능한 광고 표준 자세히 알아보기"
+  },
+  "learnMoreUblock": {
+    "message": "uBlock 자세히 알아보기"
+  },
+  "saveSiteIntoWhitelist": {
+    "message": "사이트를 화이트리스트에 저장"
+  },
+  "cancelAddSiteOperation": {
+    "message": "사이트 추가 작업 취소"
+  },
+  "editSiteFromWhitelist": {
+    "message": "화이트리스트에서 사이트 편집"
+  },
+  "cancelEditSiteOperation": {
+    "message": "사이트 편집 작업 취소"
+  },
+  "removeFromWhitelist": {
+    "message": "화이트리스트에서 사이트 제거"
+  },
+  "editFromWhitelist": {
+    "message": "화이트리스트에서 사이트 편집"
+  },
+  "stayOn_balanced": {
+    "message": "균형 모드 유지"
+  },
+  "stayOn_essential": {
+    "message": "기본 모드 유지"
+  },
+  "cancelSetStrict": {
+    "message": "엄격 모드 설정 작업 취소"
+  },
+  "modifyWhitelistedSite": {
+    "message": "화이트리스트 사이트 수정"
+  },
+  "whitelistModalDescription": {
+    "message": "광고를 허용할 사이트를 선택하십시오."
+  }
+}
